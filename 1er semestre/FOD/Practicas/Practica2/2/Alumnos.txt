@@ -1,0 +1,16 @@
+codalumno: 87 - ape: Ortiz - nom: Marisol - cursadasaprov: 5 - finalesaprov: 11
+codalumno: 9013 - ape: Rodriguez - nom: Juan - cursadasaprov: 8 - finalesaprov: 2
+codalumno: 10405 - ape: Lopez - nom: Santiago - cursadasaprov: 6 - finalesaprov: 6
+codalumno: 12894 - ape: Hernandez - nom: Luciana - cursadasaprov: 9 - finalesaprov: 2
+codalumno: 13680 - ape: Gomez - nom: Emilia - cursadasaprov: 10 - finalesaprov: 2
+codalumno: 14171 - ape: Perez - nom: Manuel - cursadasaprov: 6 - finalesaprov: 8
+codalumno: 14859 - ape: Martinez - nom: Ana - cursadasaprov: 9 - finalesaprov: 0
+codalumno: 16833 - ape: Gonzalez - nom: Daniel - cursadasaprov: 6 - finalesaprov: 3
+codalumno: 19620 - ape: Vargas - nom: Juliana - cursadasaprov: 5 - finalesaprov: 5
+codalumno: 20416 - ape: Ramos - nom: Gabriela - cursadasaprov: 8 - finalesaprov: 2
+codalumno: 22701 - ape: Mendoza - nom: Felipe - cursadasaprov: 6 - finalesaprov: 2
+codalumno: 23849 - ape: arias - nom: Laura - cursadasaprov: 9 - finalesaprov: 4
+codalumno: 24318 - ape: Jimenez - nom: Matías - cursadasaprov: 7 - finalesaprov: 0
+codalumno: 24579 - ape: Calderon - nom: Catalina - cursadasaprov: 8 - finalesaprov: 9
+codalumno: 25025 - ape: Medina - nom: Bruno - cursadasaprov: 5 - finalesaprov: 8
+codalumno: 31750 - ape: Murillo - nom: Sofia - cursadasaprov: 7 - finalesaprov: 6

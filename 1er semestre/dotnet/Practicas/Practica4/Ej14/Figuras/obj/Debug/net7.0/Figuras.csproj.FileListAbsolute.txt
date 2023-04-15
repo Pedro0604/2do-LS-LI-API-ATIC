@@ -1,0 +1,12 @@
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\bin\Debug\net7.0\Figuras.deps.json
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\bin\Debug\net7.0\Figuras.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\bin\Debug\net7.0\Figuras.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\obj\Debug\net7.0\Figuras.csproj.AssemblyReference.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\obj\Debug\net7.0\Figuras.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\obj\Debug\net7.0\Figuras.AssemblyInfoInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\obj\Debug\net7.0\Figuras.AssemblyInfo.cs
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\obj\Debug\net7.0\Figuras.csproj.CoreCompileInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\obj\Debug\net7.0\Figuras.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\obj\Debug\net7.0\refint\Figuras.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\obj\Debug\net7.0\Figuras.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Figuras\obj\Debug\net7.0\ref\Figuras.dll

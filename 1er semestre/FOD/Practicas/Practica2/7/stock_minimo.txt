@@ -1,0 +1,9 @@
+Código: 3 | Nombre: Producto 3 | Precio de venta: 861.67 | Stock actual: 207 | Stock mínimo: 412 | 
+Código: 9 | Nombre: Producto 9 | Precio de venta: 55.79 | Stock actual: 647 | Stock mínimo: 809 | 
+Código: 12 | Nombre: Producto 12 | Precio de venta: 842.74 | Stock actual: 452 | Stock mínimo: 567 | 
+Código: 13 | Nombre: Producto 13 | Precio de venta: 743.24 | Stock actual: 97 | Stock mínimo: 686 | 
+Código: 16 | Nombre: Producto 16 | Precio de venta: 234.69 | Stock actual: 132 | Stock mínimo: 645 | 
+Código: 17 | Nombre: Producto 17 | Precio de venta: 142.70 | Stock actual: 148 | Stock mínimo: 341 | 
+Código: 20 | Nombre: Producto 20 | Precio de venta: 725.31 | Stock actual: 473 | Stock mínimo: 510 | 
+Código: 21 | Nombre: Producto 21 | Precio de venta: 347.53 | Stock actual: 439 | Stock mínimo: 603 | 
+Código: 28 | Nombre: Producto 28 | Precio de venta: 152.32 | Stock actual: 346 | Stock mínimo: 789 | 

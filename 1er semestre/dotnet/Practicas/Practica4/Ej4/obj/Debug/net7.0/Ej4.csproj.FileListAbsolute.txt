@@ -1,0 +1,15 @@
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\bin\Debug\net7.0\Ej4.exe
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\bin\Debug\net7.0\Ej4.deps.json
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\bin\Debug\net7.0\Ej4.runtimeconfig.json
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\bin\Debug\net7.0\Ej4.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\bin\Debug\net7.0\Ej4.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\Ej4.csproj.AssemblyReference.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\Ej4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\Ej4.AssemblyInfoInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\Ej4.AssemblyInfo.cs
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\Ej4.csproj.CoreCompileInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\Ej4.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\refint\Ej4.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\Ej4.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\Ej4.genruntimeconfig.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej4\obj\Debug\net7.0\ref\Ej4.dll

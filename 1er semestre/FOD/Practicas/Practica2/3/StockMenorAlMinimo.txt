@@ -1,0 +1,9 @@
+Nombre: Producto 1 - Stock disponible: 570 - Precio: 787.81 - Descripcion: Descripción del producto 1
+Nombre: Producto 2 - Stock disponible: 191 - Precio: 682.59 - Descripcion: Descripción del producto 2
+Nombre: Producto 3 - Stock disponible: 184 - Precio: 705.66 - Descripcion: Descripción del producto 3
+Nombre: Producto 10 - Stock disponible: 576 - Precio: 984.49 - Descripcion: Descripción del producto 10
+Nombre: Producto 14 - Stock disponible: 121 - Precio: 611.05 - Descripcion: Descripción del producto 14
+Nombre: Producto 15 - Stock disponible: 619 - Precio: 995.49 - Descripcion: Descripción del producto 15
+Nombre: Producto 16 - Stock disponible: 746 - Precio: 444.64 - Descripcion: Descripción del producto 16
+Nombre: Producto 26 - Stock disponible: 561 - Precio: 205.42 - Descripcion: Descripción del producto 26
+Nombre: Producto 30 - Stock disponible: 499 - Precio: 677.71 - Descripcion: Descripción del producto 30

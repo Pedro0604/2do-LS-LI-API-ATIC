@@ -1,0 +1,5 @@
+C:\Users\Pedro master god\Desktop\dotnet Desktop\Practica1\19\obj\Debug\net7.0\10.csproj.AssemblyReference.cache
+C:\Users\Pedro master god\Desktop\dotnet Desktop\Practica1\19\obj\Debug\net7.0\10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro master god\Desktop\dotnet Desktop\Practica1\19\obj\Debug\net7.0\10.AssemblyInfoInputs.cache
+C:\Users\Pedro master god\Desktop\dotnet Desktop\Practica1\19\obj\Debug\net7.0\10.AssemblyInfo.cs
+C:\Users\Pedro master god\Desktop\dotnet Desktop\Practica1\19\obj\Debug\net7.0\10.csproj.CoreCompileInputs.cache

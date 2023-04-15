@@ -1,0 +1,12 @@
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\bin\Debug\net7.0\Automotores.deps.json
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\bin\Debug\net7.0\Automotores.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\bin\Debug\net7.0\Automotores.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\obj\Debug\net7.0\Automotores.csproj.AssemblyReference.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\obj\Debug\net7.0\Automotores.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\obj\Debug\net7.0\Automotores.AssemblyInfoInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\obj\Debug\net7.0\Automotores.AssemblyInfo.cs
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\obj\Debug\net7.0\Automotores.csproj.CoreCompileInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\obj\Debug\net7.0\Automotores.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\obj\Debug\net7.0\refint\Automotores.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\obj\Debug\net7.0\Automotores.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica4\Ej14\Automotores\obj\Debug\net7.0\ref\Automotores.dll

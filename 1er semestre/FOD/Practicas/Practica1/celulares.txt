@@ -1,0 +1,33 @@
+111  1.3490000000000000E+003 Apple
+0 33  La pantalla es Super Retina XDR con tecnologia ProMotion, capaz de ofrecer una tasa de refresco adaptativa de hasta 120 Hz, y cuenta con un nuevo escudo ceramico mas resistente a impactos.
+iPhone 14 Pro Max 
+222  1.4000000000000000E+003 Samsung
+30 43  A primera vista llama la atencion su pantalla curva inmersiva Dynamic AMOLED 2x de 6,8 pulgadas con una tasa de refresco de 120 Hz y compatibilidad con S Pen.
+Samsung Galaxy S23 Ultra
+333  1.3000000000000000E+003 Samsung
+49 28  Su caracteristica mas llamativa es su doble pantalla. La principal, de 7,6 pulgadas con tecnologia Dynamic AMOLED 2X, que se utiliza cuando el dispositivo esta desplegado en formato tablet, y la exterior de 6,2 pulgadas Dynamic AMOLED 2X.
+Samsung Galaxy Z Fold4
+444  1.1000000000000000E+003 Xiaomi
+14 28  Tiene una pantalla curvada AMOLED de 6,73 pulgadas, con resolucion WQHD+ y refresco adaptativo de hasta 120 Hz.
+Xiaomi 13 Pro
+555  1.0000000000000000E+003 OPPO
+17 9  Viste el procesador Qualcomm Snapdragon 8 Gen 1, 12 Gb de RAM y una bateria de 5.000 mAh con carga rapida de 80 W.
+OPPO Find X5 Pro
+666  1.1400000000000000E+003 OPPO
+15 8  Destaca su pantalla plegable tipo flip AMOLED de 6,8 pulgadas, con una resolucion Full HD + y 120 Hz.
+OPPO Find N2 Flip
+777  1.4000000000000000E+003 Huawei
+0 15  Su sistema de camaras, ubicado en un circulo en la parte trasera del telefono, es elegante y cuenta con tecnologia de cine UltraVision. Cuenta con una lente de 50 megapixeles, otra de 13 megapixeles y un teleobjetivo de 64 megapixeles.
+Huawei Mate 50 Pro
+888  1.2000000000000000E+003 Huawei
+18 25  Dispone de un panel con tecnologia OLED, tasa de refresco de hasta 120 Hz y una resolucion de 2480 x 2200 pixeles (2480 x 1176 pixeles plegado). En su interior lleva un procesador Snapdragon 888 de 8 nucleos, pero sin 5G.
+Huawei Mate Xs 2
+999  8.4900000000000000E+002 OnePlus
+20 11  El OnePlus 11 cuenta con una pantalla de 6,7 pulgadas Fluid AMOLED con resolucion Quad HD+ y tasa de refresco dinamica de hasta 120 Hz. 
+OnePlus 11
+1000  1.1110000000000000E+003 Google
+13 25  Google no descuida el apartado fotografico con su sistema de triple camara trasera con una lente principal de 50 MP, un teleobjetivo de 48 MP y un ultra gran angular de 12 MP.
+Google Pixel 7 Pro
+1111  3.5000000000000000E+002 POCO
+0 34 God celu
+POCO X3 NFC
