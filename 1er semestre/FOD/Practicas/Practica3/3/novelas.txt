@@ -1,0 +1,50 @@
+Codigo: 0 - Genero: @ - Nombre: @ - Duracion: 0 - Director: @ - Precio: 0
+Codigo: 1100 - Genero: Romance - Nombre: Doctor Who - Duracion: 109 - Director: Paul Thomas Anderson - Precio: 422
+Codigo: 1200 - Genero: Misterio - Nombre: Money Heist - Duracion: 162 - Director: Guillermo del Toro - Precio: 437
+Codigo: 8 - Genero: Historia - Nombre: Narcos - Duracion: 88 - Director: Ridley Scott - Precio: 446
+Codigo: 10 - Genero: Drama - Nombre: La Casa de Papel - Duracion: 55 - Director: Ang Lee - Precio: 239
+Codigo: 13 - Genero: Suspenso - Nombre: Black Mirror - Duracion: 106 - Director: Paul Thomas Anderson - Precio: 285
+Codigo: 15 - Genero: Ciencia Ficción - Nombre: Dark - Duracion: 168 - Director: Christopher Nolan - Precio: 169
+Codigo: 17 - Genero: Comedia - Nombre: Desperate Housewives - Duracion: 5 - Director: Luc Besson - Precio: 417
+Codigo: 19 - Genero: Infantil - Nombre: Battlestar Galactica - Duracion: 29 - Director: Denis Villeneuve - Precio: 436
+Codigo: 21 - Genero: Infantil - Nombre: Sherlock - Duracion: 160 - Director: Ethan Hawke - Precio: 231
+Codigo: 45 - Genero: Fantasía - Nombre: Brooklyn Nine-Nine - Duracion: 144 - Director: J.J. Abrams - Precio: 302
+Codigo: 26 - Genero: Historia - Nombre: Brooklyn Nine-Nine - Duracion: 29 - Director: Sofia Coppola - Precio: 473
+Codigo: 28 - Genero: Suspenso - Nombre: How I Met Your Mother - Duracion: 22 - Director: Fernando Meirelles - Precio: 237
+Codigo: 20 - Genero: Aventura - Nombre: Stranger Things - Duracion: 155 - Director: Milos Forman - Precio: 229
+Codigo: 3 - Genero: Aventura - Nombre: Parks and Recreation - Duracion: 28 - Director: Steven Spielberg - Precio: 163
+Codigo: 31 - Genero: Pedro - Nombre: Spadari - Duracion: 146 - Director: Pedro Spadari - Precio: 330
+Codigo: 35 - Genero: Ciencia Ficción - Nombre: Money Heist - Duracion: 181 - Director: Stephen Frears - Precio: 225
+Codigo: 37 - Genero: Ciencia Ficción - Nombre: The Good Place - Duracion: 88 - Director: Patty Jenkins - Precio: 349
+Codigo: 856 - Genero: Comedia - Nombre: The Wire - Duracion: 194 - Director: Oliver Stone - Precio: 327
+Codigo: 2345 - Genero: Policial - Nombre: Fargo - Duracion: 43 - Director: Jean-Pierre Jeunet - Precio: 65
+Codigo: 746 - Genero: Suspenso - Nombre: Twin Peaks - Duracion: 122 - Director: Luc Besson - Precio: 163
+Codigo: 7 - Genero: Fantasía - Nombre: The Sopranos - Duracion: 88 - Director: Alejandro González Iñárritu - Precio: 495
+Codigo: 456 - Genero: Infantil - Nombre: The Crown - Duracion: 131 - Director: David Fincher - Precio: 318
+Codigo: 3 - Genero: Acción - Nombre: Elite - Duracion: 131 - Director: Wes Anderson - Precio: 127
+Codigo: 756 - Genero: Terror - Nombre: Sherlock - Duracion: 95 - Director: George Lucas - Precio: 312
+Codigo: 8 - Genero: Acción - Nombre: House of Cards - Duracion: 23 - Director: Oliver Stone - Precio: 329
+Codigo: 89 - Genero: Romance - Nombre: The West Wing - Duracion: 156 - Director: Tim Burton - Precio: 475
+Codigo: 32 - Genero: Ciencia Ficción - Nombre: Grey's Anatomy - Duracion: 165 - Director: Steven Spielberg - Precio: 49
+Codigo: 45 - Genero: Historia - Nombre: Westworld - Duracion: 135 - Director: Alfred Hitchcock - Precio: 486
+Codigo: 69 - Genero: Infantil - Nombre: Stranger Things - Duracion: 94 - Director: David Lynch - Precio: 489
+Codigo: 346 - Genero: Drama - Nombre: The Good Place - Duracion: 91 - Director: Milos Forman - Precio: 10
+Codigo: 56 - Genero: Drama - Nombre: Homeland - Duracion: 57 - Director: Chloé Zhao - Precio: 61
+Codigo: 4769 - Genero: Ciencia Ficción - Nombre: The Twilight Zone - Duracion: 97 - Director: Stanley Kubrick - Precio: 345
+Codigo: 74 - Genero: Romance - Nombre: American Horror Story - Duracion: 83 - Director: Patty Jenkins - Precio: 33
+Codigo: 34 - Genero: Aventura - Nombre: Buffy the Vampire Slayer - Duracion: 114 - Director: Robert Zemeckis - Precio: 433
+Codigo: 586 - Genero: Aventura - Nombre: Friends - Duracion: 105 - Director: Patty Jenkins - Precio: 47
+Codigo: 3 - Genero: Musical - Nombre: Parks and Recreation - Duracion: 17 - Director: Ryan Coogler - Precio: 139
+Codigo: 356 - Genero: Romance - Nombre: Breaking Bad - Duracion: 134 - Director: J.J. Abrams - Precio: 66
+Codigo: 86 - Genero: Historia - Nombre: Charmed - Duracion: 169 - Director: Ridley Scott - Precio: 133
+Codigo: 798 - Genero: Acción - Nombre: Narcos - Duracion: 118 - Director: Joel Schumacher - Precio: 11
+Codigo: 26 - Genero: Acción - Nombre: Westworld - Duracion: 74 - Director: Steven Spielberg - Precio: 74
+Codigo: 68 - Genero: Policial - Nombre: Parks and Recreation - Duracion: 55 - Director: Sam Mendes - Precio: 368
+Codigo: 2364 - Genero: Romance - Nombre: La Casa de Papel - Duracion: 87 - Director: George Lucas - Precio: 379
+Codigo: 97 - Genero: Fantasía - Nombre: Narcos - Duracion: 119 - Director: Damien Chazelle - Precio: 287
+Codigo: 364 - Genero: Historia - Nombre: True Detective - Duracion: 179 - Director: Bong Joon-ho - Precio: 341
+Codigo: 36 - Genero: Terror - Nombre: Homeland - Duracion: 170 - Director: Chloé Zhao - Precio: 350
+Codigo: 957 - Genero: Comedia - Nombre: The Twilight Zone - Duracion: 154 - Director: Ethan Hawke - Precio: 206
+Codigo: 5734 - Genero: Ciencia Ficción - Nombre: Grey's Anatomy - Duracion: 177 - Director: George Lucas - Precio: 291
+Codigo: 90 - Genero: Historia - Nombre: Narcos - Duracion: 88 - Director: Ridley Scott - Precio: 446
+Codigo: 660 - Genero: Acción - Nombre: Elite - Duracion: 191 - Director: Robert Zemeckis - Precio: 68
