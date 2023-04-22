@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Almacen.Aplicacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Almacen.Aplicacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Almacen.Aplicacion.dll": {}
+        }
+      },
+      "Almacen.Repositorios/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Almacen.Aplicacion": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Almacen.Repositorios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Almacen.Repositorios.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Almacen.Aplicacion/1.0.0": {
+      "type": "project",
+      "path": "../Almacen.Aplicacion/Almacen.Aplicacion.csproj",
+      "msbuildProject": "../Almacen.Aplicacion/Almacen.Aplicacion.csproj"
+    },
+    "Almacen.Repositorios/1.0.0": {
+      "type": "project",
+      "path": "../Almacen.Repositorios/Almacen.Repositorios.csproj",
+      "msbuildProject": "../Almacen.Repositorios/Almacen.Repositorios.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Almacen.Aplicacion >= 1.0.0",
+      "Almacen.Repositorios >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Pedro master god\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Teorias\\Teoria7\\Almacen\\Almacen.Consola\\Almacen.Consola.csproj",
+      "projectName": "Almacen.Consola",
+      "projectPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Teorias\\Teoria7\\Almacen\\Almacen.Consola\\Almacen.Consola.csproj",
+      "packagesPath": "C:\\Users\\Pedro master god\\.nuget\\packages\\",
+      "outputPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Teorias\\Teoria7\\Almacen\\Almacen.Consola\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Pedro master god\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Teorias\\Teoria7\\Almacen\\Almacen.Aplicacion\\Almacen.Aplicacion.csproj": {
+              "projectPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Teorias\\Teoria7\\Almacen\\Almacen.Aplicacion\\Almacen.Aplicacion.csproj"
+            },
+            "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Teorias\\Teoria7\\Almacen\\Almacen.Repositorios\\Almacen.Repositorios.csproj": {
+              "projectPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Teorias\\Teoria7\\Almacen\\Almacen.Repositorios\\Almacen.Repositorios.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

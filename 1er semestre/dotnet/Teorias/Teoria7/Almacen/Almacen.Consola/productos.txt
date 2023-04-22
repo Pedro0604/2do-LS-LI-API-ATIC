@@ -1,0 +1,10 @@
+1
+Yerba
+2
+Azúcar
+4
+Agua
+5
+Yerba
+6
+Azúcar
