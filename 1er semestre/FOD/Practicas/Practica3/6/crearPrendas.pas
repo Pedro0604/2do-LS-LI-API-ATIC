@@ -33,7 +33,7 @@ Var
   prenda_actual: prenda;
 Begin
   // Abrir el archivo de prendas
-  Assign(arc_prendas, 'prendas.dat');
+  Assign(arc_prendas, 'prendas.pr');
   Reset(arc_prendas);
 
   // Leer cada registro de prenda y llamar al procedimiento ImprimirPrenda
@@ -65,7 +65,7 @@ Begin
   // Generar 50 registros de prendas con campos aleatorios y escribirlos en el archivo
   For i := 1 To 50 Do
     Begin
-      nueva_prenda.cod_prenda := Random(1000);
+      nueva_prenda.cod_prenda := i;
       nueva_prenda.descripcion := 'Prenda ' + IntToStr(i);
       nueva_prenda.colores := 'Rojo, Verde, Azul';
       nueva_prenda.tipo_prenda := 'Tipo ' + IntToStr(Random(5));

@@ -17,10 +17,40 @@ Type
     precio_unitario: real;
   End;
 
-  file_prendas: file Of prenda;
-  file_obsoletas: file Of integer;
+  file_prendas = file Of prenda;
+  file_obsoletas = file Of integer;
 
-Procedure leer(Var arc_obsoletas: file_obsoletas; Var cod:integer;);
+Procedure ImprimirPrenda(prenda: prenda);
+Begin
+  writeln('Código: ', prenda.cod_prenda);
+  writeln('Descripción: ', prenda.descripcion);
+  writeln('Colores: ', prenda.colores);
+  writeln('Tipo de prenda: ', prenda.tipo_prenda);
+  writeln('Stock: ', prenda.stock);
+  writeln('Precio unitario: $', prenda.precio_unitario:0:2);
+End;
+
+Procedure ImprimirArchivoPrendas(Var arc_prendas: file_prendas);
+
+Var 
+  prenda_actual: prenda;
+Begin
+  Reset(arc_prendas);
+
+  // Leer cada registro de prenda y llamar al procedimiento ImprimirPrenda
+  While Not EOF(arc_prendas) Do
+    Begin
+      Read(arc_prendas, prenda_actual);
+      ImprimirPrenda(prenda_actual);
+      writeln('-----------------------');
+    End;
+
+  // Cerrar el archivo de prendas
+  Close(arc_prendas);
+End;
+
+
+Procedure leer(Var arc_obsoletas: file_obsoletas; Var cod:integer);
 Begin
   If (Not EOF(arc_obsoletas))Then
     read(arc_obsoletas, cod)
@@ -54,11 +84,59 @@ Begin
   Close(arc_obsoletas);
 End;
 
+Procedure compactacion(Var arc_prendas: file_prendas);
+
+Var 
+  aux: prenda;
+  nuevoArchivo: file_prendas;
+Begin
+  Assign(nuevoArchivo, 'nuevoPrendas.pr');
+  Rewrite(nuevoArchivo);
+  Reset(arc_prendas);
+
+  While Not EOF(arc_prendas) Do
+    Begin
+      read(arc_prendas, aux);
+      If (aux.stock>=0)Then
+        write(nuevoArchivo, aux);
+    End;
+  Close(nuevoArchivo);
+  Close(arc_prendas);
+  Erase(arc_prendas);
+  Rename(nuevoArchivo, 'prendas.pr');
+  Assign(arc_prendas, 'prendas.pr');
+End;
+
 Var 
   arc_prendas: file_prendas;
   arc_obsoletas: file_obsoletas;
 Begin
   Assign(arc_prendas, 'prendas.pr');
   Assign(arc_obsoletas, 'obsoletas.obs');
+  writeln('#################################');
+  writeln('#################################');
+  writeln('#################################');
+  writeln('Pre bajas');
+  writeln('#################################');
+  writeln('#################################');
+  writeln('#################################');
+  ImprimirArchivoPrendas(arc_prendas);
   bajaLogica(arc_prendas, arc_obsoletas);
-End;
+  writeln('#################################');
+  writeln('#################################');
+  writeln('#################################');
+  writeln('Post bajas');
+  writeln('#################################');
+  writeln('#################################');
+  writeln('#################################');
+  ImprimirArchivoPrendas(arc_prendas);
+  compactacion(arc_prendas);
+  writeln('#################################');
+  writeln('#################################');
+  writeln('#################################');
+  writeln('Post compactacion');
+  writeln('#################################');
+  writeln('#################################');
+  writeln('#################################');
+  ImprimirArchivoPrendas(arc_prendas);
+End.
