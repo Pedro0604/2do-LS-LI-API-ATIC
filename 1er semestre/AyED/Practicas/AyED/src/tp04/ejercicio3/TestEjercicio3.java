@@ -6,6 +6,7 @@ public class TestEjercicio3 {
 
 	public static void main(String[] args) {
 		ArbolGeneral<Integer> arbol = ArbolGeneral.crearArbolConValoresEnteros();
+		arbol.printTree();
 		RecorridosAG rec = new RecorridosAG();
 		System.out.println("Pre orden: ");
 		System.out.println(rec.numerosImparesMayoresQuePreOrden(arbol, 0));

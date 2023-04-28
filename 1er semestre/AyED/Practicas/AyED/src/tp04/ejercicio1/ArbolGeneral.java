@@ -154,20 +154,30 @@ public class ArbolGeneral<T> {
 		ArbolGeneral<Integer> a = new ArbolGeneral<Integer>(1);
 		ArbolGeneral<Integer> b = new ArbolGeneral<Integer>(2);
 		ArbolGeneral<Integer> c = new ArbolGeneral<Integer>(3);
-		ArbolGeneral<Integer> d = new ArbolGeneral<Integer>(5);
-		ArbolGeneral<Integer> e = new ArbolGeneral<Integer>(6);
-		ArbolGeneral<Integer> f = new ArbolGeneral<Integer>(8);
-		ArbolGeneral<Integer> g = new ArbolGeneral<Integer>(9);
-		ArbolGeneral<Integer> h = new ArbolGeneral<Integer>(7);
-		ArbolGeneral<Integer> i = new ArbolGeneral<Integer>(4);
-		f.agregarHijo(g);
-		e.agregarHijo(f);
-		d.agregarHijo(h);
-		c.agregarHijo(d);
-		c.agregarHijo(e);
-		b.agregarHijo(i);
+		ArbolGeneral<Integer> d = new ArbolGeneral<Integer>(4);
+		ArbolGeneral<Integer> e = new ArbolGeneral<Integer>(5);
+		ArbolGeneral<Integer> f = new ArbolGeneral<Integer>(6);
+		ArbolGeneral<Integer> g = new ArbolGeneral<Integer>(7);
+		ArbolGeneral<Integer> h = new ArbolGeneral<Integer>(8);
+		ArbolGeneral<Integer> i = new ArbolGeneral<Integer>(9);
+		ArbolGeneral<Integer> j = new ArbolGeneral<Integer>(10);
+		ArbolGeneral<Integer> k = new ArbolGeneral<Integer>(11);
+		ArbolGeneral<Integer> l = new ArbolGeneral<Integer>(12);
+		ArbolGeneral<Integer> m = new ArbolGeneral<Integer>(13);
+		ArbolGeneral<Integer> n = new ArbolGeneral<Integer>(14);
 		a.agregarHijo(b);
 		a.agregarHijo(c);
+		a.agregarHijo(d);
+		a.agregarHijo(e);
+		c.agregarHijo(f);
+		c.agregarHijo(g);
+		d.agregarHijo(h);
+		d.agregarHijo(i);
+		d.agregarHijo(j);
+		d.agregarHijo(k);
+		g.agregarHijo(l);
+		j.agregarHijo(m);
+		j.agregarHijo(n);
 		return a;
 	}
 
@@ -198,5 +208,31 @@ public class ArbolGeneral<T> {
 
 		}
 		return encontreB;
+	}
+
+	public void printTree() {
+		ColaGenerica<ArbolGeneral<T>> c = new ColaGenerica<ArbolGeneral<T>>();
+		ArbolGeneral<T> a = null;
+		ListaGenerica<ArbolGeneral<T>> hijos;
+		c.encolar(this);
+		c.encolar(null);
+		while (!c.esVacia()) {
+			a = c.desencolar();
+			if (a != null) {
+				System.out.print(a.getDato() + " ");
+				hijos = a.getHijos();
+				hijos.comenzar();
+				while (!hijos.fin()) {
+					c.encolar(hijos.proximo());
+				}
+			} else {
+				if (!c.esVacia()) {
+					System.out.println();
+					c.encolar(null);
+				}
+			}
+		}
+
+		System.out.println();
 	}
 }
