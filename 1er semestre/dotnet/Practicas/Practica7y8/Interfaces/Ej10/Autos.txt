@@ -1,0 +1,14 @@
+Ford|2010
+Fiat|2023
+Samsung|1960
+Yamaha|2000
+Renault|2020
+CoVid|2019
+Locuras|2016
+Lucia Giannotta|2003
+Pedro Spadari|2004
+Jose de San Martín|1786
+Jesus|33
+Xd|2009
+Minecraft|2009
+Facebook|2004

@@ -1,0 +1,15 @@
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\bin\Debug\net7.0\Ej1.exe
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\bin\Debug\net7.0\Ej1.deps.json
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\bin\Debug\net7.0\Ej1.runtimeconfig.json
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\bin\Debug\net7.0\Ej1.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\bin\Debug\net7.0\Ej1.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\Ej1.csproj.AssemblyReference.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\Ej1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\Ej1.AssemblyInfoInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\Ej1.AssemblyInfo.cs
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\Ej1.csproj.CoreCompileInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\Ej1.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\refint\Ej1.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\Ej1.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\Ej1.genruntimeconfig.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica7y8\Interfaces\Ej1\obj\Debug\net7.0\ref\Ej1.dll
