@@ -218,34 +218,25 @@ public class ArbolBinarioPrincesaAccesible<T> {
 	public Personaje PrincesaAccesible() {
 		Personaje p = null;
 		if (!this.esVacio()) {
-			PrincesaAccesible((ArbolBinarioPrincesaAccesible<Personaje>) this, p, false);
+			p = PrincesaAccesible((ArbolBinarioPrincesaAccesible<Personaje>) this);
 		}
 		return p;
 	}
 
-	private void PrincesaAccesible(ArbolBinarioPrincesaAccesible<Personaje> a, Personaje p, boolean encontre) {
-		p = null;
-		if (a.getDato().getNombre() != "Dragon" && !encontre) {
-			if (!a.esHoja()) {
-				if (a.tieneHijoIzquierdo()) {
-					Personaje pIzq = null;
-					PrincesaAccesible(a.getHijoIzquierdo(), pIzq, encontre);
-					if (pIzq != null && pIzq.getNombre() == "princesa") {
-						encontre = true;
-						p = pIzq;
-					}
-				}
-				if (a.tieneHijoDerecho() && !encontre) {
-					Personaje pDer = null;
-					PrincesaAccesible(a.getHijoDerecho(), pDer, encontre);
-					if (pDer != null && pDer.getNombre() == "princesa") {
-						encontre = true;
-						p = pDer;
-					}
-				}
-			} else {
-				p = a.getDato();
+	private Personaje PrincesaAccesible(ArbolBinarioPrincesaAccesible<Personaje> a) {
+		Personaje p = null;
+		if (a.getDato().getNombre() == "Princesa") {
+			p = a.getDato();
+		} else {
+			if (a.getDato().getNombre() != "Dragon") {
+				if (a.tieneHijoIzquierdo())
+					p = PrincesaAccesible(a.getHijoIzquierdo());
+				if (a.tieneHijoDerecho() && p == null) // p solo es distinto de null cuando se encontro una princesa,
+														// por lo que mientras p sea null se debe ir a ver el hijo
+														// derecho en busca de una princesa accesible
+					p = PrincesaAccesible(a.getHijoDerecho());
 			}
 		}
+		return p;
 	}
 }

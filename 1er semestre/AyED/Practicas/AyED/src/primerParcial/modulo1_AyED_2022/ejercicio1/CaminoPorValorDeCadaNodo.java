@@ -5,26 +5,26 @@ import tp02.ejercicio2.ListaGenerica;
 import tp04.ejercicio1.ArbolGeneral;
 
 public class CaminoPorValorDeCadaNodo {
-	public ListaGenerica<ArbolGeneral<Integer>> caminoPorValorDeCadaNodo(ArbolGeneral<Integer> a) {
-		ListaGenerica<ArbolGeneral<Integer>> l = new ListaEnlazadaGenerica<ArbolGeneral<Integer>>();
+	public ListaGenerica<ArbolGeneral<Dato>> caminoPorValorDeCadaNodo(ArbolGeneral<Dato> a) {
+		ListaGenerica<ArbolGeneral<Dato>> l = new ListaEnlazadaGenerica<ArbolGeneral<Dato>>();
 		if (!a.esVacio())
-			caminoPorValorDeCadaNodo(a, l, a.getDato());
+			caminoPorValorDeCadaNodo(a, l, a.getDato().getValor());
 		return l;
 	}
 
-	private void caminoPorValorDeCadaNodo(ArbolGeneral<Integer> a, ListaGenerica<ArbolGeneral<Integer>> l,
+	private void caminoPorValorDeCadaNodo(ArbolGeneral<Dato> a, ListaGenerica<ArbolGeneral<Dato>> l,
 			int caminoASeguir) {
 		l.agregarFinal(a);
 		if (!a.esHoja()) {
-			ListaGenerica<ArbolGeneral<Integer>> hijos = a.getHijos();
-			ArbolGeneral<Integer> hijoAct = null;
+			ListaGenerica<ArbolGeneral<Dato>> hijos = a.getHijos();
+			ArbolGeneral<Dato> hijoAct = null;
 			hijos.comenzar();
 			if (a.tieneHijos()) {
 				while (!hijos.fin() && caminoASeguir > 0) {
 					hijoAct = hijos.proximo();
 					caminoASeguir--;
 				}
-				caminoPorValorDeCadaNodo(hijoAct, l, hijoAct.getDato());
+				caminoPorValorDeCadaNodo(hijoAct, l, hijoAct.getDato().getValor());
 			}
 		}
 	}
