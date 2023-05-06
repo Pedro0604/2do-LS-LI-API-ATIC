@@ -40,7 +40,7 @@ public class TestCantidadParesDelCaminoMayorOIgual {
 
 		a.printTree();
 		System.out
-				.println("El camino con por lo menos 3 pares es: " + CantidadParesDelCaminoMayorOIgual.resolver(a, 3));
+				.println("El camino con por lo menos 3 pares es: " + CantidadParesDelCaminoMayorOIgual.resolver(a, 4));
 	}
 
 }

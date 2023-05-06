@@ -9,31 +9,30 @@ public class CantidadParesDelCaminoMayorOIgual {
 		ListaGenerica<Integer> lReturn = new ListaEnlazadaGenerica<Integer>();
 		if (!ab.esVacio()) {
 			ListaGenerica<Integer> camino = new ListaEnlazadaGenerica<Integer>();
-			int cantPares = 0;
-			resolver(ab, min, lReturn, camino, cantPares);
+			resolver(ab, min, lReturn, camino);
 		}
 		return lReturn;
 	}
 
 	private static void resolver(ArbolBinario<Integer> a, int min, ListaGenerica<Integer> lReturn,
-			ListaGenerica<Integer> camino, int cantPares) {
+			ListaGenerica<Integer> camino) {
 		camino.agregarFinal(a.getDato());
+		if (a.getDato() % 2 == 0) {
+			min--;
+		}
 		if (a.esHoja()) {
-			if (cantPares >= min) {
+			if (min <= 0) {
 				camino.comenzar();
 				while (!camino.fin()) {
 					lReturn.agregarFinal(camino.proximo());
 				}
 			}
 		} else {
-			if (a.getDato() % 2 == 0) {
-				cantPares++;
-			}
 			if (a.tieneHijoIzquierdo()) {
-				resolver(a.getHijoIzquierdo(), min, lReturn, camino, cantPares);
+				resolver(a.getHijoIzquierdo(), min, lReturn, camino);
 			}
 			if (lReturn.tamanio() == 0 && a.tieneHijoDerecho()) {
-				resolver(a.getHijoDerecho(), min, lReturn, camino, cantPares);
+				resolver(a.getHijoDerecho(), min, lReturn, camino);
 			}
 		}
 		camino.eliminarEn(camino.tamanio());
