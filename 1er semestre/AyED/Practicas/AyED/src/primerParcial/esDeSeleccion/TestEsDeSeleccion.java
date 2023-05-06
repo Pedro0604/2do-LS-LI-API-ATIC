@@ -5,7 +5,7 @@ import tp04.ejercicio1.ArbolGeneral;
 public class TestEsDeSeleccion {
 
 	public static void main(String[] args) {
-		Parcial p = new Parcial();
+		EsDeSeleccion p = new EsDeSeleccion();
 
 		ArbolGeneral<Integer> a = new ArbolGeneral<Integer>(12);
 		ArbolGeneral<Integer> b = new ArbolGeneral<Integer>(12);

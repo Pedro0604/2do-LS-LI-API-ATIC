@@ -68,7 +68,29 @@ public class ArbolBinario<T> {
 
 	@Override
 	public String toString() {
-		return this.getDato().toString();
+		String st = "";
+		ColaGenerica<ArbolBinario<T>> c = new ColaGenerica<ArbolBinario<T>>();
+		ArbolBinario<T> a = null;
+		c.encolar(this);
+		c.encolar(null);
+		while (!c.esVacia()) {
+			a = c.desencolar();
+			if (a != null) {
+				st += a.getDato() + " ";
+				if (a.tieneHijoIzquierdo()) {
+					c.encolar(a.getHijoIzquierdo());
+				}
+				if (a.tieneHijoDerecho()) {
+					c.encolar(a.getHijoDerecho());
+				}
+			} else {
+				if (!c.esVacia()) {
+					st += "\n";
+					c.encolar(null);
+				}
+			}
+		}
+		return st;
 	}
 
 	public boolean tieneHijoIzquierdo() {
@@ -214,4 +236,5 @@ public class ArbolBinario<T> {
 		a.agregarHijoDerecho(c);
 		return a;
 	}
+
 }

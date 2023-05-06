@@ -232,7 +232,33 @@ public class ArbolGeneral<T> {
 				}
 			}
 		}
-
 		System.out.println();
+	}
+
+	@Override
+	public String toString() {
+		String st = "";
+		ColaGenerica<ArbolGeneral<T>> c = new ColaGenerica<ArbolGeneral<T>>();
+		ArbolGeneral<T> a = null;
+		ListaGenerica<ArbolGeneral<T>> hijos;
+		c.encolar(this);
+		c.encolar(null);
+		while (!c.esVacia()) {
+			a = c.desencolar();
+			if (a != null) {
+				st += a.getDato() + " ";
+				hijos = a.getHijos();
+				hijos.comenzar();
+				while (!hijos.fin()) {
+					c.encolar(hijos.proximo());
+				}
+			} else {
+				if (!c.esVacia()) {
+					st += "\n";
+					c.encolar(null);
+				}
+			}
+		}
+		return st;
 	}
 }

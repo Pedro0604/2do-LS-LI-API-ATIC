@@ -3,7 +3,7 @@ package primerParcial.esDeSeleccion;
 import tp02.ejercicio2.ListaGenerica;
 import tp04.ejercicio1.ArbolGeneral;
 
-public class Parcial {
+public class EsDeSeleccion {
 	public boolean esDeSeleccion(ArbolGeneral<Integer> arbol) {
 		boolean esDeS = false;
 		if (!arbol.esVacio()) {

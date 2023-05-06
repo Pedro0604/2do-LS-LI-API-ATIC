@@ -177,7 +177,7 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 		String str = "";
 		NodoGenerico<T> n = this.inicio;
 		while (n != null) {
-			str = str + n.getDato() + " -> ";
+			str = str + "[" + n.getDato() + "] -> ";
 			n = n.getSiguiente();
 		}
 		if (str.length() > 1)
