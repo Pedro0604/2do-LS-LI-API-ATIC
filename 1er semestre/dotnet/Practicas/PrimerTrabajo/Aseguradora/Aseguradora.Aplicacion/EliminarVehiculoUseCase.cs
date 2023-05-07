@@ -6,5 +6,5 @@ public class EliminarVehiculoUseCase
 
     public EliminarVehiculoUseCase(IRepositorioVehiculo repositorio) => this._repositorio = repositorio;
 
-    public void Ejecutar(Vehiculo vehiculo) => _repositorio.EliminarVehiculo(vehiculo);
+    public void Ejecutar(int id) => _repositorio.EliminarVehiculo(id);
 }

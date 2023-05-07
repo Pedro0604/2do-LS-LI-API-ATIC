@@ -6,5 +6,5 @@ public class EliminarTitularUseCase
 
     public EliminarTitularUseCase(IRepositorioTitular repositorio) => this._repositorio = repositorio;
 
-    public void Ejecutar(Titular titular) => _repositorio.EliminarTitular(titular);
+    public void Ejecutar(int id) => _repositorio.EliminarTitular(id);
 }

@@ -7,6 +7,6 @@ public class Tercero : Persona
 
     public override string ToString()
     {
-        return "Tercero: | " + base.ToString() + " - Nombre de la aseguradora: " + this.NombreAseguradora + " - Id del siniestro: " + this.SiniestroId + " |";
+        return $"Tercero: | {base.ToString()} - Nombre de la aseguradora: {this.NombreAseguradora} - Id del siniestro: {this.SiniestroId} |";
     }
 }

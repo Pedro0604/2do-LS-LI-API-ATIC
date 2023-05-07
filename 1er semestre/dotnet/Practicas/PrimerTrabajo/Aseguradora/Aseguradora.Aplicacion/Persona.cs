@@ -10,6 +10,11 @@ public abstract class Persona
 
     public override string ToString()
     {
-        return "Id: " + this.Id + " - DNI: " + this.DNI + " - Apellido:" + this.Apellido + " - Nombre: " + this.Nombre + " - Telefono: " + this.Telefono;
+        return $"Id: {this.Id} - DNI: {this.DNI} - Apellido:{this.Apellido} - Nombre: {this.Nombre} - Telefono: {this.Telefono}";
+    }
+
+    public virtual string AStringParaTxt()
+    {
+        return $"{this.Id}|{this.DNI}|{this.Apellido}|{this.Nombre}|{this.Telefono}";
     }
 }

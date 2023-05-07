@@ -9,6 +9,10 @@ public class Titular : Persona
 
     public override string ToString()
     {
-        return "Tercero: | " + base.ToString() + " - Direccion: " + this.Direccion + " - Correo electronico: " + this.CorreoElectronico + " - Id del vehiculo: " + this.VehiculoId + " |";
+        return $"Tercero: | {base.ToString()} - Direccion: {this.Direccion} - Correo electronico: {this.CorreoElectronico} - Id del vehiculo: {this.VehiculoId} |";
+    }
+    public override string AStringParaTxt()
+    {
+        return $"{base.AStringParaTxt()}|{this.Direccion}|{this.CorreoElectronico}|{this.VehiculoId}";
     }
 }

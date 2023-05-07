@@ -12,6 +12,10 @@ public class Poliza
 
     public override string ToString()
     {
-        return "Poliza: | Id: " + this.Id + " - Id del vehiculo: " + this.VehiculoId + " - Valor asegurado:" + this.ValorAsegurado + " - Franquicia: " + this.Franquicia + " - Tipo de cobertura: " + this.TipoDeCobertura + " - Fecha de inicio de cobertura: " + this.FechaInicioVigencia + " - Fecha de fin de cobertura: " + this.FechaFinVigencia + " |";
+        return $"Poliza: | Id: {this.Id} - Id del vehiculo: {this.VehiculoId} - Valor asegurado: {this.ValorAsegurado} - Franquicia: {this.Franquicia} - Tipo de cobertura: {this.TipoDeCobertura} - Fecha de inicio de cobertura: {this.FechaInicioVigencia} - Fecha de fin de cobertura: {this.FechaFinVigencia} |";
+    }
+    public string AStringParaTxt()
+    {
+        return $"{this.Id}|{this.VehiculoId}|{this.ValorAsegurado}|{this.Franquicia}|{this.TipoDeCobertura}|{this.FechaInicioVigencia}|{this.FechaFinVigencia}";
     }
 }

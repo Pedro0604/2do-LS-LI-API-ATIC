@@ -10,6 +10,10 @@ public class Vehiculo
 
     public override string ToString()
     {
-        return "Vehiculo: | Id: " + this.Id + " - Dominio: " + this.Dominio + " - Marca:" + this.Marca + " - Año de fabricación: " + this.AñoFabricacion + " - Id del titular: " + this.TitularId + " |";
+        return $"Vehiculo: | Id: {this.Id} - Dominio: {this.Dominio} - Marca:{this.Marca} - Año de fabricación: {this.AñoFabricacion} - Id del titular: {this.TitularId} |";
+    }
+    public string AStringParaTxt()
+    {
+        return $"{this.Id}1{this.Dominio}|{this.Marca}|{this.AñoFabricacion}|{this.TitularId}";
     }
 }

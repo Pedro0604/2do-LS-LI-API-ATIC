@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Aseguradora.Aplicacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Aseguradora.Aplicacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aseguradora.Aplicacion.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Aseguradora.Aplicacion/1.0.0": {
+      "type": "project",
+      "path": "../Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj",
+      "msbuildProject": "../Aseguradora.Aplicacion/Aseguradora.Aplicacion.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Aseguradora.Aplicacion >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Pedro master god\\.nuget\\packages\\": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\PrimerTrabajo\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj": {
+              "projectPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\PrimerTrabajo\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
