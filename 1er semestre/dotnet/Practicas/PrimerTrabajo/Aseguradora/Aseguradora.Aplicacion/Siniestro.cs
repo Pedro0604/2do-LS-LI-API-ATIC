@@ -11,6 +11,6 @@ public class Siniestro
 
     public override string ToString()
     {
-        return $"Siniestro: | Id: {this.Id} - Id de la poliza: {this.PolizaId} - Fecha de ingreso: {this.FechaIngreso} - Fecha de ocurrencia: {this.FechaOcurrencia} - Dirección del siniestro: {this.DireccionSiniestro} - Descripcion del siniestro: {this.Descripcion} |";
+        return $"Siniestro: | Id: {this.Id} - Id de la poliza: {this.PolizaId} - Fecha de ingreso: {this.FechaIngreso.ToShortDateString()} - Fecha de ocurrencia: {this.FechaOcurrencia.ToShortDateString()} - Dirección del siniestro: {this.DireccionSiniestro} - Descripcion del siniestro: {this.Descripcion}";
     }
 }

@@ -1,0 +1,1 @@
+Poliza: | Id: 123 - Id del vehiculo: 2 - Valor asegurado:3 - Franquicia: sd - Tipo de cobertura: sda - Fecha de inicio de cobertura: 1/1/0001 00:00:00 - Fecha de fin de cobertura: 1/1/0001 00:00:00 |

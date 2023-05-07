@@ -7,22 +7,51 @@ public class RepositorioPoliza : IRepositorioPoliza
     public readonly string _nombreRepositorio = "RepositorioPoliza.txt";
     public void AgregarPoliza(Poliza poliza)
     {
-        using var sw = new StreamWriter(_nombreRepositorio);
+        using var sw = new StreamWriter(_nombreRepositorio, true);
         sw.WriteLine(poliza.AStringParaTxt());
     }
 
-    public bool EliminarPoliza(int id)
+    public void EliminarPoliza(int id)
     {
-        throw new NotImplementedException();
+        var list = ListarPolizas();
+        if (list.RemoveAll(poliza => poliza.Id == id) == 0)
+        {
+            throw new Exception($"La poliza de id {id} no existe");
+        }
+        using var sw = new StreamWriter(_nombreRepositorio);
+        foreach (var p in list)
+        {
+            sw.WriteLine(p.AStringParaTxt());
+        }
+    }
+
+    public void ModificarPoliza(Poliza poliza)
+    {
+        var list = ListarPolizas();
+        var index = list.FindIndex(p => p.Id == poliza.Id);
+        if (index == -1)
+        {
+            throw new Exception($"La poliza de id {poliza.Id} no existe");
+        }
+        else
+        {
+            list[index] = poliza;
+        }
+        using var sw = new StreamWriter(_nombreRepositorio);
+        foreach (var p in list)
+        {
+            sw.WriteLine(p.AStringParaTxt());
+        }
     }
 
     public List<Poliza> ListarPolizas()
     {
-        throw new NotImplementedException();
-    }
-
-    public bool ModificarPoliza(Poliza poliza)
-    {
-        throw new NotImplementedException();
+        using var sr = new StreamReader(_nombreRepositorio);
+        var list = new List<Poliza>();
+        while (!sr.EndOfStream)
+        {
+            list.Add(new Poliza(sr.ReadLine() ?? ""));
+        }
+        return list;
     }
 }
