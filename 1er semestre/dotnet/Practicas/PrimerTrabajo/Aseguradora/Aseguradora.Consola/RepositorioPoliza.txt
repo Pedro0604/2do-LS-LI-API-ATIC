@@ -1,1 +1,6 @@
-Poliza: | Id: 123 - Id del vehiculo: 2 - Valor asegurado:3 - Franquicia: sd - Tipo de cobertura: sda - Fecha de inicio de cobertura: 1/1/0001 00:00:00 - Fecha de fin de cobertura: 1/1/0001 00:00:00 |
+1|1|200000|30000|Responsabilidad Civil Bienes y Personas|1/1/0001|1/1/0001
+3|5|1000000|70000|Gastos médicos a ocupantes|1/1/0001|1/1/0001
+4|6|50000|50000|Robo Total|1/1/0001|1/1/0001
+5|7|300000|15000|Daños materiales|1/1/0001|1/1/0001
+6|8|270000|40000||1/1/0001|1/1/0001
+7|2|150000|40000||1/1/0001|1/1/0001
