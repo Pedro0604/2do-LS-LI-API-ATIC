@@ -31,7 +31,7 @@ public class Siniestro
     {
         string st = $"Siniestro: | Id: {this.Id} - Id de la poliza: {this.PolizaId} - Fecha de ingreso: {this.FechaIngreso.ToShortDateString()} - Fecha de ocurrencia: {this.FechaOcurrencia.ToShortDateString()}";
         st += this.DireccionSiniestro != "" ? $" - Dirección del siniestro: {this.DireccionSiniestro}" : "";
-        st += this.Descripcion != "" ? $" - Descripcion del siniestro: {this.Descripcion}" : "";
+        st += this.Descripcion != "" ? $" - Descripción del siniestro: {this.Descripcion}" : "";
         return st;
     }
 }

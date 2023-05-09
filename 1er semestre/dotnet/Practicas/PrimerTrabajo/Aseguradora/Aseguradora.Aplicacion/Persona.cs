@@ -47,7 +47,7 @@ public abstract class Persona
     public override string ToString()
     {
         string st = $"Id: {this.Id} - DNI: {this.DNI} - Apellido: {this.Apellido} - Nombre: {this.Nombre}";
-        st += this.Telefono != "" ? $" - Telefono: {this.Telefono}" : "";
+        st += this.Telefono != "" ? $" - Teléfono: {this.Telefono}" : "";
         return st;
     }
 

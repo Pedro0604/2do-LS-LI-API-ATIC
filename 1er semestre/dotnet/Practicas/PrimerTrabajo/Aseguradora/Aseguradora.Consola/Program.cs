@@ -117,7 +117,18 @@ EliminarVehiculo(3);
 //Listamos vehículos:
 ListarVehiculos();
 
-//Listamos todos los titlulares con sus vehículos:
+//Listamos todos los titulares con sus vehículos:
+ListarTitularesConSusVehiculos();
+
+//Intentamos modificar un vehículo cambiándole el titular a uno que no existe:
+Console.WriteLine("Cambiando el titular del vehículo con id: 5, del titular con Id 7 al de Id 400");
+ModificarVehiculo(new Vehiculo("RWT-845", "Chevrolet", 400, 2012));
+
+//Modificamos un vehículo cambiándole el titular:
+Console.WriteLine("Cambiando el titular del vehículo con id: 5, del titular con Id 5 al de Id 7");
+ModificarVehiculo(new Vehiculo("RWT-845", "Chevrolet", 7, 2012));
+
+//Listamos todos los titulares con sus vehículos:
 ListarTitularesConSusVehiculos();
 
 
@@ -126,8 +137,8 @@ ListarTitularesConSusVehiculos();
 //Agregamos varias pólizas al repositorio:
 Console.WriteLine("Agregando pólizas al repositorio...");
 PersistirPoliza(new Poliza(1, 200000.0, new DateTime(2020, 11, 10), new DateTime(2023, 11, 10), 30000.0, "Responsabilidad Civil Bienes y Personas"));
-PersistirPoliza(new Poliza(3, 180000.0, new DateTime(2018, 1, 19), new DateTime(2024, 1, 19), 20000.0, "Responsabilidad Civil Catastrófica"));
-PersistirPoliza(new Poliza(3, 500000.0, new DateTime(2022, 3, 30), new DateTime(2024, 3, 30), 50000.0, "Asistencia vial y viajes"));
+PersistirPoliza(new Poliza(2, 180000.0, new DateTime(2018, 1, 19), new DateTime(2024, 1, 19), 20000.0, "Responsabilidad Civil Catastrófica"));
+PersistirPoliza(new Poliza(2, 500000.0, new DateTime(2022, 3, 30), new DateTime(2024, 3, 30), 50000.0, "Asistencia vial y viajes"));
 PersistirPoliza(new Poliza(4, 100000.0, new DateTime(2021, 4, 6), new DateTime(2024, 4, 6), 10000.0, "Defensa jurídica"));
 PersistirPoliza(new Poliza(5, 1000000.0, new DateTime(2014, 1, 7), new DateTime(2023, 7, 1), 70000.0, "Gastos médicos a ocupantes"));
 PersistirPoliza(new Poliza(6, 50000.0, new DateTime(2023, 4, 26), new DateTime(2024, 4, 26), 50000.0, "Robo Total"));
@@ -177,13 +188,7 @@ ListarPolizas();
 
 
 
-
-
-
-
-
-
-//Metodos locales para titulares
+//Métodos locales para titulares
 void PersistirTitular(Titular t)
 {
     try
@@ -236,7 +241,7 @@ void ListarTitularesConSusVehiculos()
     }
 }
 
-//Metodos locales para vehiculos
+//Métodos locales para vehículos
 void PersistirVehiculo(Vehiculo v)
 {
     try
@@ -274,13 +279,13 @@ void ListarVehiculos()
 {
     Console.WriteLine("Listando todos los vehículos:");
     List<Vehiculo> lista = listarVehiculos.Ejecutar();
-    foreach (Vehiculo t in lista)
+    foreach (Vehiculo v in lista)
     {
-        Console.WriteLine(t);
+        Console.WriteLine(v);
     }
 }
 
-//Metodos locales para polizas
+//Métodos locales para pólizas
 void PersistirPoliza(Poliza p)
 {
     try
@@ -316,10 +321,10 @@ void ModificarPoliza(Poliza p)
 }
 void ListarPolizas()
 {
-    Console.WriteLine("Listando todas las polizas de vehículos:");
+    Console.WriteLine("Listando todas las pólizas de vehículos:");
     List<Poliza> lista = listarPolizas.Ejecutar();
-    foreach (Poliza t in lista)
+    foreach (Poliza p in lista)
     {
-        Console.WriteLine(t);
+        Console.WriteLine(p);
     }
 }

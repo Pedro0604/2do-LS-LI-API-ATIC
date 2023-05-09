@@ -48,8 +48,8 @@ public class Titular : Persona
     public override string ToString()
     {
         string st = $"Titular: | {base.ToString()}";
-        st += this.Direccion != "" ? $" - Direccion: {this.Direccion}" : "";
-        st += this.Email != "" ? $" - Correo electronico: {this.Email}" : "";
+        st += this.Direccion != "" ? $" - Dirección: {this.Direccion}" : "";
+        st += this.Email != "" ? $" - Correo electrónico: {this.Email}" : "";
         return st;
     }
 
@@ -57,11 +57,14 @@ public class Titular : Persona
     public override string AStringParaTxt()
     {
         string st = $"{base.AStringParaTxt()}|{this.Direccion}|{this.Email}|";
-        foreach (Vehiculo v in ListaVehiculos)
+        if (this.ListaVehiculos.Count != 0)
         {
-            st += v.AStringParaTxt('~') + ";";
+            foreach (Vehiculo v in ListaVehiculos)
+            {
+                st += v.AStringParaTxt('~') + ";";
+            }
+            st = st.Remove(st.Length - 1);
         }
-        st.Remove(st.Count() - 1);
         return st;
     }
 }

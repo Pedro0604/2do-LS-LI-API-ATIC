@@ -21,7 +21,7 @@ public class RepositorioVehiculo : IRepositorioVehiculo
             //Si el titular no existe (el resultado de Find es null) se lanza una excepción
             if (titular == null)
             {
-                throw new Exception($"No hay ningún titular de vehiculo que tenga el Id {vehiculo.TitularId}");
+                throw new ArgumentException($"No hay ningún titular de vehículo que tenga el Id {vehiculo.TitularId}");
             }
             else
             {
@@ -52,7 +52,7 @@ public class RepositorioVehiculo : IRepositorioVehiculo
         }
         else
         {
-            throw new Exception($"El vehiculo de dominio {vehiculo.Dominio} ya existe");
+            throw new ArgumentException($"El vehículo de dominio {vehiculo.Dominio} ya existe");
         }
     }
 
@@ -66,7 +66,7 @@ public class RepositorioVehiculo : IRepositorioVehiculo
         //Si el vehículo no existe (el resultado de Find es null) se lanza una excepción
         if (vehiculo == null)
         {
-            throw new Exception($"El vehiculo de id {id} no existe");
+            throw new ArgumentException($"El vehículo de id {id} no existe");
         }
         else
         {
@@ -89,7 +89,7 @@ public class RepositorioVehiculo : IRepositorioVehiculo
             if (titular != null)
             {
                 //Se elimina el vehículo de la lista de vehículos del titular
-                titular.ListaVehiculos.Remove(vehiculo);
+                titular.ListaVehiculos.RemoveAll(v => v.Id == vehiculo.Id);
                 var modificarTit = new ModificarTitularUseCase(new RepositorioTitular());
 
                 //Se modifica el repositorio de titulares con el titular sin el vehículo eliminado
@@ -110,11 +110,15 @@ public class RepositorioVehiculo : IRepositorioVehiculo
         //Se busca el vehículo, en caso de no encontrarse (el resultado de FindIndex es -1), se lanza una excepción
         if (index == -1)
         {
-            throw new Exception($"El vehiculo de dominio {vehiculo.Dominio} no existe");
+            throw new ArgumentException($"El vehículo de dominio {vehiculo.Dominio} no existe");
         }
         else
         {
             Vehiculo vehiculoAnterior = list[index];
+
+            //Se mantiene el Id del vehículo previo
+            vehiculo.Id = vehiculoAnterior.Id;
+
             //En caso de que se haya modificado el titular...
             if (vehiculo.TitularId != vehiculoAnterior.TitularId)
             {
@@ -127,7 +131,7 @@ public class RepositorioVehiculo : IRepositorioVehiculo
                 if (titularAnterior != null)
                 {
                     //Se elimina el vehículo de la lista de vehículos del titular anterior
-                    titularAnterior.ListaVehiculos.Remove(vehiculoAnterior);
+                    titularAnterior.ListaVehiculos.RemoveAll(v => v.Id == vehiculoAnterior.Id);
                     var modificarTit = new ModificarTitularUseCase(new RepositorioTitular());
 
                     //Se modifica el repositorio de titulares con el titular anterior sin el vehículo modificado
@@ -156,9 +160,8 @@ public class RepositorioVehiculo : IRepositorioVehiculo
                     throw new Exception($"El titular de id {vehiculo.TitularId} no existe");
                 }
             }
-            //Se mantiene el Id del vehículo previo
-            vehiculo.Id = vehiculoAnterior.Id;
-            vehiculoAnterior = vehiculo;
+            //Se modifica el vehículo en la lista de vehículos
+            list[index] = vehiculo;
 
             //Se escribe la lista actualizada en el repositorio
             using var sw = new StreamWriter(_nombreRepositorio);

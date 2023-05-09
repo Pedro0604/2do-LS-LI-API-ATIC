@@ -21,7 +21,7 @@ public class RepositorioPoliza : IRepositorioPoliza
             //Si el vehiculo no existe (el resultado de Find es null) se lanza una excepción
             if (vehiculo == null)
             {
-                throw new Exception($"No hay ningún vehiculo que tenga el Id {poliza.VehiculoId}");
+                throw new ArgumentException($"No hay ningún vehículo que tenga el Id {poliza.VehiculoId}");
             }
             else
             {
@@ -46,7 +46,7 @@ public class RepositorioPoliza : IRepositorioPoliza
         }
         else
         {
-            throw new Exception($"La poliza de id {poliza.Id} ya existe");
+            throw new ArgumentException($"La póliza de id {poliza.Id} ya existe");
         }
     }
 
@@ -57,7 +57,7 @@ public class RepositorioPoliza : IRepositorioPoliza
         //Se elimina la póliza, en caso de no encontrarse (el resultado de RemoveAll es 0, es decir, no se eliminó ninguna póliza), se lanza una excepción
         if (list.RemoveAll(poliza => poliza.Id == id) == 0)
         {
-            throw new Exception($"La poliza de id {id} no existe");
+            throw new ArgumentException($"La póliza de id {id} no existe");
         }
         else
         {
@@ -78,7 +78,7 @@ public class RepositorioPoliza : IRepositorioPoliza
         //Se busca la póliza, en caso de no encontrarse (el resultado de FindIndex es -1), se lanza una excepción
         if (index == -1)
         {
-            throw new Exception($"La poliza de id {poliza.Id} no existe");
+            throw new ArgumentException($"La póliza de id {poliza.Id} no existe");
         }
         else
         {

@@ -31,9 +31,9 @@ public class Poliza
             Franquicia = double.Parse(infoPoliza[3]);
             TipoDeCobertura = infoPoliza[4];
             string[] fIniV = infoPoliza[5].Split("/");
-            FechaInicioVigencia = new DateTime(int.Parse(fIniV[0]), int.Parse(fIniV[1]), int.Parse(fIniV[2]));
+            FechaInicioVigencia = new DateTime(int.Parse(fIniV[2]), int.Parse(fIniV[1]), int.Parse(fIniV[0]));
             string[] fFinV = infoPoliza[6].Split("/");
-            FechaInicioVigencia = new DateTime(int.Parse(fFinV[0]), int.Parse(fFinV[1]), int.Parse(fFinV[2]));
+            FechaFinVigencia = new DateTime(int.Parse(fFinV[2]), int.Parse(fFinV[1]), int.Parse(fFinV[0]));
         }
         catch
         {
@@ -56,7 +56,7 @@ public class Poliza
 
     public override string ToString()
     {
-        string st = $"Poliza: | Id: {this.Id} - Id del vehiculo: {this.VehiculoId} - Valor asegurado: {this.ValorAsegurado} - Fecha de inicio de cobertura: {this.FechaInicioVigencia.ToShortDateString()} - Fecha de fin de cobertura: {this.FechaFinVigencia.ToShortDateString()}";
+        string st = $"Póliza: | Id: {this.Id} - Id del vehículo: {this.VehiculoId} - Valor asegurado: {this.ValorAsegurado} - Fecha de inicio de cobertura: {this.FechaInicioVigencia.ToShortDateString()} - Fecha de fin de cobertura: {this.FechaFinVigencia.ToShortDateString()}";
         st += this.Franquicia != -1 ? $" - Franquicia: {this.Franquicia}" : "";
         st += this.TipoDeCobertura != "" ? $" - Tipo de cobertura: {this.TipoDeCobertura}" : "";
         return st;
@@ -65,6 +65,7 @@ public class Poliza
     //Se transforma la Poliza en un string con el formato que tienen los repositorios
     public string AStringParaTxt()
     {
+        string st = $"{this.FechaInicioVigencia.ToShortDateString()}|{this.FechaFinVigencia.ToShortDateString()}";
         return $"{this.Id}|{this.VehiculoId}|{this.ValorAsegurado}|{this.Franquicia}|{this.TipoDeCobertura}|{this.FechaInicioVigencia.ToShortDateString()}|{this.FechaFinVigencia.ToShortDateString()}";
     }
 }

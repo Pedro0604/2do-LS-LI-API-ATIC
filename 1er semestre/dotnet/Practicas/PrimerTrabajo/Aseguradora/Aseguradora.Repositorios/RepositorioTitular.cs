@@ -33,7 +33,7 @@ public class RepositorioTitular : IRepositorioTitular
         }
         else
         {
-            throw new Exception($"El titular de DNI {titular.DNI} ya existe");
+            throw new ArgumentException($"El titular de DNI {titular.DNI} ya existe");
         }
     }
     public void EliminarTitular(int id)
@@ -43,7 +43,7 @@ public class RepositorioTitular : IRepositorioTitular
         //Se elimina el titular, en caso de no encontrarse (el resultado de RemoveAll es 0, es decir, no se eliminó ningún titular), se lanza una excepción
         if (list.RemoveAll(titular => titular.Id == id) == 0)
         {
-            throw new Exception($"El titular de id {id} no existe");
+            throw new ArgumentException($"El titular de id {id} no existe");
         }
         else
         {//Se escribe la lista actualizada en el repositorio
@@ -63,7 +63,7 @@ public class RepositorioTitular : IRepositorioTitular
         //Se busca el titular, en caso de no encontrarse (el resultado de FindIndex es -1), se lanza una excepción
         if (index == -1)
         {
-            throw new Exception($"El titular de DNI {titular.DNI} no existe");
+            throw new ArgumentException($"El titular de DNI {titular.DNI} no existe");
         }
         else
         {
@@ -85,9 +85,11 @@ public class RepositorioTitular : IRepositorioTitular
         //Cada titular del repositorio se añade a la variable list
         using var sr = new StreamReader(_nombreRepositorio);
         List<Titular> list = new List<Titular>();
+        string linea;
         while (!sr.EndOfStream)
         {
-            list.Add(new Titular(sr.ReadLine() ?? ""));
+            linea = sr.ReadLine() ?? "";
+            list.Add(new Titular(linea));
         }
         return list;
     }
@@ -100,13 +102,19 @@ public class RepositorioTitular : IRepositorioTitular
         string? st;
         foreach (Titular t in list)
         {
+
             st = "";
-            st += t.ToString() + " - Vehículos: [";
-            foreach (Vehiculo v in t.ListaVehiculos)
+            st += t.ToString();
+            if (t.ListaVehiculos.Count != 0)
             {
-                st += v.ToString() + "; ";
+                st += " - Vehículos: [";
+                foreach (Vehiculo v in t.ListaVehiculos)
+                {
+                    st += v.ToString() + "; ";
+                }
+                st = st.Remove(st.Length - 1);
+                st += "]";
             }
-            st += "]";
             listTitConV.Add(st);
         }
         return listTitConV;
