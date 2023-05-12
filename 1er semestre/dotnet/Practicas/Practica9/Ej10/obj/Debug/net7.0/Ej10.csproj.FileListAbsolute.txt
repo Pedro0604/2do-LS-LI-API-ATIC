@@ -1,0 +1,15 @@
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\bin\Debug\net7.0\Ej10.exe
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\bin\Debug\net7.0\Ej10.deps.json
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\bin\Debug\net7.0\Ej10.runtimeconfig.json
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\bin\Debug\net7.0\Ej10.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\bin\Debug\net7.0\Ej10.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\Ej10.csproj.AssemblyReference.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\Ej10.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\Ej10.AssemblyInfoInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\Ej10.AssemblyInfo.cs
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\Ej10.csproj.CoreCompileInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\Ej10.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\refint\Ej10.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\Ej10.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\Ej10.genruntimeconfig.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\Practica9\Ej10\obj\Debug\net7.0\ref\Ej10.dll
