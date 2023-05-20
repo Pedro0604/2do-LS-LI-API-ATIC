@@ -41,14 +41,14 @@ Agregar(cliente2);
 ListarClientes();
 var alquiler1 = new Alquiler()
 {
-    IdCliente = 1,
-    IdJuego = 1,
+    ClienteId = 1,
+    JuegoId = 1,
     Fecha = DateTime.Now
 };
 var alquiler2 = new Alquiler()
 {
-    IdCliente = 1,
-    IdJuego = 2,
+    ClienteId = 1,
+    JuegoId = 2,
     Fecha = DateTime.Now
 };
 Agregar(alquiler1);
@@ -61,7 +61,7 @@ EliminarCliente("10569784");
 ListarClientes();
 ModificarJuego(1, "Cama Elastica", "Medida de 2 x 2", "Roto", 1500);
 ListarJuegos();
-ModificarAlquiler(1, 1562.25, new DateTime(2021 / 11 / 12));
+ModificarAlquiler(1, 1562.25, new DateTime(2021, 11, 12));
 ListarAlquileres();
 
 
@@ -96,7 +96,7 @@ void ListarJuegos()
     {
         foreach (Juego j in context.Juegos)
         {
-            Console.WriteLine($"Id = {j.Id}, Nombre = {j.Nombre}, Descripción = {j.Descripcion}, Estado = {j.Estado}, Precio por dia = {j.Telefono}, Mail = {j.Mail}");
+            Console.WriteLine($"Id = {j.Id}, Nombre = {j.Nombre}, Descripción = {j.Descripcion}, Estado = {j.Estado}, Precio por día = {j.PrecioPorDia}");
         }
     }
 }
@@ -108,7 +108,7 @@ void ListarAlquileres()
     {
         foreach (Alquiler a in context.Alquileres)
         {
-            Console.WriteLine(a.ToString());
+            Console.WriteLine($"Id = {a.Id}, Fecha = {a.Fecha.ToShortDateString()}, Fecha de devolución = {a.FechaDevolucion.ToShortDateString()}, Cleinte = {context.Clientes.Where(c => c.Id == a.ClienteId).SingleOrDefault()?.ApellidoYNombre}, Juego = {context.Juegos.Where(j => j.Id == a.JuegoId).SingleOrDefault()?.Nombre}, Costo total = {a.CostoTotal}");
         }
     }
 }
@@ -123,6 +123,7 @@ void EliminarCliente(string dni)
         {
             context.Remove(clElim);
         }
+        context.SaveChanges();
     }
     Console.WriteLine($"-- Se eliminó el cliente con dni {dni} --");
 }
@@ -140,6 +141,7 @@ void ModificarCliente(string dni, string apyn, string dir, string email, string 
             clMod.Mail = email;
             clMod.Telefono = tel;
         }
+        context.SaveChanges();
     }
     Console.WriteLine($"-- Se modificó el cliente con dni {dni} --");
 }
@@ -157,6 +159,7 @@ void ModificarJuego(int id, string nom, string des, string estado, double ppd)
             jueMod.Estado = estado;
             jueMod.PrecioPorDia = ppd;
         }
+        context.SaveChanges();
     }
     Console.WriteLine($"-- Se modificó el Juego con id {id} --");
 }
@@ -172,6 +175,7 @@ void ModificarAlquiler(int id, double costo, DateTime fec)
             alqMod.CostoTotal = costo;
             alqMod.FechaDevolucion = fec;
         }
+        context.SaveChanges();
     }
     Console.WriteLine($"-- Se modificó el alquiler con id {id} --");
 }
