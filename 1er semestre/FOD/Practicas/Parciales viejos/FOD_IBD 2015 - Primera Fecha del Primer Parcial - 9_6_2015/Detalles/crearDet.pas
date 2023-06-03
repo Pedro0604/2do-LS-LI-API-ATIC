@@ -5,12 +5,12 @@ Uses
 SysUtils;
 
 Const 
-  CANT_ARC = 30;
+  CANT_ARC = 3;
 
 Type 
   TRegistro = Record
-    codigo: integer;
-    cantV: integer;
+    codProd, cantPed: integer;
+    descrip: string;
   End;
 
 Var 
@@ -24,8 +24,9 @@ Begin
   r := Random(CANT_ARC);
   For i := 0 To Length(registros) - 1 Do
     Begin
-      registros[i].codigo := CANT_ARC -(r Div (i+1));
-      registros[i].cantV := Random(30);
+      registros[i].codProd := i+1;
+      registros[i].cantPed := Random(100);
+      registros[i].descrip := 'Descrip' + IntToStr(i);
     End;
 End;
 
@@ -38,12 +39,12 @@ Begin
   Randomize();
   For i := 1 To CANT_ARC Do
     Begin
-      SetLength(registros[i], Random(5));
+      SetLength(registros[i], Random(30));
       inicializarRegistros(registros[i]);
     End;
   For i := 1 To CANT_ARC Do
     Begin
-      Assign(archivo, 'detalle' + IntToStr(i) + '.det');
+      Assign(archivo, 'pedido' + IntToStr(i) + '.ped');
       Rewrite(archivo);
       For j := 0 To Length(registros[i]) - 1 Do
         Write(archivo, registros[i][j]);
@@ -53,14 +54,15 @@ Begin
 
   For i := 1 To CANT_ARC Do
     Begin
-      Assign(archivo, 'detalle' + IntToStr(i) + '.det');
+      Assign(archivo, 'pedido' + IntToStr(i) + '.ped');
       Reset(archivo);
       writeln('Archivo ', i, ':');
       While Not eof(archivo) Do
         Begin
           Read(archivo, registro);
-          writeln('   Código: ', registro.codigo);
-          writeln('   Cantidad vendida: ', registro.cantV);
+          writeln('   Código: ', registro.codProd);
+          writeln('   Cantidad pedida: ', registro.cantPed);
+          writeln('   Descripcion: ', registro.descrip);
           writeln;
         End;
       Close(archivo);

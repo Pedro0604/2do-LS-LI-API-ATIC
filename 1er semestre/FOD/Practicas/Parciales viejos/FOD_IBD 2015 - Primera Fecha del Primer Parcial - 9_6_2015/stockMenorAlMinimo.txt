@@ -1,0 +1,15 @@
+Codigo producto = 1 - (stockAct = 0 - stockMin = 94). Categoria = Categoria del producto 1
+Codigo producto = 3 - (stockAct = 22 - stockMin = 118). Categoria = Categoria del producto 3
+Codigo producto = 5 - (stockAct = 43 - stockMin = 72). Categoria = Categoria del producto 5
+Codigo producto = 6 - (stockAct = 41 - stockMin = 50). Categoria = Categoria del producto 6
+Codigo producto = 7 - (stockAct = 0 - stockMin = 60). Categoria = Categoria del producto 7
+Codigo producto = 9 - (stockAct = 0 - stockMin = 54). Categoria = Categoria del producto 9
+Codigo producto = 10 - (stockAct = 106 - stockMin = 115). Categoria = Categoria del producto 10
+Codigo producto = 12 - (stockAct = 83 - stockMin = 117). Categoria = Categoria del producto 12
+Codigo producto = 13 - (stockAct = 17 - stockMin = 99). Categoria = Categoria del producto 13
+Codigo producto = 14 - (stockAct = 0 - stockMin = 62). Categoria = Categoria del producto 14
+Codigo producto = 17 - (stockAct = 56 - stockMin = 90). Categoria = Categoria del producto 17
+Codigo producto = 18 - (stockAct = 54 - stockMin = 106). Categoria = Categoria del producto 18
+Codigo producto = 20 - (stockAct = 50 - stockMin = 114). Categoria = Categoria del producto 20
+Codigo producto = 21 - (stockAct = 39 - stockMin = 102). Categoria = Categoria del producto 21
+Codigo producto = 22 - (stockAct = 94 - stockMin = 102). Categoria = Categoria del producto 22

@@ -1,0 +1,4 @@
+Codigo producto = 1 - (stockAct = 54 - cantPedida = 79). Diferencia no enviada = 25
+Codigo producto = 7 - (stockAct = 94 - cantPedida = 95). Diferencia no enviada = 1
+Codigo producto = 9 - (stockAct = 61 - cantPedida = 86). Diferencia no enviada = 25
+Codigo producto = 14 - (stockAct = 50 - cantPedida = 78). Diferencia no enviada = 28
