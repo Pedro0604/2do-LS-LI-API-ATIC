@@ -5,7 +5,7 @@ Uses
 sysutils;
 
 Const 
-  CANT_DETALLES = 2;
+  CANT_DETALLES = 20;
   MAX_REGISTROS = 50;
   MAX_DNI = 9;
   MAX_COD_CARRERA = 8;

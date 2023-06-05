@@ -5,20 +5,17 @@ Uses
 sysutils;
 
 Const 
-  MAX_REGISTROS = 100;
-  MAX_COD_CLIENTE = 100;
+  MAX_REGISTROS = 100000;
   MAX_ANIO = 2023;
   MAX_MES = 12;
+  MAX_DIA = 28;
+  MAX_ID_USUARIO = 100;
+
 
 Type 
-  cliente = Record
-    codCliente: integer;
-    nombre, apellido: string;
-  End;
   regMaestro = Record
-    cl: cliente;
-    anio, mes, dia: integer;
-    monto: real;
+    anio, mes, dia, idUsu: integer;
+    tiempoAcc: real;
   End;
 
 
@@ -39,10 +36,9 @@ Begin
   While Not eof(archivo) Do
     Begin
       read(archivo, reg);
-      write(reg.cl.codCliente, ' | ');
-      write(reg.cl.nombre, ' ', reg.cl.apellido, ' | ');
+      write('idUsuario: ', reg.idUsu,' | ');
       write(reg.anio, '-', reg.mes, '-', reg.dia, ' | ');
-      write(reg.monto:0:2);
+      write('Tiempo de acceso: ', reg.tiempoAcc:0:2);
       writeln();
 
     End;
@@ -53,48 +49,47 @@ End;
 
 
 Var 
-  j, n, k: integer;
+  j, n, k: longint;
   archivo: file Of regMaestro;
   reg: regMaestro;
-  codCliente, anio, mes: integer;
+  idUsu, anio, mes, dia: integer;
   registros: array[1..MAX_REGISTROS] Of regMaestro;
   aux: regMaestro;
 Begin
   Randomize();
   // Generar registros aleatorios
-  n := random(MAX_REGISTROS) + 1;
+  n := MAX_REGISTROS;
   // cantidad aleatoria de registros entre 1 y MAX_REGISTROS
   For j := 1 To n Do
     Begin
       // Generar códigos aleatorios
-      codCliente := random(MAX_COD_CLIENTE) + 1;
-      // código de localidad aleatorio entre 1 y MAX_COD_CLIENTE
+      idUsu := random(MAX_ID_USUARIO) + 1;
+      // código de localidad aleatorio entre 1 y MAX_ID_USUARIO
       anio := random(24) + MAX_ANIO-23;
       // código de cepa aleatorio entre MAX_ANIO-23 y MAX_ANIO
       mes := random(MAX_MES) + 1;
       // código de cepa aleatorio entre 1 y MAX_MES
+      dia := random(MAX_DIA) + 1;
 
       // Verificar si el registro ya existe
       While True Do
         Begin
-          If (j = 1) Or ((registros[j-1].cl.codCliente <> codCliente) Or (registros[j-1]
-             .anio <> anio) Or (registros[j-1].mes <> mes)) Then
+          If ((j = 1) Or ((registros[j-1].idUsu <> idUsu) Or (registros[j-1].anio <> anio)
+             Or (registros[j-1].mes <> mes)Or((registros[j-1].dia <> dia))))Then
             Begin
               // El registro no existe, crearlo
-              reg.cl.codCliente := codCliente;
+              reg.idUsu := idUsu;
               reg.anio := anio;
               reg.mes := mes;
-              reg.dia := random(28)+1;
-              reg.monto := random()*950+50;
-              reg.cl.nombre := 'Nombre' + intToStr(j);
-              reg.cl.apellido := 'Apellido' + intToStr(j);
+              reg.dia := dia;
+              reg.tiempoAcc := random()*100+50;
               registros[j] := reg;
               break;
             End
           Else
             Begin
               // El registro ya existe, generar nuevos códigos
-              codCliente := random(MAX_COD_CLIENTE) + 1;
+              idUsu := random(MAX_ID_USUARIO) + 1;
               anio := random(MAX_ANIO) + 1;
               mes := random(MAX_MES) + 1;
             End;
@@ -106,10 +101,11 @@ Begin
     Begin
       For k := j+1 To n Do
         Begin
-          If (registros[j].cl.codCliente > registros[k].cl.codCliente) Or
-             ((registros[j].cl.codCliente = registros[k].cl.codCliente) And ((
-             registros[j].anio > registros[k].anio) Or ((registros[j].anio = registros[k
-             ].anio) And (registros[j].mes > registros[k].mes)))) Then
+          If ((registros[j].anio > registros[k].anio) Or
+             ((registros[j].anio = registros[k].anio) And ((
+             registros[j].mes > registros[k].mes) Or ((registros[j].mes = registros[k
+             ].mes) And ((registros[j].dia > registros[k].dia)Or(registros[j].dia =
+             registros[k].dia)And(registros[j].idUsu > registros[k].idUsu)))))) Then
             Begin
               aux := registros[j];
               registros[j] := registros[k];
@@ -123,9 +119,9 @@ Begin
   rewrite(archivo);
   For j := 1 To n Do
     Begin
-      If ((j=1) Or (registros[j].cl.codCliente <> registros[j-1].cl.codCliente) Or
+      If ((j=1) Or (registros[j].idUsu <> registros[j-1].idUsu) Or
          (registros[j].anio <> registros[j-1].anio) Or (registros[j].mes<>registros[j-1].
-         mes))Then
+         mes)Or(registros[j].dia<>registros[j-1].dia))Then
         Write(archivo, registros[j]);
     End;
   close(archivo);

@@ -6,7 +6,7 @@ sysutils;
 
 Const 
   VALOR_ALTO = 'zzzzzzzzzzzz';
-  CANT_ARC = 2;
+  CANT_ARC = 20;
 
 Type 
   alumno = Record
