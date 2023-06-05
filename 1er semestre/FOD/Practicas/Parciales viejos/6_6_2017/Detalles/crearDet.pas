@@ -10,8 +10,8 @@ Const
 
 Type 
   TRegistro = Record
-        nroUsuario: integer;
-        cuentaDest, cuerpo : string;
+    nroUsuario: integer;
+    cuentaDest, cuerpo : string;
   End;
 
 Var 
@@ -26,13 +26,14 @@ Begin
   For i := 0 To 19 Do
     Begin
       r := random(10);
-      while((r>0)and(cant<Length(registros)))do begin
-        r := r - 1;
-        registros[cant].nroUsuario := i+1;
-        registros[cant].cuentaDest := 'Cuenta destino' + IntToStr(cant);
-        registros[cant].cuerpo := 'Cuerpo' + IntToStr(cant);
-        cant := cant + 1;
-      end;
+      While ((r>0)And(cant<Length(registros))) Do
+        Begin
+          r := r - 1;
+          registros[cant].nroUsuario := i+1;
+          registros[cant].cuentaDest := 'Cuenta destino' + IntToStr(cant);
+          registros[cant].cuerpo := 'Cuerpo' + IntToStr(cant);
+          cant := cant + 1;
+        End;
     End;
 End;
 

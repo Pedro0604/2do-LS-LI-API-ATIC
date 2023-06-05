@@ -1,16 +1,16 @@
 
 Program crearMaestro;
 
-Uses
-  SysUtils;
+Uses 
+SysUtils;
 
-Const
+Const 
   CANT_REG = 20;
 
 Type 
   log = Record
-        nroUsuario, cantM : integer;
-        nomUsuario, nombre, apellido: string;
+    nroUsuario, cantM : integer;
+    nomUsuario, nombre, apellido: string;
   End;
 
   file_logs = file Of log;
