@@ -111,8 +111,7 @@ Begin
           writeln('aux.codigo superponedor: ', aux.codigo);
           writeln('Pos: ', pos);
           writeln('FilePos: ', FilePos(arc_especies));
-          While (aux.codigo<0) And (FileSize(arc_especies)-cantEliminados+1>=0) And (pos<>
-                FilePos(arc_especies)-1) Do
+          While (aux.codigo<0) And (pos<>FilePos(arc_especies)-1) Do
             Begin
               cantEliminados := cantEliminados+1;
               Seek(arc_especies, FileSize(arc_especies)-cantEliminados);

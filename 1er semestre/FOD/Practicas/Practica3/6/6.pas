@@ -104,7 +104,6 @@ Begin
   Close(arc_prendas);
   Erase(arc_prendas);
   Rename(nuevoArchivo, 'prendas.pr');
-  Assign(arc_prendas, 'prendas.pr');
 End;
 
 Var 
