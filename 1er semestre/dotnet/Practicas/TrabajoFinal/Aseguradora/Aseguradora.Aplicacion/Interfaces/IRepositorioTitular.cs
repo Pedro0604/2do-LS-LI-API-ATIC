@@ -1,4 +1,6 @@
-namespace Aseguradora.Aplicacion;
+using Aseguradora.Aplicacion.Entidades;
+
+namespace Aseguradora.Aplicacion.Interfaces;
 public interface IRepositorioTitular
 {
     void AgregarTitular(Titular titular);

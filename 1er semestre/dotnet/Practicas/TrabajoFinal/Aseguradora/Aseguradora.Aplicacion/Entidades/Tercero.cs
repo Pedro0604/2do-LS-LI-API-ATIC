@@ -1,4 +1,4 @@
-namespace Aseguradora.Aplicacion;
+namespace Aseguradora.Aplicacion.Entidades;
 
 //Clase derivada de la clase Persona
 public class Tercero : Persona

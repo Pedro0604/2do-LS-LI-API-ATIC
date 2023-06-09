@@ -1,4 +1,4 @@
-namespace Aseguradora.Aplicacion;
+namespace Aseguradora.Aplicacion.Entidades;
 
 //Clase base de Titular y Tercero
 public abstract class Persona
@@ -13,24 +13,6 @@ public abstract class Persona
     protected Persona()
     {
         Id = -1;
-    }
-
-    //Constructor que recibe un array de string con la información de la persona con el formato que tienen los repositorios
-    public Persona(string[] infoPersona)
-    {
-        try
-        {
-            //Se setean las propiedades de la Persona
-            Id = int.Parse(infoPersona[0]);
-            DNI = int.Parse(infoPersona[1]);
-            Apellido = infoPersona[2];
-            Nombre = infoPersona[3];
-            Telefono = infoPersona[4];
-        }
-        catch
-        {
-            Console.WriteLine("El formato de la cadena enviada no corresponde con el de un " + this.GetType().Name);
-        }
     }
 
     //Constructor para inicializar las propiedades
@@ -49,11 +31,5 @@ public abstract class Persona
         string st = $"Id: {this.Id} - DNI: {this.DNI} - Apellido: {this.Apellido} - Nombre: {this.Nombre}";
         st += this.Telefono != "" ? $" - Teléfono: {this.Telefono}" : "";
         return st;
-    }
-
-    //Se transforma la Persona en un string con el formato que tienen los repositorios
-    public virtual string AStringParaTxt()
-    {
-        return $"{this.Id}|{this.DNI}|{this.Apellido}|{this.Nombre}|{this.Telefono}";
     }
 }

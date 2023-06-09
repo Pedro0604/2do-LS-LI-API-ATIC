@@ -1,4 +1,4 @@
-namespace Aseguradora.Aplicacion;
+namespace Aseguradora.Aplicacion.Entidades;
 
 public class Poliza
 {
@@ -14,31 +14,6 @@ public class Poliza
     private Poliza()
     {
         Id = -1;
-    }
-
-    //Constructor que recibe un string con la información de la Poliza con el formato que tienen los repositorios
-    public Poliza(string strFromText)
-    {
-        try
-        {
-            //Se transforma el string en un string[], separandolo por el caracter '|'
-            string[] infoPoliza = strFromText.Split('|');
-
-            //Se setean las propiedades de la Poliza
-            Id = int.Parse(infoPoliza[0]);
-            VehiculoId = int.Parse(infoPoliza[1]);
-            ValorAsegurado = double.Parse(infoPoliza[2]);
-            Franquicia = double.Parse(infoPoliza[3]);
-            TipoDeCobertura = infoPoliza[4];
-            string[] fIniV = infoPoliza[5].Split("/");
-            FechaInicioVigencia = new DateTime(int.Parse(fIniV[2]), int.Parse(fIniV[1]), int.Parse(fIniV[0]));
-            string[] fFinV = infoPoliza[6].Split("/");
-            FechaFinVigencia = new DateTime(int.Parse(fFinV[2]), int.Parse(fFinV[1]), int.Parse(fFinV[0]));
-        }
-        catch
-        {
-            Console.WriteLine("El formato de la cadena enviada no corresponde con el de una póliza");
-        }
     }
 
     //Constructor para inicializar las propiedades
@@ -60,12 +35,5 @@ public class Poliza
         st += this.Franquicia != -1 ? $" - Franquicia: {this.Franquicia}" : "";
         st += this.TipoDeCobertura != "" ? $" - Tipo de cobertura: {this.TipoDeCobertura}" : "";
         return st;
-    }
-
-    //Se transforma la Poliza en un string con el formato que tienen los repositorios
-    public string AStringParaTxt()
-    {
-        string st = $"{this.FechaInicioVigencia.ToShortDateString()}|{this.FechaFinVigencia.ToShortDateString()}";
-        return $"{this.Id}|{this.VehiculoId}|{this.ValorAsegurado}|{this.Franquicia}|{this.TipoDeCobertura}|{this.FechaInicioVigencia.ToShortDateString()}|{this.FechaFinVigencia.ToShortDateString()}";
     }
 }
