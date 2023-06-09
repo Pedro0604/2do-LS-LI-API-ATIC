@@ -1,5 +1,6 @@
 using Aseguradora.Aplicacion.Interfaces;
 using Aseguradora.Aplicacion.Entidades;
+using Microsoft.EntityFrameworkCore;
 
 namespace Aseguradora.Repositorios;
 
@@ -41,25 +42,41 @@ public class RepositorioTitular : IRepositorioTitular
     {
         using (var db = new AseguradoraContext())
         {
-            var titularABorrar = db.Titulares.Where(t => t.Id == id).SingleOrDefault();
+            var titularABorrar = db.Titulares.Where(t => t.Id == id).Include(t => t.Vehiculos).SingleOrDefault();
             if (titularABorrar != null)
             {
-                foreach (var vehiculo in titularABorrar.Vehiculos)
+                titularABorrar.Vehiculos?.ToList()
+                .ForEach(vehiculo =>
                 {
-                    foreach (var poliza in vehiculo.Polizas)
+                    var vehiculoABorrar = db.Vehiculos.Where(v => v.Id == vehiculo.Id).Include(v => v.Polizas).SingleOrDefault();
+                    if (vehiculoABorrar != null)
                     {
-                        foreach (var siniestro in poliza.Siniestros)
+                        vehiculoABorrar.Polizas?.ToList().
+                        ForEach(poliza =>
                         {
-                            foreach (var tercero in siniestro.Terceros)
+                            var polizaABorrar = db.Polizas.Where(p => p.Id == poliza.Id).Include(p => p.Siniestros).SingleOrDefault();
+                            if (polizaABorrar != null)
                             {
-                                db.Remove(tercero);
+                                polizaABorrar.Siniestros?.ToList().
+                                ForEach(siniestro =>
+                                {
+                                    var siniestroABorrar = db.Siniestros.Where(s => s.Id == siniestro.Id).Include(s => s.Terceros).SingleOrDefault();
+                                    if (siniestroABorrar != null)
+                                    {
+                                        siniestroABorrar.Terceros?.ToList().
+                                        ForEach(tercero =>
+                                        {
+                                            db.Remove(tercero);
+                                        });
+                                        db.Remove(siniestroABorrar);
+                                    }
+                                });
+                                db.Remove(polizaABorrar);
                             }
-                            db.Remove(siniestro);
-                        }
-                        db.Remove(poliza);
+                        });
+                        db.Remove(vehiculoABorrar);
                     }
-                    db.Remove(vehiculo);
-                }
+                });
                 db.Remove(titularABorrar);
                 db.SaveChanges();
             }

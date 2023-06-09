@@ -1,5 +1,6 @@
 using Aseguradora.Aplicacion.Interfaces;
 using Aseguradora.Aplicacion.Entidades;
+using Microsoft.EntityFrameworkCore;
 
 namespace Aseguradora.Repositorios;
 
@@ -50,13 +51,26 @@ public class RepositorioSiniestro : IRepositorioSiniestro
     {
         using (var db = new AseguradoraContext())
         {
-            var siniestroABorrar = db.Siniestros.Where(s => s.Id == id).SingleOrDefault();
+            // var siniestroABorrar = db.Siniestros.Where(s => s.Id == id).SingleOrDefault();
+            // if (siniestroABorrar != null)
+            // {
+            //     foreach (var tercero in siniestroABorrar.Terceros)
+            //     {
+            //         db.Remove(tercero);
+            //     }
+            //     db.Remove(siniestroABorrar);
+            //     db.SaveChanges();
+            // }
+
+
+            var siniestroABorrar = db.Siniestros.Where(s => s.Id == id).Include(s => s.Terceros).SingleOrDefault();
             if (siniestroABorrar != null)
             {
-                foreach (var tercero in siniestroABorrar.Terceros)
+                siniestroABorrar.Terceros?.ToList().
+                ForEach(tercero =>
                 {
                     db.Remove(tercero);
-                }
+                });
                 db.Remove(siniestroABorrar);
                 db.SaveChanges();
             }

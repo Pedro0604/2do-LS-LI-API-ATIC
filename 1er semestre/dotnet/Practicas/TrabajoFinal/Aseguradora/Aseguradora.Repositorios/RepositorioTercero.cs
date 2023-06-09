@@ -1,5 +1,6 @@
 using Aseguradora.Aplicacion.Interfaces;
 using Aseguradora.Aplicacion.Entidades;
+using Microsoft.EntityFrameworkCore;
 
 namespace Aseguradora.Repositorios;
 
