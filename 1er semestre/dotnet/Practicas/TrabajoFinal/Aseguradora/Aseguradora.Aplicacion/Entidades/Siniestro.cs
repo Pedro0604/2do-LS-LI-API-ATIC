@@ -9,6 +9,9 @@ public class Siniestro
     public string? DireccionSiniestro { get; set; }
     public string? Descripcion { get; set; }
 
+    // Propiedad de navegación para los terceros
+    public List<Tercero> Terceros { get; set; } = new List<Tercero>();
+
     //Constructor para inicializar el Id en -1 por default
     private Siniestro()
     {

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
 using Aseguradora.UI.Data;
 
 using Aseguradora.Repositorios;
@@ -48,6 +49,12 @@ builder.Services.AddScoped<IRepositorioTitular, RepositorioTitular>();
 builder.Services.AddScoped<IRepositorioVehiculo, RepositorioVehiculo>();
 builder.Services.AddScoped<IRepositorioTercero, RepositorioTercero>();
 builder.Services.AddScoped<IRepositorioSiniestro, RepositorioSiniestro>();
+
+// Nos aseguramos que esté creada la base de datos
+using (var context = new AseguradoraContext())
+{
+    context.Database.EnsureCreated();
+}
 
 var app = builder.Build();
 

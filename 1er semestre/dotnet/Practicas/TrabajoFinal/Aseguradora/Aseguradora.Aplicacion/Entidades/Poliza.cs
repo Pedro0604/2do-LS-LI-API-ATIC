@@ -10,6 +10,9 @@ public class Poliza
     public DateTime FechaInicioVigencia { get; set; }
     public DateTime FechaFinVigencia { get; set; }
 
+    // Propiedad de navegación para los siniestros
+    public List<Siniestro> Siniestros { get; set; } = new List<Siniestro>();
+
     //Constructor para inicializar el Id en -1 por default
     private Poliza()
     {

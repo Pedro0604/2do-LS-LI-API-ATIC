@@ -8,6 +8,9 @@ public class Vehiculo
     public int AñoFabricacion { get; set; }
     public int TitularId { get; set; }
 
+    // Propiedad de navegación para las pólizas
+    public List<Poliza> Polizas { get; set; } = new List<Poliza>();
+
     //Constructor para inicializar el Id en -1 por default
     private Vehiculo()
     {

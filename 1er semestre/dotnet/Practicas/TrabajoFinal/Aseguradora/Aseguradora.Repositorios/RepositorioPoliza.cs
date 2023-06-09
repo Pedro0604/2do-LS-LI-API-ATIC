@@ -7,21 +7,54 @@ public class RepositorioPoliza : IRepositorioPoliza
 {
     public void AgregarPoliza(Poliza poliza)
     {
-        throw new NotImplementedException();
-    }
-
-    public void EliminarPoliza(int id)
-    {
-        throw new NotImplementedException();
+        using (var db = new AseguradoraContext())
+        {
+            db.Add(poliza);
+            db.SaveChanges();
+        }
     }
 
     public List<Poliza> ListarPolizas()
     {
-        throw new NotImplementedException();
+        var lista = new List<Poliza>();
+        using (var db = new AseguradoraContext())
+        {
+            lista = db.Polizas.ToList();
+        }
+        return lista;
     }
 
     public void ModificarPoliza(Poliza poliza)
     {
-        throw new NotImplementedException();
+        using (var db = new AseguradoraContext())
+        {
+            var polizaAModificar = db.Polizas.Where(p => p.Id == poliza.Id).SingleOrDefault();
+            if (polizaAModificar != null)
+            {
+                polizaAModificar = poliza;
+                db.SaveChanges();
+            }
+        }
+    }
+
+    public void EliminarPoliza(int id)
+    {
+        using (var db = new AseguradoraContext())
+        {
+            var polizaABorrar = db.Polizas.Where(p => p.Id == id).SingleOrDefault();
+            if (polizaABorrar != null)
+            {
+                foreach (var siniestro in polizaABorrar.Siniestros)
+                {
+                    foreach (var tercero in siniestro.Terceros)
+                    {
+                        db.Remove(tercero);
+                    }
+                    db.Remove(siniestro);
+                }
+                db.Remove(polizaABorrar);
+                db.SaveChanges();
+            }
+        }
     }
 }
