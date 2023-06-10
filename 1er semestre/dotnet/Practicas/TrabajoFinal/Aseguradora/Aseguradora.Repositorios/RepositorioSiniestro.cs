@@ -62,15 +62,10 @@ public class RepositorioSiniestro : IRepositorioSiniestro
             //     db.SaveChanges();
             // }
 
-
             var siniestroABorrar = db.Siniestros.Where(s => s.Id == id).Include(s => s.Terceros).SingleOrDefault();
             if (siniestroABorrar != null)
             {
-                siniestroABorrar.Terceros?.ToList().
-                ForEach(tercero =>
-                {
-                    db.Remove(tercero);
-                });
+                db.RemoveRange(siniestroABorrar.Terceros);
                 db.Remove(siniestroABorrar);
                 db.SaveChanges();
             }

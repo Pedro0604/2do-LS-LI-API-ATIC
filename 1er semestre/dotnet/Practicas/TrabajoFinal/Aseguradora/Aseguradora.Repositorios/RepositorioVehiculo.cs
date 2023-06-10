@@ -61,32 +61,54 @@ public class RepositorioVehiculo : IRepositorioVehiculo
             //     db.SaveChanges();
             // }
 
-            var vehiculoABorrar = db.Vehiculos.Where(v => v.Id == id).Include(v => v.Polizas).SingleOrDefault();
+            // var vehiculoABorrar = db.Vehiculos.Where(v => v.Id == id).Include(v => v.Polizas).SingleOrDefault();
+            // if (vehiculoABorrar != null)
+            // {
+            //     vehiculoABorrar.Polizas?.ToList().
+            //     ForEach(poliza =>
+            //     {
+            //         var polizaABorrar = db.Polizas.Where(p => p.Id == poliza.Id).Include(p => p.Siniestros).SingleOrDefault();
+            //         if (polizaABorrar != null)
+            //         {
+            //             polizaABorrar.Siniestros?.ToList().
+            //             ForEach(siniestro =>
+            //             {
+            //                 var siniestroABorrar = db.Siniestros.Where(s => s.Id == siniestro.Id).Include(s => s.Terceros).SingleOrDefault();
+            //                 if (siniestroABorrar != null)
+            //                 {
+            //                     siniestroABorrar.Terceros?.ToList().
+            //                     ForEach(tercero =>
+            //                     {
+            //                         db.Remove(tercero);
+            //                     });
+            //                     db.Remove(siniestroABorrar);
+            //                 }
+            //             });
+            //             db.Remove(polizaABorrar);
+            //         }
+            //     });
+            //     db.Remove(vehiculoABorrar);
+            //     db.SaveChanges();
+            // }
+
+            var vehiculoABorrar = db.Vehiculos
+            .Where(v => v.Id == id)
+            .Include(v => v.Polizas)
+            .ThenInclude(p => p.Siniestros)
+            .ThenInclude(s => s.Terceros)
+            .SingleOrDefault();
+
             if (vehiculoABorrar != null)
             {
-                vehiculoABorrar.Polizas?.ToList().
-                ForEach(poliza =>
+                foreach (var poliza in vehiculoABorrar.Polizas)
                 {
-                    var polizaABorrar = db.Polizas.Where(p => p.Id == poliza.Id).Include(p => p.Siniestros).SingleOrDefault();
-                    if (polizaABorrar != null)
+                    foreach (var siniestro in poliza.Siniestros)
                     {
-                        polizaABorrar.Siniestros?.ToList().
-                        ForEach(siniestro =>
-                        {
-                            var siniestroABorrar = db.Siniestros.Where(s => s.Id == siniestro.Id).Include(s => s.Terceros).SingleOrDefault();
-                            if (siniestroABorrar != null)
-                            {
-                                siniestroABorrar.Terceros?.ToList().
-                                ForEach(tercero =>
-                                {
-                                    db.Remove(tercero);
-                                });
-                                db.Remove(siniestroABorrar);
-                            }
-                        });
-                        db.Remove(polizaABorrar);
+                        db.RemoveRange(siniestro.Terceros);
+                        db.Remove(siniestro);
                     }
-                });
+                    db.Remove(poliza);
+                }
                 db.Remove(vehiculoABorrar);
                 db.SaveChanges();
             }
