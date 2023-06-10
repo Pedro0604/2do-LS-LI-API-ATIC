@@ -34,8 +34,8 @@
         <td>@titular.DNI</td>
         <td>@titular.Telefono</td>
         <td>@titular.Email</td>
-        <td><button class="btn btn-primary" @onclick="Editar"><span class="oi oi-pencil"></span></button></td>
-        <td><button class="btn btn-danger" @onclick="Borrar"><span class="oi oi-trash"></span></button></td>
+        <td><button class="btn btn-primary" @onclick="()=>Modificar(titular.Id)"><span class="oi oi-pencil"></span></button></td>
+        <td><button class="btn btn-danger" @onclick="Eliminar"><span class="oi oi-trash"></span></button></td>
       </tr>
       if (ConVehiculos)
       {
@@ -58,12 +58,12 @@
   List<Titular> listaTitulares = new List<Titular>(); protected override void
   OnInitialized() => listaTitulares = ListarTitularesUseCase.Ejecutar();
 
-  void Editar()
+  void Modificar(int id)
   {
-    Navigator.NavigateTo("/titulares/nuevo");
+    Navigator.NavigateTo($"/titulares/nuevo/{id}");
   }
 
-  void Borrar()
+  void Eliminar()
   {
 
   }

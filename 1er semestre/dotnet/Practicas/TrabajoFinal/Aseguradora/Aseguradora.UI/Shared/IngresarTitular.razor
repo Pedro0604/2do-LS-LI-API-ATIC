@@ -25,8 +25,9 @@ else
 </div>
 
 @code{
-    [Parameter] public bool Modificar {get; set;} = false;
     [Parameter] public int Id {get; set;}
+    [Parameter] public EventCallback CerrarDialogo{get; set;}
+    public bool Modificar {get; set;} = false;
     Titular _titular = new Titular();
 
     protected override void OnParametersSet() 
@@ -38,20 +39,15 @@ else
                 _titular = titularEcontrado;
                 Modificar = true;
             }
-            else
-            {
-                Modificar = false;
-            }
-        }
-        else{
-            Modificar = false;
         }
     }
     void AgregarTitular(){
         AgregarTitularUseCase.Ejecutar(_titular);
+        CerrarDialogo.InvokeAsync();
     }
 
     void ModificarTitular(){
         ModificarTitularUseCase.Ejecutar(_titular);
+        CerrarDialogo.InvokeAsync();
     }
 }

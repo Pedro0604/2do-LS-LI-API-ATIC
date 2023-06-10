@@ -1,5 +1,16 @@
-@page "/titulares/nuevo";
+@page "/titulares/ingresar/{Id:int?}";
+@inject NavigationManager Navigator;
 
-<Dialogo>
-  <IngresarTitular />
+<ListaTitulares/>
+<Dialogo CerrarDialogo="Cerrar">
+  <IngresarTitular CerrarDialogo="Cerrar" Id="@Id"/>
 </Dialogo>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public int Id { get; set; }
+    void Cerrar()
+    { 
+        Navigator.NavigateTo("/titulares");
+    }
+} 
