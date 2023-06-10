@@ -7,4 +7,5 @@ public interface IRepositorioSiniestro
     void EliminarSiniestro(int id);
     void ModificarSiniestro(Siniestro siniestro);
     List<Siniestro> ListarSiniestros();
+    Siniestro? GetSiniestro(int id);
 }

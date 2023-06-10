@@ -7,4 +7,5 @@ public interface IRepositorioPoliza
     void EliminarPoliza(int id);
     void ModificarPoliza(Poliza poliza);
     List<Poliza> ListarPolizas();
+    Poliza? GetPoliza(int id);
 }

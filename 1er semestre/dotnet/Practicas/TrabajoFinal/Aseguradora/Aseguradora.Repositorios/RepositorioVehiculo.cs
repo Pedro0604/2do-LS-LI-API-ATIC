@@ -114,4 +114,12 @@ public class RepositorioVehiculo : IRepositorioVehiculo
             }
         }
     }
+
+    public Vehiculo? GetVehiculo(int id)
+    {
+        using (var db = new AseguradoraContext())
+        {
+            return db.Vehiculos.Where(t => t.Id == id).SingleOrDefault();
+        }
+    }
 }

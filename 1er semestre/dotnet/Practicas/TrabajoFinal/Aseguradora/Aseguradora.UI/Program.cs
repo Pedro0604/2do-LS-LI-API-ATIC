@@ -14,33 +14,39 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
 // Agregamos servicios para agregar entidades
-builder.Services.AddTransient<AgregarPolizaUseCase>();
 builder.Services.AddTransient<AgregarTitularUseCase>();
 builder.Services.AddTransient<AgregarVehiculoUseCase>();
-builder.Services.AddTransient<AgregarTerceroUseCase>();
+builder.Services.AddTransient<AgregarPolizaUseCase>();
 builder.Services.AddTransient<AgregarSiniestroUseCase>();
+builder.Services.AddTransient<AgregarTerceroUseCase>();
 
 // Agregamos servicios para modificar entidades
-builder.Services.AddTransient<ModificarPolizaUseCase>();
 builder.Services.AddTransient<ModificarTitularUseCase>();
 builder.Services.AddTransient<ModificarVehiculoUseCase>();
-builder.Services.AddTransient<ModificarTerceroUseCase>();
+builder.Services.AddTransient<ModificarPolizaUseCase>();
 builder.Services.AddTransient<ModificarSiniestroUseCase>();
+builder.Services.AddTransient<ModificarTerceroUseCase>();
 
 // Agregamos servicios para eliminar entidades
-builder.Services.AddTransient<EliminarPolizaUseCase>();
 builder.Services.AddTransient<EliminarTitularUseCase>();
 builder.Services.AddTransient<EliminarVehiculoUseCase>();
-builder.Services.AddTransient<EliminarTerceroUseCase>();
+builder.Services.AddTransient<EliminarPolizaUseCase>();
 builder.Services.AddTransient<EliminarSiniestroUseCase>();
+builder.Services.AddTransient<EliminarTerceroUseCase>();
 
 // Agregamos servicios para listar entidades
-builder.Services.AddTransient<ListarPolizasUseCase>();
 builder.Services.AddTransient<ListarTitularesUseCase>();
-builder.Services.AddTransient<ListarTitularesConSusVehiculosUseCase>();
 builder.Services.AddTransient<ListarVehiculosUseCase>();
-builder.Services.AddTransient<ListarTercerosUseCase>();
+builder.Services.AddTransient<ListarPolizasUseCase>();
 builder.Services.AddTransient<ListarSiniestrosUseCase>();
+builder.Services.AddTransient<ListarTercerosUseCase>();
+
+// Agregamos servicios para obtener una entidad
+builder.Services.AddTransient<GetTitularUseCase>();
+builder.Services.AddTransient<GetVehiculoUseCase>();
+builder.Services.AddTransient<GetPolizaUseCase>();
+builder.Services.AddTransient<GetSiniestroUseCase>();
+builder.Services.AddTransient<GetTerceroUseCase>();
 
 // Agregamos los servicios de los repositorios
 builder.Services.AddScoped<IRepositorioPoliza, RepositorioPoliza>();

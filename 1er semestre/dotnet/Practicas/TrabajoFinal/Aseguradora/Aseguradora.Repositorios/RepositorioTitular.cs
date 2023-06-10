@@ -109,4 +109,11 @@ public class RepositorioTitular : IRepositorioTitular
             }
         }
     }
+
+    public Titular? GetTitular(int id){
+        using (var db = new AseguradoraContext())
+        {
+            return db.Titulares.Where(t => t.Id == id).SingleOrDefault();
+        }
+    }
 }

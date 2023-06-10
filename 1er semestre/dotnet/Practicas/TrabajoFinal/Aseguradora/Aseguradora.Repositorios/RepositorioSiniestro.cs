@@ -71,4 +71,12 @@ public class RepositorioSiniestro : IRepositorioSiniestro
             }
         }
     }
+
+    public Siniestro? GetSiniestro(int id)
+    {
+        using (var db = new AseguradoraContext())
+        {
+            return db.Siniestros.Where(t => t.Id == id).SingleOrDefault();
+        }
+    }
 }

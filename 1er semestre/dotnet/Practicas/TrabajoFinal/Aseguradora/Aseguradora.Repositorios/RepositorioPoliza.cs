@@ -96,4 +96,12 @@ public class RepositorioPoliza : IRepositorioPoliza
             }
         }
     }
+
+    public Poliza? GetPoliza(int id)
+    {
+        using (var db = new AseguradoraContext())
+        {
+            return db.Polizas.Where(t => t.Id == id).SingleOrDefault();
+        }
+    }
 }

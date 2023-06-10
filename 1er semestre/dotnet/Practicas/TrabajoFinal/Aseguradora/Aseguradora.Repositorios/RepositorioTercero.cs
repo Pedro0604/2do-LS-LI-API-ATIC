@@ -50,4 +50,12 @@ public class RepositorioTercero : IRepositorioTercero
             }
         }
     }
+
+    public Tercero? GetTercero(int id)
+    {
+        using (var db = new AseguradoraContext())
+        {
+            return db.Terceros.Where(t => t.Id == id).SingleOrDefault();
+        }
+    }
 }
