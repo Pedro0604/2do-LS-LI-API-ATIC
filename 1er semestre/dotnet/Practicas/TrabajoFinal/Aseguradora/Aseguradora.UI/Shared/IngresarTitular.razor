@@ -15,13 +15,7 @@ else{
 <input type="text" placeholder="Dirección" @bind="_titular.Direccion">
 <input type="tel" placeholder="Teléfono" @bind="_titular.Telefono">
 <input type="email" placeholder="Email" @bind="_titular.Email">
-@if(Modificar){
-    <button @onclick="ModificarTitular">Modificar</button>
-}
-else
-{
-    <button @onclick="AgregarTitular">Agregar</button>
-}
+<button @onclick="Cerrar">@if(Modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
 </div>
 
 @code{
@@ -41,13 +35,14 @@ else
             }
         }
     }
-    void AgregarTitular(){
-        AgregarTitularUseCase.Ejecutar(_titular);
-        CerrarDialogo.InvokeAsync();
-    }
-
-    void ModificarTitular(){
-        ModificarTitularUseCase.Ejecutar(_titular);
+    void Cerrar(){
+        if(Modificar)
+        {
+            ModificarTitularUseCase.Ejecutar(_titular);
+        }
+        else{
+            AgregarTitularUseCase.Ejecutar(_titular);
+        }
         CerrarDialogo.InvokeAsync();
     }
 }

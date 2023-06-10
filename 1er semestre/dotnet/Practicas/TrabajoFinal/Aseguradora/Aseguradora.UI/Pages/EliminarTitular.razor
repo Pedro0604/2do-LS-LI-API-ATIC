@@ -1,9 +1,9 @@
-@page "/titulares/ingresar/{Id:int?}";
+@page "/titulares/eliminar/{Id:int?}";
 @inject NavigationManager Navigator;
 
 <ListaTitulares/>
 <Dialogo CerrarDialogo="Cerrar">
-  <IngresarTitular CerrarDialogo="Cerrar" Id="@Id"/>
+  <DivEliminarTitular CerrarDialogo="Cerrar" Id="@Id"/>
 </Dialogo>
 
 @code {
