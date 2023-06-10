@@ -80,7 +80,7 @@ public class RepositorioTitular : IRepositorioTitular
             //     db.Remove(titularABorrar);
             //     db.SaveChanges();
             // }
-            
+
             var titularABorrar = db.Titulares
             .Where(t => t.Id == id)
             .Include(t => t.Vehiculos)
@@ -115,7 +115,7 @@ public class RepositorioTitular : IRepositorioTitular
         var lista = new List<string>();
         using (var db = new AseguradoraContext())
         {
-            lista = null;
+            lista = db.Titulares.Include(t => t.Vehiculos).Select(t => t.ToString()).ToList();
         }
         return lista;
     }
