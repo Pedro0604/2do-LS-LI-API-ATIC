@@ -1,0 +1,56 @@
+@inject AgregarSiniestroUseCase AgregarSiniestroUseCase;
+@inject ModificarSiniestroUseCase ModificarSiniestroUseCase;
+@inject GetSiniestroUseCase GetSiniestroUseCase;
+
+<div>
+@if(Modificar){
+    <h1>Modificar al siniestro: @_siniestro.Id</h1>
+}
+else{
+<h1>Agregar un siniestro</h1>
+}
+<input type="date" placeholder="Fecha de ocurrencia" @bind="_siniestro.FechaOcurrencia">
+<input type="number" placeholder="Direccion del siniestro" @bind="_siniestro.DireccionSiniestro">
+<input type="text" placeholder="Dirección" @bind="_siniestro.DireccionSiniestro">
+<input type="email" placeholder="Id de la póliza" @bind="_siniestro.PolizaId">
+<textarea placeholder="Descripción" @bind="_siniestro.Descripcion"></textarea>
+@if(Modificar){
+    <button @onclick="ModificarSiniestro">Modificar</button>
+}
+else
+{
+    <button @onclick="AgregarSiniestro">Agregar</button>
+}
+</div>
+
+@code{
+    [Parameter] public bool Modificar {get; set;} = false;
+    [Parameter] public int Id {get; set;}
+    Siniestro _siniestro = new Siniestro();
+
+    protected override void OnParametersSet() 
+    {
+        if(Id != 0){
+            var siniestroEcontrado = GetSiniestroUseCase.Ejecutar(Id);
+            if(siniestroEcontrado != null)
+            {
+                _siniestro = siniestroEcontrado;
+                Modificar = true;
+            }
+            else
+            {
+                Modificar = false;
+            }
+        }
+        else{
+            Modificar = false;
+        }
+    }
+    void AgregarSiniestro(){
+        AgregarSiniestroUseCase.Ejecutar(_siniestro);
+    }
+
+    void ModificarSiniestro(){
+        ModificarSiniestroUseCase.Ejecutar(_siniestro);
+    }
+}

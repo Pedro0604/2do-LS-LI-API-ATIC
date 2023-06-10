@@ -1,0 +1,55 @@
+@inject AgregarVehiculoUseCase AgregarVehiculoUseCase;
+@inject ModificarVehiculoUseCase ModificarVehiculoUseCase;
+@inject GetVehiculoUseCase GetVehiculoUseCase;
+
+<div>
+@if(Modificar){
+    <h1>Modificar al vehículo: @_vehiculo.Dominio</h1>
+}
+else{
+<h1>Agregar un vehículo</h1>
+}
+<input type="text" placeholder="Dominio" @bind="_vehiculo.Dominio">
+<input type="text" placeholder="Marca" @bind="_vehiculo.Marca">
+<input type="number" placeholder="AñoFabricacion" @bind="_vehiculo.AñoFabricacion">
+<input type="number" placeholder="Id del titular" @bind="_vehiculo.TitularId">
+@if(Modificar){
+    <button @onclick="ModificarVehiculo">Modificar</button>
+}
+else
+{
+    <button @onclick="AgregarVehiculo">Agregar</button>
+}
+</div>
+
+@code{
+    [Parameter] public bool Modificar {get; set;} = false;
+    [Parameter] public int Id {get; set;}
+    Vehiculo _vehiculo = new Vehiculo();
+
+    protected override void OnParametersSet() 
+    {
+        if(Id != 0){
+            var vehiculoEcontrado = GetVehiculoUseCase.Ejecutar(Id);
+            if(vehiculoEcontrado != null)
+            {
+                _vehiculo = vehiculoEcontrado;
+                Modificar = true;
+            }
+            else
+            {
+                Modificar = false;
+            }
+        }
+        else{
+            Modificar = false;
+        }
+    }
+    void AgregarVehiculo(){
+        AgregarVehiculoUseCase.Ejecutar(_vehiculo);
+    }
+
+    void ModificarVehiculo(){
+        ModificarVehiculoUseCase.Ejecutar(_vehiculo);
+    }
+}

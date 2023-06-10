@@ -1,0 +1,57 @@
+@inject AgregarTitularUseCase AgregarTitularUseCase;
+@inject ModificarTitularUseCase ModificarTitularUseCase;
+@inject GetTitularUseCase GetTitularUseCase;
+
+<div>
+@if(Modificar){
+    <h1>Modificar al titular: @_titular.Nombre</h1>
+}
+else{
+<h1>Agregar un titular</h1>
+}
+<input type="text" placeholder="Nombre" @bind="_titular.Nombre">
+<input type="text" placeholder="Apellido" @bind="_titular.Apellido">
+<input type="number" placeholder="DNI" @bind="_titular.DNI" maxlength="8">
+<input type="text" placeholder="Dirección" @bind="_titular.Direccion">
+<input type="tel" placeholder="Teléfono" @bind="_titular.Telefono">
+<input type="email" placeholder="Email" @bind="_titular.Email">
+@if(Modificar){
+    <button @onclick="ModificarTitular">Modificar</button>
+}
+else
+{
+    <button @onclick="AgregarTitular">Agregar</button>
+}
+</div>
+
+@code{
+    [Parameter] public bool Modificar {get; set;} = false;
+    [Parameter] public int Id {get; set;}
+    Titular _titular = new Titular();
+
+    protected override void OnParametersSet() 
+    {
+        if(Id != 0){
+            var titularEcontrado = GetTitularUseCase.Ejecutar(Id);
+            if(titularEcontrado != null)
+            {
+                _titular = titularEcontrado;
+                Modificar = true;
+            }
+            else
+            {
+                Modificar = false;
+            }
+        }
+        else{
+            Modificar = false;
+        }
+    }
+    void AgregarTitular(){
+        AgregarTitularUseCase.Ejecutar(_titular);
+    }
+
+    void ModificarTitular(){
+        ModificarTitularUseCase.Ejecutar(_titular);
+    }
+}

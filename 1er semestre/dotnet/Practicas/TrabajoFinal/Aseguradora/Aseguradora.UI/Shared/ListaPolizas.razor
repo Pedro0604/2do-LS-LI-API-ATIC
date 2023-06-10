@@ -5,6 +5,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th>Id</th>
       <th>Valor asegurado</th>
       <th>Franquicia</th>
       <th>Tipo de cobertura</th>
@@ -14,22 +15,22 @@
     </tr>
   </thead>
   <tbody>
-        @foreach (var poliza in listaPolizas)
-        {
-        <tr>
-          <th>@poliza.ValorAsegurado</th>
-          <th>@poliza.Franquicia</th>
-          <th>@poliza.TipoDeCobertura</th>
-          <th>@poliza.FechaInicioVigencia.ToShortDateString()</th>
-          <th>@poliza.FechaFinVigencia.ToShortDateString()</th>
-          <th>@poliza.VehiculoId</th>
-        </tr>
-        }
+    @foreach (var poliza in listaPolizas)
+    {
+      <tr>
+        <td>@poliza.Id</td>
+        <td>@poliza.ValorAsegurado</td>
+        <td>@poliza.Franquicia</td>
+        <td>@poliza.TipoDeCobertura</td>
+        <td>@poliza.FechaInicioVigencia.ToShortDateString()</td>
+        <td>@poliza.FechaFinVigencia.ToShortDateString()</td>
+        <td>@poliza.VehiculoId</td>
+      </tr>
+    }
   </tbody>
 </table>
 
 @code {
-    List<Poliza> listaPolizas = new List<Poliza>(); protected override
-    void OnInitialized() => listaPolizas = ListarPolizasUseCase.Ejecutar();
+  List<Poliza> listaPolizas = new List<Poliza>(); protected override void
+  OnInitialized() => listaPolizas = ListarPolizasUseCase.Ejecutar();
 } 
-

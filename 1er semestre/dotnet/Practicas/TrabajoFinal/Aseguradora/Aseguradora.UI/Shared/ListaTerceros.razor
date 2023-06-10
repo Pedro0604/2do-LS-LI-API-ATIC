@@ -5,6 +5,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th>Id</th>
       <th>Nombre</th>
       <th>Apellido</th>
       <th>Nombre de la aseguradora</th>
@@ -14,17 +15,18 @@
     </tr>
   </thead>
   <tbody>
-        @foreach (var tercero in listaTerceros)
-        {
-        <tr>
-          <th>@tercero.Nombre</th>
-          <th>@tercero.Apellido</th>
-          <th>@tercero.NombreAseguradora</th>
-          <th>@tercero.DNI</th>
-          <th>@tercero.Telefono</th>
-          <th>@tercero.SiniestroId</th>
-        </tr>
-        }
+    @foreach (var tercero in listaTerceros)
+    {
+      <tr>
+        <td>@tercero.Id</td>
+        <td>@tercero.Nombre</td>
+        <td>@tercero.Apellido</td>
+        <td>@tercero.NombreAseguradora</td>
+        <td>@tercero.DNI</td>
+        <td>@tercero.Telefono</td>
+        <td>@tercero.SiniestroId</td>
+      </tr>
+    }
   </tbody>
 </table>
 

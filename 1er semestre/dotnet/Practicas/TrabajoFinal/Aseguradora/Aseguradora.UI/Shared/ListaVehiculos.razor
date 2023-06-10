@@ -5,6 +5,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th>Id</th>
       <th>Dominio</th>
       <th>Marca</th>
       <th>Año de fabricación</th>
@@ -12,15 +13,16 @@
     </tr>
   </thead>
   <tbody>
-        @foreach (var vehiculo in listaVehiculos)
-        {
+    @foreach (var vehiculo in listaVehiculos)
+      {
         <tr>
-          <th>@vehiculo.Dominio</th>
-          <th>@vehiculo.Marca</th>
-          <th>@vehiculo.AñoFabricacion</th>
-          <th>@vehiculo.TitularId</th>
+          <td>@vehiculo.Id</td>
+          <td>@vehiculo.Dominio</td>
+          <td>@vehiculo.Marca</td>
+          <td>@vehiculo.AñoFabricacion</td>
+          <td>@vehiculo.TitularId</td>
         </tr>
-        }
+      }
   </tbody>
 </table>
 

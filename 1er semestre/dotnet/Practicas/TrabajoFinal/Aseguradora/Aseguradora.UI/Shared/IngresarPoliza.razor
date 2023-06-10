@@ -1,0 +1,57 @@
+@inject AgregarPolizaUseCase AgregarPolizaUseCase;
+@inject ModificarPolizaUseCase ModificarPolizaUseCase;
+@inject GetPolizaUseCase GetPolizaUseCase;
+
+<div>
+@if(Modificar){
+    <h1>Modificar a la póliza: @_poliza.Id</h1>
+}
+else{
+<h1>Agregar una póliza</h1>
+}
+<input type="number" placeholder="Valor asegurado" @bind="_poliza.ValorAsegurado">
+<input type="text" placeholder="Franquicia" @bind="_poliza.Franquicia">
+<input type="text" placeholder="Tipo de cobertura" @bind="_poliza.TipoDeCobertura">
+<input type="date" placeholder="Fecha de inicio de la vigencia" @bind="_poliza.FechaInicioVigencia">
+<input type="date" placeholder="Fecha de fin de la vigencia" @bind="_poliza.FechaFinVigencia">
+<input type="number" placeholder="Id del vehículo" @bind="_poliza.VehiculoId">
+@if(Modificar){
+    <button @onclick="ModificarPoliza">Modificar</button>
+}
+else
+{
+    <button @onclick="AgregarPoliza">Agregar</button>
+}
+</div>
+
+@code{
+    [Parameter] public bool Modificar {get; set;} = false;
+    [Parameter] public int Id {get; set;}
+    Poliza _poliza = new Poliza();
+
+    protected override void OnParametersSet() 
+    {
+        if(Id != 0){
+            var polizaEcontrada = GetPolizaUseCase.Ejecutar(Id);
+            if(polizaEcontrada != null)
+            {
+                _poliza = polizaEcontrada;
+                Modificar = true;
+            }
+            else
+            {
+                Modificar = false;
+            }
+        }
+        else{
+            Modificar = false;
+        }
+    }
+    void AgregarPoliza(){
+        AgregarPolizaUseCase.Ejecutar(_poliza);
+    }
+
+    void ModificarPoliza(){
+        ModificarPolizaUseCase.Ejecutar(_poliza);
+    }
+}

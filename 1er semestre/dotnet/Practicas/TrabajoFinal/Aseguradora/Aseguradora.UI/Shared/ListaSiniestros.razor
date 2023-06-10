@@ -5,6 +5,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th>Id</th>
       <th>Fecha de ingreso</th>
       <th>Fecha de ocurrencia</th>
       <th>Dirección</th>
@@ -13,21 +14,22 @@
     </tr>
   </thead>
   <tbody>
-        @foreach (var siniestro in listaSiniestros)
-        {
-        <tr>
-          <th>@siniestro.FechaIngreso</th>
-          <th>@siniestro.FechaOcurrencia</th>
-          <th>@siniestro.DireccionSiniestro</th>
-          <th>@siniestro.Descripcion</th>
-          <th>@siniestro.PolizaId</th>
-        </tr>
-        }
+    @foreach (var siniestro in listaSiniestros)
+    {
+      <tr>
+        <td>@siniestro.Id</td>
+        <td>@siniestro.FechaIngreso</td>
+        <td>@siniestro.FechaOcurrencia</td>
+        <td>@siniestro.DireccionSiniestro</td>
+        <td>@siniestro.Descripcion</td>
+        <td>@siniestro.PolizaId</td>
+      </tr>
+    }
   </tbody>
 </table>
 
 @code {
-    List<Siniestro> listaSiniestros = new List<Siniestro>(); protected override
-    void OnInitialized() => listaSiniestros = ListarSiniestrosUseCase.Ejecutar();
+  List<Siniestro> listaSiniestros = new List<Siniestro>(); protected
+  override void OnInitialized() => listaSiniestros =
+  ListarSiniestrosUseCase.Ejecutar();
 } 
-

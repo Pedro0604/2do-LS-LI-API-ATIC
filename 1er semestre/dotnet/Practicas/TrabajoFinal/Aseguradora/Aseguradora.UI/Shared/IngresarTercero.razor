@@ -1,0 +1,57 @@
+@inject AgregarTerceroUseCase AgregarTerceroUseCase;
+@inject ModificarTerceroUseCase ModificarTerceroUseCase;
+@inject GetTerceroUseCase GetTerceroUseCase;
+
+<div>
+@if(Modificar){
+    <h1>Modificar al tercero: @_tercero.Nombre</h1>
+}
+else{
+<h1>Agregar un tercero</h1>
+}
+<input type="text" placeholder="Nombre" @bind="_tercero.Nombre">
+<input type="text" placeholder="Apellido" @bind="_tercero.Apellido">
+<input type="number" placeholder="DNI" @bind="_tercero.DNI">
+<input type="text" placeholder="Nombre de la aseguradora" @bind="_tercero.NombreAseguradora">
+<input type="tel" placeholder="Teléfono" @bind="_tercero.Telefono">
+<input type="number" placeholder="Id del siniestro" @bind="_tercero.SiniestroId">
+@if(Modificar){
+    <button @onclick="ModificarTercero">Modificar</button>
+}
+else
+{
+    <button @onclick="AgregarTercero">Agregar</button>
+}
+</div>
+
+@code{
+    [Parameter] public bool Modificar {get; set;} = false;
+    [Parameter] public int Id {get; set;}
+    Tercero _tercero = new Tercero();
+
+    protected override void OnParametersSet() 
+    {
+        if(Id != 0){
+            var terceroEcontrado = GetTerceroUseCase.Ejecutar(Id);
+            if(terceroEcontrado != null)
+            {
+                _tercero = terceroEcontrado;
+                Modificar = true;
+            }
+            else
+            {
+                Modificar = false;
+            }
+        }
+        else{
+            Modificar = false;
+        }
+    }
+    void AgregarTercero(){
+        AgregarTerceroUseCase.Ejecutar(_tercero);
+    }
+
+    void ModificarTercero(){
+        ModificarTerceroUseCase.Ejecutar(_tercero);
+    }
+}

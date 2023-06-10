@@ -67,3 +67,4 @@ D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Ase
 D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\obj\Debug\net7.0\Aseguradora.UI.pdb
 D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\obj\Debug\net7.0\Aseguradora.UI.genruntimeconfig.cache
 D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\obj\Debug\net7.0\ref\Aseguradora.UI.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\obj\Debug\net7.0\scopedcss\Shared\Dialogo.razor.rz.scp.css

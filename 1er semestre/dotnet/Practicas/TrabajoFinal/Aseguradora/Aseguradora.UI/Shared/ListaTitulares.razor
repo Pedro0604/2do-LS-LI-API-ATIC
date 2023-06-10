@@ -1,16 +1,20 @@
 @inject ListarTitularesUseCase ListarTitularesUseCase;
+@inject NavigationManager Navigator
 
 <h1>Listado de titulares @if(ConVehiculos){<span>con sus vehículos</span>}</h1>
 
 <table class="table">
   <thead>
     <tr>
+      <th>Id</th>
       <th>Nombre</th>
       <th>Apellido</th>
       <th>Dirección</th>
       <th>DNI</th>
       <th>Teléfono</th>
       <th>Email</th>
+      <th>Modificar</th>
+      <th>Eliminar</th>
       @if (ConVehiculos)
       {
         <th>Dominio</th>
@@ -23,22 +27,25 @@
     @foreach (var titular in listaTitulares)
     {
       <tr>
-        <th>@titular.Nombre</th>
-        <th>@titular.Apellido</th>
-        <th>@titular.Direccion</th>
-        <th>@titular.DNI</th>
-        <th>@titular.Telefono</th>
-        <th>@titular.Email</th>
+        <td>@titular.Id</td>
+        <td>@titular.Nombre</td>
+        <td>@titular.Apellido</td>
+        <td>@titular.Direccion</td>
+        <td>@titular.DNI</td>
+        <td>@titular.Telefono</td>
+        <td>@titular.Email</td>
+        <td><button class="btn btn-primary" @onclick="Editar"><span class="oi oi-pencil"></span></button></td>
+        <td><button class="btn btn-danger" @onclick="Borrar"><span class="oi oi-trash"></span></button></td>
       </tr>
       if (ConVehiculos)
       {
         foreach (var vehiculo in titular.Vehiculos)
         {
           <tr>
-            <th colspan="6">Vehículo @(titular.Vehiculos.IndexOf(vehiculo) + 1)</th>
-            <th>@vehiculo.Dominio</th>
-            <th>@vehiculo.Marca</th>
-            <th>@vehiculo.AñoFabricacion</th>
+            <td colspan="8">Vehículo @(titular.Vehiculos.IndexOf(vehiculo) + 1)</td>
+            <td>@vehiculo.Dominio</td>
+            <td>@vehiculo.Marca</td>
+            <td>@vehiculo.AñoFabricacion</td>
           </tr>
         }
       }
@@ -50,4 +57,14 @@
   [Parameter] public bool ConVehiculos { get; set; } = false;
   List<Titular> listaTitulares = new List<Titular>(); protected override void
   OnInitialized() => listaTitulares = ListarTitularesUseCase.Ejecutar();
+
+  void Editar()
+  {
+    Navigator.NavigateTo("/titulares/nuevo");
+  }
+
+  void Borrar()
+  {
+
+  }
 } 

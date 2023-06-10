@@ -32,7 +32,12 @@ public class RepositorioTitular : IRepositorioTitular
             var titularAModificar = db.Titulares.Where(t => t.Id == titular.Id).SingleOrDefault();
             if (titularAModificar != null)
             {
-                titularAModificar = titular;
+                titularAModificar.Nombre = titular.Nombre;
+                titularAModificar.Apellido = titular.Apellido;
+                titularAModificar.Direccion = titular.Direccion;
+                titularAModificar.DNI = titular.DNI;
+                titularAModificar.Email = titular.Email;
+                titularAModificar.Telefono = titular.Telefono;
                 db.SaveChanges();
             }
         }

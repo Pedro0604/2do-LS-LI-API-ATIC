@@ -1,0 +1,16 @@
+@inject NavigationManager Navigator;
+
+<div class="backdrop" @onclick="Cerrar"></div>
+<dialog open class="dialogo">@ChildContent</dialog>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    
+    void Cerrar()
+    { 
+        string uri = Navigator.BaseUri;
+        int index = uri.LastIndexOf("/");
+        uri = uri.Substring(0, index);
+        Navigator.NavigateTo(uri);
+    }
+} 
