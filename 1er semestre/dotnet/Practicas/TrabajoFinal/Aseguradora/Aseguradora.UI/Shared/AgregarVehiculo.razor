@@ -1,0 +1,13 @@
+@inject AgregarVehiculoUseCase AgregarVehiculoUseCase;
+
+<h1>Agregar un vehículo:</h1>
+<input type="text" placeholder="Dominio" @bind="v.Dominio">
+<input type="text" placeholder="Marca" @bind="v.Marca">
+<input type="number" placeholder="AñoFabricacion" @bind="v.AñoFabricacion">
+<input type="number" placeholder="Id del titular" @bind="v.TitularId">
+<button @onclick="Agregar">Agregar</button>
+
+@code{
+    Vehiculo v = new Vehiculo();
+    void Agregar() => AgregarVehiculoUseCase.Ejecutar(v);
+}

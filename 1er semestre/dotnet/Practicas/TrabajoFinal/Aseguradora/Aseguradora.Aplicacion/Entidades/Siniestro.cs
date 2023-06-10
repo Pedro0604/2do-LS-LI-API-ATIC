@@ -13,5 +13,5 @@ public class Siniestro
     public List<Tercero> Terceros { get; set; } = new List<Tercero>();
 
     //Constructor para inicializar la fecha de ingreso
-    private Siniestro() { FechaIngreso = DateTime.Now; }
+    public Siniestro() { FechaIngreso = DateTime.Now; }
 }

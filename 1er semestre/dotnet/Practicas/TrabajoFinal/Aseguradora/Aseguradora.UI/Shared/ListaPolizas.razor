@@ -1,0 +1,35 @@
+@inject ListarPolizasUseCase ListarPolizasUseCase;
+
+<h1>Listado de pólizas</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Valor asegurado</th>
+      <th>Franquicia</th>
+      <th>Tipo de cobertura</th>
+      <th>Fecha de inicio de vigencia</th>
+      <th>Fecha de fin de vigencia</th>
+      <th>Id del vehículo</th>
+    </tr>
+  </thead>
+  <tbody>
+        @foreach (var poliza in listaPolizas)
+        {
+        <tr>
+          <th>@poliza.ValorAsegurado</th>
+          <th>@poliza.Franquicia</th>
+          <th>@poliza.TipoDeCobertura</th>
+          <th>@poliza.FechaInicioVigencia.ToShortDateString()</th>
+          <th>@poliza.FechaFinVigencia.ToShortDateString()</th>
+          <th>@poliza.VehiculoId</th>
+        </tr>
+        }
+  </tbody>
+</table>
+
+@code {
+    List<Poliza> listaPolizas = new List<Poliza>(); protected override
+    void OnInitialized() => listaPolizas = ListarPolizasUseCase.Ejecutar();
+} 
+

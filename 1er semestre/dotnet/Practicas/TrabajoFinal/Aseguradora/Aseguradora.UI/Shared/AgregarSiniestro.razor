@@ -1,0 +1,14 @@
+@inject AgregarSiniestroUseCase AgregarSiniestroUseCase;
+
+<h1>Agregar un siniestro:</h1>
+<input type="date" placeholder="Fecha de ocurrencia" @bind="s.FechaOcurrencia">
+<input type="number" placeholder="Direccion del siniestro" @bind="s.DireccionSiniestro">
+<input type="text" placeholder="Dirección" @bind="s.DireccionSiniestro">
+<input type="email" placeholder="Id de la póliza" @bind="s.PolizaId">
+<textarea placeholder="Descripción" @bind="s.Descripcion"></textarea>
+<button @onclick="Agregar">Agregar</button>
+
+@code{
+    Siniestro s = new Siniestro();
+    void Agregar() => AgregarSiniestroUseCase.Ejecutar(s);
+}

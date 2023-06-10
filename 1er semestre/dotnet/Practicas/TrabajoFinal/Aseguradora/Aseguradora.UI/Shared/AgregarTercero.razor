@@ -1,0 +1,15 @@
+@inject AgregarTerceroUseCase AgregarTerceroUseCase;
+
+<h1>Agregar un tercero:</h1>
+<input type="text" placeholder="Nombre" @bind="t.Nombre">
+<input type="text" placeholder="Apellido" @bind="t.Apellido">
+<input type="number" placeholder="DNI" @bind="t.DNI">
+<input type="text" placeholder="Nombre de la aseguradora" @bind="t.NombreAseguradora">
+<input type="tel" placeholder="Teléfono" @bind="t.Telefono">
+<input type="number" placeholder="Id del siniestro" @bind="t.SiniestroId">
+<button @onclick="Agregar">Agregar</button>
+
+@code{
+    Tercero t = new Tercero();
+    void Agregar() => AgregarTerceroUseCase.Ejecutar(t);
+}

@@ -1,0 +1,31 @@
+@inject ListarVehiculosUseCase ListarVehiculosUseCase;
+
+<h1>Listado de vehículos</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Dominio</th>
+      <th>Marca</th>
+      <th>Año de fabricación</th>
+      <th>Id del titular</th>
+    </tr>
+  </thead>
+  <tbody>
+        @foreach (var vehiculo in listaVehiculos)
+        {
+        <tr>
+          <th>@vehiculo.Dominio</th>
+          <th>@vehiculo.Marca</th>
+          <th>@vehiculo.AñoFabricacion</th>
+          <th>@vehiculo.TitularId</th>
+        </tr>
+        }
+  </tbody>
+</table>
+
+@code {
+    List<Vehiculo> listaVehiculos = new List<Vehiculo>();
+    protected override void OnInitialized() => listaVehiculos = ListarVehiculosUseCase.Ejecutar();
+} 
+

@@ -1,0 +1,33 @@
+@inject ListarSiniestrosUseCase ListarSiniestrosUseCase;
+
+<h1>Listado de siniestros</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Fecha de ingreso</th>
+      <th>Fecha de ocurrencia</th>
+      <th>Dirección</th>
+      <th>Descripción</th>
+      <th>Id de la póliza</th>
+    </tr>
+  </thead>
+  <tbody>
+        @foreach (var siniestro in listaSiniestros)
+        {
+        <tr>
+          <th>@siniestro.FechaIngreso</th>
+          <th>@siniestro.FechaOcurrencia</th>
+          <th>@siniestro.DireccionSiniestro</th>
+          <th>@siniestro.Descripcion</th>
+          <th>@siniestro.PolizaId</th>
+        </tr>
+        }
+  </tbody>
+</table>
+
+@code {
+    List<Siniestro> listaSiniestros = new List<Siniestro>(); protected override
+    void OnInitialized() => listaSiniestros = ListarSiniestrosUseCase.Ejecutar();
+} 
+
