@@ -1,0 +1,50 @@
+@page "/titulares";
+@inject ListarTitularesUseCase ListarTitularesUseCase;
+@inject AgregarTitularUseCase AgregarTitularUseCase;
+
+<h1>Agregar un titular:</h1>
+<input type="text" placeholder="Nombre" @bind="t.Nombre">
+<input type="text" placeholder="Apellido" @bind="t.Apellido">
+<input type="text" placeholder="DNI" @bind="t.DNI">
+<button @onclick="Agregar">Agregar</button>
+
+<h1>Listado de titulares</h1>
+
+
+<table class="table">
+ <thead>
+ <tr>
+ <th>Nombre</th>
+ <th>Apellido</th>
+ <th>Dirección</th>
+ <th>DNI</th>
+ <th>Telefono</th>
+ <th>Email</th>
+ </tr>
+ </thead>
+ <tbody>
+ @foreach (var titular in listaTitulares)
+ {
+    <tr>
+    <th>@titular.Nombre</th>
+    <th>@titular.Apellido</th>
+    <th>@titular.Direccion</th>
+    <th>@titular.DNI</th>
+    <th>@titular.Telefono</th>
+    <th>@titular.Email</th>
+    </tr>
+ }
+ </tbody>
+</table>
+
+@code{
+    List<Titular> listaTitulares = new List<Titular>();
+    protected override void OnInitialized()
+    {
+        listaTitulares = ListarTitularesUseCase.Ejecutar();
+    }
+    Titular t = new Titular();
+    void Agregar(){
+        AgregarTitularUseCase.Ejecutar(t);
+    }
+}

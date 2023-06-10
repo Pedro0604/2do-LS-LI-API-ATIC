@@ -8,18 +8,6 @@ public class Titular : Persona
     // Propiedad de navegación para los vehículos
     public List<Vehiculo> Vehiculos { get; set; } = new List<Vehiculo>();
 
-    protected Titular() { }
-
-    //Constructor para inicializar las propiedades
-    //que recibe obligatoriamente: dni, apellido y nombre
-    //y opcionalmente: direccion y email
-    //Llama al constructor de su clase base
-    public Titular(int dni, string? apellido, string? nombre, string? telefono = "", string? direccion = "", string? email = "") : base(dni, apellido, nombre, telefono)
-    {
-        this.Direccion = direccion;
-        this.Email = email;
-    }
-
     public override string ToString()
     {
         string st = $"Titular: | {base.ToString()}";

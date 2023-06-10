@@ -115,7 +115,17 @@ public class RepositorioTitular : IRepositorioTitular
         var lista = new List<string>();
         using (var db = new AseguradoraContext())
         {
-            lista = db.Titulares.Include(t => t.Vehiculos).Select(t => t.ToString()).ToList();
+            string st;
+            var listaTit = db.Titulares.Include(t => t.Vehiculos).ToList();
+            foreach (var titular in listaTit)
+            {
+                st = titular.Vehiculos.Count > 0 ? titular.ToString() + " Vehiculos: " : titular.ToString() + "\n";
+                foreach (var vehiculo in titular.Vehiculos)
+                {
+                    st += vehiculo.ToString() + "\n";
+                }
+                lista.Add(st);
+            }
         }
         return lista;
     }
