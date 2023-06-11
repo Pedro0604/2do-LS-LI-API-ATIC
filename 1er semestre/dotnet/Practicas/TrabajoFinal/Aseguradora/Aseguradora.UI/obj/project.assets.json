@@ -1175,19 +1175,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lucia\\.nuget\\packages\\": {}
+    "C:\\Users\\Pedro master god\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Aseguradora.UI.csproj",
+      "projectUniqueName": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Aseguradora.UI.csproj",
       "projectName": "Aseguradora.UI",
-      "projectPath": "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Aseguradora.UI.csproj",
-      "packagesPath": "C:\\Users\\Lucia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\obj\\",
+      "projectPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Aseguradora.UI.csproj",
+      "packagesPath": "C:\\Users\\Pedro master god\\.nuget\\packages\\",
+      "outputPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lucia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Pedro master god\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1199,11 +1199,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj": {
-              "projectPath": "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj"
+            "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj": {
+              "projectPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj"
             },
-            "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Repositorios\\Aseguradora.Repositorios.csproj": {
-              "projectPath": "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Repositorios\\Aseguradora.Repositorios.csproj"
+            "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Repositorios\\Aseguradora.Repositorios.csproj": {
+              "projectPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Repositorios\\Aseguradora.Repositorios.csproj"
             }
           }
         }
