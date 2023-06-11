@@ -48,10 +48,10 @@
   protected override void OnInitialized() => listaSiniestros = ListarSiniestrosUseCase.Ejecutar();
   void Ingresar(int id)
   {
-    Navigator.NavigateTo($"/titulares/ingresar/{id}");
+    Navigator.NavigateTo($"/siniestros/ingresar/{id}");
   }
   void Eliminar(int id)
   {
-    Navigator.NavigateTo($"/titulares/eliminar/{id}");
+    Navigator.NavigateTo($"/sinietros/eliminar/{id}");
   }
 } 
