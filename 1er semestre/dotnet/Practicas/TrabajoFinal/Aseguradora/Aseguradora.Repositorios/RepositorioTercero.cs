@@ -32,7 +32,12 @@ public class RepositorioTercero : IRepositorioTercero
             var terceroAModificar = db.Terceros.Where(t => t.Id == tercero.Id).SingleOrDefault();
             if (terceroAModificar != null)
             {
-                terceroAModificar = tercero;
+                terceroAModificar.Nombre = tercero.Nombre;
+                terceroAModificar.Apellido = tercero.Apellido;
+                terceroAModificar.DNI = tercero.DNI;
+                terceroAModificar.NombreAseguradora = tercero.NombreAseguradora;
+                terceroAModificar.SiniestroId = tercero.SiniestroId;
+                terceroAModificar.Telefono = tercero.Telefono;
                 db.SaveChanges();
             }
         }

@@ -884,43 +884,6 @@
         }
       },
       {
-        "HashCode": -1331005958,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.App",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "Aseguradora.UI",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1973361514,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.App",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "Aseguradora.UI",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -848869655,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.DialogoConfirmacion",
@@ -1544,80 +1507,6 @@
         }
       },
       {
-        "HashCode": -1820832563,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.NavMenu",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1071290005,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.NavMenu",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1221699488,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.VolverAtras",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VolverAtras"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.VolverAtras",
-          "Common.TypeNameIdentifier": "VolverAtras",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 40762895,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.VolverAtras",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.VolverAtras"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.VolverAtras",
-          "Common.TypeNameIdentifier": "VolverAtras",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -850449048,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.ConfirmarEliminacion",
@@ -1717,85 +1606,6 @@
         }
       },
       {
-        "HashCode": -1954300633,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaTitulares",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ListaTitulares"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ConVehiculos",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "ConVehiculos",
-              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaTitulares",
-          "Common.TypeNameIdentifier": "ListaTitulares",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -876855409,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaTitulares",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.ListaTitulares"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "ConVehiculos",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "ConVehiculos",
-              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaTitulares",
-          "Common.TypeNameIdentifier": "ListaTitulares",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -939868174,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.IngresarVehiculo",
@@ -1875,14 +1685,14 @@
         }
       },
       {
-        "HashCode": -53304427,
+        "HashCode": 928518741,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaVehiculos",
+        "Name": "Aseguradora.UI.Shared.ListaPolizas",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ListaVehiculos"
+            "TagName": "ListaPolizas"
           }
         ],
         "BoundAttributes": [
@@ -1898,21 +1708,21 @@
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaVehiculos",
-          "Common.TypeNameIdentifier": "ListaVehiculos",
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaPolizas",
+          "Common.TypeNameIdentifier": "ListaPolizas",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1009429906,
+        "HashCode": -47394143,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaVehiculos",
+        "Name": "Aseguradora.UI.Shared.ListaPolizas",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Aseguradora.UI.Shared.ListaVehiculos"
+            "TagName": "Aseguradora.UI.Shared.ListaPolizas"
           }
         ],
         "BoundAttributes": [
@@ -1928,69 +1738,8 @@
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaVehiculos",
-          "Common.TypeNameIdentifier": "ListaVehiculos",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 790877293,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaTerceros",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ListaTerceros"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaTerceros",
-          "Common.TypeNameIdentifier": "ListaTerceros",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 352442139,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaTerceros",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.ListaTerceros"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaTerceros",
-          "Common.TypeNameIdentifier": "ListaTerceros",
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaPolizas",
+          "Common.TypeNameIdentifier": "ListaPolizas",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -2058,14 +1807,14 @@
         }
       },
       {
-        "HashCode": 928518741,
+        "HashCode": 790877293,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaPolizas",
+        "Name": "Aseguradora.UI.Shared.ListaTerceros",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ListaPolizas"
+            "TagName": "ListaTerceros"
           }
         ],
         "BoundAttributes": [
@@ -2081,21 +1830,21 @@
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaPolizas",
-          "Common.TypeNameIdentifier": "ListaPolizas",
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaTerceros",
+          "Common.TypeNameIdentifier": "ListaTerceros",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -47394143,
+        "HashCode": 352442139,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaPolizas",
+        "Name": "Aseguradora.UI.Shared.ListaTerceros",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Aseguradora.UI.Shared.ListaPolizas"
+            "TagName": "Aseguradora.UI.Shared.ListaTerceros"
           }
         ],
         "BoundAttributes": [
@@ -2111,9 +1860,223 @@
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaPolizas",
-          "Common.TypeNameIdentifier": "ListaPolizas",
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaTerceros",
+          "Common.TypeNameIdentifier": "ListaTerceros",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1954300633,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaTitulares",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListaTitulares"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ConVehiculos",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "ConVehiculos",
+              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaTitulares",
+          "Common.TypeNameIdentifier": "ListaTitulares",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -876855409,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaTitulares",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.ListaTitulares"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ConVehiculos",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "ConVehiculos",
+              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaTitulares",
+          "Common.TypeNameIdentifier": "ListaTitulares",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -53304427,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaVehiculos",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListaVehiculos"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaVehiculos",
+          "Common.TypeNameIdentifier": "ListaVehiculos",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1009429906,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaVehiculos",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.ListaVehiculos"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaVehiculos",
+          "Common.TypeNameIdentifier": "ListaVehiculos",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1820832563,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.NavMenu",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.NavMenu",
+          "Common.TypeNameIdentifier": "NavMenu",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1071290005,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.NavMenu",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.NavMenu",
+          "Common.TypeNameIdentifier": "NavMenu",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1331005958,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.App",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "Aseguradora.UI",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1973361514,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.App",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.App"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "Aseguradora.UI",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -20868,11 +20831,6 @@
     {
       "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\DialogoConfirmacion.razor",
       "TargetPath": "Shared\\DialogoConfirmacion.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\VolverAtras.razor",
-      "TargetPath": "Shared\\VolverAtras.razor",
       "FileKind": "component"
     },
     {

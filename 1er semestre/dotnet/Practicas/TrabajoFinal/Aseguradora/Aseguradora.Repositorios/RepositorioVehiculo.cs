@@ -32,7 +32,10 @@ public class RepositorioVehiculo : IRepositorioVehiculo
             var vehiculoAModificar = db.Vehiculos.Where(v => v.Id == vehiculo.Id).SingleOrDefault();
             if (vehiculoAModificar != null)
             {
-                vehiculoAModificar = vehiculo;
+                vehiculoAModificar.Dominio = vehiculo.Dominio;
+                vehiculoAModificar.AñoFabricacion = vehiculo.AñoFabricacion;
+                vehiculoAModificar.Marca = vehiculo.Marca;
+                vehiculoAModificar.TitularId = vehiculo.TitularId;
                 db.SaveChanges();
             }
         }

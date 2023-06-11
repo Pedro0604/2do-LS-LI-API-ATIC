@@ -50,7 +50,11 @@ builder.Services.AddScoped<IRepositorioVehiculo, RepositorioVehiculo>();
 builder.Services.AddScoped<IRepositorioTercero, RepositorioTercero>();
 builder.Services.AddScoped<IRepositorioSiniestro, RepositorioSiniestro>();
 
-EnsureCreated.Ensure();
+// Nos aseguramos que esté creada la base de datos
+using (var context = new AseguradoraContext())
+{
+    context.Database.EnsureCreated();
+}
 
 var app = builder.Build();
 

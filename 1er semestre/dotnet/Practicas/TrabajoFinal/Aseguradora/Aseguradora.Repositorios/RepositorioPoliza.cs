@@ -32,7 +32,12 @@ public class RepositorioPoliza : IRepositorioPoliza
             var polizaAModificar = db.Polizas.Where(p => p.Id == poliza.Id).SingleOrDefault();
             if (polizaAModificar != null)
             {
-                polizaAModificar = poliza;
+                polizaAModificar.FechaFinVigencia = poliza.FechaFinVigencia;
+                polizaAModificar.FechaInicioVigencia = poliza.FechaInicioVigencia;
+                polizaAModificar.Franquicia = poliza.Franquicia;
+                polizaAModificar.TipoDeCobertura = poliza.TipoDeCobertura;
+                polizaAModificar.ValorAsegurado = poliza.ValorAsegurado;
+                polizaAModificar.VehiculoId = poliza.VehiculoId;
                 db.SaveChanges();
             }
         }

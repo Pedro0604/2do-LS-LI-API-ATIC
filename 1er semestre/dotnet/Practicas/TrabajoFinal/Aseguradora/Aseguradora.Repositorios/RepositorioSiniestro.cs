@@ -41,7 +41,10 @@ public class RepositorioSiniestro : IRepositorioSiniestro
             var siniestroAModificar = db.Siniestros.Where(s => s.Id == siniestro.Id).SingleOrDefault();
             if (siniestroAModificar != null)
             {
-                siniestroAModificar = siniestro;
+                siniestroAModificar.Descripcion = siniestro.Descripcion;
+                siniestroAModificar.DireccionSiniestro = siniestro.DireccionSiniestro;
+                siniestroAModificar.FechaOcurrencia = siniestro.FechaOcurrencia;
+                siniestroAModificar.PolizaId = siniestro.PolizaId;
                 db.SaveChanges();
             }
         }
