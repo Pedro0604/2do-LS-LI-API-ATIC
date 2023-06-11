@@ -13,7 +13,7 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1462060956,
+        "HashCode": 428144287,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Pages.Index",
         "AssemblyName": "Aseguradora.UI",
@@ -31,7 +31,7 @@
         }
       },
       {
-        "HashCode": -1396640971,
+        "HashCode": 2032928655,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Pages.Index",
         "AssemblyName": "Aseguradora.UI",
@@ -50,199 +50,7 @@
         }
       },
       {
-        "HashCode": 1804017390,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Pages.Titulares",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Titulares"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Pages.Titulares",
-          "Common.TypeNameIdentifier": "Titulares",
-          "Common.TypeNamespace": "Aseguradora.UI.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 929018619,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Pages.Titulares",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Pages.Titulares"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Pages.Titulares",
-          "Common.TypeNameIdentifier": "Titulares",
-          "Common.TypeNamespace": "Aseguradora.UI.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 380443807,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Pages.NuevoTitular",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NuevoTitular"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Pages.NuevoTitular",
-          "Common.TypeNameIdentifier": "NuevoTitular",
-          "Common.TypeNamespace": "Aseguradora.UI.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -934327667,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Pages.NuevoTitular",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Pages.NuevoTitular"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Pages.NuevoTitular",
-          "Common.TypeNameIdentifier": "NuevoTitular",
-          "Common.TypeNamespace": "Aseguradora.UI.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1099271031,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Pages.Vehiculos",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Vehiculos"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Pages.Vehiculos",
-          "Common.TypeNameIdentifier": "Vehiculos",
-          "Common.TypeNamespace": "Aseguradora.UI.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -250416521,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Pages.Vehiculos",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Pages.Vehiculos"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Pages.Vehiculos",
-          "Common.TypeNameIdentifier": "Vehiculos",
-          "Common.TypeNamespace": "Aseguradora.UI.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 383218701,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Pages.NuevoVehiculo",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NuevoVehiculo"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Pages.NuevoVehiculo",
-          "Common.TypeNameIdentifier": "NuevoVehiculo",
-          "Common.TypeNamespace": "Aseguradora.UI.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -895710338,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Pages.NuevoVehiculo",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Pages.NuevoVehiculo"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Pages.NuevoVehiculo",
-          "Common.TypeNameIdentifier": "NuevoVehiculo",
-          "Common.TypeNamespace": "Aseguradora.UI.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1030259602,
+        "HashCode": -511260270,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Pages.EliminarVehiculo",
         "AssemblyName": "Aseguradora.UI",
@@ -271,7 +79,7 @@
         }
       },
       {
-        "HashCode": 276487757,
+        "HashCode": 260574948,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Pages.EliminarVehiculo",
         "AssemblyName": "Aseguradora.UI",
@@ -301,7 +109,302 @@
         }
       },
       {
-        "HashCode": -63427709,
+        "HashCode": 82954110,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevaPoliza",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NuevaPoliza"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevaPoliza",
+          "Common.TypeNameIdentifier": "NuevaPoliza",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1119379968,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevaPoliza",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.NuevaPoliza"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevaPoliza",
+          "Common.TypeNameIdentifier": "NuevaPoliza",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2010128561,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.EliminarPoliza",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EliminarPoliza"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.EliminarPoliza",
+          "Common.TypeNameIdentifier": "EliminarPoliza",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1108871962,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.EliminarPoliza",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.EliminarPoliza"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.EliminarPoliza",
+          "Common.TypeNameIdentifier": "EliminarPoliza",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 577705919,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevoSiniestro",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NuevoSiniestro"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevoSiniestro",
+          "Common.TypeNameIdentifier": "NuevoSiniestro",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1203557729,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevoSiniestro",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.NuevoSiniestro"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevoSiniestro",
+          "Common.TypeNameIdentifier": "NuevoSiniestro",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1014466648,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevoVehiculo",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NuevoVehiculo"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevoVehiculo",
+          "Common.TypeNameIdentifier": "NuevoVehiculo",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1615867601,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevoVehiculo",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.NuevoVehiculo"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevoVehiculo",
+          "Common.TypeNameIdentifier": "NuevoVehiculo",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1958786891,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.EliminarSiniestro",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EliminarSiniestro"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.EliminarSiniestro",
+          "Common.TypeNameIdentifier": "EliminarSiniestro",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1258387112,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.EliminarSiniestro",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.EliminarSiniestro"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.EliminarSiniestro",
+          "Common.TypeNameIdentifier": "EliminarSiniestro",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -538954235,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Pages.EliminarTitular",
         "AssemblyName": "Aseguradora.UI",
@@ -330,7 +433,7 @@
         }
       },
       {
-        "HashCode": 1932317637,
+        "HashCode": 27876458,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Pages.EliminarTitular",
         "AssemblyName": "Aseguradora.UI",
@@ -360,7 +463,332 @@
         }
       },
       {
-        "HashCode": -1153952701,
+        "HashCode": 676171359,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevoTitular",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NuevoTitular"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevoTitular",
+          "Common.TypeNameIdentifier": "NuevoTitular",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -155781393,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevoTitular",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.NuevoTitular"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevoTitular",
+          "Common.TypeNameIdentifier": "NuevoTitular",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 349592822,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.Polizas",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Polizas"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.Polizas",
+          "Common.TypeNameIdentifier": "Polizas",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1899864898,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.Polizas",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.Polizas"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.Polizas",
+          "Common.TypeNameIdentifier": "Polizas",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -986114436,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.Titulares",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Titulares"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.Titulares",
+          "Common.TypeNameIdentifier": "Titulares",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1946327048,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.Titulares",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.Titulares"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.Titulares",
+          "Common.TypeNameIdentifier": "Titulares",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1914278097,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.Siniestros",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Siniestros"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.Siniestros",
+          "Common.TypeNameIdentifier": "Siniestros",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2142038277,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.Siniestros",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.Siniestros"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.Siniestros",
+          "Common.TypeNameIdentifier": "Siniestros",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -350390519,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.Terceros",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Terceros"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.Terceros",
+          "Common.TypeNameIdentifier": "Terceros",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -856010668,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.Terceros",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.Terceros"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.Terceros",
+          "Common.TypeNameIdentifier": "Terceros",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1823022056,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.EliminarTercero",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EliminarTercero"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.EliminarTercero",
+          "Common.TypeNameIdentifier": "EliminarTercero",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1667543636,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.EliminarTercero",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.EliminarTercero"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.EliminarTercero",
+          "Common.TypeNameIdentifier": "EliminarTercero",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1591246203,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevoTercero",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NuevoTercero"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevoTercero",
+          "Common.TypeNameIdentifier": "NuevoTercero",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1354627599,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Pages.NuevoTercero",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Pages.NuevoTercero"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Pages.NuevoTercero",
+          "Common.TypeNameIdentifier": "NuevoTercero",
+          "Common.TypeNamespace": "Aseguradora.UI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1331005958,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.App",
         "AssemblyName": "Aseguradora.UI",
@@ -378,7 +806,7 @@
         }
       },
       {
-        "HashCode": -552761343,
+        "HashCode": -1973361514,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.App",
         "AssemblyName": "Aseguradora.UI",
@@ -397,7 +825,7 @@
         }
       },
       {
-        "HashCode": -1112126894,
+        "HashCode": -848869655,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.DialogoConfirmacion",
         "AssemblyName": "Aseguradora.UI",
@@ -436,7 +864,7 @@
         }
       },
       {
-        "HashCode": 438968257,
+        "HashCode": -1065297206,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.DialogoConfirmacion",
         "AssemblyName": "Aseguradora.UI",
@@ -476,7 +904,646 @@
         }
       },
       {
-        "HashCode": 2003612862,
+        "HashCode": 2116516206,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarSiniestro",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IngresarSiniestro"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarSiniestro",
+          "Common.TypeNameIdentifier": "IngresarSiniestro",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 974289704,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarSiniestro",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.IngresarSiniestro"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarSiniestro",
+          "Common.TypeNameIdentifier": "IngresarSiniestro",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 52651484,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarTercero",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IngresarTercero"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTercero",
+          "Common.TypeNameIdentifier": "IngresarTercero",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -611368878,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarTercero",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.IngresarTercero"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTercero",
+          "Common.TypeNameIdentifier": "IngresarTercero",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -670528955,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarTitular",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IngresarTitular"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTitular",
+          "Common.TypeNameIdentifier": "IngresarTitular",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -699339553,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarTitular",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.IngresarTitular"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTitular",
+          "Common.TypeNameIdentifier": "IngresarTitular",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -939868174,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarVehiculo",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IngresarVehiculo"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarVehiculo",
+          "Common.TypeNameIdentifier": "IngresarVehiculo",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2146441932,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarVehiculo",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.IngresarVehiculo"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarVehiculo",
+          "Common.TypeNameIdentifier": "IngresarVehiculo",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 928518741,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaPolizas",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListaPolizas"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaPolizas",
+          "Common.TypeNameIdentifier": "ListaPolizas",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -47394143,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaPolizas",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.ListaPolizas"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaPolizas",
+          "Common.TypeNameIdentifier": "ListaPolizas",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 978977657,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaSiniestros",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListaSiniestros"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaSiniestros",
+          "Common.TypeNameIdentifier": "ListaSiniestros",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1532894409,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaSiniestros",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.ListaSiniestros"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaSiniestros",
+          "Common.TypeNameIdentifier": "ListaSiniestros",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 790877293,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaTerceros",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListaTerceros"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaTerceros",
+          "Common.TypeNameIdentifier": "ListaTerceros",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 352442139,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaTerceros",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.ListaTerceros"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaTerceros",
+          "Common.TypeNameIdentifier": "ListaTerceros",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -53304427,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaVehiculos",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListaVehiculos"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaVehiculos",
+          "Common.TypeNameIdentifier": "ListaVehiculos",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1009429906,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.ListaVehiculos",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.ListaVehiculos"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.ListaVehiculos",
+          "Common.TypeNameIdentifier": "ListaVehiculos",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1849217345,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarPoliza",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IngresarPoliza"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarPoliza",
+          "Common.TypeNameIdentifier": "IngresarPoliza",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1719110710,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarPoliza",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.IngresarPoliza"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarPoliza",
+          "Common.TypeNameIdentifier": "IngresarPoliza",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -2043719798,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.Dialogo",
         "AssemblyName": "Aseguradora.UI",
@@ -516,7 +1583,7 @@
         }
       },
       {
-        "HashCode": -2066186878,
+        "HashCode": 375285708,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.Dialogo",
         "AssemblyName": "Aseguradora.UI",
@@ -557,7 +1624,7 @@
         }
       },
       {
-        "HashCode": -1330845206,
+        "HashCode": 1430259404,
         "Kind": "Components.ChildContent",
         "Name": "Aseguradora.UI.Shared.Dialogo.ChildContent",
         "AssemblyName": "Aseguradora.UI",
@@ -577,7 +1644,7 @@
         }
       },
       {
-        "HashCode": 371517141,
+        "HashCode": 1178858660,
         "Kind": "Components.ChildContent",
         "Name": "Aseguradora.UI.Shared.Dialogo.ChildContent",
         "AssemblyName": "Aseguradora.UI",
@@ -598,582 +1665,7 @@
         }
       },
       {
-        "HashCode": -841714793,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.MainLayout",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.MainLayout",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1924840172,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.MainLayout",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.MainLayout",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1278549100,
-        "Kind": "Components.ChildContent",
-        "Name": "Aseguradora.UI.Shared.MainLayout.Body",
-        "AssemblyName": "Aseguradora.UI",
-        "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.MainLayout.Body",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Runtime.Name": "Components.None"
-        }
-      },
-      {
-        "HashCode": 1167047156,
-        "Kind": "Components.ChildContent",
-        "Name": "Aseguradora.UI.Shared.MainLayout.Body",
-        "AssemblyName": "Aseguradora.UI",
-        "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "Aseguradora.UI.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.MainLayout.Body",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.None"
-        }
-      },
-      {
-        "HashCode": 584405849,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.NavMenu",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 135224883,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.NavMenu",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 105881795,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.VolverAtras",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VolverAtras"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.VolverAtras",
-          "Common.TypeNameIdentifier": "VolverAtras",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1729423710,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.VolverAtras",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.VolverAtras"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.VolverAtras",
-          "Common.TypeNameIdentifier": "VolverAtras",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -871191036,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarVehiculo",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "IngresarVehiculo"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarVehiculo",
-          "Common.TypeNameIdentifier": "IngresarVehiculo",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -778623817,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarVehiculo",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.IngresarVehiculo"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarVehiculo",
-          "Common.TypeNameIdentifier": "IngresarVehiculo",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 777278615,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarTitular",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "IngresarTitular"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTitular",
-          "Common.TypeNameIdentifier": "IngresarTitular",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1704953893,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarTitular",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.IngresarTitular"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTitular",
-          "Common.TypeNameIdentifier": "IngresarTitular",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 195481734,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarPoliza",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "IngresarPoliza"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarPoliza",
-          "Common.TypeNameIdentifier": "IngresarPoliza",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 397592789,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarPoliza",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.IngresarPoliza"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarPoliza",
-          "Common.TypeNameIdentifier": "IngresarPoliza",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1900293892,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarSiniestro",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "IngresarSiniestro"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarSiniestro",
-          "Common.TypeNameIdentifier": "IngresarSiniestro",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1975857793,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarSiniestro",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.IngresarSiniestro"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarSiniestro",
-          "Common.TypeNameIdentifier": "IngresarSiniestro",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1218553798,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarTercero",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "IngresarTercero"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTercero",
-          "Common.TypeNameIdentifier": "IngresarTercero",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1397745364,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarTercero",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.IngresarTercero"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTercero",
-          "Common.TypeNameIdentifier": "IngresarTercero",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 435908621,
+        "HashCode": -1954300633,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.ListaTitulares",
         "AssemblyName": "Aseguradora.UI",
@@ -1212,7 +1704,7 @@
         }
       },
       {
-        "HashCode": -2020407935,
+        "HashCode": -876855409,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.ListaTitulares",
         "AssemblyName": "Aseguradora.UI",
@@ -1252,258 +1744,194 @@
         }
       },
       {
-        "HashCode": 1275293918,
+        "HashCode": -681581724,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaVehiculos",
+        "Name": "Aseguradora.UI.Shared.MainLayout",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ListaVehiculos"
+            "TagName": "MainLayout"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
             "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
+              "Common.PropertyName": "Body",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
             }
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaVehiculos",
-          "Common.TypeNameIdentifier": "ListaVehiculos",
+          "Common.TypeName": "Aseguradora.UI.Shared.MainLayout",
+          "Common.TypeNameIdentifier": "MainLayout",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 599155320,
+        "HashCode": 2024907066,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaVehiculos",
+        "Name": "Aseguradora.UI.Shared.MainLayout",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Aseguradora.UI.Shared.ListaVehiculos"
+            "TagName": "Aseguradora.UI.Shared.MainLayout"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
             "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
+              "Common.PropertyName": "Body",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.RenderFragment",
+              "Components.ChildContent": "True"
             }
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaVehiculos",
-          "Common.TypeNameIdentifier": "ListaVehiculos",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1279758105,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaPolizas",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ListaPolizas"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaPolizas",
-          "Common.TypeNameIdentifier": "ListaPolizas",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 703242361,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaPolizas",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.ListaPolizas"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaPolizas",
-          "Common.TypeNameIdentifier": "ListaPolizas",
+          "Common.TypeName": "Aseguradora.UI.Shared.MainLayout",
+          "Common.TypeNameIdentifier": "MainLayout",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1501555697,
+        "HashCode": -822670552,
+        "Kind": "Components.ChildContent",
+        "Name": "Aseguradora.UI.Shared.MainLayout.Body",
+        "AssemblyName": "Aseguradora.UI",
+        "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.MainLayout.Body",
+          "Common.TypeNameIdentifier": "MainLayout",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": 289282732,
+        "Kind": "Components.ChildContent",
+        "Name": "Aseguradora.UI.Shared.MainLayout.Body",
+        "AssemblyName": "Aseguradora.UI",
+        "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "Aseguradora.UI.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.MainLayout.Body",
+          "Common.TypeNameIdentifier": "MainLayout",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.None"
+        }
+      },
+      {
+        "HashCode": -1820832563,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaSiniestros",
+        "Name": "Aseguradora.UI.Shared.NavMenu",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ListaSiniestros"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaSiniestros",
-          "Common.TypeNameIdentifier": "ListaSiniestros",
+          "Common.TypeName": "Aseguradora.UI.Shared.NavMenu",
+          "Common.TypeNameIdentifier": "NavMenu",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1944937786,
+        "HashCode": 1071290005,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaSiniestros",
+        "Name": "Aseguradora.UI.Shared.NavMenu",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Aseguradora.UI.Shared.ListaSiniestros"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
+            "TagName": "Aseguradora.UI.Shared.NavMenu"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaSiniestros",
-          "Common.TypeNameIdentifier": "ListaSiniestros",
+          "Common.TypeName": "Aseguradora.UI.Shared.NavMenu",
+          "Common.TypeNameIdentifier": "NavMenu",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 933206600,
+        "HashCode": 1221699488,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaTerceros",
+        "Name": "Aseguradora.UI.Shared.VolverAtras",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ListaTerceros"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
+            "TagName": "VolverAtras"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaTerceros",
-          "Common.TypeNameIdentifier": "ListaTerceros",
+          "Common.TypeName": "Aseguradora.UI.Shared.VolverAtras",
+          "Common.TypeNameIdentifier": "VolverAtras",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1671514061,
+        "HashCode": 40762895,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ListaTerceros",
+        "Name": "Aseguradora.UI.Shared.VolverAtras",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Aseguradora.UI.Shared.ListaTerceros"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "OnEliminar",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnEliminar",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
+            "TagName": "Aseguradora.UI.Shared.VolverAtras"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ListaTerceros",
-          "Common.TypeNameIdentifier": "ListaTerceros",
+          "Common.TypeName": "Aseguradora.UI.Shared.VolverAtras",
+          "Common.TypeNameIdentifier": "VolverAtras",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 518873912,
+        "HashCode": -850449048,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ConfirmarEliminacionVehiculo",
+        "Name": "Aseguradora.UI.Shared.ConfirmarEliminacion",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ConfirmarEliminacionVehiculo"
+            "TagName": "ConfirmarEliminacion"
           }
         ],
         "BoundAttributes": [
@@ -1518,15 +1946,6 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
             "Name": "CerrarDialogo",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
             "Metadata": {
@@ -1534,24 +1953,34 @@
               "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
               "Components.EventCallback": "True"
             }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ConfirmarEliminacionVehiculo",
-          "Common.TypeNameIdentifier": "ConfirmarEliminacionVehiculo",
+          "Common.TypeName": "Aseguradora.UI.Shared.ConfirmarEliminacion",
+          "Common.TypeNameIdentifier": "ConfirmarEliminacion",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 1608739706,
+        "HashCode": -859634416,
         "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ConfirmarEliminacionVehiculo",
+        "Name": "Aseguradora.UI.Shared.ConfirmarEliminacion",
         "AssemblyName": "Aseguradora.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Aseguradora.UI.Shared.ConfirmarEliminacionVehiculo"
+            "TagName": "Aseguradora.UI.Shared.ConfirmarEliminacion"
           }
         ],
         "BoundAttributes": [
@@ -1566,15 +1995,6 @@
           },
           {
             "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
             "Name": "CerrarDialogo",
             "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
             "Metadata": {
@@ -1582,115 +2002,28 @@
               "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
               "Components.EventCallback": "True"
             }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnEliminar",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnEliminar",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ConfirmarEliminacionVehiculo",
-          "Common.TypeNameIdentifier": "ConfirmarEliminacionVehiculo",
+          "Common.TypeName": "Aseguradora.UI.Shared.ConfirmarEliminacion",
+          "Common.TypeNameIdentifier": "ConfirmarEliminacion",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -859401934,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ConfirmarEliminacionTitular",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ConfirmarEliminacionTitular"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Mensaje",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Mensaje",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ConfirmarEliminacionTitular",
-          "Common.TypeNameIdentifier": "ConfirmarEliminacionTitular",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -293861650,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.ConfirmarEliminacionTitular",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.ConfirmarEliminacionTitular"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Mensaje",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Mensaje",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.ConfirmarEliminacionTitular",
-          "Common.TypeNameIdentifier": "ConfirmarEliminacionTitular",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1756510784,
+        "HashCode": -898844433,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1774,7 +2107,7 @@
         }
       },
       {
-        "HashCode": 713858203,
+        "HashCode": 349163695,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1859,7 +2192,7 @@
         }
       },
       {
-        "HashCode": -1051976419,
+        "HashCode": 71690827,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1892,7 +2225,7 @@
         }
       },
       {
-        "HashCode": 1174803970,
+        "HashCode": 1125628692,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1926,7 +2259,7 @@
         }
       },
       {
-        "HashCode": 626491950,
+        "HashCode": 1635094430,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1947,7 +2280,7 @@
         }
       },
       {
-        "HashCode": -47488616,
+        "HashCode": 322374819,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1969,7 +2302,7 @@
         }
       },
       {
-        "HashCode": -1709480140,
+        "HashCode": -1174479657,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2074,7 +2407,7 @@
         }
       },
       {
-        "HashCode": 1919857309,
+        "HashCode": -529480833,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2180,7 +2513,7 @@
         }
       },
       {
-        "HashCode": -402968457,
+        "HashCode": 861804881,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2213,7 +2546,7 @@
         }
       },
       {
-        "HashCode": -1122196245,
+        "HashCode": 1278743876,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2247,7 +2580,7 @@
         }
       },
       {
-        "HashCode": -1924489265,
+        "HashCode": 382109664,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2280,7 +2613,7 @@
         }
       },
       {
-        "HashCode": -220367503,
+        "HashCode": 85248718,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2314,7 +2647,7 @@
         }
       },
       {
-        "HashCode": -1176192364,
+        "HashCode": -247144669,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2347,7 +2680,7 @@
         }
       },
       {
-        "HashCode": -895210979,
+        "HashCode": 779973695,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2381,7 +2714,7 @@
         }
       },
       {
-        "HashCode": -1869184462,
+        "HashCode": 372519315,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2402,7 +2735,7 @@
         }
       },
       {
-        "HashCode": 164690323,
+        "HashCode": 1993980618,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2424,7 +2757,7 @@
         }
       },
       {
-        "HashCode": -1490140904,
+        "HashCode": 1743643145,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2455,7 +2788,7 @@
         }
       },
       {
-        "HashCode": 2052668106,
+        "HashCode": -1659425827,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2487,7 +2820,7 @@
         }
       },
       {
-        "HashCode": 1107848936,
+        "HashCode": 1990571693,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2508,7 +2841,7 @@
         }
       },
       {
-        "HashCode": 1047075389,
+        "HashCode": 2112792985,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -2530,7 +2863,7 @@
         }
       },
       {
-        "HashCode": 1562270337,
+        "HashCode": -811550586,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2605,7 +2938,7 @@
         }
       },
       {
-        "HashCode": -1151267283,
+        "HashCode": 1331201120,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2681,7 +3014,7 @@
         }
       },
       {
-        "HashCode": 1740561867,
+        "HashCode": -1301362706,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2702,7 +3035,7 @@
         }
       },
       {
-        "HashCode": 2016388208,
+        "HashCode": 564932586,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2724,7 +3057,7 @@
         }
       },
       {
-        "HashCode": -240395152,
+        "HashCode": -801646853,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.DynamicComponent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2766,7 +3099,7 @@
         }
       },
       {
-        "HashCode": 1913748051,
+        "HashCode": 1837050576,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.DynamicComponent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2809,7 +3142,7 @@
         }
       },
       {
-        "HashCode": 1555323094,
+        "HashCode": 740502307,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.LayoutView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2851,7 +3184,7 @@
         }
       },
       {
-        "HashCode": 1280758209,
+        "HashCode": 1534917119,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.LayoutView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2894,7 +3227,7 @@
         }
       },
       {
-        "HashCode": -738755058,
+        "HashCode": -1299064030,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.LayoutView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2915,7 +3248,7 @@
         }
       },
       {
-        "HashCode": 2119375625,
+        "HashCode": -2131061607,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.LayoutView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2937,7 +3270,7 @@
         }
       },
       {
-        "HashCode": 121844436,
+        "HashCode": 1063828812,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.RouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2979,7 +3312,7 @@
         }
       },
       {
-        "HashCode": 410508038,
+        "HashCode": 1470358628,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.RouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3022,7 +3355,7 @@
         }
       },
       {
-        "HashCode": 861403033,
+        "HashCode": -2135288130,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3130,7 +3463,7 @@
         }
       },
       {
-        "HashCode": 853188735,
+        "HashCode": -1989275727,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3239,7 +3572,7 @@
         }
       },
       {
-        "HashCode": 236213692,
+        "HashCode": -30088489,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.NotFound",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3260,7 +3593,7 @@
         }
       },
       {
-        "HashCode": 1974958843,
+        "HashCode": -1100221533,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.NotFound",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3282,7 +3615,7 @@
         }
       },
       {
-        "HashCode": -835143920,
+        "HashCode": -1441420095,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Found",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3315,7 +3648,7 @@
         }
       },
       {
-        "HashCode": 595975541,
+        "HashCode": -951471248,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Found",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3349,7 +3682,7 @@
         }
       },
       {
-        "HashCode": 1884091915,
+        "HashCode": 686103022,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Navigating",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3370,7 +3703,7 @@
         }
       },
       {
-        "HashCode": 682216900,
+        "HashCode": 267397508,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Navigating",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -3392,7 +3725,7 @@
         }
       },
       {
-        "HashCode": -448113919,
+        "HashCode": 915562679,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
@@ -3411,7 +3744,7 @@
         }
       },
       {
-        "HashCode": -130774992,
+        "HashCode": -1596882079,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
@@ -3431,7 +3764,7 @@
         }
       },
       {
-        "HashCode": -101513732,
+        "HashCode": -1659996822,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3536,7 +3869,7 @@
         }
       },
       {
-        "HashCode": -1772213955,
+        "HashCode": -561524094,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3642,7 +3975,7 @@
         }
       },
       {
-        "HashCode": -675068637,
+        "HashCode": -1941271267,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3675,7 +4008,7 @@
         }
       },
       {
-        "HashCode": -780861233,
+        "HashCode": 733843199,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3709,7 +4042,7 @@
         }
       },
       {
-        "HashCode": -393899356,
+        "HashCode": -1809397694,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3781,7 +4114,7 @@
         }
       },
       {
-        "HashCode": -114436216,
+        "HashCode": -1073381914,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3854,7 +4187,7 @@
         }
       },
       {
-        "HashCode": -547904689,
+        "HashCode": 782969960,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3962,7 +4295,7 @@
         }
       },
       {
-        "HashCode": 822540822,
+        "HashCode": 1143585003,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4071,7 +4404,7 @@
         }
       },
       {
-        "HashCode": 1580283579,
+        "HashCode": -92435816,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputFile",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4113,7 +4446,7 @@
         }
       },
       {
-        "HashCode": -662979319,
+        "HashCode": -2140369274,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputFile",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4156,7 +4489,7 @@
         }
       },
       {
-        "HashCode": -1332365453,
+        "HashCode": 246504608,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4253,7 +4586,7 @@
         }
       },
       {
-        "HashCode": -1981053652,
+        "HashCode": 1399861129,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4351,7 +4684,7 @@
         }
       },
       {
-        "HashCode": 952635229,
+        "HashCode": -412544115,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadio<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4415,7 +4748,7 @@
         }
       },
       {
-        "HashCode": 1995127428,
+        "HashCode": 22275841,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadio<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4480,7 +4813,7 @@
         }
       },
       {
-        "HashCode": 238554984,
+        "HashCode": 1932516005,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4588,7 +4921,7 @@
         }
       },
       {
-        "HashCode": 1524617376,
+        "HashCode": 15641906,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4697,7 +5030,7 @@
         }
       },
       {
-        "HashCode": 87249016,
+        "HashCode": 767157065,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4718,7 +5051,7 @@
         }
       },
       {
-        "HashCode": 1528480363,
+        "HashCode": -833846404,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4740,7 +5073,7 @@
         }
       },
       {
-        "HashCode": -1193573316,
+        "HashCode": -158580950,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4838,7 +5171,7 @@
         }
       },
       {
-        "HashCode": 777771380,
+        "HashCode": -1740817160,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4937,7 +5270,7 @@
         }
       },
       {
-        "HashCode": -99469366,
+        "HashCode": -738999105,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4958,7 +5291,7 @@
         }
       },
       {
-        "HashCode": 258774121,
+        "HashCode": -2036293141,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4980,7 +5313,7 @@
         }
       },
       {
-        "HashCode": -140834294,
+        "HashCode": -1647110972,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5052,7 +5385,7 @@
         }
       },
       {
-        "HashCode": 1804867474,
+        "HashCode": -1855017933,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5125,7 +5458,7 @@
         }
       },
       {
-        "HashCode": -1695264170,
+        "HashCode": 2053537,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5197,7 +5530,7 @@
         }
       },
       {
-        "HashCode": -390203015,
+        "HashCode": 868409606,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5270,7 +5603,7 @@
         }
       },
       {
-        "HashCode": 710398262,
+        "HashCode": 931356722,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5324,7 +5657,7 @@
         }
       },
       {
-        "HashCode": 576475632,
+        "HashCode": -683818040,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5379,7 +5712,7 @@
         }
       },
       {
-        "HashCode": -1676935793,
+        "HashCode": -1408251202,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationSummary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5420,7 +5753,7 @@
         }
       },
       {
-        "HashCode": -263151849,
+        "HashCode": -24149480,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationSummary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5462,7 +5795,7 @@
         }
       },
       {
-        "HashCode": -1726928353,
+        "HashCode": 415517042,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5503,7 +5836,7 @@
         }
       },
       {
-        "HashCode": -1372851493,
+        "HashCode": 1543359652,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5545,7 +5878,7 @@
         }
       },
       {
-        "HashCode": -840159075,
+        "HashCode": -142469105,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5587,7 +5920,7 @@
         }
       },
       {
-        "HashCode": 1817421453,
+        "HashCode": 997587708,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavigationLock",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5630,7 +5963,7 @@
         }
       },
       {
-        "HashCode": -1477390480,
+        "HashCode": -1172857915,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5693,7 +6026,7 @@
         }
       },
       {
-        "HashCode": 2021355614,
+        "HashCode": 125349142,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5757,7 +6090,7 @@
         }
       },
       {
-        "HashCode": -1672347519,
+        "HashCode": 341089215,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5778,7 +6111,7 @@
         }
       },
       {
-        "HashCode": -1511647960,
+        "HashCode": -1086927201,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5800,7 +6133,7 @@
         }
       },
       {
-        "HashCode": -1433797231,
+        "HashCode": -167137665,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5832,7 +6165,7 @@
         }
       },
       {
-        "HashCode": -310591080,
+        "HashCode": 1886851957,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5865,7 +6198,7 @@
         }
       },
       {
-        "HashCode": 1498214164,
+        "HashCode": -999392194,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5886,7 +6219,7 @@
         }
       },
       {
-        "HashCode": 2000322288,
+        "HashCode": 506792832,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5908,7 +6241,7 @@
         }
       },
       {
-        "HashCode": -1165187237,
+        "HashCode": -880412801,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5927,7 +6260,7 @@
         }
       },
       {
-        "HashCode": -1720006450,
+        "HashCode": -2055491279,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5947,7 +6280,7 @@
         }
       },
       {
-        "HashCode": -1709059516,
+        "HashCode": -2007412125,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5979,7 +6312,7 @@
         }
       },
       {
-        "HashCode": 1993899609,
+        "HashCode": -714696480,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6012,7 +6345,7 @@
         }
       },
       {
-        "HashCode": -913373798,
+        "HashCode": 1360583384,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6033,7 +6366,7 @@
         }
       },
       {
-        "HashCode": 899244830,
+        "HashCode": 701222497,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6055,7 +6388,7 @@
         }
       },
       {
-        "HashCode": 326136887,
+        "HashCode": -720047529,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6118,7 +6451,7 @@
         }
       },
       {
-        "HashCode": 136171114,
+        "HashCode": 768352948,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6182,7 +6515,7 @@
         }
       },
       {
-        "HashCode": -328409068,
+        "HashCode": -1529250738,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6203,7 +6536,7 @@
         }
       },
       {
-        "HashCode": 1114638397,
+        "HashCode": -352846720,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6225,7 +6558,7 @@
         }
       },
       {
-        "HashCode": 1815855786,
+        "HashCode": 637421625,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ErrorContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6258,7 +6591,7 @@
         }
       },
       {
-        "HashCode": -200535384,
+        "HashCode": 919680682,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ErrorContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6292,7 +6625,7 @@
         }
       },
       {
-        "HashCode": 1180225282,
+        "HashCode": 1459924199,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6424,7 +6757,7 @@
         }
       },
       {
-        "HashCode": -445938564,
+        "HashCode": 1398669073,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6557,7 +6890,7 @@
         }
       },
       {
-        "HashCode": 379884059,
+        "HashCode": -412009695,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6590,7 +6923,7 @@
         }
       },
       {
-        "HashCode": 1698286856,
+        "HashCode": 1754163541,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6624,7 +6957,7 @@
         }
       },
       {
-        "HashCode": -187205306,
+        "HashCode": 384930045,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6657,7 +6990,7 @@
         }
       },
       {
-        "HashCode": 283634235,
+        "HashCode": -1725357001,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6691,7 +7024,7 @@
         }
       },
       {
-        "HashCode": -807040930,
+        "HashCode": -857470124,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6724,7 +7057,7 @@
         }
       },
       {
-        "HashCode": 925853655,
+        "HashCode": -729208161,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -6758,7 +7091,7 @@
         }
       },
       {
-        "HashCode": -1117628069,
+        "HashCode": 1927987417,
         "Kind": "Components.EventHandler",
         "Name": "onfocus",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6841,7 +7174,7 @@
         }
       },
       {
-        "HashCode": -1737795079,
+        "HashCode": 1412441171,
         "Kind": "Components.EventHandler",
         "Name": "onblur",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6924,7 +7257,7 @@
         }
       },
       {
-        "HashCode": -2099571639,
+        "HashCode": 1406601090,
         "Kind": "Components.EventHandler",
         "Name": "onfocusin",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7007,7 +7340,7 @@
         }
       },
       {
-        "HashCode": 2059844250,
+        "HashCode": -1346132623,
         "Kind": "Components.EventHandler",
         "Name": "onfocusout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7090,7 +7423,7 @@
         }
       },
       {
-        "HashCode": -1323360383,
+        "HashCode": -622884894,
         "Kind": "Components.EventHandler",
         "Name": "onmouseover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7173,7 +7506,7 @@
         }
       },
       {
-        "HashCode": -1484157558,
+        "HashCode": -3568454,
         "Kind": "Components.EventHandler",
         "Name": "onmouseout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7256,7 +7589,7 @@
         }
       },
       {
-        "HashCode": -2139827925,
+        "HashCode": -309164884,
         "Kind": "Components.EventHandler",
         "Name": "onmouseleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7339,7 +7672,7 @@
         }
       },
       {
-        "HashCode": -633695302,
+        "HashCode": -2101804679,
         "Kind": "Components.EventHandler",
         "Name": "onmouseenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7422,7 +7755,7 @@
         }
       },
       {
-        "HashCode": -1216002384,
+        "HashCode": 1772793944,
         "Kind": "Components.EventHandler",
         "Name": "onmousemove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7505,7 +7838,7 @@
         }
       },
       {
-        "HashCode": 1232893174,
+        "HashCode": 309510692,
         "Kind": "Components.EventHandler",
         "Name": "onmousedown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7588,7 +7921,7 @@
         }
       },
       {
-        "HashCode": -1349799488,
+        "HashCode": -54318365,
         "Kind": "Components.EventHandler",
         "Name": "onmouseup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7671,7 +8004,7 @@
         }
       },
       {
-        "HashCode": -323118921,
+        "HashCode": 1202771979,
         "Kind": "Components.EventHandler",
         "Name": "onclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7754,7 +8087,7 @@
         }
       },
       {
-        "HashCode": 900862517,
+        "HashCode": -569250106,
         "Kind": "Components.EventHandler",
         "Name": "ondblclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7837,7 +8170,7 @@
         }
       },
       {
-        "HashCode": 317882117,
+        "HashCode": 1156544440,
         "Kind": "Components.EventHandler",
         "Name": "onwheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7920,7 +8253,7 @@
         }
       },
       {
-        "HashCode": -1422633368,
+        "HashCode": -1942357931,
         "Kind": "Components.EventHandler",
         "Name": "onmousewheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8003,7 +8336,7 @@
         }
       },
       {
-        "HashCode": 1745740286,
+        "HashCode": -2015677859,
         "Kind": "Components.EventHandler",
         "Name": "oncontextmenu",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8086,7 +8419,7 @@
         }
       },
       {
-        "HashCode": 990475361,
+        "HashCode": 666051062,
         "Kind": "Components.EventHandler",
         "Name": "ondrag",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8169,7 +8502,7 @@
         }
       },
       {
-        "HashCode": 41988719,
+        "HashCode": 2073949081,
         "Kind": "Components.EventHandler",
         "Name": "ondragend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8252,7 +8585,7 @@
         }
       },
       {
-        "HashCode": 1407584670,
+        "HashCode": -621689014,
         "Kind": "Components.EventHandler",
         "Name": "ondragenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8335,7 +8668,7 @@
         }
       },
       {
-        "HashCode": -722800636,
+        "HashCode": 43026087,
         "Kind": "Components.EventHandler",
         "Name": "ondragleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8418,7 +8751,7 @@
         }
       },
       {
-        "HashCode": -1256170224,
+        "HashCode": 1981205430,
         "Kind": "Components.EventHandler",
         "Name": "ondragover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8501,7 +8834,7 @@
         }
       },
       {
-        "HashCode": -757645818,
+        "HashCode": -1374391441,
         "Kind": "Components.EventHandler",
         "Name": "ondragstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8584,7 +8917,7 @@
         }
       },
       {
-        "HashCode": 1646982512,
+        "HashCode": 979595011,
         "Kind": "Components.EventHandler",
         "Name": "ondrop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8667,7 +9000,7 @@
         }
       },
       {
-        "HashCode": 1440443539,
+        "HashCode": -2003685781,
         "Kind": "Components.EventHandler",
         "Name": "onkeydown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8750,7 +9083,7 @@
         }
       },
       {
-        "HashCode": -1755250885,
+        "HashCode": 2095881662,
         "Kind": "Components.EventHandler",
         "Name": "onkeyup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8833,7 +9166,7 @@
         }
       },
       {
-        "HashCode": 249411833,
+        "HashCode": 587173721,
         "Kind": "Components.EventHandler",
         "Name": "onkeypress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8916,7 +9249,7 @@
         }
       },
       {
-        "HashCode": -1863336048,
+        "HashCode": 99585750,
         "Kind": "Components.EventHandler",
         "Name": "onchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8999,7 +9332,7 @@
         }
       },
       {
-        "HashCode": -1317876055,
+        "HashCode": 1972892341,
         "Kind": "Components.EventHandler",
         "Name": "oninput",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9082,7 +9415,7 @@
         }
       },
       {
-        "HashCode": -1664313854,
+        "HashCode": -942766477,
         "Kind": "Components.EventHandler",
         "Name": "oninvalid",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9165,7 +9498,7 @@
         }
       },
       {
-        "HashCode": -154916379,
+        "HashCode": 1110623950,
         "Kind": "Components.EventHandler",
         "Name": "onreset",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9248,7 +9581,7 @@
         }
       },
       {
-        "HashCode": -168999964,
+        "HashCode": -356230460,
         "Kind": "Components.EventHandler",
         "Name": "onselect",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9331,7 +9664,7 @@
         }
       },
       {
-        "HashCode": 964874363,
+        "HashCode": 1715448159,
         "Kind": "Components.EventHandler",
         "Name": "onselectstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9414,7 +9747,7 @@
         }
       },
       {
-        "HashCode": 906994549,
+        "HashCode": 1776755175,
         "Kind": "Components.EventHandler",
         "Name": "onselectionchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9497,7 +9830,7 @@
         }
       },
       {
-        "HashCode": -1903101082,
+        "HashCode": -1843999251,
         "Kind": "Components.EventHandler",
         "Name": "onsubmit",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9580,7 +9913,7 @@
         }
       },
       {
-        "HashCode": 1651253478,
+        "HashCode": 1119308599,
         "Kind": "Components.EventHandler",
         "Name": "onbeforecopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9663,7 +9996,7 @@
         }
       },
       {
-        "HashCode": 1951210521,
+        "HashCode": -2003340110,
         "Kind": "Components.EventHandler",
         "Name": "onbeforecut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9746,7 +10079,7 @@
         }
       },
       {
-        "HashCode": 1003413909,
+        "HashCode": -1945776753,
         "Kind": "Components.EventHandler",
         "Name": "onbeforepaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9829,7 +10162,7 @@
         }
       },
       {
-        "HashCode": -1426834479,
+        "HashCode": -744108381,
         "Kind": "Components.EventHandler",
         "Name": "oncopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9912,7 +10245,7 @@
         }
       },
       {
-        "HashCode": 1247297618,
+        "HashCode": 371494084,
         "Kind": "Components.EventHandler",
         "Name": "oncut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9995,7 +10328,7 @@
         }
       },
       {
-        "HashCode": 1751935692,
+        "HashCode": -1921348752,
         "Kind": "Components.EventHandler",
         "Name": "onpaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10078,7 +10411,7 @@
         }
       },
       {
-        "HashCode": 1807482009,
+        "HashCode": 300963525,
         "Kind": "Components.EventHandler",
         "Name": "ontouchcancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10161,7 +10494,7 @@
         }
       },
       {
-        "HashCode": 229372437,
+        "HashCode": -1755079199,
         "Kind": "Components.EventHandler",
         "Name": "ontouchend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10244,7 +10577,7 @@
         }
       },
       {
-        "HashCode": 1634875904,
+        "HashCode": 368993290,
         "Kind": "Components.EventHandler",
         "Name": "ontouchmove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10327,7 +10660,7 @@
         }
       },
       {
-        "HashCode": -79927713,
+        "HashCode": -409575002,
         "Kind": "Components.EventHandler",
         "Name": "ontouchstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10410,7 +10743,7 @@
         }
       },
       {
-        "HashCode": -1528321202,
+        "HashCode": -2076075603,
         "Kind": "Components.EventHandler",
         "Name": "ontouchenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10493,7 +10826,7 @@
         }
       },
       {
-        "HashCode": -99866174,
+        "HashCode": -315405086,
         "Kind": "Components.EventHandler",
         "Name": "ontouchleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10576,7 +10909,7 @@
         }
       },
       {
-        "HashCode": 1162371358,
+        "HashCode": 127184510,
         "Kind": "Components.EventHandler",
         "Name": "ongotpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10659,7 +10992,7 @@
         }
       },
       {
-        "HashCode": 1324564061,
+        "HashCode": 1181444164,
         "Kind": "Components.EventHandler",
         "Name": "onlostpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10742,7 +11075,7 @@
         }
       },
       {
-        "HashCode": 680808626,
+        "HashCode": -2002385469,
         "Kind": "Components.EventHandler",
         "Name": "onpointercancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10825,7 +11158,7 @@
         }
       },
       {
-        "HashCode": -42774498,
+        "HashCode": 1556896854,
         "Kind": "Components.EventHandler",
         "Name": "onpointerdown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10908,7 +11241,7 @@
         }
       },
       {
-        "HashCode": 1009426736,
+        "HashCode": 587819504,
         "Kind": "Components.EventHandler",
         "Name": "onpointerenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10991,7 +11324,7 @@
         }
       },
       {
-        "HashCode": -1361886664,
+        "HashCode": 2070170636,
         "Kind": "Components.EventHandler",
         "Name": "onpointerleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11074,7 +11407,7 @@
         }
       },
       {
-        "HashCode": -1700316261,
+        "HashCode": 216006242,
         "Kind": "Components.EventHandler",
         "Name": "onpointermove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11157,7 +11490,7 @@
         }
       },
       {
-        "HashCode": 1135029168,
+        "HashCode": 1314358987,
         "Kind": "Components.EventHandler",
         "Name": "onpointerout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11240,7 +11573,7 @@
         }
       },
       {
-        "HashCode": 1874326680,
+        "HashCode": 879276954,
         "Kind": "Components.EventHandler",
         "Name": "onpointerover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11323,7 +11656,7 @@
         }
       },
       {
-        "HashCode": -1601827283,
+        "HashCode": 827990678,
         "Kind": "Components.EventHandler",
         "Name": "onpointerup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11406,7 +11739,7 @@
         }
       },
       {
-        "HashCode": -99969112,
+        "HashCode": -1659150836,
         "Kind": "Components.EventHandler",
         "Name": "oncanplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11489,7 +11822,7 @@
         }
       },
       {
-        "HashCode": -1198150005,
+        "HashCode": -1410749339,
         "Kind": "Components.EventHandler",
         "Name": "oncanplaythrough",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11572,7 +11905,7 @@
         }
       },
       {
-        "HashCode": 1210396295,
+        "HashCode": -1017155144,
         "Kind": "Components.EventHandler",
         "Name": "oncuechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11655,7 +11988,7 @@
         }
       },
       {
-        "HashCode": 405933682,
+        "HashCode": -2075832328,
         "Kind": "Components.EventHandler",
         "Name": "ondurationchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11738,7 +12071,7 @@
         }
       },
       {
-        "HashCode": 1355945523,
+        "HashCode": -1779942704,
         "Kind": "Components.EventHandler",
         "Name": "onemptied",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11821,7 +12154,7 @@
         }
       },
       {
-        "HashCode": 283596378,
+        "HashCode": -1332630569,
         "Kind": "Components.EventHandler",
         "Name": "onpause",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11904,7 +12237,7 @@
         }
       },
       {
-        "HashCode": 1501735408,
+        "HashCode": 371833355,
         "Kind": "Components.EventHandler",
         "Name": "onplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11987,7 +12320,7 @@
         }
       },
       {
-        "HashCode": -477928119,
+        "HashCode": -1632000950,
         "Kind": "Components.EventHandler",
         "Name": "onplaying",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12070,7 +12403,7 @@
         }
       },
       {
-        "HashCode": 1621661031,
+        "HashCode": -182173186,
         "Kind": "Components.EventHandler",
         "Name": "onratechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12153,7 +12486,7 @@
         }
       },
       {
-        "HashCode": -1962287888,
+        "HashCode": 1313048153,
         "Kind": "Components.EventHandler",
         "Name": "onseeked",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12236,7 +12569,7 @@
         }
       },
       {
-        "HashCode": -1470738963,
+        "HashCode": -1915953437,
         "Kind": "Components.EventHandler",
         "Name": "onseeking",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12319,7 +12652,7 @@
         }
       },
       {
-        "HashCode": 616191702,
+        "HashCode": -652298703,
         "Kind": "Components.EventHandler",
         "Name": "onstalled",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12402,7 +12735,7 @@
         }
       },
       {
-        "HashCode": 1987475847,
+        "HashCode": -2035116544,
         "Kind": "Components.EventHandler",
         "Name": "onstop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12485,7 +12818,7 @@
         }
       },
       {
-        "HashCode": 1314220806,
+        "HashCode": -190000382,
         "Kind": "Components.EventHandler",
         "Name": "onsuspend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12568,7 +12901,7 @@
         }
       },
       {
-        "HashCode": -1978481137,
+        "HashCode": -988256543,
         "Kind": "Components.EventHandler",
         "Name": "ontimeupdate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12651,7 +12984,7 @@
         }
       },
       {
-        "HashCode": -1588871982,
+        "HashCode": 414381304,
         "Kind": "Components.EventHandler",
         "Name": "onvolumechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12734,7 +13067,7 @@
         }
       },
       {
-        "HashCode": 558826841,
+        "HashCode": 135495113,
         "Kind": "Components.EventHandler",
         "Name": "onwaiting",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12817,7 +13150,7 @@
         }
       },
       {
-        "HashCode": 1131849575,
+        "HashCode": 160193448,
         "Kind": "Components.EventHandler",
         "Name": "onloadstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12900,7 +13233,7 @@
         }
       },
       {
-        "HashCode": -2015864553,
+        "HashCode": -1533394184,
         "Kind": "Components.EventHandler",
         "Name": "ontimeout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12983,7 +13316,7 @@
         }
       },
       {
-        "HashCode": 1771075971,
+        "HashCode": -1282649027,
         "Kind": "Components.EventHandler",
         "Name": "onabort",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13066,7 +13399,7 @@
         }
       },
       {
-        "HashCode": 769862572,
+        "HashCode": -1054089290,
         "Kind": "Components.EventHandler",
         "Name": "onload",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13149,7 +13482,7 @@
         }
       },
       {
-        "HashCode": -1316880311,
+        "HashCode": -438422243,
         "Kind": "Components.EventHandler",
         "Name": "onloadend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13232,7 +13565,7 @@
         }
       },
       {
-        "HashCode": -1504350864,
+        "HashCode": -2123048268,
         "Kind": "Components.EventHandler",
         "Name": "onprogress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13315,7 +13648,7 @@
         }
       },
       {
-        "HashCode": -2107508550,
+        "HashCode": -1794056823,
         "Kind": "Components.EventHandler",
         "Name": "onerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13398,7 +13731,7 @@
         }
       },
       {
-        "HashCode": -1104400011,
+        "HashCode": -2043098533,
         "Kind": "Components.EventHandler",
         "Name": "onactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13481,7 +13814,7 @@
         }
       },
       {
-        "HashCode": -1155930662,
+        "HashCode": -260962647,
         "Kind": "Components.EventHandler",
         "Name": "onbeforeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13564,7 +13897,7 @@
         }
       },
       {
-        "HashCode": -64558247,
+        "HashCode": -1864041233,
         "Kind": "Components.EventHandler",
         "Name": "onbeforedeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13647,7 +13980,7 @@
         }
       },
       {
-        "HashCode": 468404886,
+        "HashCode": -1249045725,
         "Kind": "Components.EventHandler",
         "Name": "ondeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13730,7 +14063,7 @@
         }
       },
       {
-        "HashCode": -1390337516,
+        "HashCode": -1683729311,
         "Kind": "Components.EventHandler",
         "Name": "onended",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13813,7 +14146,7 @@
         }
       },
       {
-        "HashCode": -876167156,
+        "HashCode": -476596898,
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13896,7 +14229,7 @@
         }
       },
       {
-        "HashCode": 415538723,
+        "HashCode": 1097956903,
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13979,7 +14312,7 @@
         }
       },
       {
-        "HashCode": -336015539,
+        "HashCode": -1888218451,
         "Kind": "Components.EventHandler",
         "Name": "onloadeddata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14062,7 +14395,7 @@
         }
       },
       {
-        "HashCode": 488389080,
+        "HashCode": 1872563952,
         "Kind": "Components.EventHandler",
         "Name": "onloadedmetadata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14145,7 +14478,7 @@
         }
       },
       {
-        "HashCode": 366214715,
+        "HashCode": -985051799,
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14228,7 +14561,7 @@
         }
       },
       {
-        "HashCode": 35458213,
+        "HashCode": -583150444,
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14311,7 +14644,7 @@
         }
       },
       {
-        "HashCode": -711217344,
+        "HashCode": -455030927,
         "Kind": "Components.EventHandler",
         "Name": "onreadystatechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14394,7 +14727,7 @@
         }
       },
       {
-        "HashCode": -196807831,
+        "HashCode": 733506785,
         "Kind": "Components.EventHandler",
         "Name": "onscroll",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14477,7 +14810,7 @@
         }
       },
       {
-        "HashCode": -1011313983,
+        "HashCode": -800861561,
         "Kind": "Components.EventHandler",
         "Name": "ontoggle",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14560,7 +14893,7 @@
         }
       },
       {
-        "HashCode": -1133669029,
+        "HashCode": 1911934060,
         "Kind": "Components.Splat",
         "Name": "Attributes",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14599,7 +14932,7 @@
         }
       },
       {
-        "HashCode": -1405022795,
+        "HashCode": 1236979955,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
@@ -14916,7 +15249,7 @@
         }
       },
       {
-        "HashCode": 1724474750,
+        "HashCode": 1977505376,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15115,7 +15448,7 @@
         }
       },
       {
-        "HashCode": -30478492,
+        "HashCode": 1385222061,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15244,7 +15577,7 @@
         }
       },
       {
-        "HashCode": 1998298026,
+        "HashCode": -1146763764,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ComponentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15301,7 +15634,7 @@
         }
       },
       {
-        "HashCode": -1228075180,
+        "HashCode": 2015822068,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.DistributedCacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15435,7 +15768,7 @@
         }
       },
       {
-        "HashCode": -296575905,
+        "HashCode": 2091563855,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15483,7 +15816,7 @@
         }
       },
       {
-        "HashCode": -323395493,
+        "HashCode": 184994465,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15902,7 +16235,7 @@
         }
       },
       {
-        "HashCode": 987038469,
+        "HashCode": 800129231,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16006,7 +16339,7 @@
         }
       },
       {
-        "HashCode": -865380474,
+        "HashCode": 1996051708,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16054,7 +16387,7 @@
         }
       },
       {
-        "HashCode": 1755328234,
+        "HashCode": 2065361809,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16126,7 +16459,7 @@
         }
       },
       {
-        "HashCode": 1958585916,
+        "HashCode": 506284874,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16161,7 +16494,7 @@
         }
       },
       {
-        "HashCode": -1893021998,
+        "HashCode": -601827106,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16359,7 +16692,7 @@
         }
       },
       {
-        "HashCode": -478279286,
+        "HashCode": 698423085,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16389,7 +16722,7 @@
         }
       },
       {
-        "HashCode": -1946890722,
+        "HashCode": -855838592,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16472,7 +16805,7 @@
         }
       },
       {
-        "HashCode": -1155933061,
+        "HashCode": -531315449,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PersistComponentStateTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16503,7 +16836,7 @@
         }
       },
       {
-        "HashCode": 275930613,
+        "HashCode": 812379599,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16658,7 +16991,7 @@
         }
       },
       {
-        "HashCode": 1110685751,
+        "HashCode": -1529235910,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16719,7 +17052,7 @@
         }
       },
       {
-        "HashCode": -1934929104,
+        "HashCode": 1757614098,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16763,7 +17096,7 @@
         }
       },
       {
-        "HashCode": -686471667,
+        "HashCode": -37866930,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16798,7 +17131,7 @@
         }
       },
       {
-        "HashCode": -11404520,
+        "HashCode": 624211633,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -16834,7 +17167,7 @@
         }
       },
       {
-        "HashCode": 1173371222,
+        "HashCode": 151554485,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16930,7 +17263,7 @@
         }
       },
       {
-        "HashCode": -716658339,
+        "HashCode": 1854735217,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17052,7 +17385,7 @@
         }
       },
       {
-        "HashCode": 776301729,
+        "HashCode": -1455196748,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17174,7 +17507,7 @@
         }
       },
       {
-        "HashCode": 1216516301,
+        "HashCode": 322799,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17307,7 +17640,7 @@
         }
       },
       {
-        "HashCode": 1685607913,
+        "HashCode": -785574670,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17440,7 +17773,7 @@
         }
       },
       {
-        "HashCode": -564769725,
+        "HashCode": 1278224091,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17573,7 +17906,7 @@
         }
       },
       {
-        "HashCode": -350105200,
+        "HashCode": -1967018299,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17706,7 +18039,7 @@
         }
       },
       {
-        "HashCode": -860171769,
+        "HashCode": 1176167496,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17839,7 +18172,7 @@
         }
       },
       {
-        "HashCode": 982173779,
+        "HashCode": 1456449936,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17972,7 +18305,7 @@
         }
       },
       {
-        "HashCode": 290128061,
+        "HashCode": -1476523428,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -18105,7 +18438,7 @@
         }
       },
       {
-        "HashCode": -61515724,
+        "HashCode": -669641144,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -18238,7 +18571,7 @@
         }
       },
       {
-        "HashCode": 1473129204,
+        "HashCode": 1625600803,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -18371,7 +18704,7 @@
         }
       },
       {
-        "HashCode": 685071833,
+        "HashCode": 1727672927,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -18504,7 +18837,7 @@
         }
       },
       {
-        "HashCode": 1886406971,
+        "HashCode": 1919384400,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -18637,7 +18970,7 @@
         }
       },
       {
-        "HashCode": -2077578370,
+        "HashCode": -121664848,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -18770,7 +19103,7 @@
         }
       },
       {
-        "HashCode": 159263728,
+        "HashCode": -137424892,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -18892,7 +19225,7 @@
         }
       },
       {
-        "HashCode": 383417634,
+        "HashCode": 1665887161,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -19014,7 +19347,7 @@
         }
       },
       {
-        "HashCode": 1686316375,
+        "HashCode": 953194908,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19101,7 +19434,7 @@
         }
       },
       {
-        "HashCode": -1324744351,
+        "HashCode": -1243334663,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19189,7 +19522,7 @@
         }
       },
       {
-        "HashCode": -2058254963,
+        "HashCode": 108473576,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19276,7 +19609,7 @@
         }
       },
       {
-        "HashCode": 430835418,
+        "HashCode": 814153181,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19364,7 +19697,7 @@
         }
       },
       {
-        "HashCode": 1990816763,
+        "HashCode": 605973415,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19451,7 +19784,7 @@
         }
       },
       {
-        "HashCode": 121306555,
+        "HashCode": -29093346,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19539,7 +19872,7 @@
         }
       },
       {
-        "HashCode": 920897421,
+        "HashCode": 602658870,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19626,7 +19959,7 @@
         }
       },
       {
-        "HashCode": -261628064,
+        "HashCode": -1540898426,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19714,7 +20047,7 @@
         }
       },
       {
-        "HashCode": 955255728,
+        "HashCode": -1198517454,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19801,7 +20134,7 @@
         }
       },
       {
-        "HashCode": -331693995,
+        "HashCode": -1915370570,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19889,7 +20222,7 @@
         }
       },
       {
-        "HashCode": 352715045,
+        "HashCode": -1763844402,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19976,7 +20309,7 @@
         }
       },
       {
-        "HashCode": -6343628,
+        "HashCode": -1334888897,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -20064,7 +20397,7 @@
         }
       },
       {
-        "HashCode": 680014076,
+        "HashCode": 1535782084,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -20151,7 +20484,7 @@
         }
       },
       {
-        "HashCode": -1070798385,
+        "HashCode": 1420650322,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -20239,7 +20572,7 @@
         }
       },
       {
-        "HashCode": 1525063790,
+        "HashCode": 1207543372,
         "Kind": "Components.Ref",
         "Name": "Ref",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -20278,7 +20611,7 @@
         }
       },
       {
-        "HashCode": -113391211,
+        "HashCode": 773912572,
         "Kind": "Components.Key",
         "Name": "Key",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -20322,23 +20655,23 @@
   "RootNamespace": "Aseguradora.UI",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaTitulares.razor",
+      "TargetPath": "Shared\\ListaTitulares.razor",
+      "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\IngresarTitular.razor",
-      "TargetPath": "Shared\\IngresarTitular.razor",
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\IngresarVehiculo.razor",
+      "TargetPath": "Shared\\IngresarVehiculo.razor",
       "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\IngresarSiniestro.razor",
       "TargetPath": "Shared\\IngresarSiniestro.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\EliminarTitular.razor",
-      "TargetPath": "Pages\\EliminarTitular.razor",
       "FileKind": "component"
     },
     {
@@ -20347,13 +20680,53 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaVehiculos.razor",
-      "TargetPath": "Shared\\ListaVehiculos.razor",
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
       "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\App.razor",
       "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaPolizas.razor",
+      "TargetPath": "Shared\\ListaPolizas.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\Polizas.razor",
+      "TargetPath": "Pages\\Polizas.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\EliminarTitular.razor",
+      "TargetPath": "Pages\\EliminarTitular.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\EliminarPoliza.razor",
+      "TargetPath": "Pages\\EliminarPoliza.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\Titulares.razor",
+      "TargetPath": "Pages\\Titulares.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaTerceros.razor",
+      "TargetPath": "Shared\\ListaTerceros.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\NuevoTercero.razor",
+      "TargetPath": "Pages\\NuevoTercero.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\NuevoSiniestro.razor",
+      "TargetPath": "Pages\\NuevoSiniestro.razor",
       "FileKind": "component"
     },
     {
@@ -20367,56 +20740,6 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\Vehiculos.razor",
-      "TargetPath": "Pages\\Vehiculos.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\VolverAtras.razor",
-      "TargetPath": "Shared\\VolverAtras.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaTitulares.razor",
-      "TargetPath": "Shared\\ListaTitulares.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ConfirmarEliminacionVehiculo.razor",
-      "TargetPath": "Shared\\ConfirmarEliminacionVehiculo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\Dialogo.razor",
-      "TargetPath": "Shared\\Dialogo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\IngresarPoliza.razor",
-      "TargetPath": "Shared\\IngresarPoliza.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\IngresarVehiculo.razor",
-      "TargetPath": "Shared\\IngresarVehiculo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaPolizas.razor",
-      "TargetPath": "Shared\\ListaPolizas.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\IngresarTercero.razor",
-      "TargetPath": "Shared\\IngresarTercero.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ConfirmarEliminacionTitular.razor",
-      "TargetPath": "Shared\\ConfirmarEliminacionTitular.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\NuevoTitular.razor",
       "TargetPath": "Pages\\NuevoTitular.razor",
       "FileKind": "component"
@@ -20427,28 +20750,18 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaSiniestros.razor",
-      "TargetPath": "Shared\\ListaSiniestros.razor",
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\NuevaPoliza.razor",
+      "TargetPath": "Pages\\NuevaPoliza.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\Titulares.razor",
-      "TargetPath": "Pages\\Titulares.razor",
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\Siniestros.razor",
+      "TargetPath": "Pages\\Siniestros.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaTerceros.razor",
-      "TargetPath": "Shared\\ListaTerceros.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\EliminarVehiculo.razor",
-      "TargetPath": "Pages\\EliminarVehiculo.razor",
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\IngresarTercero.razor",
+      "TargetPath": "Shared\\IngresarTercero.razor",
       "FileKind": "component"
     },
     {
@@ -20457,8 +20770,63 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\VolverAtras.razor",
+      "TargetPath": "Shared\\VolverAtras.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaVehiculos.razor",
+      "TargetPath": "Shared\\ListaVehiculos.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ListaSiniestros.razor",
+      "TargetPath": "Shared\\ListaSiniestros.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\IngresarTitular.razor",
+      "TargetPath": "Shared\\IngresarTitular.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\EliminarVehiculo.razor",
+      "TargetPath": "Pages\\EliminarVehiculo.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\Terceros.razor",
+      "TargetPath": "Pages\\Terceros.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\IngresarPoliza.razor",
+      "TargetPath": "Shared\\IngresarPoliza.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\EliminarTercero.razor",
+      "TargetPath": "Pages\\EliminarTercero.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Pages\\EliminarSiniestro.razor",
+      "TargetPath": "Pages\\EliminarSiniestro.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\ConfirmarEliminacion.razor",
+      "TargetPath": "Shared\\ConfirmarEliminacion.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.UI\\Shared\\Dialogo.razor",
+      "TargetPath": "Shared\\Dialogo.razor",
       "FileKind": "component"
     }
   ],

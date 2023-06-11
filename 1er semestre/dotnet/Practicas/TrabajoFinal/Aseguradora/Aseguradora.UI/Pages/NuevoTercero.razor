@@ -1,15 +1,15 @@
-@page "/vehiculos/ingresar/{Id:int?}";
+@page "/terceros/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
 
-<ListaVehiculos/>
+<ListaTerceros/>
 <Dialogo CerrarDialogo="Cerrar">
-  <IngresarVehiculo CerrarDialogo="Cerrar" Id="@Id"/>
+  <IngresarTercero CerrarDialogo="Cerrar" Id="@Id"/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
     void Cerrar()
     { 
-      Navigator.NavigateTo("/vehiculos");
+      Navigator.NavigateTo("/terceros");
     }
 }

@@ -1,0 +1,35 @@
+@page "/siniestros/eliminar/{Id:int?}";
+@inject NavigationManager Navigator;
+@inject EliminarSiniestroUseCase EliminarSiniestroUseCase;
+@inject GetSiniestroUseCase GetSiniestroUseCase;
+
+<ListaSiniestros/>
+<Dialogo CerrarDialogo="Cerrar">
+  <ConfirmarEliminacion @ref="confirmar" CerrarDialogo="Cerrar" OnEliminar="Eliminar"/>
+</Dialogo>
+
+@code {
+    [Parameter] public int Id { get; set; }
+    Siniestro _siniestro = new Siniestro();
+    ConfirmarEliminacion confirmar = null!;
+    protected override void OnAfterRender(bool first) 
+    {
+        var siniestroEcontrado = GetSiniestroUseCase.Ejecutar(Id);
+        if(siniestroEcontrado != null)
+        {
+            _siniestro = siniestroEcontrado;
+            confirmar.AgregarMensaje($"Eliminar al Siniestro {_siniestro.Id}?");
+        }
+        else
+        {
+            confirmar.SetError(Id);
+        }
+    }
+    void Eliminar(){
+            EliminarSiniestroUseCase.Ejecutar(Id);
+    }
+    void Cerrar()
+    { 
+        Navigator.NavigateTo("/siniestros");
+    }
+}

@@ -1,13 +1,33 @@
 @page "/vehiculos/eliminar/{Id:int?}";
 @inject NavigationManager Navigator;
+@inject EliminarVehiculoUseCase EliminarVehiculoUseCase;
+@inject GetVehiculoUseCase GetVehiculoUseCase;
 
 <ListaVehiculos/>
 <Dialogo CerrarDialogo="Cerrar">
-  <ConfirmarEliminacionVehiculo CerrarDialogo="Cerrar" Id="@Id"/>
+  <ConfirmarEliminacion @ref="confirmar" CerrarDialogo="Cerrar" OnEliminar="Eliminar"/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
+    Vehiculo _vehiculo = new Vehiculo();
+    ConfirmarEliminacion confirmar = null!;
+    protected override void OnAfterRender(bool first) 
+    {
+        var vehiculoEcontrado = GetVehiculoUseCase.Ejecutar(Id);
+        if(vehiculoEcontrado != null)
+        {
+            _vehiculo = vehiculoEcontrado;
+            confirmar.AgregarMensaje($"Eliminar al Vehiculo {_vehiculo.Dominio}?");
+        }
+        else
+        {
+            confirmar.SetError(Id);
+        }
+    }
+    void Eliminar(){
+            EliminarVehiculoUseCase.Ejecutar(Id);
+    }
     void Cerrar()
     { 
         Navigator.NavigateTo("/vehiculos");

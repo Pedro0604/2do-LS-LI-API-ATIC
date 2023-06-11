@@ -5,13 +5,11 @@
 <Dialogo CerrarDialogo="Cerrar">
   <IngresarTitular CerrarDialogo="Cerrar" Id="@Id"/>
 </Dialogo>
-<VolverAtras @ref="volver"/>
 
 @code {
     [Parameter] public int Id { get; set; }
-    VolverAtras volver = null!;
     void Cerrar()
     { 
-      volver.Cerrar();
+      Navigator.NavigateTo("/titulares");
     }
 }

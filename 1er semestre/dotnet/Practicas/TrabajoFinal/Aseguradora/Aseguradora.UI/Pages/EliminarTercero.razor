@@ -1,0 +1,35 @@
+@page "/terceros/eliminar/{Id:int?}";
+@inject NavigationManager Navigator;
+@inject EliminarTerceroUseCase EliminarTerceroUseCase;
+@inject GetTerceroUseCase GetTerceroUseCase;
+
+<ListaTerceros/>
+<Dialogo CerrarDialogo="Cerrar">
+  <ConfirmarEliminacion @ref="confirmar" CerrarDialogo="Cerrar" OnEliminar="Eliminar"/>
+</Dialogo>
+
+@code {
+    [Parameter] public int Id { get; set; }
+    Tercero _tercero = new Tercero();
+    ConfirmarEliminacion confirmar = null!;
+    protected override void OnAfterRender(bool first) 
+    {
+        var terceroEcontrado = GetTerceroUseCase.Ejecutar(Id);
+        if(terceroEcontrado != null)
+        {
+            _tercero = terceroEcontrado;
+            confirmar.AgregarMensaje($"Eliminar al Tercero {_tercero.Nombre} {_tercero.Apellido}?");
+        }
+        else
+        {
+            confirmar.SetError(Id);
+        }
+    }
+    void Eliminar(){
+            EliminarTerceroUseCase.Ejecutar(Id);
+    }
+    void Cerrar()
+    { 
+        Navigator.NavigateTo("/terceros");
+    }
+}
