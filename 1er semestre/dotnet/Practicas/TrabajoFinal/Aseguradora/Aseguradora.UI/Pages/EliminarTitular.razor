@@ -1,15 +1,31 @@
 @page "/titulares/eliminar/{Id:int?}";
 @inject NavigationManager Navigator;
+@inject EliminarTitularUseCase EliminarTitularUseCase;
+@inject GetTitularUseCase GetTitularUseCase;
 
 <ListaTitulares/>
 <Dialogo CerrarDialogo="Cerrar">
-  <DivEliminarTitular CerrarDialogo="Cerrar" Id="@Id"/>
+  <ConfirmarEliminacion CerrarDialogo="Cerrar" @ref="confirmacion"/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
+    Titular _titular = new Titular();
+    ConfirmarEliminacion confirmacion = null!;
+
+    protected override void OnParametersSet() 
+    {
+        if(Id != 0){
+            var titularEcontrado = GetTitularUseCase.Ejecutar(Id);
+            if(titularEcontrado != null)
+            {
+                _titular = titularEcontrado;
+                confirmacion.Mensaje = $"Eliminar al titular {_titular.Nombre} {_titular.Apellido}?";
+            }
+        }
+    }
     void Cerrar()
     { 
         Navigator.NavigateTo("/titulares");
     }
-} 
+}

@@ -13,18 +13,13 @@ else{
 <input type="text" placeholder="Marca" @bind="_vehiculo.Marca">
 <input type="number" placeholder="AñoFabricacion" @bind="_vehiculo.AñoFabricacion">
 <input type="number" placeholder="Id del titular" @bind="_vehiculo.TitularId">
-@if(Modificar){
-    <button @onclick="ModificarVehiculo">Modificar</button>
-}
-else
-{
-    <button @onclick="AgregarVehiculo">Agregar</button>
-}
+<button @onclick="Cerrar">@if(Modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
 </div>
 
 @code{
-    [Parameter] public bool Modificar {get; set;} = false;
     [Parameter] public int Id {get; set;}
+    [Parameter] public EventCallback CerrarDialogo{get; set;}
+    public bool Modificar {get; set;} = false;
     Vehiculo _vehiculo = new Vehiculo();
 
     protected override void OnParametersSet() 
@@ -36,20 +31,16 @@ else
                 _vehiculo = vehiculoEcontrado;
                 Modificar = true;
             }
-            else
-            {
-                Modificar = false;
-            }
+        }
+    }
+    void Cerrar(){
+        if(Modificar)
+        {
+            ModificarVehiculoUseCase.Ejecutar(_vehiculo);
         }
         else{
-            Modificar = false;
+            AgregarVehiculoUseCase.Ejecutar(_vehiculo);
         }
-    }
-    void AgregarVehiculo(){
-        AgregarVehiculoUseCase.Ejecutar(_vehiculo);
-    }
-
-    void ModificarVehiculo(){
-        ModificarVehiculoUseCase.Ejecutar(_vehiculo);
+        CerrarDialogo.InvokeAsync();
     }
 }

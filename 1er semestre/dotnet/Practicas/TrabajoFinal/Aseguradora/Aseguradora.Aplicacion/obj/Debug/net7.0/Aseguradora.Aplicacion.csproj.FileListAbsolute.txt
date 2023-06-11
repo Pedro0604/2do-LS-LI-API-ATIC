@@ -10,3 +10,15 @@ D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Ase
 D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\refint\Aseguradora.Aplicacion.dll
 D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.pdb
 D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\ref\Aseguradora.Aplicacion.dll
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\bin\Debug\net7.0\Aseguradora.Aplicacion.deps.json
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\bin\Debug\net7.0\Aseguradora.Aplicacion.dll
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\bin\Debug\net7.0\Aseguradora.Aplicacion.pdb
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.csproj.AssemblyReference.cache
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.AssemblyInfoInputs.cache
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.AssemblyInfo.cs
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.dll
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\refint\Aseguradora.Aplicacion.dll
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\Aseguradora.Aplicacion.pdb
+C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Aplicacion\obj\Debug\net7.0\ref\Aseguradora.Aplicacion.dll

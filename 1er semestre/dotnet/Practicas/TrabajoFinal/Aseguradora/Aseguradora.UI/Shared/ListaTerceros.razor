@@ -1,4 +1,9 @@
 @inject ListarTercerosUseCase ListarTercerosUseCase;
+@inject NavigationManager Navigator
+
+<h1>Listado de terceros</h1>
+<button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un tercero</button>
+ 
 
 <h1>Listado de terceros</h1>
 
@@ -12,6 +17,8 @@
       <th>DNI</th>
       <th>Telefono</th>
       <th>Id del siniestro</th>
+      <th>Modificar</th>
+      <th>Eliminar</th>
     </tr>
   </thead>
   <tbody>
@@ -25,13 +32,26 @@
         <td>@tercero.DNI</td>
         <td>@tercero.Telefono</td>
         <td>@tercero.SiniestroId</td>
+        <td><button class="btn btn-primary" @onclick="()=>Ingresar(tercero.Id)"><span class="oi oi-pencil"></span></button></td>
+        <td><button class="btn btn-danger" @onclick="()=>Eliminar(tercero.Id)"><span class="oi oi-trash"></span></button></td>
       </tr>
     }
   </tbody>
 </table>
 
 @code {
-    List<Tercero> listaTerceros = new List<Tercero>(); protected override
-    void OnInitialized() => listaTerceros = ListarTercerosUseCase.Ejecutar();
+  [Parameter] public EventCallback OnEliminar { get; set; }
+  List<Tercero> listaTerceros = new List<Tercero>(); 
+  protected override void OnInitialized() => listaTerceros = ListarTercerosUseCase.Ejecutar();
+  
+  void Ingresar(int id)
+  {
+    Navigator.NavigateTo($"/titulares/ingresar/{id}");
+  }
+
+  void Eliminar(int id)
+  {
+    Navigator.NavigateTo($"/titulares/eliminar/{id}");
+  }
 } 
 

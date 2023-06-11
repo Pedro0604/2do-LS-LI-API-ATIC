@@ -9,113 +9,121 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Aseguradora.UI
 build_property.RootNamespace = Aseguradora.UI
-build_property.ProjectDir = D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\
+build_property.ProjectDir = C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI
+build_property.MSBuildProjectDirectory = C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/App.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/EliminarTitular.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/EliminarTitular.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWxpbWluYXJUaXR1bGFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/EliminarVehiculo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWxpbWluYXJWZWhpY3Vsby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/Index.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/NuevoTitular.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/NuevoTitular.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldm9UaXR1bGFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/Titulares.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/NuevoVehiculo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTnVldm9WZWhpY3Vsby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/Titulares.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGl0dWxhcmVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/DialogoConfirmacion.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/Vehiculos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ConfirmarEliminacionTitular.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hckVsaW1pbmFjaW9uVGl0dWxhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ConfirmarEliminacionVehiculo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hckVsaW1pbmFjaW9uVmVoaWN1bG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/DialogoConfirmacion.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ29Db25maXJtYWNpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/DivEliminarTitular.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpdkVsaW1pbmFyVGl0dWxhci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarPoliza.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarPoliza.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZ3Jlc2FyUG9saXphLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarSiniestro.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarSiniestro.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZ3Jlc2FyU2luaWVzdHJvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarTercero.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarTercero.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZ3Jlc2FyVGVyY2Vyby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarTitular.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarTitular.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZ3Jlc2FyVGl0dWxhci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarVehiculo.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarVehiculo.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZ3Jlc2FyVmVoaWN1bG8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaPolizas.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaPolizas.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhUG9saXphcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaSiniestros.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaSiniestros.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhU2luaWVzdHJvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaTerceros.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaTerceros.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhVGVyY2Vyb3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaTitulares.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaTitulares.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhVGl0dWxhcmVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaVehiculos.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ListaVehiculos.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhVmVoaWN1bG9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/VolverAtras.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFZvbHZlckF0cmFzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/_Imports.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/Dialogo.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/Dialogo.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ28ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-hdo3htk7gj
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/MainLayout.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-g6x6s7l54y
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/NavMenu.razor]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-7swmyw7ncn
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/Error.cshtml]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/_Host.cshtml]
+[C:/Users/Lucia/OneDrive/Escritorio/Pedro/2do-LS-LI-APU-ATIC/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

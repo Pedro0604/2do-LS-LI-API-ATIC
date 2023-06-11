@@ -1,0 +1,15 @@
+@page "/vehiculos/eliminar/{Id:int?}";
+@inject NavigationManager Navigator;
+
+<ListaVehiculos/>
+<Dialogo CerrarDialogo="Cerrar">
+  <ConfirmarEliminacionVehiculo CerrarDialogo="Cerrar" Id="@Id"/>
+</Dialogo>
+
+@code {
+    [Parameter] public int Id { get; set; }
+    void Cerrar()
+    { 
+        Navigator.NavigateTo("/vehiculos");
+    }
+}

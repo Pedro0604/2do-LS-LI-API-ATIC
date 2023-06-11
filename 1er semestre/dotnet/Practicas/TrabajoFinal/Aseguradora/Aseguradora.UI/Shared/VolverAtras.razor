@@ -1,0 +1,10 @@
+@inject NavigationManager Navigator;
+
+@code{
+    public void Cerrar(){
+        string uri = Navigator.Uri;
+        uri = uri.Substring(0, uri.LastIndexOf("/"));
+        uri = uri.Substring(0, uri.LastIndexOf("/"));
+        Navigator.NavigateTo(uri);
+    }
+}

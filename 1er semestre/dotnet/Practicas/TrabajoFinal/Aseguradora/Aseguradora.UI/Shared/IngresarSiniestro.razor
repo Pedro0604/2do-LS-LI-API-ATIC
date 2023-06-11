@@ -14,18 +14,13 @@ else{
 <input type="text" placeholder="Dirección" @bind="_siniestro.DireccionSiniestro">
 <input type="email" placeholder="Id de la póliza" @bind="_siniestro.PolizaId">
 <textarea placeholder="Descripción" @bind="_siniestro.Descripcion"></textarea>
-@if(Modificar){
-    <button @onclick="ModificarSiniestro">Modificar</button>
-}
-else
-{
-    <button @onclick="AgregarSiniestro">Agregar</button>
-}
+<button @onclick="Cerrar">@if(Modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
 </div>
 
 @code{
-    [Parameter] public bool Modificar {get; set;} = false;
     [Parameter] public int Id {get; set;}
+    [Parameter] public EventCallback CerrarDialogo{get; set;}
+    public bool Modificar {get; set;} = false;
     Siniestro _siniestro = new Siniestro();
 
     protected override void OnParametersSet() 
@@ -37,20 +32,16 @@ else
                 _siniestro = siniestroEcontrado;
                 Modificar = true;
             }
-            else
-            {
-                Modificar = false;
-            }
+        }
+    }
+    void Cerrar(){
+        if(Modificar)
+        {
+            ModificarSiniestroUseCase.Ejecutar(_siniestro);
         }
         else{
-            Modificar = false;
+            AgregarSiniestroUseCase.Ejecutar(_siniestro);
         }
-    }
-    void AgregarSiniestro(){
-        AgregarSiniestroUseCase.Ejecutar(_siniestro);
-    }
-
-    void ModificarSiniestro(){
-        ModificarSiniestroUseCase.Ejecutar(_siniestro);
+        CerrarDialogo.InvokeAsync();
     }
 }

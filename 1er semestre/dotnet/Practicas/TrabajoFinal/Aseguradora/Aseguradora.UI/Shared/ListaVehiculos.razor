@@ -1,8 +1,10 @@
 @inject ListarVehiculosUseCase ListarVehiculosUseCase;
+@inject NavigationManager Navigator
 
 <h1>Listado de vehículos</h1>
-
-<table class="table">
+<button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un vehículo</button>
+ 
+<table class="table"> 
   <thead>
     <tr>
       <th>Id</th>
@@ -10,6 +12,8 @@
       <th>Marca</th>
       <th>Año de fabricación</th>
       <th>Id del titular</th>
+      <th>Modificar</th>
+      <th>Eliminar</th>
     </tr>
   </thead>
   <tbody>
@@ -21,13 +25,26 @@
           <td>@vehiculo.Marca</td>
           <td>@vehiculo.AñoFabricacion</td>
           <td>@vehiculo.TitularId</td>
+          <td><button class="btn btn-primary" @onclick="()=>Ingresar(vehiculo.Id)"><span class="oi oi-pencil"></span></button></td>
+          <td><button class="btn btn-danger" @onclick="()=>Eliminar(vehiculo.Id)"><span class="oi oi-trash"></span></button></td>
         </tr>
       }
-  </tbody>
+  </tbody> 
 </table>
 
 @code {
-    List<Vehiculo> listaVehiculos = new List<Vehiculo>();
-    protected override void OnInitialized() => listaVehiculos = ListarVehiculosUseCase.Ejecutar();
+  [Parameter] public EventCallback OnEliminar { get; set; }
+  List<Vehiculo> listaVehiculos = new List<Vehiculo>();
+  protected override void OnInitialized() => listaVehiculos = ListarVehiculosUseCase.Ejecutar();
+
+  void Ingresar(int id)
+  {
+    Navigator.NavigateTo($"/titulares/ingresar/{id}");
+  }
+
+  void Eliminar(int id)
+  {
+    Navigator.NavigateTo($"/titulares/eliminar/{id}");
+  }
 } 
 

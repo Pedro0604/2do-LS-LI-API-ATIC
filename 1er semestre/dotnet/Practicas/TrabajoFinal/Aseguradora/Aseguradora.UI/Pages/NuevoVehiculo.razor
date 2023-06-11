@@ -1,9 +1,9 @@
-@page "/titulares/ingresar/{Id:int?}";
+@page "/vehiculos/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
 
-<ListaTitulares/>
+<ListaVehiculos/>
 <Dialogo CerrarDialogo="Cerrar">
-  <IngresarTitular CerrarDialogo="Cerrar" Id="@Id"/>
+  <IngresarVehiculo CerrarDialogo="Cerrar" Id="@Id"/>
 </Dialogo>
 <VolverAtras @ref="volver"/>
 

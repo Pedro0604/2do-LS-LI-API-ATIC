@@ -15,18 +15,13 @@ else{
 <input type="date" placeholder="Fecha de inicio de la vigencia" @bind="_poliza.FechaInicioVigencia">
 <input type="date" placeholder="Fecha de fin de la vigencia" @bind="_poliza.FechaFinVigencia">
 <input type="number" placeholder="Id del vehículo" @bind="_poliza.VehiculoId">
-@if(Modificar){
-    <button @onclick="ModificarPoliza">Modificar</button>
-}
-else
-{
-    <button @onclick="AgregarPoliza">Agregar</button>
-}
+<button @onclick="Cerrar">@if(Modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
 </div>
 
 @code{
-    [Parameter] public bool Modificar {get; set;} = false;
     [Parameter] public int Id {get; set;}
+    [Parameter] public EventCallback CerrarDialogo{get; set;}
+    public bool Modificar {get; set;} = false;
     Poliza _poliza = new Poliza();
 
     protected override void OnParametersSet() 
@@ -38,20 +33,16 @@ else
                 _poliza = polizaEcontrada;
                 Modificar = true;
             }
-            else
-            {
-                Modificar = false;
-            }
+        }
+    }
+    void Cerrar(){
+        if(Modificar)
+        {
+            ModificarPolizaUseCase.Ejecutar(_poliza);
         }
         else{
-            Modificar = false;
+            AgregarPolizaUseCase.Ejecutar(_poliza);
         }
-    }
-    void AgregarPoliza(){
-        AgregarPolizaUseCase.Ejecutar(_poliza);
-    }
-
-    void ModificarPoliza(){
-        ModificarPolizaUseCase.Ejecutar(_poliza);
+        CerrarDialogo.InvokeAsync();
     }
 }

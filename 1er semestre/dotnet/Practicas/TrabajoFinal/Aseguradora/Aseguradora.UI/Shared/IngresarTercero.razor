@@ -15,18 +15,13 @@ else{
 <input type="text" placeholder="Nombre de la aseguradora" @bind="_tercero.NombreAseguradora">
 <input type="tel" placeholder="Teléfono" @bind="_tercero.Telefono">
 <input type="number" placeholder="Id del siniestro" @bind="_tercero.SiniestroId">
-@if(Modificar){
-    <button @onclick="ModificarTercero">Modificar</button>
-}
-else
-{
-    <button @onclick="AgregarTercero">Agregar</button>
-}
+<button @onclick="Cerrar">@if(Modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
 </div>
 
 @code{
-    [Parameter] public bool Modificar {get; set;} = false;
     [Parameter] public int Id {get; set;}
+    [Parameter] public EventCallback CerrarDialogo{get; set;}
+    public bool Modificar {get; set;} = false;
     Tercero _tercero = new Tercero();
 
     protected override void OnParametersSet() 
@@ -38,20 +33,16 @@ else
                 _tercero = terceroEcontrado;
                 Modificar = true;
             }
-            else
-            {
-                Modificar = false;
-            }
+        }
+    }
+    void Cerrar(){
+        if(Modificar)
+        {
+            ModificarTerceroUseCase.Ejecutar(_tercero);
         }
         else{
-            Modificar = false;
+            AgregarTerceroUseCase.Ejecutar(_tercero);
         }
-    }
-    void AgregarTercero(){
-        AgregarTerceroUseCase.Ejecutar(_tercero);
-    }
-
-    void ModificarTercero(){
-        ModificarTerceroUseCase.Ejecutar(_tercero);
+        CerrarDialogo.InvokeAsync();
     }
 }

@@ -3,7 +3,7 @@
 
 <h1>Listado de titulares @if(ConVehiculos){<span>con sus vehículos</span>}</h1>
 <button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un titular</button>
-
+ 
 <table class="table">
   <thead>
     <tr>
@@ -14,14 +14,12 @@
       <th>DNI</th>
       <th>Teléfono</th>
       <th>Email</th>
-      <th>Modificar</th>
-      <th>Eliminar</th>
       @if (ConVehiculos)
       {
-        <th>Dominio</th>
-        <th>Marca</th>
-        <th>Año de fabricación</th>
+        <th><span class="oi oi-car"></span></th>
       }
+      <th>Modificar</th>
+      <th>Eliminar</th>
     </tr>
   </thead>
   <tbody>
@@ -40,15 +38,7 @@
       </tr>
       if (ConVehiculos)
       {
-        foreach (var vehiculo in titular.Vehiculos)
-        {
-          <tr>
-            <td colspan="8">Vehículo @(titular.Vehiculos.IndexOf(vehiculo) + 1)</td>
-            <td>@vehiculo.Dominio</td>
-            <td>@vehiculo.Marca</td>
-            <td>@vehiculo.AñoFabricacion</td>
-          </tr>
-        }
+        
       }
     }
   </tbody>
