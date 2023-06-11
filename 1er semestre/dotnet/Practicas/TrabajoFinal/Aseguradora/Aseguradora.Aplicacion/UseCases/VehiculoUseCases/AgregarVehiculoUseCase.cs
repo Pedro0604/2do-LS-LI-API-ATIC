@@ -8,5 +8,5 @@ public class AgregarVehiculoUseCase : VehiculoUseCase
 
     public AgregarVehiculoUseCase(IRepositorioVehiculo repositorio) : base(repositorio) { }
 
-    public void Ejecutar(Vehiculo vehiculo) => Repositorio.AgregarVehiculo(vehiculo);
+    public Error Ejecutar(Vehiculo vehiculo) => Repositorio.AgregarVehiculo(vehiculo);
 }

@@ -6,5 +6,5 @@ public class ModificarSiniestroUseCase : SiniestroUseCase
 {
     public ModificarSiniestroUseCase(IRepositorioSiniestro repositorio):base(repositorio){}
 
-    public void Ejecutar(Siniestro Siniestro) => Repositorio.ModificarSiniestro(Siniestro);
+    public Error Ejecutar(Siniestro Siniestro) => Repositorio.ModificarSiniestro(Siniestro);
 }

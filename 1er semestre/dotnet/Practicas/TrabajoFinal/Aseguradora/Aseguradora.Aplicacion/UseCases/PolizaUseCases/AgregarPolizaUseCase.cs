@@ -8,5 +8,5 @@ public class AgregarPolizaUseCase : PolizaUseCase
 
     public AgregarPolizaUseCase(IRepositorioPoliza repositorio) : base(repositorio) { }
 
-    public void Ejecutar(Poliza poliza) => Repositorio.AgregarPoliza(poliza);
+    public Error Ejecutar(Poliza poliza) => Repositorio.AgregarPoliza(poliza);
 }

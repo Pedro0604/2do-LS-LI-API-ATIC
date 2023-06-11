@@ -8,5 +8,5 @@ public class AgregarSiniestroUseCase : SiniestroUseCase
 
     public AgregarSiniestroUseCase(IRepositorioSiniestro repositorio) : base(repositorio) { }
 
-    public bool Ejecutar(Siniestro Siniestro) => Repositorio.AgregarSiniestro(Siniestro);
+    public Error Ejecutar(Siniestro Siniestro) => Repositorio.AgregarSiniestro(Siniestro);
 }

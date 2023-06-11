@@ -6,8 +6,9 @@ namespace Aseguradora.Repositorios;
 
 public class RepositorioSiniestro : IRepositorioSiniestro
 {
-    public bool AgregarSiniestro(Siniestro siniestro)
+    public Error AgregarSiniestro(Siniestro siniestro)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
             var poliza = db.Polizas.Where(p => p.Id == siniestro.PolizaId).SingleOrDefault();
@@ -17,11 +18,18 @@ public class RepositorioSiniestro : IRepositorioSiniestro
                 {
                     db.Add(siniestro);
                     db.SaveChanges();
-                    return true;
+                }
+                else
+                {
+                    error.Mensaje = "La fecha de ocurrencia del siniestro no se encuentra dentro de la fecha de vigencia de la póliza correspondiente";
                 }
             }
+            else
+            {
+                error.Mensaje = "No hay ninguna póliza con Id " + siniestro.PolizaId;
+            }
         }
-        return false;
+        return error;
     }
 
     public List<Siniestro> ListarSiniestros()
@@ -34,24 +42,46 @@ public class RepositorioSiniestro : IRepositorioSiniestro
         return lista;
     }
 
-    public void ModificarSiniestro(Siniestro siniestro)
+    public Error ModificarSiniestro(Siniestro siniestro)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
             var siniestroAModificar = db.Siniestros.Where(s => s.Id == siniestro.Id).SingleOrDefault();
             if (siniestroAModificar != null)
             {
-                siniestroAModificar.Descripcion = siniestro.Descripcion;
-                siniestroAModificar.DireccionSiniestro = siniestro.DireccionSiniestro;
-                siniestroAModificar.FechaOcurrencia = siniestro.FechaOcurrencia;
-                siniestroAModificar.PolizaId = siniestro.PolizaId;
-                db.SaveChanges();
+                var poliza = db.Polizas.Where(p => p.Id == siniestro.PolizaId).SingleOrDefault();
+                if (poliza != null)
+                {
+                    if ((siniestro.FechaOcurrencia >= poliza.FechaInicioVigencia) && (siniestro.FechaOcurrencia <= poliza.FechaFinVigencia))
+                    {
+                        siniestroAModificar.Descripcion = siniestro.Descripcion;
+                        siniestroAModificar.DireccionSiniestro = siniestro.DireccionSiniestro;
+                        siniestroAModificar.FechaOcurrencia = siniestro.FechaOcurrencia;
+                        siniestroAModificar.PolizaId = siniestro.PolizaId;
+                        db.SaveChanges();
+                    }
+                    else
+                    {
+                        error.Mensaje = "La fecha de ocurrencia del siniestro no se encuentra dentro de la fecha de vigencia de la póliza correspondiente";
+                    }
+                }
+                else
+                {
+                    error.Mensaje = "No hay ninguna póliza con Id " + siniestro.PolizaId;
+                }
+            }
+            else
+            {
+                error.Mensaje = "No hay ningún siniestro con Id " + siniestro.Id;
             }
         }
+        return error;
     }
 
-    public void EliminarSiniestro(int id)
+    public Error EliminarSiniestro(int id)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
             // var siniestroABorrar = db.Siniestros.Where(s => s.Id == id).SingleOrDefault();
@@ -72,7 +102,12 @@ public class RepositorioSiniestro : IRepositorioSiniestro
                 db.Remove(siniestroABorrar);
                 db.SaveChanges();
             }
+            else
+            {
+                error.Mensaje = "No hay ningún siniestro con Id " + id;
+            }
         }
+        return error;
     }
 
     public Siniestro? GetSiniestro(int id)

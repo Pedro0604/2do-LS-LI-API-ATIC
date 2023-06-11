@@ -6,13 +6,23 @@ namespace Aseguradora.Repositorios;
 
 public class RepositorioTercero : IRepositorioTercero
 {
-    public void AgregarTercero(Tercero tercero)
+    public Error AgregarTercero(Tercero tercero)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            db.Add(tercero);
-            db.SaveChanges();
+            var siniestro = db.Siniestros.Where(p => p.Id == tercero.SiniestroId).SingleOrDefault();
+            if (siniestro != null)
+            {
+                db.Add(tercero);
+                db.SaveChanges();
+            }
+            else
+            {
+                error.Mensaje = "No hay ningún siniestro con Id " + tercero.SiniestroId;
+            }
         }
+        return error;
     }
 
     public List<Tercero> ListarTerceros()
@@ -25,26 +35,41 @@ public class RepositorioTercero : IRepositorioTercero
         return lista;
     }
 
-    public void ModificarTercero(Tercero tercero)
+    public Error ModificarTercero(Tercero tercero)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
             var terceroAModificar = db.Terceros.Where(t => t.Id == tercero.Id).SingleOrDefault();
             if (terceroAModificar != null)
             {
-                terceroAModificar.Nombre = tercero.Nombre;
-                terceroAModificar.Apellido = tercero.Apellido;
-                terceroAModificar.DNI = tercero.DNI;
-                terceroAModificar.NombreAseguradora = tercero.NombreAseguradora;
-                terceroAModificar.SiniestroId = tercero.SiniestroId;
-                terceroAModificar.Telefono = tercero.Telefono;
-                db.SaveChanges();
+                var siniestro = db.Siniestros.Where(p => p.Id == tercero.SiniestroId).SingleOrDefault();
+                if (siniestro != null)
+                {
+                    terceroAModificar.Nombre = tercero.Nombre;
+                    terceroAModificar.Apellido = tercero.Apellido;
+                    terceroAModificar.DNI = tercero.DNI;
+                    terceroAModificar.NombreAseguradora = tercero.NombreAseguradora;
+                    terceroAModificar.SiniestroId = tercero.SiniestroId;
+                    terceroAModificar.Telefono = tercero.Telefono;
+                    db.SaveChanges();
+                }
+                else
+                {
+                    error.Mensaje = "No hay ningún siniestro con Id " + tercero.SiniestroId;
+                }
+            }
+            else
+            {
+                error.Mensaje = "No hay ningún tercero con Id " + tercero.Id;
             }
         }
+        return error;
     }
 
-    public void EliminarTercero(int id)
+    public Error EliminarTercero(int id)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
             var terceroABorrar = db.Terceros.Where(t => t.Id == id).SingleOrDefault();
@@ -53,7 +78,12 @@ public class RepositorioTercero : IRepositorioTercero
                 db.Remove(terceroABorrar);
                 db.SaveChanges();
             }
+            else
+            {
+                error.Mensaje = "No hay ningún tercero con Id " + id;
+            }
         }
+        return error;
     }
 
     public Tercero? GetTercero(int id)

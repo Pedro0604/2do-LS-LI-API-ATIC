@@ -8,5 +8,5 @@ public class AgregarTerceroUseCase : TerceroUseCase
 
     public AgregarTerceroUseCase(IRepositorioTercero repositorio) : base(repositorio) { }
 
-    public void Ejecutar(Tercero tercero) => Repositorio.AgregarTercero(tercero);
+    public Error Ejecutar(Tercero tercero) => Repositorio.AgregarTercero(tercero);
 }

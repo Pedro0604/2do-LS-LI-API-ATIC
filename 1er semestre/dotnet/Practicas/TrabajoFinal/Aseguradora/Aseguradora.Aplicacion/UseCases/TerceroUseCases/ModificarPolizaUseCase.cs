@@ -6,5 +6,5 @@ public class ModificarTerceroUseCase : TerceroUseCase
 {
     public ModificarTerceroUseCase(IRepositorioTercero repositorio):base(repositorio){}
 
-    public void Ejecutar(Tercero Tercero) => Repositorio.ModificarTercero(Tercero);
+    public Error Ejecutar(Tercero Tercero) => Repositorio.ModificarTercero(Tercero);
 }

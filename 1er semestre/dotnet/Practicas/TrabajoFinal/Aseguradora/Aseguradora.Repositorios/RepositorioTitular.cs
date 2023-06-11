@@ -25,8 +25,9 @@ public class RepositorioTitular : IRepositorioTitular
         return lista;
     }
 
-    public void ModificarTitular(Titular titular)
+    public Error ModificarTitular(Titular titular)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
             var titularAModificar = db.Titulares.Where(t => t.Id == titular.Id).SingleOrDefault();
@@ -40,11 +41,17 @@ public class RepositorioTitular : IRepositorioTitular
                 titularAModificar.Telefono = titular.Telefono;
                 db.SaveChanges();
             }
+            else
+            {
+                error.Mensaje = "No hay ningún titular con Id " + titular.Id;
+            }
         }
+        return error;
     }
 
-    public void EliminarTitular(int id)
+    public Error EliminarTitular(int id)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
             // var titularABorrar = db.Titulares.Where(t => t.Id == id).Include(t => t.Vehiculos).SingleOrDefault();
@@ -112,7 +119,12 @@ public class RepositorioTitular : IRepositorioTitular
                 db.Remove(titularABorrar);
                 db.SaveChanges();
             }
+            else
+            {
+                error.Mensaje = "No hay ningún titular con Id " + id;
+            }
         }
+        return error;
     }
 
     public Titular? GetTitular(int id){

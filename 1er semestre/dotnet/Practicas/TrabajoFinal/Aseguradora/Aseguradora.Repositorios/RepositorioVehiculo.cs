@@ -6,13 +6,23 @@ namespace Aseguradora.Repositorios;
 
 public class RepositorioVehiculo : IRepositorioVehiculo
 {
-    public void AgregarVehiculo(Vehiculo vehiculo)
+    public Error AgregarVehiculo(Vehiculo vehiculo)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            db.Add(vehiculo);
-            db.SaveChanges();
+            var titular = db.Titulares.Where(p => p.Id == vehiculo.TitularId).SingleOrDefault();
+            if (titular != null)
+            {
+                db.Add(vehiculo);
+                db.SaveChanges();
+            }
+            else
+            {
+                error.Mensaje = "No hay ningún titular con Id " + vehiculo.TitularId;
+            }
         }
+        return error;
     }
 
     public List<Vehiculo> ListarVehiculos()
@@ -25,24 +35,39 @@ public class RepositorioVehiculo : IRepositorioVehiculo
         return lista;
     }
 
-    public void ModificarVehiculo(Vehiculo vehiculo)
+    public Error ModificarVehiculo(Vehiculo vehiculo)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
             var vehiculoAModificar = db.Vehiculos.Where(v => v.Id == vehiculo.Id).SingleOrDefault();
             if (vehiculoAModificar != null)
             {
-                vehiculoAModificar.Dominio = vehiculo.Dominio;
-                vehiculoAModificar.AñoFabricacion = vehiculo.AñoFabricacion;
-                vehiculoAModificar.Marca = vehiculo.Marca;
-                vehiculoAModificar.TitularId = vehiculo.TitularId;
-                db.SaveChanges();
+                var titular = db.Titulares.Where(p => p.Id == vehiculo.TitularId).SingleOrDefault();
+                if (titular != null)
+                {
+                    vehiculoAModificar.Dominio = vehiculo.Dominio;
+                    vehiculoAModificar.AñoFabricacion = vehiculo.AñoFabricacion;
+                    vehiculoAModificar.Marca = vehiculo.Marca;
+                    vehiculoAModificar.TitularId = vehiculo.TitularId;
+                    db.SaveChanges();
+                }
+                else
+                {
+                    error.Mensaje = "No hay ningún titular con Id " + vehiculo.TitularId;
+                }
+            }
+            else
+            {
+                error.Mensaje = "No hay ningún vehículo con Id " + vehiculo.Id;
             }
         }
+        return error;
     }
 
-    public void EliminarVehiculo(int id)
+    public Error EliminarVehiculo(int id)
     {
+        var error = new Error();
         using (var db = new AseguradoraContext())
         {
             // var vehiculoABorrar = db.Vehiculos.Where(v => v.Id == id).SingleOrDefault();
@@ -115,7 +140,12 @@ public class RepositorioVehiculo : IRepositorioVehiculo
                 db.Remove(vehiculoABorrar);
                 db.SaveChanges();
             }
+            else
+            {
+                error.Mensaje = "No hay ningún vehículo con Id " + id;
+            }
         }
+        return error;
     }
 
     public Vehiculo? GetVehiculo(int id)

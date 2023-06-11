@@ -7,5 +7,5 @@ public class ModificarPolizaUseCase : PolizaUseCase
 {
     public ModificarPolizaUseCase(IRepositorioPoliza repositorio):base(repositorio){}
 
-    public void Ejecutar(Poliza poliza) => Repositorio.ModificarPoliza(poliza);
+    public Error Ejecutar(Poliza poliza) => Repositorio.ModificarPoliza(poliza);
 }

@@ -39,11 +39,11 @@
     border: none;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    padding: 0;
+    padding: 10px;
     overflow: hidden;
     z-index: 1;
     animation: animate-in-b-hdo3htk7gj 1s ease-out forwards;
-    width: 400px;
+    width: 600px;
 }
 /* _content/Aseguradora.UI/Shared/MainLayout.razor.rz.scp.css */
 .page[b-g6x6s7l54y] {
