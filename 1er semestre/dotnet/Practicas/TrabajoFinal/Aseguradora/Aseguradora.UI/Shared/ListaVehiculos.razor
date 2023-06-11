@@ -1,9 +1,12 @@
 @inject ListarVehiculosUseCase ListarVehiculosUseCase;
 @inject NavigationManager Navigator
+@inject GetTitularUseCase GetTitularUseCase;
 
 <h1>Listado de vehículos</h1>
-<button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un vehículo</button>
- 
+@if(IdTitular == 0){
+  <button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un vehículo</button>
+}
+
 <table class="table"> 
   <thead>
     <tr>
@@ -12,8 +15,10 @@
       <th>Marca</th>
       <th>Año de fabricación</th>
       <th>Id del titular</th>
-      <th>Modificar</th>
-      <th>Eliminar</th>
+      @if(IdTitular == 0){
+        <th>Modificar</th>
+        <th>Eliminar</th>
+      }
     </tr>
   </thead>
   <tbody>
@@ -25,8 +30,10 @@
           <td>@vehiculo.Marca</td>
           <td>@vehiculo.AñoFabricacion</td>
           <td>@vehiculo.TitularId</td>
-          <td><button class="btn btn-primary" @onclick="()=>Ingresar(vehiculo.Id)"><span class="oi oi-pencil"></span></button></td>
-          <td><button class="btn btn-danger" @onclick="()=>Eliminar(vehiculo.Id)"><span class="oi oi-trash"></span></button></td>
+          @if(IdTitular == 0){
+            <td><button class="btn btn-primary" @onclick="()=>Ingresar(vehiculo.Id)"><span class="oi oi-pencil"></span></button></td>
+            <td><button class="btn btn-danger" @onclick="()=>Eliminar(vehiculo.Id)"><span class="oi oi-trash"></span></button></td>
+          }
         </tr>
       }
   </tbody> 
@@ -34,8 +41,20 @@
 
 @code {
   [Parameter] public EventCallback OnEliminar { get; set; }
+  [Parameter] public int IdTitular { get; set; }
   List<Vehiculo> listaVehiculos = new List<Vehiculo>();
-  protected override void OnInitialized() => listaVehiculos = ListarVehiculosUseCase.Ejecutar();
+  protected override void OnInitialized()
+  {
+    listaVehiculos = ListarVehiculosUseCase.Ejecutar();
+    if(IdTitular != 0)
+    {
+      var titular = GetTitularUseCase.Ejecutar(IdTitular);
+      if(titular != null)
+      {
+        listaVehiculos = listaVehiculos.Where(v => v.TitularId == IdTitular).ToList();
+      }
+    }
+  }
 
   void Ingresar(int id)
   {

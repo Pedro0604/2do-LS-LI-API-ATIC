@@ -22,8 +22,10 @@
     {
       <tr>
         <td>@siniestro.Id</td>
-        <td>@siniestro.FechaIngreso</td>
-        <td>@siniestro.FechaOcurrencia</td>
+        <td>@siniestro.FechaIngreso.ToString("g",
+                  CultureInfo.CreateSpecificCulture("es-ARG"))</td>
+        <td>@siniestro.FechaOcurrencia.ToString("d",
+                  CultureInfo.CreateSpecificCulture("es-ARG"))</td>
         <td>@siniestro.DireccionSiniestro</td>
         <td>@siniestro.Descripcion</td>
         <td>@siniestro.PolizaId</td>
@@ -52,6 +54,6 @@
   }
   void Eliminar(int id)
   {
-    Navigator.NavigateTo($"/sinietros/eliminar/{id}");
+    Navigator.NavigateTo($"/siniestros/eliminar/{id}");
   }
 } 

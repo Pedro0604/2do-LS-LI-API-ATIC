@@ -21,7 +21,7 @@ else{
     [Parameter] public int Id {get; set;}
     [Parameter] public EventCallback CerrarDialogo{get; set;}
     public bool Modificar {get; set;} = false;
-    Siniestro _siniestro = new Siniestro();
+    Siniestro _siniestro = new Siniestro(true);
 
     protected override void OnParametersSet() 
     {

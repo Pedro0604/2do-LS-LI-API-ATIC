@@ -12,6 +12,8 @@ public class Siniestro
     // Propiedad de navegación para los terceros
     public List<Tercero> Terceros { get; set; } = new List<Tercero>();
 
+    public Siniestro() { }
+
     //Constructor para inicializar la fecha de ingreso
-    public Siniestro() { FechaIngreso = DateTime.Now; }
+    public Siniestro(bool inicializarFechaIngreso = false) { if (inicializarFechaIngreso) FechaIngreso = DateTime.Now; }
 }
