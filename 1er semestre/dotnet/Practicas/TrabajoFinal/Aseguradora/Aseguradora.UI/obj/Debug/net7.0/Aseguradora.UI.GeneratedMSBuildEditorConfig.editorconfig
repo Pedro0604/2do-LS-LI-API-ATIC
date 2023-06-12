@@ -92,10 +92,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hckVsaW1pbmFjaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/DialogoConfirmacion.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ29Db25maXJtYWNpb24ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [d:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarPoliza.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZ3Jlc2FyUG9saXphLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

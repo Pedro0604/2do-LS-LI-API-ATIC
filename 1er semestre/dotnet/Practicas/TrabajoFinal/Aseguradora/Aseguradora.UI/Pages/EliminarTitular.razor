@@ -5,24 +5,22 @@
 
 <ListaTitulares/>
 <Dialogo CerrarDialogo="Cerrar">
-  <ConfirmarEliminacion @ref="confirmar" CerrarDialogo="Cerrar" OnEliminar="Eliminar"/>
+  <ConfirmarEliminacion @ref="Confirmar" CerrarDialogo="Cerrar" OnEliminar="Eliminar"/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
-    Titular _titular = new Titular();
-    ConfirmarEliminacion confirmar = null!;
+    ConfirmarEliminacion? Confirmar {get; set;} = null;
     protected override void OnAfterRender(bool first) 
     {
         var titularEcontrado = GetTitularUseCase.Ejecutar(Id);
         if(titularEcontrado != null)
         {
-            _titular = titularEcontrado;
-            confirmar.AgregarMensaje($"Eliminar al titular {_titular.Nombre} {_titular.Apellido}?");
+            Confirmar?.AgregarMensaje($"Eliminar al titular {titularEcontrado.Nombre} {titularEcontrado.Apellido}?");
         }
         else
         {
-            confirmar.SetError(Id);
+            Confirmar?.AgregarMensaje($"El titular de Id {Id} no existe", true);
         }
     }
     void Eliminar(){

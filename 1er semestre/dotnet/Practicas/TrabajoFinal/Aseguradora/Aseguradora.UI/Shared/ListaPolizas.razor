@@ -3,45 +3,50 @@
 
 <h1>Listado de pólizas</h1>
 <button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar una póliza</button>
- 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Valor asegurado</th>
-      <th>Franquicia</th>
-      <th>Tipo de cobertura</th>
-      <th>Fecha de inicio de vigencia</th>
-      <th>Fecha de fin de vigencia</th>
-      <th>Id del vehículo</th>
-      <th>Modificar</th>
-      <th>Eliminar</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach (var poliza in listaPolizas)
-    {
+
+@if(_listaPolizas.Count == 0){
+  <h3>Aún no hay pólizas</h3>
+}
+else{
+  <table class="table">
+    <thead>
       <tr>
-        <td>@poliza.Id</td>
-        <td>@poliza.ValorAsegurado</td>
-        <td>@poliza.Franquicia</td>
-        <td>@poliza.TipoDeCobertura</td>
-        <td>@poliza.FechaInicioVigencia.ToString("d",
-                  CultureInfo.CreateSpecificCulture("es-ARG"))</td>
-        <td>@poliza.FechaFinVigencia.ToString("d",
-                  CultureInfo.CreateSpecificCulture("es-ARG"))</td>
-        <td>@poliza.VehiculoId</td>
-        <td><button class="btn btn-primary" @onclick="()=>Ingresar(poliza.Id)"><span class="oi oi-pencil"></span></button></td>
-        <td><button class="btn btn-danger" @onclick="()=>Eliminar(poliza.Id)"><span class="oi oi-trash"></span></button></td>
+        <th>Id</th>
+        <th>Valor asegurado</th>
+        <th>Franquicia</th>
+        <th>Tipo de cobertura</th>
+        <th>Fecha de inicio de vigencia</th>
+        <th>Fecha de fin de vigencia</th>
+        <th>Id del vehículo</th>
+        <th>Modificar</th>
+        <th>Eliminar</th>
       </tr>
-    }
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      @foreach (var poliza in _listaPolizas)
+      {
+        <tr>
+          <td>@poliza.Id</td>
+          <td>@poliza.ValorAsegurado</td>
+          <td>@poliza.Franquicia</td>
+          <td>@poliza.TipoDeCobertura</td>
+          <td>@poliza.FechaInicioVigencia.ToString("d",
+                    CultureInfo.CreateSpecificCulture("es-ARG"))</td>
+          <td>@poliza.FechaFinVigencia.ToString("d",
+                    CultureInfo.CreateSpecificCulture("es-ARG"))</td>
+          <td>@poliza.VehiculoId</td>
+          <td><button class="btn btn-primary" @onclick="()=>Ingresar(poliza.Id)"><span class="oi oi-pencil"></span></button></td>
+          <td><button class="btn btn-danger" @onclick="()=>Eliminar(poliza.Id)"><span class="oi oi-trash"></span></button></td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}
 
 @code {
   [Parameter] public EventCallback OnEliminar { get; set; }
-  List<Poliza> listaPolizas = new List<Poliza>();
-  protected override void OnInitialized() => listaPolizas = ListarPolizasUseCase.Ejecutar();
+  List<Poliza> _listaPolizas = new List<Poliza>();
+  protected override void OnInitialized() => _listaPolizas = ListarPolizasUseCase.Ejecutar();
   
   void Ingresar(int id)
   {

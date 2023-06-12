@@ -2,56 +2,76 @@
 @inject NavigationManager Navigator
 @inject GetTitularUseCase GetTitularUseCase;
 
-<h1>Listado de vehículos</h1>
-@if(IdTitular == 0){
+@if(!ParaTitular){
+  <h1>Listado de vehículos</h1>
   <button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un vehículo</button>
 }
+else if(_listaVehiculos.Count != 0){
+  <h1>Listado de vehículos del titular @_titular?.Nombre @_titular?.Apellido</h1>
+}
 
-<table class="table"> 
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Dominio</th>
-      <th>Marca</th>
-      <th>Año de fabricación</th>
-      <th>Id del titular</th>
-      @if(IdTitular == 0){
-        <th>Modificar</th>
-        <th>Eliminar</th>
-      }
-    </tr>
-  </thead>
-  <tbody>
-    @foreach (var vehiculo in listaVehiculos)
-      {
-        <tr>
-          <td>@vehiculo.Id</td>
-          <td>@vehiculo.Dominio</td>
-          <td>@vehiculo.Marca</td>
-          <td>@vehiculo.AñoFabricacion</td>
-          <td>@vehiculo.TitularId</td>
-          @if(IdTitular == 0){
-            <td><button class="btn btn-primary" @onclick="()=>Ingresar(vehiculo.Id)"><span class="oi oi-pencil"></span></button></td>
-            <td><button class="btn btn-danger" @onclick="()=>Eliminar(vehiculo.Id)"><span class="oi oi-trash"></span></button></td>
-          }
-        </tr>
-      }
-  </tbody> 
-</table>
+@if(_listaVehiculos.Count == 0){
+    <h3>Aún no
+    @if(!ParaTitular){
+      <span>hay</span>
+    }else{
+      <span>tiene</span>
+    }
+    vehículos</h3>
+}
+else{
+  <table class="table"> 
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Dominio</th>
+        <th>Marca</th>
+        <th>Año de fabricación</th>
+        @if(!ParaTitular){
+          <th>Id del titular</th>
+          <th>Modificar</th>
+          <th>Eliminar</th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (var vehiculo in _listaVehiculos)
+        {
+          <tr>
+            <td>@vehiculo.Id</td>
+            <td>@vehiculo.Dominio</td>
+            <td>@vehiculo.Marca</td>
+            <td>@vehiculo.AñoFabricacion</td>
+            <td>@vehiculo.TitularId</td>
+            @if(!ParaTitular){
+              <td><button class="btn btn-primary" @onclick="()=>Ingresar(vehiculo.Id)"><span class="oi oi-pencil"></span></button></td>
+              <td><button class="btn btn-danger" @onclick="()=>Eliminar(vehiculo.Id)"><span class="oi oi-trash"></span></button></td>
+            }
+          </tr>
+        }
+    </tbody> 
+  </table>
+}
 
 @code {
   [Parameter] public EventCallback OnEliminar { get; set; }
   [Parameter] public int IdTitular { get; set; }
-  List<Vehiculo> listaVehiculos = new List<Vehiculo>();
+  [Parameter] public EventCallback<string> OnError{get; set;}
+  [Parameter] public bool ParaTitular{get; set;} = false;
+  List<Vehiculo> _listaVehiculos = new List<Vehiculo>();
+  Titular? _titular = null;
   protected override void OnInitialized()
   {
-    listaVehiculos = ListarVehiculosUseCase.Ejecutar();
-    if(IdTitular != 0)
-    {
-      var titular = GetTitularUseCase.Ejecutar(IdTitular);
-      if(titular != null)
+    _listaVehiculos = ListarVehiculosUseCase.Ejecutar();
+    if(ParaTitular){
+      _titular = GetTitularUseCase.Ejecutar(IdTitular);
+      if(_titular != null)
       {
-        listaVehiculos = listaVehiculos.Where(v => v.TitularId == IdTitular).ToList();
+        _listaVehiculos = _listaVehiculos.Where(v => v.TitularId == _titular.Id).ToList();
+      }
+      else
+      {
+        OnError.InvokeAsync($"El titular de Id {IdTitular} no existe");
       }
     }
   }

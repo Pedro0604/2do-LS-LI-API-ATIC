@@ -21,6 +21,8 @@ else{
 @code{
     [Parameter] public int Id {get; set;}
     [Parameter] public EventCallback CerrarDialogo{get; set;}
+    [Parameter] public EventCallback OnError{get; set;}
+    public string? MensajeError {get; private set; }
     public bool Modificar {get; set;} = false;
     Tercero _tercero = new Tercero();
 
@@ -36,13 +38,23 @@ else{
         }
     }
     void Cerrar(){
+        Error error;
         if(Modificar)
         {
-            ModificarTerceroUseCase.Ejecutar(_tercero);
+            error = ModificarTerceroUseCase.Ejecutar(_tercero);
         }
         else{
-            AgregarTerceroUseCase.Ejecutar(_tercero);
+            error = AgregarTerceroUseCase.Ejecutar(_tercero);
         }
-        CerrarDialogo.InvokeAsync();
+
+        if(error.Mensaje != "")
+        {
+            MensajeError = error.Mensaje;
+            OnError.InvokeAsync();
+        }
+        else
+        {
+            CerrarDialogo.InvokeAsync();
+        }
     }
 }

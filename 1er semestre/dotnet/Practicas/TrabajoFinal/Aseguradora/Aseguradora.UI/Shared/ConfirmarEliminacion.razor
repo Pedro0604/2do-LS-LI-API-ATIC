@@ -1,7 +1,7 @@
 @inject AgregarTitularUseCase AgregarTitularUseCase;
 
 <div>
-  @if(Error){
+  @if(HasError){
     <h3 class="text-danger">@Mensaje</h3>
   }
   else
@@ -14,24 +14,17 @@
 
 @code {
   [Parameter] public string? Mensaje { get; set; }
-  [Parameter]
-  public
-  EventCallback CerrarDialogo
-  { get; set; }
-  [Parameter]
-  public EventCallback  OnEliminar
-  { get; set; }
-  public bool Error { get; set; } = false; public void
-  AgregarMensaje(string st)
-  { Mensaje = st; 
-  StateHasChanged();}
-  public void SetError(int id)
+  [Parameter]  public  EventCallback CerrarDialogo  { get; set; }
+  [Parameter]  public EventCallback  OnEliminar  { get; set; }
+  public bool HasError { get; set; } = false;
+
+  public void AgregarMensaje(string? st, bool hasError = false)
   {
-    Error =
-  true; Mensaje = $"El titular de Id {id} no existe"; StateHasChanged();
+    Mensaje = st;
+    HasError = hasError;
+    StateHasChanged();
   }
-  void
-  Cerrar(bool eliminar)
+  void Cerrar(bool eliminar)
   {
     if (eliminar) { OnEliminar.InvokeAsync(); }
     CerrarDialogo.InvokeAsync();

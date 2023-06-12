@@ -3,13 +3,26 @@
 
 <ListaTerceros/>
 <Dialogo CerrarDialogo="Cerrar">
-  <IngresarTercero CerrarDialogo="Cerrar" Id="@Id"/>
+  @if(!HasError){
+  <IngresarTercero @ref="Ingresar" CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError"/>
+  }
+  else{
+    <h3 class="text-danger">@MensajeError</h3>
+  }
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
+    public bool HasError { get; set; } = false;
+    public string? MensajeError { get; set; }
+    public IngresarTercero? Ingresar { get; set; } = null;
     void Cerrar()
     { 
       Navigator.NavigateTo("/terceros");
+    }
+    void MostrarError(){
+      HasError = true;
+      MensajeError = Ingresar?.MensajeError;
+      StateHasChanged();
     }
 }

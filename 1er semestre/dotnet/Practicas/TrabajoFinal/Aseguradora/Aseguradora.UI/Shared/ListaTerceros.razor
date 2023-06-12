@@ -4,42 +4,47 @@
 <h1>Listado de terceros</h1>
 <button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un tercero</button>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Nombre</th>
-      <th>Apellido</th>
-      <th>Nombre de la aseguradora</th>
-      <th>DNI</th>
-      <th>Telefono</th>
-      <th>Id del siniestro</th>
-      <th>Modificar</th>
-      <th>Eliminar</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach (var tercero in listaTerceros)
-    {
+@if(_listaTerceros.Count == 0){
+  <h3>Aún no hay terceros</h3>
+}
+else{
+  <table class="table">
+    <thead>
       <tr>
-        <td>@tercero.Id</td>
-        <td>@tercero.Nombre</td>
-        <td>@tercero.Apellido</td>
-        <td>@tercero.NombreAseguradora</td>
-        <td>@tercero.DNI</td>
-        <td>@tercero.Telefono</td>
-        <td>@tercero.SiniestroId</td>
-        <td><button class="btn btn-primary" @onclick="()=>Ingresar(tercero.Id)"><span class="oi oi-pencil"></span></button></td>
-        <td><button class="btn btn-danger" @onclick="()=>Eliminar(tercero.Id)"><span class="oi oi-trash"></span></button></td>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Nombre de la aseguradora</th>
+        <th>DNI</th>
+        <th>Telefono</th>
+        <th>Id del siniestro</th>
+        <th>Modificar</th>
+        <th>Eliminar</th>
       </tr>
-    }
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      @foreach (var tercero in _listaTerceros)
+      {
+        <tr>
+          <td>@tercero.Id</td>
+          <td>@tercero.Nombre</td>
+          <td>@tercero.Apellido</td>
+          <td>@tercero.NombreAseguradora</td>
+          <td>@tercero.DNI</td>
+          <td>@tercero.Telefono</td>
+          <td>@tercero.SiniestroId</td>
+          <td><button class="btn btn-primary" @onclick="()=>Ingresar(tercero.Id)"><span class="oi oi-pencil"></span></button></td>
+          <td><button class="btn btn-danger" @onclick="()=>Eliminar(tercero.Id)"><span class="oi oi-trash"></span></button></td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}
 
 @code {
   [Parameter] public EventCallback OnEliminar { get; set; }
-  List<Tercero> listaTerceros = new List<Tercero>(); 
-  protected override void OnInitialized() => listaTerceros = ListarTercerosUseCase.Ejecutar();
+  List<Tercero> _listaTerceros = new List<Tercero>(); 
+  protected override void OnInitialized() => _listaTerceros = ListarTercerosUseCase.Ejecutar();
   
   void Ingresar(int id)
   {

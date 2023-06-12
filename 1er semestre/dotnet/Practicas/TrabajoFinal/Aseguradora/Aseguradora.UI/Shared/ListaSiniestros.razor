@@ -3,51 +3,56 @@
 
 <h1>Listado de siniestros</h1>
 <button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un siniestro</button>
- 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Fecha de ingreso</th>
-      <th>Fecha de ocurrencia</th>
-      <th>Dirección</th>
-      <th>Descripción</th>
-      <th>Id de la póliza</th>
-      <th>Modificar</th>
-      <th>Eliminar</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach (var siniestro in listaSiniestros)
-    {
+
+@if(_listaSiniestros.Count == 0){
+  <h3>Aún no hay siniestros</h3>
+}
+else{
+  <table class="table">
+    <thead>
       <tr>
-        <td>@siniestro.Id</td>
-        <td>@siniestro.FechaIngreso.ToString("g",
-                  CultureInfo.CreateSpecificCulture("es-ARG"))</td>
-        <td>@siniestro.FechaOcurrencia.ToString("d",
-                  CultureInfo.CreateSpecificCulture("es-ARG"))</td>
-        <td>@siniestro.DireccionSiniestro</td>
-        <td>@siniestro.Descripcion</td>
-        <td>@siniestro.PolizaId</td>
-        <td>
-          <button class="btn btn-primary" @onclick="()=>Ingresar(siniestro.Id)">
-            <span class="oi oi-pencil"></span>
-          </button>
-        </td>
-        <td>
-          <button class="btn btn-danger" @onclick="()=>Eliminar(siniestro.Id)">
-            <span class="oi oi-trash"></span>
-          </button>
-        </td>
+        <th>Id</th>
+        <th>Fecha de ingreso</th>
+        <th>Fecha de ocurrencia</th>
+        <th>Dirección</th>
+        <th>Descripción</th>
+        <th>Id de la póliza</th>
+        <th>Modificar</th>
+        <th>Eliminar</th>
       </tr>
-    }
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      @foreach (var siniestro in _listaSiniestros)
+      {
+        <tr>
+          <td>@siniestro.Id</td>
+          <td>@siniestro.FechaIngreso.ToString("g",
+                    CultureInfo.CreateSpecificCulture("es-ARG"))</td>
+          <td>@siniestro.FechaOcurrencia.ToString("d",
+                    CultureInfo.CreateSpecificCulture("es-ARG"))</td>
+          <td>@siniestro.DireccionSiniestro</td>
+          <td>@siniestro.Descripcion</td>
+          <td>@siniestro.PolizaId</td>
+          <td>
+            <button class="btn btn-primary" @onclick="()=>Ingresar(siniestro.Id)">
+              <span class="oi oi-pencil"></span>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-danger" @onclick="()=>Eliminar(siniestro.Id)">
+              <span class="oi oi-trash"></span>
+            </button>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+}
 
 @code {
   [Parameter] public EventCallback OnEliminar { get; set; }
-  List<Siniestro> listaSiniestros = new List<Siniestro>();
-  protected override void OnInitialized() => listaSiniestros = ListarSiniestrosUseCase.Ejecutar();
+  List<Siniestro> _listaSiniestros = new List<Siniestro>();
+  protected override void OnInitialized() => _listaSiniestros = ListarSiniestrosUseCase.Ejecutar();
   void Ingresar(int id)
   {
     Navigator.NavigateTo($"/siniestros/ingresar/{id}");
