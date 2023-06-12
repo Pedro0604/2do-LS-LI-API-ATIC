@@ -9,8 +9,7 @@
       "Aseguradora.UI/1.0.0": {
         "dependencies": {
           "Aseguradora.Aplicacion": "1.0.0",
-          "Aseguradora.Repositorios": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.5"
+          "Aseguradora.Repositorios": "1.0.0"
         },
         "runtime": {
           "Aseguradora.UI.dll": {}

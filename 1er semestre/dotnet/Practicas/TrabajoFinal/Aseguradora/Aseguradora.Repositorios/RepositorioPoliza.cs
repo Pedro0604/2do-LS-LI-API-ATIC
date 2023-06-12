@@ -72,42 +72,6 @@ public class RepositorioPoliza : IRepositorioPoliza
         var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            // var polizaABorrar = db.Polizas.Where(p => p.Id == id).SingleOrDefault();
-            // if (polizaABorrar != null)
-            // {
-            //     foreach (var siniestro in polizaABorrar.Siniestros)
-            //     {
-            //         foreach (var tercero in siniestro.Terceros)
-            //         {
-            //             db.Remove(tercero);
-            //         }
-            //         db.Remove(siniestro);
-            //     }
-            //     db.Remove(polizaABorrar);
-            //     db.SaveChanges();
-            // }
-
-            // var polizaABorrar = db.Polizas.Where(p => p.Id == id).Include(p => p.Siniestros).SingleOrDefault();
-            // if (polizaABorrar != null)
-            // {
-            //     polizaABorrar.Siniestros?.ToList().
-            //     ForEach(siniestro =>
-            //     {
-            //         var siniestroABorrar = db.Siniestros.Where(s => s.Id == siniestro.Id).Include(s => s.Terceros).SingleOrDefault();
-            //         if (siniestroABorrar != null)
-            //         {
-            //             siniestroABorrar.Terceros?.ToList().
-            //             ForEach(tercero =>
-            //             {
-            //                 db.Remove(tercero);
-            //             });
-            //             db.Remove(siniestroABorrar);
-            //         }
-            //     });
-            //     db.Remove(polizaABorrar);
-            //     db.SaveChanges();
-            // }
-
             var polizaABorrar = db.Polizas
             .Where(p => p.Id == id)
             .Include(p => p.Siniestros)

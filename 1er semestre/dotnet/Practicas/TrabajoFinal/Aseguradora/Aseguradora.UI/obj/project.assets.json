@@ -1170,8 +1170,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Aseguradora.Aplicacion >= 1.0.0",
-      "Aseguradora.Repositorios >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.5"
+      "Aseguradora.Repositorios >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1217,12 +1216,6 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Sqlite": {
-            "target": "Package",
-            "version": "[7.0.5, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

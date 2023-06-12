@@ -84,18 +84,10 @@ public class RepositorioSiniestro : IRepositorioSiniestro
         var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            // var siniestroABorrar = db.Siniestros.Where(s => s.Id == id).SingleOrDefault();
-            // if (siniestroABorrar != null)
-            // {
-            //     foreach (var tercero in siniestroABorrar.Terceros)
-            //     {
-            //         db.Remove(tercero);
-            //     }
-            //     db.Remove(siniestroABorrar);
-            //     db.SaveChanges();
-            // }
-
-            var siniestroABorrar = db.Siniestros.Where(s => s.Id == id).Include(s => s.Terceros).SingleOrDefault();
+            var siniestroABorrar = db.Siniestros.Where(s => s.Id == id)
+            .Include(s => s.Terceros)
+            .SingleOrDefault();
+            
             if (siniestroABorrar != null)
             {
                 db.RemoveRange(siniestroABorrar.Terceros);
