@@ -5,29 +5,31 @@
 
 <ListaVehiculos/>
 <Dialogo CerrarDialogo="Cerrar">
-  <ConfirmarEliminacion @ref="Confirmar" CerrarDialogo="Cerrar" OnEliminar="Eliminar"/>
+    <ConfirmarEliminacion CerrarDialogo="Cerrar" Mensaje=@_mensaje Visible=@(!_hasError)/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
-    ConfirmarEliminacion? Confirmar {get; set;} = null;
-    protected override void OnAfterRender(bool first) 
+    public string? _mensaje = "";
+    public bool _hasError = false;
+    protected override void OnInitialized() 
     {
         var vehiculoEcontrado = GetVehiculoUseCase.Ejecutar(Id);
         if(vehiculoEcontrado != null)
         {
-            Confirmar?.AgregarMensaje($"Eliminar al vehículo {vehiculoEcontrado.Dominio}?");
+            _mensaje = $"Eliminar al vehículo {vehiculoEcontrado.Dominio}?";
         }
         else
         {
-            Confirmar?.AgregarMensaje($"El vehículo de Id {Id} no existe", true);
+            _mensaje = $"El vehículo de Id {Id} no existe";
+            _hasError = true;
         }
     }
-    void Eliminar(){
-            EliminarVehiculoUseCase.Ejecutar(Id);
-    }
-    void Cerrar()
+    void Cerrar(bool eliminar)
     { 
+        if(eliminar){
+            EliminarVehiculoUseCase.Ejecutar(Id);
+        }
         Navigator.NavigateTo("/vehiculos");
     }
 }

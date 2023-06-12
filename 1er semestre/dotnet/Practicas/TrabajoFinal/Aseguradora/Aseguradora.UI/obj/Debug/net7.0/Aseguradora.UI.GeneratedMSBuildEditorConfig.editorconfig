@@ -88,10 +88,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ConfirmarEliminacion.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hckVsaW1pbmFjaW9uLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/IngresarPoliza.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZ3Jlc2FyUG9saXphLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -136,6 +132,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/ConfirmarEliminacion.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hckVsaW1pbmFjaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-xitvtigc3p
+
 [D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/Dialogo.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ28ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-hdo3htk7gj
@@ -143,6 +143,10 @@ build_metadata.AdditionalFiles.CssScope = b-hdo3htk7gj
 [D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-g6x6s7l54y
+
+[D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/MensajeError.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1lbnNhamVFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-wf5euqohlt
 
 [D:/Pedro/Facultad/2do/1er semestre/dotnet/Practicas/TrabajoFinal/Aseguradora/Aseguradora.UI/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=

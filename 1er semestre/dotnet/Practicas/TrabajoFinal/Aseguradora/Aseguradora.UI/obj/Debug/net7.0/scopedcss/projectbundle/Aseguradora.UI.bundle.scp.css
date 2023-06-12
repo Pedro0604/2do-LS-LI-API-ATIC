@@ -1,3 +1,14 @@
+/* _content/Aseguradora.UI/Shared/ConfirmarEliminacion.razor.rz.scp.css */
+#confirmarEliminacion[b-xitvtigc3p]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botones[b-xitvtigc3p]{
+    display: flex;
+    gap: 30px;
+}
 /* _content/Aseguradora.UI/Shared/Dialogo.razor.rz.scp.css */
 @keyframes animate-in-b-hdo3htk7gj {
     from {
@@ -39,11 +50,12 @@
     border: none;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    padding: 15px;
     overflow: hidden;
     z-index: 1;
     animation: animate-in-b-hdo3htk7gj 1s ease-out forwards;
-    width: 600px;
+    width: fit-content;
+    max-width: 550px;
 }
 /* _content/Aseguradora.UI/Shared/MainLayout.razor.rz.scp.css */
 .page[b-g6x6s7l54y] {
@@ -115,6 +127,18 @@ main[b-g6x6s7l54y] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
+}
+/* _content/Aseguradora.UI/Shared/MensajeError.razor.rz.scp.css */
+#error[b-wf5euqohlt]{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#titulo[b-wf5euqohlt]{
+    display: flex;
+    gap: 30px;
 }
 /* _content/Aseguradora.UI/Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-7swmyw7ncn] {

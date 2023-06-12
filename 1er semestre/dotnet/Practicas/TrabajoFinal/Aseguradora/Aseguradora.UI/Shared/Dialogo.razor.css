@@ -38,9 +38,10 @@
     border: none;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    padding: 15px;
     overflow: hidden;
     z-index: 1;
     animation: animate-in 1s ease-out forwards;
-    width: 600px;
+    width: fit-content;
+    max-width: 550px;
 }

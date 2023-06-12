@@ -5,28 +5,31 @@
 
 <ListaSiniestros/>
 <Dialogo CerrarDialogo="Cerrar">
-    <ConfirmarEliminacion @ref="Confirmar" CerrarDialogo="Cerrar" OnEliminar="Eliminar"/>
+    <ConfirmarEliminacion CerrarDialogo="Cerrar" Mensaje=@_mensaje Visible=@(!_hasError)/>
+    <MensajeError Mensaje=@_mensaje Visible=@_hasError/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
-    ConfirmarEliminacion? Confirmar {get; set;} = null;
-    protected override void OnAfterRender(bool first) 
+    public string? _mensaje = "";
+    public bool _hasError = false;
+    protected override void OnInitialized()
     {
         if(GetSiniestroUseCase.Ejecutar(Id) != null)
         {
-            Confirmar?.AgregarMensaje($"Eliminar al siniestro {Id}?");
+            _mensaje = $"Eliminar al siniestro {Id}?";
         }
         else
         {
-            Confirmar?.AgregarMensaje($"El siniestro de Id {Id} no existe", true);
+            _mensaje = $"El siniestro de Id {Id} no existe";
+            _hasError = true;
         }
     }
-    void Eliminar(){
-        EliminarSiniestroUseCase.Ejecutar(Id);
-    }
-    void Cerrar()
-    { 
+    void Cerrar(bool eliminar)
+    {
+        if(eliminar){
+            EliminarSiniestroUseCase.Ejecutar(Id);
+        }
         Navigator.NavigateTo("/siniestros");
     }
 }

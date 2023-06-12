@@ -1,32 +1,23 @@
 @inject AgregarTitularUseCase AgregarTitularUseCase;
 
-<div>
-  @if(HasError){
-    <h3 class="text-danger">@Mensaje</h3>
-  }
-  else
-  {
-    <h3>@Mensaje</h3>
-    <button class="btn btn-danger" @onclick="()=>Cerrar(true)">Aceptar</button>
-    <button class="btn btn-primary" @onclick="()=>Cerrar(false)">Cancelar</button>
-  }
-</div>
+@if(Visible){
+  <div id="confirmarEliminacion">
+    <div id="mensaje">
+      <h1>@Mensaje</h1>
+    </div>
+    <div id="botones">
+      <button class="btn btn-danger" @onclick="()=>Cerrar(true)">Aceptar</button>
+      <button class="btn btn-primary" @onclick="()=>Cerrar(false)">Cancelar</button>
+    </div>
+  </div>
+}
 
 @code {
+  [Parameter] public EventCallback<bool> CerrarDialogo  { get; set; }
   [Parameter] public string? Mensaje { get; set; }
-  [Parameter]  public  EventCallback CerrarDialogo  { get; set; }
-  [Parameter]  public EventCallback  OnEliminar  { get; set; }
-  public bool HasError { get; set; } = false;
-
-  public void AgregarMensaje(string? st, bool hasError = false)
-  {
-    Mensaje = st;
-    HasError = hasError;
-    StateHasChanged();
-  }
+  [Parameter] public bool Visible { get; set; } = false;
   void Cerrar(bool eliminar)
   {
-    if (eliminar) { OnEliminar.InvokeAsync(); }
-    CerrarDialogo.InvokeAsync();
+    CerrarDialogo.InvokeAsync(eliminar);
   }
 } 

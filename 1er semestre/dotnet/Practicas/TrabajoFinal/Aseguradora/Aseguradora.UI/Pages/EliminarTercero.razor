@@ -5,29 +5,31 @@
 
 <ListaTerceros/>
 <Dialogo CerrarDialogo="Cerrar">
-  <ConfirmarEliminacion @ref="Confirmar" CerrarDialogo="Cerrar" OnEliminar="Eliminar"/>
+    <ConfirmarEliminacion CerrarDialogo="Cerrar" Mensaje=@_mensaje Visible=@(!_hasError)/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
-    ConfirmarEliminacion? Confirmar = null;
-    protected override void OnAfterRender(bool first) 
+    public string? _mensaje = "";
+    public bool _hasError = false;
+    protected override void OnInitialized() 
     {
         var terceroEcontrado = GetTerceroUseCase.Ejecutar(Id);
         if(terceroEcontrado != null)
         {
-            Confirmar?.AgregarMensaje($"Eliminar al tercero {terceroEcontrado.Nombre} {terceroEcontrado.Apellido}?");
+            _mensaje = $"Eliminar al tercero {terceroEcontrado.Nombre} {terceroEcontrado.Apellido}?";
         }
         else
         {
-            Confirmar?.AgregarMensaje($"El tercero de Id {Id} no existe", true);
+            _mensaje = $"El tercero de Id {Id} no existe";
+            _hasError = true;
         }
     }
-    void Eliminar(){
-            EliminarTerceroUseCase.Ejecutar(Id);
-    }
-    void Cerrar()
+    void Cerrar(bool eliminar)
     { 
+        if(eliminar){
+            EliminarTerceroUseCase.Ejecutar(Id);
+        }
         Navigator.NavigateTo("/terceros");
     }
 }

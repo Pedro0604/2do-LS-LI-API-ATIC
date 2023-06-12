@@ -42,8 +42,8 @@ else{
             <td>@vehiculo.Dominio</td>
             <td>@vehiculo.Marca</td>
             <td>@vehiculo.AñoFabricacion</td>
-            <td>@vehiculo.TitularId</td>
             @if(!ParaTitular){
+              <td>@vehiculo.TitularId</td>
               <td><button class="btn btn-primary" @onclick="()=>Ingresar(vehiculo.Id)"><span class="oi oi-pencil"></span></button></td>
               <td><button class="btn btn-danger" @onclick="()=>Eliminar(vehiculo.Id)"><span class="oi oi-trash"></span></button></td>
             }

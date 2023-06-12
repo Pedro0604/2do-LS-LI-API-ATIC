@@ -5,29 +5,30 @@
 
 <ListaPolizas/>
 <Dialogo CerrarDialogo="Cerrar">
-  <ConfirmarEliminacion @ref="Confirmar" CerrarDialogo="Cerrar" OnEliminar="Eliminar"/>
+    <ConfirmarEliminacion CerrarDialogo="Cerrar" Mensaje=@_mensaje Visible=@(!_hasError)/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
-    ConfirmarEliminacion? Confirmar {get; set; } = null;
-    protected override void OnAfterRender(bool first) 
+    public string? _mensaje = "";
+    public bool _hasError = false;
+    protected override void OnInitialized() 
     {
-        var polizaEcontrado = GetPolizaUseCase.Ejecutar(Id);
-        if(polizaEcontrado != null)
+        if(GetPolizaUseCase.Ejecutar(Id) != null)
         {
-            Confirmar?.AgregarMensaje($"Eliminar a la póliza {Id}?");
+            _mensaje = $"Eliminar a la póliza {Id}?";
         }
         else
         {
-            Confirmar?.AgregarMensaje($"La póliza de Id {Id} no existe", true);
+            _mensaje = $"La póliza de Id {Id} no existe";
+            _hasError = true;
         }
     }
-    void Eliminar(){
-        EliminarPolizaUseCase.Ejecutar(Id);
-    }
-    void Cerrar()
+    void Cerrar(bool eliminar)
     { 
+        if(eliminar){
+            EliminarPolizaUseCase.Ejecutar(Id);
+        }
         Navigator.NavigateTo("/polizas");
     }
 }

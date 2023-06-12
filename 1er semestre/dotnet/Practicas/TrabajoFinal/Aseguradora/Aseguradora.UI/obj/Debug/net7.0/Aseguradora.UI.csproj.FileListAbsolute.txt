@@ -138,3 +138,5 @@ C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\
 C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\obj\Debug\net7.0\Aseguradora.UI.pdb
 C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\obj\Debug\net7.0\Aseguradora.UI.genruntimeconfig.cache
 C:\Users\Lucia\OneDrive\Escritorio\Pedro\2do-LS-LI-APU-ATIC\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\obj\Debug\net7.0\ref\Aseguradora.UI.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\obj\Debug\net7.0\scopedcss\Shared\ConfirmarEliminacion.razor.rz.scp.css
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.UI\obj\Debug\net7.0\scopedcss\Shared\MensajeError.razor.rz.scp.css
