@@ -28,13 +28,14 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     animation: opacityChangeIn-b-hdo3htk7gj 0.7s ease-in-out;
 }
 
 .dialogo[b-hdo3htk7gj] {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    translate: -50%;
     border: none;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
