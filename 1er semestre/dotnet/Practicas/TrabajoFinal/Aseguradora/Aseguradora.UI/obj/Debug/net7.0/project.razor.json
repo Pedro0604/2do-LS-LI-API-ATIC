@@ -1641,6 +1641,240 @@
         }
       },
       {
+        "HashCode": 645264173,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarPoliza",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IngresarPoliza"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnError",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "OnError",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visible",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Visible",
+              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarPoliza",
+          "Common.TypeNameIdentifier": "IngresarPoliza",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 493960411,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarPoliza",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.IngresarPoliza"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnError",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "OnError",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visible",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Visible",
+              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarPoliza",
+          "Common.TypeNameIdentifier": "IngresarPoliza",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -643032111,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarTercero",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IngresarTercero"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnError",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "OnError",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visible",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Visible",
+              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTercero",
+          "Common.TypeNameIdentifier": "IngresarTercero",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 818111806,
+        "Kind": "Components.Component",
+        "Name": "Aseguradora.UI.Shared.IngresarTercero",
+        "AssemblyName": "Aseguradora.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Aseguradora.UI.Shared.IngresarTercero"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CerrarDialogo",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "CerrarDialogo",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnError",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "OnError",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Visible",
+            "TypeName": "System.Boolean",
+            "Metadata": {
+              "Common.PropertyName": "Visible",
+              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTercero",
+          "Common.TypeNameIdentifier": "IngresarTercero",
+          "Common.TypeNamespace": "Aseguradora.UI.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": 2137456530,
         "Kind": "Components.Component",
         "Name": "Aseguradora.UI.Shared.IngresarTitular",
@@ -1986,240 +2220,6 @@
         "Metadata": {
           "Common.TypeName": "Aseguradora.UI.Shared.IngresarVehiculo",
           "Common.TypeNameIdentifier": "IngresarVehiculo",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -643032111,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarTercero",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "IngresarTercero"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnError",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Metadata": {
-              "Common.PropertyName": "OnError",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Visible",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "Visible",
-              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTercero",
-          "Common.TypeNameIdentifier": "IngresarTercero",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 818111806,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarTercero",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.IngresarTercero"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnError",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Metadata": {
-              "Common.PropertyName": "OnError",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Visible",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "Visible",
-              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarTercero",
-          "Common.TypeNameIdentifier": "IngresarTercero",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 645264173,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarPoliza",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "IngresarPoliza"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnError",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Metadata": {
-              "Common.PropertyName": "OnError",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Visible",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "Visible",
-              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarPoliza",
-          "Common.TypeNameIdentifier": "IngresarPoliza",
-          "Common.TypeNamespace": "Aseguradora.UI.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 493960411,
-        "Kind": "Components.Component",
-        "Name": "Aseguradora.UI.Shared.IngresarPoliza",
-        "AssemblyName": "Aseguradora.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Aseguradora.UI.Shared.IngresarPoliza"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.Int32"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CerrarDialogo",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "CerrarDialogo",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnError",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Metadata": {
-              "Common.PropertyName": "OnError",
-              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Visible",
-            "TypeName": "System.Boolean",
-            "Metadata": {
-              "Common.PropertyName": "Visible",
-              "Common.GloballyQualifiedTypeName": "global::System.Boolean"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Aseguradora.UI.Shared.IngresarPoliza",
-          "Common.TypeNameIdentifier": "IngresarPoliza",
           "Common.TypeNamespace": "Aseguradora.UI.Shared",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"

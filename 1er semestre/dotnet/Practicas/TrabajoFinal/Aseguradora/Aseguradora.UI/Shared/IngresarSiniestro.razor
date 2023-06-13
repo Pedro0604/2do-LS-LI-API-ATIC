@@ -11,19 +11,19 @@
             <h1>Agregar un siniestro</h1>
         }
         <div class="form-floating mb-3">
-            <input type="date" id="fecha-ocurr" placeholder="Fecha de ocurrencia" min="2010-01-01" max="2023-06-19" @bind="_siniestro.FechaOcurrencia">
+            <input class="form-control" type="date" id="fecha-ocurr" placeholder="Fecha de ocurrencia" min="2010-01-01" max="2023-06-19" @bind="_siniestro.FechaOcurrencia">
             <label for="fecha-ocurr" class="form-label">Fecha de ocurrencia</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" id="dir-siniestro" placeholder="Dirección del siniestro" @bind="_siniestro.DireccionSiniestro">
+            <input class="form-control" type="text" id="dir-siniestro" placeholder="Dirección del siniestro" @bind="_siniestro.DireccionSiniestro">
             <label for="dir-siniestro" class="form-label">Direción del siniestro</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" id="poliza-id" placeholder="Id de la póliza" @bind="_siniestro.PolizaId">
+            <input class="form-control" type="text" id="poliza-id" placeholder="Id de la póliza" @bind="_siniestro.PolizaId">
             <label for="poliza-id" class="form-label">Id de la póliza</label>
         </div>
         <div class="form-floating mb-3">
-            <textarea id="descrip-siniestro" rows="3" placeholder="Descripción del siniestro" @bind="_siniestro.Descripcion"></textarea>
+            <textarea class="form-control" id="descrip-siniestro" rows="3" placeholder="Descripción del siniestro" @bind="_siniestro.Descripcion"></textarea>
             <label for="descrip-siniestro" class="form-label">Descripción del siniestro</label>
         </div>
         <button @onclick="Cerrar" class="btn btn-success" >@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>

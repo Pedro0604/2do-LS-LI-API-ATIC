@@ -11,27 +11,27 @@
         <h1>Agregar un titular</h1>
         }
         <div class="form-floating mb-3">
-            <input type="text" id="nombre-titular" placeholder="Nombre" @bind="_titular.Nombre">
+            <input class="form-control" type="text" id="nombre-titular" placeholder="Nombre" @bind="_titular.Nombre">
             <label for="nombre-titular" class="form-label">Nombre</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" id="apellido-titular" placeholder="Apellido" @bind="_titular.Apellido">
+            <input class="form-control" type="text" id="apellido-titular" placeholder="Apellido" @bind="_titular.Apellido">
             <label for="apellido-titular" class="form-label">Apellido</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" id="dni-titular" placeholder="DNI" @bind="_titular.DNI" maxlength="8">
+            <input class="form-control" type="text" id="dni-titular" placeholder="DNI" @bind="_titular.DNI" maxlength="8">
             <label for="dni-titular" class="form-label">DNI</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" id="direccion-titular" placeholder="Dirección" @bind="_titular.Direccion">
+            <input class="form-control" type="text" id="direccion-titular" placeholder="Dirección" @bind="_titular.Direccion">
             <label for="direccion-titular" class="form-label">Dirección</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="tel" id="telefono-titular" placeholder="Teléfono" @bind="_titular.Telefono">
+            <input class="form-control" type="tel" id="telefono-titular" placeholder="Teléfono" @bind="_titular.Telefono">
             <label for="telefono-titular" class="form-label">Teléfono</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="email" id="email-titular" placeholder="email@dotnet.com" @bind="_titular.Email">
+            <input class="form-control" type="email" id="email-titular" placeholder="email@dotnet.com" @bind="_titular.Email">
             <label for="email-titular" class="form-label">email@dotnet.com</label>
         </div>
         <button @onclick="Cerrar" class="btn btn-success">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
