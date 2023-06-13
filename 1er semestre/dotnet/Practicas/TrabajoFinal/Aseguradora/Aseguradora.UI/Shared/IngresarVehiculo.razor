@@ -10,11 +10,23 @@
         else{
             <h1>Agregar un vehículo</h1>
         }
-        <input type="text" placeholder="Dominio" @bind="_vehiculo.Dominio">
-        <input type="text" placeholder="Marca" @bind="_vehiculo.Marca">
-        <input type="number" placeholder="AñoFabricacion" @bind="_vehiculo.AñoFabricacion">
-        <input type="number" placeholder="Id del titular" @bind="_vehiculo.TitularId">
-        <button @onclick="Cerrar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
+        <div class="form-floating mb-3">
+            <input type="text" id="dominio" placeholder="Dominio" @bind="_vehiculo.Dominio">
+            <label for="dominio" class="form-label">Dominio</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" id="marca" placeholder="Marca" @bind="_vehiculo.Marca">
+            <label for="marca" class="form-label">Marca</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" id="año-fab" placeholder="Año de fabricacion" @bind="_vehiculo.AñoFabricacion">
+            <label for="año-fab" class="form-label">Año de fabricacion</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" id="titular-id" placeholder="Id del titular" @bind="_vehiculo.TitularId">
+            <label for="titular-id" class="form-label">Id del titular</label>
+        </div>
+        <button @onclick="Cerrar" class="btn btn-success">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
     </div>
 }
 

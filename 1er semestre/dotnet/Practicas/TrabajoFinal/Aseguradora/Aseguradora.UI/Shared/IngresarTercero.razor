@@ -10,13 +10,31 @@
         else{
             <h1>Agregar un tercero</h1>
         }
-        <input type="text" placeholder="Nombre" @bind="_tercero.Nombre">
-        <input type="text" placeholder="Apellido" @bind="_tercero.Apellido">
-        <input type="number" placeholder="DNI" @bind="_tercero.DNI">
-        <input type="text" placeholder="Nombre de la aseguradora" @bind="_tercero.NombreAseguradora">
-        <input type="tel" placeholder="Teléfono" @bind="_tercero.Telefono">
-        <input type="number" placeholder="Id del siniestro" @bind="_tercero.SiniestroId">
-        <button @onclick="Cerrar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
+        <div class="form-floating mb-3">
+            <input type="text" id="nombre-tercero" placeholder="Nombre" @bind="_tercero.Nombre">
+            <label for="nombre-tercero" class="form-label">Nombre</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" id="apellido-tercero" placeholder="Apellido" @bind="_tercero.Apellido">
+            <label for="apellido-tercero" class="form-label">Apellido</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" id="dni-tercero" placeholder="DNI" @bind="_tercero.DNI" maxlength="8">
+            <label for="dni-tercero" class="form-label">DNI</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" id="nombre-aseguradora" placeholder="Nombre de la aseguradora" @bind="_tercero.NombreAseguradora">
+            <label for="nombre-aseguradora" class="form-label">Nombre de la aseguradora</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="tel" id="telefono-tercero" placeholder="Teléfono" @bind="_tercero.Telefono">
+            <label for="telefono-tercero" class="form-label">Teléfono</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" id="siniestro-id" placeholder="Id del siniestro" @bind="_tercero.SiniestroId">
+            <label for="siniestro-id" class="form-label">Id del siniestro</label>
+        </div>
+        <button @onclick="Cerrar" class="btn btn-success">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
     </div>
 }
 

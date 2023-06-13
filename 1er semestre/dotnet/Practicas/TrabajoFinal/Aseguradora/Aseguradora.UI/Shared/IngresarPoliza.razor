@@ -5,34 +5,34 @@
 @if(Visible){
     <div>
         @if(_modificar){
-            <h1>Modificar a la póliza @_poliza.Id</h1>
+            <h1>Modificar a la póliza @Id</h1>
         }
         else{
             <h1>Agregar una póliza</h1>
         }
         <div class="form-floating mb-3">
-            <input class="form-control" id="valorAseg" type="number" step="0.01" placeholder="Valor asegurado" @bind="_poliza.ValorAsegurado">
-            <label for="valorAseg" class="form-label">Valor asegurado</label>
-        </div>
-        <div class="mb-3">
-            <label for="franquicia" class="form-label">Franquicia</label>
-            <input class="form-control" id="franquicia" type="number" step="0.01" placeholder="Franquicia" @bind="_poliza.Franquicia">
+            <input class="form-control" id="valor-aseg" type="text" placeholder="Valor asegurado" @bind="_poliza.ValorAsegurado">
+            <label for="valor-aseg" class="form-label">Valor asegurado</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" id="tipoCobert" type="text" placeholder="Tipo de cobertura" @bind="_poliza.TipoDeCobertura">
-            <label for="tipoCobert" class="form-label">Tipo de cobertura</label>
+            <input class="form-control" id="franquicia" type="text" placeholder="Franquicia" @bind="_poliza.Franquicia">
+            <label for="franquicia" class="form-label">Franquicia</label>
         </div>
-        <div class="mb-3">
-            <label for="fechaIniV" class="form-label">Fecha de inicio de la vigencia</label>
-            <input class="form-control" id="fechaIniV" type="date" min="2010-01-01" max="2024-06-19" placeholder="Fecha de inicio de la vigencia" @bind="_poliza.FechaInicioVigencia">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="tipo-cobert" type="text" placeholder="Tipo de cobertura" @bind="_poliza.TipoDeCobertura">
+            <label for="tipo-cobert" class="form-label">Tipo de cobertura</label>
         </div>
-        <div class="mb-3">
-            <label for="fechaFinV" class="form-label">Fecha de fin de la vigencia</label>
-            <input class="form-control" id="fechaFinV" type="date" min="2010-01-01" max="2024-06-19" placeholder="Fecha de fin de la vigencia" @bind="_poliza.FechaFinVigencia">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="fecha-inicio" type="date" min="2010-01-01" max="2024-06-19" placeholder="Fecha de inicio de la vigencia" @bind="_poliza.FechaInicioVigencia">
+            <label for="fecha-inicio" class="form-label">Fecha de inicio de la vigencia</label>
         </div>
-        <div class="mb-3">
-            <label for="vehiculoId" class="form-label">Id del vehículo</label>
-            <input class="form-control" id="vehiculoId" type="number" min="1" placeholder="Id del vehículo" @bind="_poliza.VehiculoId">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="fecha-fin" type="date" min="2010-01-01" max="2024-06-19" placeholder="Fecha de fin de la vigencia" @bind="_poliza.FechaFinVigencia">
+            <label for="fecha-fin" class="form-label">Fecha de fin de la vigencia</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="vehiculo-id" type="text" placeholder="Id del vehículo" @bind="_poliza.VehiculoId">
+            <label for="vehiculo-id" class="form-label">Id del vehículo</label>
         </div>
         <button @onclick="Cerrar" class="btn btn-success">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
     </div>
@@ -48,8 +48,6 @@
 
     protected override void OnParametersSet() 
     {
-        _poliza.FechaInicioVigencia = new DateTime(2018, 01, 01);
-        _poliza.FechaFinVigencia = new DateTime(2018, 01, 01);
         if(Id != 0){
             var _poliza = GetPolizaUseCase.Ejecutar(Id);
             if(_poliza != null) _modificar = true;

@@ -30,10 +30,8 @@ else{
           <td>@poliza.ValorAsegurado</td>
           <td>@poliza.Franquicia</td>
           <td>@poliza.TipoDeCobertura</td>
-          <td>@poliza.FechaInicioVigencia.ToString("d",
-                    CultureInfo.CreateSpecificCulture("es-ARG"))</td>
-          <td>@poliza.FechaFinVigencia.ToString("d",
-                    CultureInfo.CreateSpecificCulture("es-ARG"))</td>
+          <td>@poliza.FechaInicioVigencia.ToString("d", CultureInfo.CreateSpecificCulture("es-ARG"))</td>
+          <td>@poliza.FechaFinVigencia.ToString("d", CultureInfo.CreateSpecificCulture("es-ARG"))</td>
           <td>@poliza.VehiculoId</td>
           <td><button class="btn btn-primary" @onclick="()=>Ingresar(poliza.Id)"><span class="oi oi-pencil"></span></button></td>
           <td><button class="btn btn-danger" @onclick="()=>Eliminar(poliza.Id)"><span class="oi oi-trash"></span></button></td>

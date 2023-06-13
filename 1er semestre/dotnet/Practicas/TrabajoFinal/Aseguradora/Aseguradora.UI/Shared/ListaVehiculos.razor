@@ -59,7 +59,7 @@
   [Parameter] public EventCallback<string> OnError{get; set;}
   [Parameter] public int IdTitular { get; set; }
   [Parameter] public bool ParaTitular{get; set;} = false;
-  [Parameter] public bool Visible {get; set;} = false;
+  [Parameter] public bool Visible {get; set;} = true;
   List<Vehiculo> _listaVehiculos = new List<Vehiculo>();
   Titular? _titular = null;
   protected override void OnInitialized()
