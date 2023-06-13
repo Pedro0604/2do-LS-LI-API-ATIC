@@ -3,25 +3,20 @@
 
 <ListaTitulares/>
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
-  @if(!HasError){
-  <ListaVehiculos IdTitular="@Id" OnError="MostrarError" ParaTitular=true/>
-  }
-  else{
-    <h3 class="text-danger">@MensajeError</h3>
-  }
+  <ListaVehiculos IdTitular="@Id" OnError="MostrarError" ParaTitular=true Visible=@(!_hasError)/>
+  <MensajeError Mensaje=@_mensaje Visible=@_hasError/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
-    public bool HasError { get; set; } = false;
-    public string? MensajeError { get; set; }
+    public bool _hasError { get; set; } = false;
+    public string? _mensaje = "";
     void Cerrar()
     { 
       Navigator.NavigateTo("/titulares");
     }
-    void MostrarError(string? msj){
-      HasError = true;
-      MensajeError = msj;
-      StateHasChanged();
+    void MostrarError(string? mensaje){
+      _mensaje = mensaje;
+      _hasError = true;
     }
 }

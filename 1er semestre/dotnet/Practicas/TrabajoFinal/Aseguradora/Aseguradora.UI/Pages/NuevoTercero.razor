@@ -10,7 +10,7 @@
 @code {
     [Parameter] public int Id { get; set; }
     public bool _hasError = false;
-    public string? _mensaje { get; set; }
+    public string? _mensaje = "";
     void Cerrar()
     { 
       Navigator.NavigateTo("/terceros");
