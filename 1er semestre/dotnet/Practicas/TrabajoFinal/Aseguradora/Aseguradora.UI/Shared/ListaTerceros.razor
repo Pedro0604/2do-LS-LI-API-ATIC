@@ -42,7 +42,6 @@ else{
 }
 
 @code {
-  [Parameter] public EventCallback OnEliminar { get; set; }
   List<Tercero> _listaTerceros = new List<Tercero>(); 
   protected override void OnInitialized() => _listaTerceros = ListarTercerosUseCase.Ejecutar();
   

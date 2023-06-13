@@ -44,7 +44,6 @@ else{
 }
 
 @code {
-  [Parameter] public EventCallback OnEliminar { get; set; }
   List<Poliza> _listaPolizas = new List<Poliza>();
   protected override void OnInitialized() => _listaPolizas = ListarPolizasUseCase.Ejecutar();
   

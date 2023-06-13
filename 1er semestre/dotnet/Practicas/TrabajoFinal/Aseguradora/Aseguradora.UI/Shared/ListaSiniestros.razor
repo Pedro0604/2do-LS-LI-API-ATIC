@@ -50,7 +50,6 @@ else{
 }
 
 @code {
-  [Parameter] public EventCallback OnEliminar { get; set; }
   List<Siniestro> _listaSiniestros = new List<Siniestro>();
   protected override void OnInitialized() => _listaSiniestros = ListarSiniestrosUseCase.Ejecutar();
   void Ingresar(int id)

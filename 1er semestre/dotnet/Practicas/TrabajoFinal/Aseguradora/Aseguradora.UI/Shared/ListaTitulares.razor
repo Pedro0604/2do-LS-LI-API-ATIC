@@ -44,7 +44,6 @@ else{
 }
 
 @code {
-  [Parameter] public EventCallback OnEliminar { get; set; }
   List<Titular> _listaTitulares = new List<Titular>(); protected override void
   OnInitialized() => _listaTitulares = ListarTitularesUseCase.Ejecutar();
 
