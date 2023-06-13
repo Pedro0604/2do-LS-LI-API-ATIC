@@ -5,7 +5,7 @@
 @if(Visible){
     <div>
         @if(_modificar){
-            <h1>Modificar al tercero: @_tercero.Nombre</h1>
+            <h1>Modificar al tercero: @_nombre @_apellido</h1>
         }
         else{
             <h1>Agregar un tercero</h1>
@@ -43,8 +43,10 @@
     [Parameter] public EventCallback CerrarDialogo{get; set;}
     [Parameter] public EventCallback<string> OnError{get; set;}
     [Parameter] public bool Visible {get; set;} = false;
-    public bool _modificar {get; set;} = false;
+    bool _modificar = false;
     Tercero _tercero = new Tercero();
+    string? _nombre;
+    string? _apellido;
 
     protected override void OnParametersSet() 
     {
@@ -53,6 +55,8 @@
             if(_terceroEncontrado != null){
                 _modificar = true;
                 _tercero = _terceroEncontrado;
+                _nombre = _tercero.Nombre;
+                _apellido = _tercero.Apellido;
             }
         }
     }

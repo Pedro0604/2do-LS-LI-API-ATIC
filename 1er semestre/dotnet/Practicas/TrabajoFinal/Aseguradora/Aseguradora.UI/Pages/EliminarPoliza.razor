@@ -11,8 +11,8 @@
 
 @code {
     [Parameter] public int Id { get; set; }
-    public string? _mensaje = "";
-    public bool _hasError = false;
+    string? _mensaje = "";
+    bool _hasError = false;
     protected override void OnParametersSet() 
     {
         if(GetPolizaUseCase.Ejecutar(Id) != null)

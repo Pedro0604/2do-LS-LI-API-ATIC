@@ -1,15 +1,11 @@
 <div class="backdrop" @onclick="Cerrar"></div>
-@if (HasError){
-    <dialog open class="dialogo error">@ChildContent</dialog>
-}
-else{
-    <dialog open class="dialogo">@ChildContent</dialog>
-}
+<dialog open class="dialogo @dialogoClass">@ChildContent</dialog>
 
 @code {
     [Parameter] public RenderFragment? ChildContent { get; set; }
     [Parameter] public EventCallback<bool> CerrarDialogo { get; set; }
     [Parameter] public bool HasError { get; set; } = false;
+    string? dialogoClass => HasError ? "error" : null;
     void Cerrar()
     {
         CerrarDialogo.InvokeAsync();

@@ -43,7 +43,7 @@
     [Parameter] public EventCallback CerrarDialogo{get; set;}
     [Parameter] public EventCallback<string> OnError{get; set;}
     [Parameter] public bool Visible {get; set;} = false;
-    public bool _modificar {get; set;} = false;
+    bool _modificar = false;
     Poliza _poliza = new Poliza();
 
     protected override void OnParametersSet() 

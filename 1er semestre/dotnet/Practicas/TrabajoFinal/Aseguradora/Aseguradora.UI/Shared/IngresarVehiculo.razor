@@ -5,7 +5,7 @@
 @if(Visible){
     <div>
         @if(_modificar){
-            <h1>Modificar al vehículo: @_vehiculo.Dominio</h1>
+            <h1>Modificar al vehículo: @_dominio</h1>
         }
         else{
             <h1>Agregar un vehículo</h1>
@@ -35,8 +35,9 @@
     [Parameter] public EventCallback CerrarDialogo{get; set;}
     [Parameter] public EventCallback<string> OnError{get; set;}
     [Parameter] public bool Visible {get; set;} = false;
-    public bool _modificar {get; set;} = false;
+    bool _modificar = false;
     Vehiculo _vehiculo = new Vehiculo();
+    string? _dominio;
 
     protected override void OnParametersSet() 
     {
@@ -45,6 +46,7 @@
             if(_vehiculoEncontrado != null){
                 _modificar = true;
                 _vehiculo = _vehiculoEncontrado;
+                _dominio = _vehiculo.Dominio;
             }
         }
     }
