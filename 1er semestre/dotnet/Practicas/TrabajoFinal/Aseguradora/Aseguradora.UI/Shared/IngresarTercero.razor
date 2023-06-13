@@ -49,8 +49,11 @@
     protected override void OnParametersSet() 
     {
         if(Id != 0){
-            var _tercero = GetTerceroUseCase.Ejecutar(Id);
-            if(_tercero != null) _modificar = true;
+            var _terceroEncontrado = GetTerceroUseCase.Ejecutar(Id);
+            if(_terceroEncontrado != null){
+                _modificar = true;
+                _tercero = _terceroEncontrado;
+            }
         }
     }
     void Cerrar(){

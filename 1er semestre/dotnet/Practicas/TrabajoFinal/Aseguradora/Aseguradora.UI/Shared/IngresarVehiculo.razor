@@ -41,8 +41,11 @@
     protected override void OnParametersSet() 
     {
         if(Id != 0){
-            var _vehiculo = GetVehiculoUseCase.Ejecutar(Id);
-            if(_vehiculo != null)_modificar = true;
+            var _vehiculoEncontrado = GetVehiculoUseCase.Ejecutar(Id);
+            if(_vehiculoEncontrado != null){
+                _modificar = true;
+                _vehiculo = _vehiculoEncontrado;
+            }
         }
     }
     void Cerrar(){

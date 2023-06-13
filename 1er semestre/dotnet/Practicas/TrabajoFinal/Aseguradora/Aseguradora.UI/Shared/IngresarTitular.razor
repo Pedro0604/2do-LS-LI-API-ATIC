@@ -49,8 +49,11 @@
     protected override void OnParametersSet() 
     {
         if(Id != 0){
-            var _titular = GetTitularUseCase.Ejecutar(Id);
-            if(_titular != null) _modificar = true;
+            var _titularEncontrado = GetTitularUseCase.Ejecutar(Id);
+            if(_titularEncontrado != null){
+                _modificar = true;
+                _titular = _titularEncontrado;
+            }
         }
     }
     void Cerrar(){

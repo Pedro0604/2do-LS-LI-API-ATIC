@@ -41,8 +41,11 @@
     protected override void OnParametersSet() 
     {
         if(Id != 0){
-            var _siniestro = GetSiniestroUseCase.Ejecutar(Id);
-            if(_siniestro != null) _modificar = true;
+            var _siniestroEncontrado = GetSiniestroUseCase.Ejecutar(Id);
+            if(_siniestroEncontrado != null){
+                _modificar = true;
+                _siniestro = _siniestroEncontrado;
+            }
         }
     }
     void Cerrar(){

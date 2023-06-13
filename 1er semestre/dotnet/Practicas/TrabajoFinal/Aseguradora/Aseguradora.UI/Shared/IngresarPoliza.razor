@@ -5,7 +5,7 @@
 @if(Visible){
     <div>
         @if(_modificar){
-            <h1>Modificar a la póliza @Id</h1>
+            <h1>Modificar a la póliza @_poliza.Id</h1>
         }
         else{
             <h1>Agregar una póliza</h1>
@@ -49,8 +49,11 @@
     protected override void OnParametersSet() 
     {
         if(Id != 0){
-            var _poliza = GetPolizaUseCase.Ejecutar(Id);
-            if(_poliza != null) _modificar = true;
+            var _polizaEncontrada = GetPolizaUseCase.Ejecutar(Id);
+            if(_polizaEncontrada != null){
+                _modificar = true;
+                _poliza = _polizaEncontrada;
+            }
         }
     }
     void Cerrar(){
