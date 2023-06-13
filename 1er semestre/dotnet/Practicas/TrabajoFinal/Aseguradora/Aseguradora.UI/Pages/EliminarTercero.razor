@@ -4,15 +4,16 @@
 @inject GetTerceroUseCase GetTerceroUseCase;
 
 <ListaTerceros/>
-<Dialogo CerrarDialogo="Cerrar">
+<Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
     <ConfirmarEliminacion CerrarDialogo="Cerrar" Mensaje=@_mensaje Visible=@(!_hasError)/>
+    <MensajeError Mensaje=@_mensaje Visible=@_hasError/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
     public string? _mensaje = "";
     public bool _hasError = false;
-    protected override void OnInitialized() 
+    protected override void OnParametersSet() 
     {
         var terceroEcontrado = GetTerceroUseCase.Ejecutar(Id);
         if(terceroEcontrado != null)

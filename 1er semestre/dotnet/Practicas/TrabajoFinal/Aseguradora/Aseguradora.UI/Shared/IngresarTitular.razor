@@ -2,59 +2,45 @@
 @inject ModificarTitularUseCase ModificarTitularUseCase;
 @inject GetTitularUseCase GetTitularUseCase;
 
-<div>
-@if(Modificar){
-    <h1>Modificar al titular: @_titular.Nombre</h1>
+@if(Visible){
+    <div>
+        @if(_modificar){
+            <h1>Modificar al titular: @_titular.Nombre</h1>
+        }
+        else{
+        <h1>Agregar un titular</h1>
+        }
+        <input type="text" placeholder="Nombre" @bind="_titular.Nombre">
+        <input type="text" placeholder="Apellido" @bind="_titular.Apellido">
+        <input type="number" placeholder="DNI" @bind="_titular.DNI" maxlength="8">
+        <input type="text" placeholder="Dirección" @bind="_titular.Direccion">
+        <input type="tel" placeholder="Teléfono" @bind="_titular.Telefono">
+        <input type="email" placeholder="Email" @bind="_titular.Email">
+        <button @onclick="Cerrar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
+    </div>
 }
-else{
-<h1>Agregar un titular</h1>
-}
-<input type="text" placeholder="Nombre" @bind="_titular.Nombre">
-<input type="text" placeholder="Apellido" @bind="_titular.Apellido">
-<input type="number" placeholder="DNI" @bind="_titular.DNI" maxlength="8">
-<input type="text" placeholder="Dirección" @bind="_titular.Direccion">
-<input type="tel" placeholder="Teléfono" @bind="_titular.Telefono">
-<input type="email" placeholder="Email" @bind="_titular.Email">
-<button @onclick="Cerrar">@if(Modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
-</div>
 
 @code{
     [Parameter] public int Id {get; set;}
     [Parameter] public EventCallback CerrarDialogo{get; set;}
-    [Parameter] public EventCallback OnError{get; set;}
-    public string? MensajeError {get; private set; }
-    public bool Modificar {get; set;} = false;
+    [Parameter] public EventCallback<string> OnError{get; set;}
+    [Parameter] public bool Visible {get; set;} = false;
+    public bool _modificar {get; set;} = false;
     Titular _titular = new Titular();
 
     protected override void OnParametersSet() 
     {
         if(Id != 0){
-            var titularEcontrado = GetTitularUseCase.Ejecutar(Id);
-            if(titularEcontrado != null)
-            {
-                _titular = titularEcontrado;
-                Modificar = true;
-            }
+            var _titular = GetTitularUseCase.Ejecutar(Id);
+            if(_titular != null) _modificar = true;
         }
     }
     void Cerrar(){
         Error error = new Error();
-        if(Modificar)
-        {
-            error = ModificarTitularUseCase.Ejecutar(_titular);
-        }
-        else{
-            AgregarTitularUseCase.Ejecutar(_titular);
-        }
+        if(_modificar) error = ModificarTitularUseCase.Ejecutar(_titular);
+        else AgregarTitularUseCase.Ejecutar(_titular);
 
-        if(error.Mensaje != "")
-        {
-            MensajeError = error.Mensaje;
-            OnError.InvokeAsync();
-        }
-        else
-        {
-            CerrarDialogo.InvokeAsync();
-        }
+        if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
+        else CerrarDialogo.InvokeAsync();
     }
 }

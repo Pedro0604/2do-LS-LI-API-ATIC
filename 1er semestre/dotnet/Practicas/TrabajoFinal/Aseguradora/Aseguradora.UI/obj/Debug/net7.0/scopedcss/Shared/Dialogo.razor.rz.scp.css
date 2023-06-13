@@ -45,3 +45,9 @@
     width: fit-content;
     max-width: 550px;
 }
+
+.error[b-hdo3htk7gj] {
+    background-color: rgba(199, 57, 57, 0.932);
+    color: white;
+    text-shadow: 0 0 2px rgb(146, 84, 84);
+}

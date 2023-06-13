@@ -2,59 +2,44 @@
 @inject ModificarTerceroUseCase ModificarTerceroUseCase;
 @inject GetTerceroUseCase GetTerceroUseCase;
 
-<div>
-@if(Modificar){
-    <h1>Modificar al tercero: @_tercero.Nombre</h1>
+@if(Visible){
+    <div>
+        @if(_modificar){
+            <h1>Modificar al tercero: @_tercero.Nombre</h1>
+        }
+        else{
+            <h1>Agregar un tercero</h1>
+        }
+        <input type="text" placeholder="Nombre" @bind="_tercero.Nombre">
+        <input type="text" placeholder="Apellido" @bind="_tercero.Apellido">
+        <input type="number" placeholder="DNI" @bind="_tercero.DNI">
+        <input type="text" placeholder="Nombre de la aseguradora" @bind="_tercero.NombreAseguradora">
+        <input type="tel" placeholder="Teléfono" @bind="_tercero.Telefono">
+        <input type="number" placeholder="Id del siniestro" @bind="_tercero.SiniestroId">
+        <button @onclick="Cerrar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
+    </div>
 }
-else{
-<h1>Agregar un tercero</h1>
-}
-<input type="text" placeholder="Nombre" @bind="_tercero.Nombre">
-<input type="text" placeholder="Apellido" @bind="_tercero.Apellido">
-<input type="number" placeholder="DNI" @bind="_tercero.DNI">
-<input type="text" placeholder="Nombre de la aseguradora" @bind="_tercero.NombreAseguradora">
-<input type="tel" placeholder="Teléfono" @bind="_tercero.Telefono">
-<input type="number" placeholder="Id del siniestro" @bind="_tercero.SiniestroId">
-<button @onclick="Cerrar">@if(Modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
-</div>
 
 @code{
     [Parameter] public int Id {get; set;}
     [Parameter] public EventCallback CerrarDialogo{get; set;}
-    [Parameter] public EventCallback OnError{get; set;}
-    public string? MensajeError {get; private set; }
-    public bool Modificar {get; set;} = false;
+    [Parameter] public EventCallback<string> OnError{get; set;}
+    [Parameter] public bool Visible {get; set;} = false;
+    public bool _modificar {get; set;} = false;
     Tercero _tercero = new Tercero();
 
     protected override void OnParametersSet() 
     {
         if(Id != 0){
-            var terceroEcontrado = GetTerceroUseCase.Ejecutar(Id);
-            if(terceroEcontrado != null)
-            {
-                _tercero = terceroEcontrado;
-                Modificar = true;
-            }
+            var _tercero = GetTerceroUseCase.Ejecutar(Id);
+            if(_tercero != null) _modificar = true;
         }
     }
     void Cerrar(){
         Error error;
-        if(Modificar)
-        {
-            error = ModificarTerceroUseCase.Ejecutar(_tercero);
-        }
-        else{
-            error = AgregarTerceroUseCase.Ejecutar(_tercero);
-        }
+        error = _modificar ? ModificarTerceroUseCase.Ejecutar(_tercero) : AgregarTerceroUseCase.Ejecutar(_tercero);
 
-        if(error.Mensaje != "")
-        {
-            MensajeError = error.Mensaje;
-            OnError.InvokeAsync();
-        }
-        else
-        {
-            CerrarDialogo.InvokeAsync();
-        }
+        if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
+        else CerrarDialogo.InvokeAsync();
     }
 }

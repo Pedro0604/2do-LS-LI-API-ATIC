@@ -2,27 +2,21 @@
 @inject NavigationManager Navigator;
 
 <ListaTerceros/>
-<Dialogo CerrarDialogo="Cerrar">
-  @if(!HasError){
-  <IngresarTercero @ref="Ingresar" CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError"/>
-  }
-  else{
-    <h3 class="text-danger">@MensajeError</h3>
-  }
+<Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
+  <IngresarTercero CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError" Visible=@(!_hasError)/>
+  <MensajeError Mensaje=@_mensaje Visible=@_hasError/>
 </Dialogo>
 
 @code {
     [Parameter] public int Id { get; set; }
-    public bool HasError { get; set; } = false;
-    public string? MensajeError { get; set; }
-    public IngresarTercero? Ingresar { get; set; } = null;
+    public bool _hasError = false;
+    public string? _mensaje { get; set; }
     void Cerrar()
     { 
       Navigator.NavigateTo("/terceros");
     }
-    void MostrarError(){
-      HasError = true;
-      MensajeError = Ingresar?.MensajeError;
-      StateHasChanged();
+    void MostrarError(string? mensaje){
+      _mensaje = mensaje;
+      _hasError = true;
     }
 }

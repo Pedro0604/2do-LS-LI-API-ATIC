@@ -2,7 +2,7 @@
 @inject NavigationManager Navigator;
 
 <ListaTitulares/>
-<Dialogo CerrarDialogo="Cerrar">
+<Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   @if(!HasError){
   <ListaVehiculos IdTitular="@Id" OnError="MostrarError" ParaTitular=true/>
   }

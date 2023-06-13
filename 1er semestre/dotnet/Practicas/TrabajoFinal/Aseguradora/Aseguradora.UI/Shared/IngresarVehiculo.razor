@@ -2,57 +2,42 @@
 @inject ModificarVehiculoUseCase ModificarVehiculoUseCase;
 @inject GetVehiculoUseCase GetVehiculoUseCase;
 
-<div>
-@if(Modificar){
-    <h1>Modificar al vehículo: @_vehiculo.Dominio</h1>
+@if(Visible){
+    <div>
+        @if(_modificar){
+            <h1>Modificar al vehículo: @_vehiculo.Dominio</h1>
+        }
+        else{
+            <h1>Agregar un vehículo</h1>
+        }
+        <input type="text" placeholder="Dominio" @bind="_vehiculo.Dominio">
+        <input type="text" placeholder="Marca" @bind="_vehiculo.Marca">
+        <input type="number" placeholder="AñoFabricacion" @bind="_vehiculo.AñoFabricacion">
+        <input type="number" placeholder="Id del titular" @bind="_vehiculo.TitularId">
+        <button @onclick="Cerrar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
+    </div>
 }
-else{
-<h1>Agregar un vehículo</h1>
-}
-<input type="text" placeholder="Dominio" @bind="_vehiculo.Dominio">
-<input type="text" placeholder="Marca" @bind="_vehiculo.Marca">
-<input type="number" placeholder="AñoFabricacion" @bind="_vehiculo.AñoFabricacion">
-<input type="number" placeholder="Id del titular" @bind="_vehiculo.TitularId">
-<button @onclick="Cerrar">@if(Modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
-</div>
 
 @code{
     [Parameter] public int Id {get; set;}
     [Parameter] public EventCallback CerrarDialogo{get; set;}
-    [Parameter] public EventCallback OnError{get; set;}
-    public string? MensajeError {get; private set; }
-    public bool Modificar {get; set;} = false;
+    [Parameter] public EventCallback<string> OnError{get; set;}
+    [Parameter] public bool Visible {get; set;} = false;
+    public bool _modificar {get; set;} = false;
     Vehiculo _vehiculo = new Vehiculo();
 
     protected override void OnParametersSet() 
     {
         if(Id != 0){
-            var vehiculoEcontrado = GetVehiculoUseCase.Ejecutar(Id);
-            if(vehiculoEcontrado != null)
-            {
-                _vehiculo = vehiculoEcontrado;
-                Modificar = true;
-            }
+            var _vehiculo = GetVehiculoUseCase.Ejecutar(Id);
+            if(_vehiculo != null)_modificar = true;
         }
     }
     void Cerrar(){
         Error error;
-        if(Modificar)
-        {
-            error = ModificarVehiculoUseCase.Ejecutar(_vehiculo);
-        }
-        else{
-            error = AgregarVehiculoUseCase.Ejecutar(_vehiculo);
-        }
+        error = _modificar ?ModificarVehiculoUseCase.Ejecutar(_vehiculo) : AgregarVehiculoUseCase.Ejecutar(_vehiculo);
 
-        if(error.Mensaje != "")
-        {
-            MensajeError = error.Mensaje;
-            OnError.InvokeAsync();
-        }
-        else
-        {
-            CerrarDialogo.InvokeAsync();
-        }
+        if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
+        else CerrarDialogo.InvokeAsync();
     }
 }
