@@ -50,4 +50,6 @@
 
 .error {
   background-color: rgba(199, 57, 57, 0.9);
+  color: white;
+  text-align: center;
 }

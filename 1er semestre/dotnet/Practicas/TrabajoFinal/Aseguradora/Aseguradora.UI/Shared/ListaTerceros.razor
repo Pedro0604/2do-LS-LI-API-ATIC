@@ -10,37 +10,39 @@
   <h3>Aún no hay terceros</h3>
 }
 else{
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Nombre de la aseguradora</th>
-        <th>DNI</th>
-        <th>Telefono</th>
-        <th>Id del siniestro</th>
-        <th>Modificar</th>
-        <th>Eliminar</th>
-      </tr>
-    </thead>
-    <tbody>
-      @foreach (var tercero in _listaTerceros)
-      {
+  <div class="contenedor-tabla">
+    <table class="table table-striped">
+      <thead>
         <tr>
-          <td>@tercero.Id</td>
-          <td>@tercero.Nombre</td>
-          <td>@tercero.Apellido</td>
-          <td>@tercero.NombreAseguradora</td>
-          <td>@tercero.DNI</td>
-          <td>@tercero.Telefono</td>
-          <td>@tercero.SiniestroId</td>
-          <td><button class="btn btn-primary" @onclick="()=>Ingresar(tercero.Id)"><span class="oi oi-pencil"></span></button></td>
-          <td><button class="btn btn-danger" @onclick="()=>Eliminar(tercero.Id)"><span class="oi oi-trash"></span></button></td>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Nombre de la aseguradora</th>
+          <th>DNI</th>
+          <th>Telefono</th>
+          <th>Id del siniestro</th>
+          <th>Modificar</th>
+          <th>Eliminar</th>
         </tr>
-      }
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        @foreach (var tercero in _listaTerceros)
+        {
+          <tr>
+            <td>@tercero.Id</td>
+            <td>@tercero.Nombre</td>
+            <td>@tercero.Apellido</td>
+            <td>@tercero.NombreAseguradora</td>
+            <td>@tercero.DNI</td>
+            <td>@tercero.Telefono</td>
+            <td>@tercero.SiniestroId</td>
+            <td><button class="btn btn-primary" @onclick="()=>Ingresar(tercero.Id)"><span class="oi oi-pencil"></span></button></td>
+            <td><button class="btn btn-danger" @onclick="()=>Eliminar(tercero.Id)"><span class="oi oi-trash"></span></button></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
 }
 
 @code {
