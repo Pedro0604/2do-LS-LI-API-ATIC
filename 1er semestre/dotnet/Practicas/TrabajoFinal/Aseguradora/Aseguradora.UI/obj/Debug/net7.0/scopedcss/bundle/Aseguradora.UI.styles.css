@@ -12,55 +12,57 @@
 }
 /* _content/Aseguradora.UI/Shared/Dialogo.razor.rz.scp.css */
 @keyframes animate-in-b-hdo3htk7gj {
-    from {
-        opacity: 0;
-        transform: translateY(1rem);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes opacityChangeIn-b-hdo3htk7gj {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .backdrop[b-hdo3htk7gj] {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-    animation: opacityChangeIn-b-hdo3htk7gj 0.7s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(32, 32, 32, 0.6);
+  z-index: 1;
+  animation: opacityChangeIn-b-hdo3htk7gj 0.7s ease-in-out;
 }
 
 .dialogo[b-hdo3htk7gj] {
-    border: none;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    overflow: hidden;
-    z-index: 1;
-    animation: animate-in-b-hdo3htk7gj 1s ease-out forwards;
-    min-width: 330px;
-    width: fit-content;
-    max-width: 700px;
+  position: fixed;
+  top: 0;
+  translate: 0 calc(50vh - 50%);
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  overflow: hidden;
+  z-index: 1;
+  animation: animate-in-b-hdo3htk7gj 1s ease-out forwards;
+  min-width: 310px;
+  width: fit-content;
+  max-width: 700px;
+  background-color: var(--bs-secondary-bg);
+  color: var(--bs-secondary-color);
 }
 
 .error[b-hdo3htk7gj] {
-    background-color: rgba(199, 57, 57, 0.932);
-    color: white;
-    text-shadow: 0 0 2px rgb(146, 84, 84);
+  background-color: rgba(199, 57, 57, 0.9);
 }
 /* _content/Aseguradora.UI/Shared/MainLayout.razor.rz.scp.css */
 .page[b-g6x6s7l54y] {
@@ -78,8 +80,7 @@ main[b-g6x6s7l54y] {
 }
 
 .top-row[b-g6x6s7l54y] {
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #d6d5d5;
+  border-bottom: 1px solid #4e4e4e;
   justify-content: flex-end;
   height: 3.5rem;
   display: flex;
@@ -199,6 +200,10 @@ main[b-g6x6s7l54y] {
 .nav-item[b-7swmyw7ncn]  a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
+}
+
+.nav-link[b-7swmyw7ncn]{
+  padding: 0.5rem 1rem !important;
 }
 
 @media (min-width: 641px) {

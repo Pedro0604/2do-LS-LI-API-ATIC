@@ -1,5 +1,6 @@
 @page "/polizas/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
+<PageTitle>Nueva póliza</PageTitle>
 
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   <IngresarPoliza CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError" Visible=@(!_hasError)/>

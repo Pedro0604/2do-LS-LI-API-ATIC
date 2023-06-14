@@ -1,11 +1,12 @@
 @page "/titulares/vehiculos/{Id:int?}";
 @inject NavigationManager Navigator;
+<PageTitle>Titulares con vehículos</PageTitle>
 
-<ListaTitulares/>
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   <ListaVehiculos IdTitular="@Id" OnError="MostrarError" ParaTitular=true Visible=@(!_hasError)/>
   <MensajeError Mensaje=@_mensaje Visible=@_hasError/>
 </Dialogo>
+<ListaTitulares/>
 
 @code {
     [Parameter] public int Id { get; set; }

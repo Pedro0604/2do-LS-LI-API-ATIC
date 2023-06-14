@@ -2,6 +2,7 @@
 @inject NavigationManager Navigator;
 @inject EliminarTerceroUseCase EliminarTerceroUseCase;
 @inject GetTerceroUseCase GetTerceroUseCase;
+<PageTitle>Eliminar tercero</PageTitle>
 
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
     <ConfirmarEliminacion CerrarDialogo="Cerrar" Mensaje=@_mensaje Visible=@(!_hasError)/>

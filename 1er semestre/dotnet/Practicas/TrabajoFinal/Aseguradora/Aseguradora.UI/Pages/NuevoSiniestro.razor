@@ -1,5 +1,6 @@
 @page "/siniestros/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
+<PageTitle>Nuevo siniestro</PageTitle>
 
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   <IngresarSiniestro CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError" Visible=@(!_hasError)/>

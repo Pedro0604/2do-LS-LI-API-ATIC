@@ -50,6 +50,10 @@
   color: white;
 }
 
+.nav-link[b-7swmyw7ncn]{
+  padding: 0.5rem 1rem !important;
+}
+
 @media (min-width: 641px) {
   .navbar-toggler[b-7swmyw7ncn] {
     display: none;

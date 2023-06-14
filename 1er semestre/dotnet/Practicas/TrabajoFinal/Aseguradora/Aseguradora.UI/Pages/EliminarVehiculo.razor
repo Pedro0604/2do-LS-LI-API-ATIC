@@ -2,6 +2,7 @@
 @inject NavigationManager Navigator;
 @inject EliminarVehiculoUseCase EliminarVehiculoUseCase;
 @inject GetVehiculoUseCase GetVehiculoUseCase;
+<PageTitle>Eliminar vehículo</PageTitle>
 
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
     <ConfirmarEliminacion CerrarDialogo="Cerrar" Mensaje=@_mensaje Visible=@(!_hasError)/>
