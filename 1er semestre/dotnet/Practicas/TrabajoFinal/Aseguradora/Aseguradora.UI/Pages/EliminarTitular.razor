@@ -3,11 +3,11 @@
 @inject EliminarTitularUseCase EliminarTitularUseCase;
 @inject GetTitularUseCase GetTitularUseCase;
 
-<ListaTitulares/>
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
     <ConfirmarEliminacion CerrarDialogo="Cerrar" Mensaje=@_mensaje Visible=@(!_hasError)/>
     <MensajeError Mensaje=@_mensaje Visible=@_hasError/>
 </Dialogo>
+<ListaTitulares/>
 
 @code {
     [Parameter] public int Id { get; set; }

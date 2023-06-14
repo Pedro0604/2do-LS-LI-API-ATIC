@@ -26,7 +26,7 @@
             <textarea class="form-control" id="descrip-siniestro" rows="3" placeholder="Descripción del siniestro" @bind="_siniestro.Descripcion"></textarea>
             <label for="descrip-siniestro" class="form-label">Descripción del siniestro</label>
         </div>
-        <button @onclick="Cerrar" class="btn btn-success" >@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
+        <button @onclick="Cerrar" class="btn btn-success btn-ingresar" >@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
     </div>
 }
 

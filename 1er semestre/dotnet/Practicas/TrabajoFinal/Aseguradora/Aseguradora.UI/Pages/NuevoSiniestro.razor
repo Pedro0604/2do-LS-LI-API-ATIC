@@ -1,11 +1,11 @@
 @page "/siniestros/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
 
-<ListaSiniestros/>
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   <IngresarSiniestro CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError" Visible=@(!_hasError)/>
   <MensajeError Mensaje=@_mensaje Visible=@_hasError/>
 </Dialogo>
+<ListaSiniestros/>
 
 @code {
     [Parameter] public int Id { get; set; }

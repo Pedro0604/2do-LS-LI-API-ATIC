@@ -45,10 +45,6 @@
 }
 
 .dialogo[b-hdo3htk7gj] {
-    position: relative;
-    top: 30%;
-    left: 50%;
-    translate: -50%;
     border: none;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -56,8 +52,9 @@
     overflow: hidden;
     z-index: 1;
     animation: animate-in-b-hdo3htk7gj 1s ease-out forwards;
+    min-width: 330px;
     width: fit-content;
-    max-width: 550px;
+    max-width: 700px;
 }
 
 .error[b-hdo3htk7gj] {

@@ -1,14 +1,16 @@
 @inject ListarPolizasUseCase ListarPolizasUseCase;
 @inject NavigationManager Navigator
 
-<h1>Listado de pólizas</h1>
-<button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar una póliza</button>
+<div class="cabecera-tabla">
+  <h1>Listado de pólizas</h1>
+  <button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar una póliza</button>
+</div>
 
 @if(_listaPolizas.Count == 0){
   <h3>Aún no hay pólizas</h3>
 }
 else{
-  <table class="table">
+  <table class="table table-striped table-light">
     <thead>
       <tr>
         <th>Id</th>

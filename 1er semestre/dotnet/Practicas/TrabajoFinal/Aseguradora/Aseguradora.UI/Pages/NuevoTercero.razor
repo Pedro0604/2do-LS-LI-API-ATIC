@@ -1,11 +1,11 @@
 @page "/terceros/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
 
-<ListaTerceros/>
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   <IngresarTercero CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError" Visible=@(!_hasError)/>
   <MensajeError Mensaje=@_mensaje Visible=@_hasError/>
 </Dialogo>
+<ListaTerceros/>
 
 @code {
     [Parameter] public int Id { get; set; }

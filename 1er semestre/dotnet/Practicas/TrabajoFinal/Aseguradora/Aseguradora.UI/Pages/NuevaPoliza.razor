@@ -1,11 +1,11 @@
 @page "/polizas/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
 
-<ListaPolizas/>
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   <IngresarPoliza CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError" Visible=@(!_hasError)/>
   <MensajeError Mensaje=@_mensaje Visible=@_hasError/>
 </Dialogo>
+<ListaPolizas/>
 
 @code {
     [Parameter] public int Id { get; set; }

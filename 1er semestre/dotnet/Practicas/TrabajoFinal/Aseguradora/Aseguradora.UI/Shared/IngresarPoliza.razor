@@ -5,7 +5,7 @@
 @if(Visible){
     <div>
         @if(_modificar){
-            <h1>Modificar a la póliza @_poliza.Id</h1>
+            <h1>Modificar a la póliza: @_poliza.Id</h1>
         }
         else{
             <h1>Agregar una póliza</h1>
@@ -34,7 +34,7 @@
             <input class="form-control" id="vehiculo-id" type="text" placeholder="Id del vehículo" @bind="_poliza.VehiculoId">
             <label for="vehiculo-id" class="form-label">Id del vehículo</label>
         </div>
-        <button @onclick="Cerrar" class="btn btn-success">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
+        <button @onclick="Cerrar" class="btn btn-success btn-ingresar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
     </div>
 }
 

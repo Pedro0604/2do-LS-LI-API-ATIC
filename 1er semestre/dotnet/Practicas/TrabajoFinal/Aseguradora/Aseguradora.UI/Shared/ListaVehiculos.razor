@@ -4,11 +4,16 @@
 
 @if(Visible){
   @if(!ParaTitular){
-    <h1>Listado de vehículos</h1>
-    <button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un vehículo</button>
+    <div class="cabecera-tabla">
+      <h1>Listado de vehículos</h1>
+      <button class="btn btn-primary" @onclick="()=>Ingresar(0)"><span class="oi oi-plus"></span>Agregar un vehículo</button>
+    </div>
   }
   else if(_listaVehiculos.Count != 0){
-    <h1>Listado de vehículos del titular @_titular?.Nombre @_titular?.Apellido</h1>
+    <div id="cabec-listaV-tit">
+      <h1>Listado de vehículos del titular:<br></h1>
+      <h1 id="nombre-tit">@_titular?.Nombre @_titular?.Apellido</h1>
+    </div>
   }
 
   @if(_listaVehiculos.Count == 0){
@@ -21,7 +26,7 @@
       vehículos</h3>
   }
   else{
-    <table class="table"> 
+    <table class="table table-striped table-light">
       <thead>
         <tr>
           <th>Id</th>
