@@ -1,6 +1,5 @@
 @page "/titulares/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
-<PageTitle>Nuevo titular</PageTitle>
 
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   <IngresarTitular CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError" Visible=@(!_hasError)/>

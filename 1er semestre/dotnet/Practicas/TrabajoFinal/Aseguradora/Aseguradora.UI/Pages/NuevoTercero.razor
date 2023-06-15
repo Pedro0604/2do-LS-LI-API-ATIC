@@ -1,6 +1,5 @@
 @page "/terceros/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
-<PageTitle>Nuevo tercero</PageTitle>
 
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   <IngresarTercero CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError" Visible=@(!_hasError)/>

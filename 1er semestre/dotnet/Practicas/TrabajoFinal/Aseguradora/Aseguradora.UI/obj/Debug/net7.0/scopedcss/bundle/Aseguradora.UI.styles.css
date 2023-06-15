@@ -58,7 +58,7 @@
   width: fit-content;
   max-width: 700px;
   background-color: var(--bs-secondary-bg);
-  color: var(--bs-secondary-color);
+  color: var(--bs-body-color);
 }
 
 .error[b-hdo3htk7gj] {
@@ -131,6 +131,7 @@ main[b-g6x6s7l54y] {
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: var(--bs-body-bg);
   }
 
   .top-row[b-g6x6s7l54y],

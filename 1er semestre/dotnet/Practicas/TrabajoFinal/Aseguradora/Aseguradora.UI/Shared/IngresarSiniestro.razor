@@ -5,9 +5,11 @@
 @if(Visible){
         <div>
         @if(_modificar){
+            <PageTitle>Modificar siniestro</PageTitle>
             <h1>Modificar al siniestro: @_siniestro.Id</h1>
         }
         else{
+            <PageTitle>Agregar siniestro</PageTitle>
             <h1>Agregar un siniestro</h1>
         }
         <div class="form-floating mb-3">

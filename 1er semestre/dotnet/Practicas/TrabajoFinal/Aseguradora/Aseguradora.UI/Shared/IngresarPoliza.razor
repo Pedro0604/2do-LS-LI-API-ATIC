@@ -2,12 +2,15 @@
 @inject ModificarPolizaUseCase ModificarPolizaUseCase;
 @inject GetPolizaUseCase GetPolizaUseCase;
 
+
 @if(Visible){
     <div>
         @if(_modificar){
+            <PageTitle>Modificar póliza</PageTitle>
             <h1>Modificar a la póliza: @_poliza.Id</h1>
         }
         else{
+            <PageTitle>Agregar póliza</PageTitle>
             <h1>Agregar una póliza</h1>
         }
         <div class="form-floating mb-3">

@@ -112,11 +112,8 @@ a,
 
 .contenedor-tabla{
   position: relative;
-  padding: 1.5rem;
-  margin: 0 -1.5rem 1rem;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
   border: solid var(--bs-border-color);
-  margin-right: 0;
-  margin-left: 0;
   border-width: 1px;
   border-radius: var(--bs-border-radius);
   margin-top: 10px;

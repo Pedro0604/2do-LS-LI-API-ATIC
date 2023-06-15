@@ -5,9 +5,11 @@
 @if(Visible){
     <div>
         @if(_modificar){
+            <PageTitle>Modificar vehículo</PageTitle>
             <h1>Modificar al vehículo: @_dominio</h1>
         }
         else{
+            <PageTitle>Agregar vehículo</PageTitle>
             <h1>Agregar un vehículo</h1>
         }
         <div class="form-floating mb-3">

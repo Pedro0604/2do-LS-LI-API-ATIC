@@ -1,6 +1,5 @@
 @page "/vehiculos/ingresar/{Id:int?}";
 @inject NavigationManager Navigator;
-<PageTitle>Nuevo vehículo</PageTitle>
 
 <Dialogo CerrarDialogo="Cerrar" HasError=@_hasError>
   <IngresarVehiculo CerrarDialogo="Cerrar" Id="@Id" OnError="MostrarError" Visible=@(!_hasError)/>

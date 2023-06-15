@@ -62,6 +62,7 @@ main[b-g6x6s7l54y] {
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: var(--bs-body-bg);
   }
 
   .top-row[b-g6x6s7l54y],

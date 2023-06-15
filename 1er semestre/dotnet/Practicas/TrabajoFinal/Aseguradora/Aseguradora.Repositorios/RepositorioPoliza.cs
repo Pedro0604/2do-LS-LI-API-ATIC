@@ -11,15 +11,22 @@ public class RepositorioPoliza : IRepositorioPoliza
         var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            var vehiculo = db.Vehiculos.Where(p => p.Id == poliza.VehiculoId).SingleOrDefault();
-            if (vehiculo != null)
+            if (poliza.FechaInicioVigencia <= poliza.FechaFinVigencia)
             {
-                db.Add(poliza);
-                db.SaveChanges();
+                var vehiculo = db.Vehiculos.Where(p => p.Id == poliza.VehiculoId).SingleOrDefault();
+                if (vehiculo != null)
+                {
+                    db.Add(poliza);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    error.Mensaje = "No hay ningún vehículo con Id " + poliza.VehiculoId;
+                }
             }
             else
             {
-                error.Mensaje = "No hay ningún vehículo con Id " + poliza.VehiculoId;
+                error.Mensaje = "La fecha de inicio de vigencia de la póliza no puede ser menor que la fecha de finalización";
             }
         }
         return error;
@@ -43,20 +50,27 @@ public class RepositorioPoliza : IRepositorioPoliza
             var polizaAModificar = db.Polizas.Where(p => p.Id == poliza.Id).SingleOrDefault();
             if (polizaAModificar != null)
             {
-                var vehiculo = db.Vehiculos.Where(p => p.Id == poliza.VehiculoId).SingleOrDefault();
-                if (vehiculo != null)
+                if (poliza.FechaInicioVigencia <= poliza.FechaFinVigencia)
                 {
-                    polizaAModificar.FechaFinVigencia = poliza.FechaFinVigencia;
-                    polizaAModificar.FechaInicioVigencia = poliza.FechaInicioVigencia;
-                    polizaAModificar.Franquicia = poliza.Franquicia;
-                    polizaAModificar.TipoDeCobertura = poliza.TipoDeCobertura;
-                    polizaAModificar.ValorAsegurado = poliza.ValorAsegurado;
-                    polizaAModificar.VehiculoId = poliza.VehiculoId;
-                    db.SaveChanges();
+                    var vehiculo = db.Vehiculos.Where(p => p.Id == poliza.VehiculoId).SingleOrDefault();
+                    if (vehiculo != null)
+                    {
+                        polizaAModificar.FechaFinVigencia = poliza.FechaFinVigencia;
+                        polizaAModificar.FechaInicioVigencia = poliza.FechaInicioVigencia;
+                        polizaAModificar.Franquicia = poliza.Franquicia;
+                        polizaAModificar.TipoDeCobertura = poliza.TipoDeCobertura;
+                        polizaAModificar.ValorAsegurado = poliza.ValorAsegurado;
+                        polizaAModificar.VehiculoId = poliza.VehiculoId;
+                        db.SaveChanges();
+                    }
+                    else
+                    {
+                        error.Mensaje = "No hay ningún vehículo con Id " + poliza.VehiculoId;
+                    }
                 }
                 else
                 {
-                    error.Mensaje = "No hay ningún vehículo con Id " + poliza.VehiculoId;
+                    error.Mensaje = "La fecha de inicio de vigencia de la póliza no puede ser menor que la fecha de finalización";
                 }
             }
             else
