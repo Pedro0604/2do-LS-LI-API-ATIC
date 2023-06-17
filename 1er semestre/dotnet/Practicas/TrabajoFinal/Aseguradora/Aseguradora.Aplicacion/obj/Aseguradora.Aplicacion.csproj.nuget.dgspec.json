@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj": {}
+    "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj": {}
   },
   "projects": {
-    "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj": {
+    "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj",
         "projectName": "Aseguradora.Aplicacion",
-        "projectPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj",
-        "packagesPath": "C:\\Users\\Pedro master god\\.nuget\\packages\\",
-        "outputPath": "D:\\Pedro\\Facultad\\2do\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\obj\\",
+        "projectPath": "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\Aseguradora.Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\Lucia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucia\\OneDrive\\Escritorio\\Pedro\\2do-LS-LI-APU-ATIC\\1er semestre\\dotnet\\Practicas\\TrabajoFinal\\Aseguradora\\Aseguradora.Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pedro master god\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Lucia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

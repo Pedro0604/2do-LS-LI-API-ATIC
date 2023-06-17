@@ -1,6 +1,6 @@
 using Aseguradora.Aplicacion.Interfaces;
 using Aseguradora.Aplicacion.Entidades;
-using Microsoft.EntityFrameworkCore;
+using Aseguradora.Aplicacion.ClassUtils;
 
 namespace Aseguradora.Repositorios;
 
@@ -20,7 +20,7 @@ public class RepositorioTitular : IRepositorioTitular
         var lista = new List<Titular>();
         using (var db = new AseguradoraContext())
         {
-            lista = db.Titulares.Include(t => t.Vehiculos).ToList();
+            lista = db.Titulares.ToList();
         }
         return lista;
     }
@@ -56,27 +56,10 @@ public class RepositorioTitular : IRepositorioTitular
         {
             var titularABorrar = db.Titulares
             .Where(t => t.Id == id)
-            .Include(t => t.Vehiculos)
-            .ThenInclude(v => v.Polizas)
-            .ThenInclude(p => p.Siniestros)
-            .ThenInclude(s => s.Terceros)
             .SingleOrDefault();
 
             if (titularABorrar != null)
             {
-                foreach (var vehiculo in titularABorrar.Vehiculos)
-                {
-                    foreach (var poliza in vehiculo.Polizas)
-                    {
-                        foreach (var siniestro in poliza.Siniestros)
-                        {
-                            db.RemoveRange(siniestro.Terceros);
-                            db.Remove(siniestro);
-                        }
-                        db.Remove(poliza);
-                    }
-                    db.Remove(vehiculo);
-                }
                 db.Remove(titularABorrar);
                 db.SaveChanges();
             }

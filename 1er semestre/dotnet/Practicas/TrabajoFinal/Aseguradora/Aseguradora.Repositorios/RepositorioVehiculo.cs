@@ -1,28 +1,18 @@
 using Aseguradora.Aplicacion.Interfaces;
 using Aseguradora.Aplicacion.Entidades;
-using Microsoft.EntityFrameworkCore;
+using Aseguradora.Aplicacion.ClassUtils;
 
 namespace Aseguradora.Repositorios;
 
 public class RepositorioVehiculo : IRepositorioVehiculo
 {
-    public Error AgregarVehiculo(Vehiculo vehiculo)
+    public void AgregarVehiculo(Vehiculo vehiculo)
     {
-        var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            var titular = db.Titulares.Where(p => p.Id == vehiculo.TitularId).SingleOrDefault();
-            if (titular != null)
-            {
-                db.Add(vehiculo);
-                db.SaveChanges();
-            }
-            else
-            {
-                error.Mensaje = "No hay ningún titular con Id " + vehiculo.TitularId;
-            }
+            db.Add(vehiculo);
+            db.SaveChanges();
         }
-        return error;
     }
 
     public List<Vehiculo> ListarVehiculos()
@@ -43,19 +33,11 @@ public class RepositorioVehiculo : IRepositorioVehiculo
             var vehiculoAModificar = db.Vehiculos.Where(v => v.Id == vehiculo.Id).SingleOrDefault();
             if (vehiculoAModificar != null)
             {
-                var titular = db.Titulares.Where(p => p.Id == vehiculo.TitularId).SingleOrDefault();
-                if (titular != null)
-                {
-                    vehiculoAModificar.Dominio = vehiculo.Dominio;
-                    vehiculoAModificar.AñoFabricacion = vehiculo.AñoFabricacion;
-                    vehiculoAModificar.Marca = vehiculo.Marca;
-                    vehiculoAModificar.TitularId = vehiculo.TitularId;
-                    db.SaveChanges();
-                }
-                else
-                {
-                    error.Mensaje = "No hay ningún titular con Id " + vehiculo.TitularId;
-                }
+                vehiculoAModificar.Dominio = vehiculo.Dominio;
+                vehiculoAModificar.AñoFabricacion = vehiculo.AñoFabricacion;
+                vehiculoAModificar.Marca = vehiculo.Marca;
+                vehiculoAModificar.TitularId = vehiculo.TitularId;
+                db.SaveChanges();
             }
             else
             {
@@ -72,22 +54,10 @@ public class RepositorioVehiculo : IRepositorioVehiculo
         {
             var vehiculoABorrar = db.Vehiculos
             .Where(v => v.Id == id)
-            .Include(v => v.Polizas)
-            .ThenInclude(p => p.Siniestros)
-            .ThenInclude(s => s.Terceros)
             .SingleOrDefault();
 
             if (vehiculoABorrar != null)
             {
-                foreach (var poliza in vehiculoABorrar.Polizas)
-                {
-                    foreach (var siniestro in poliza.Siniestros)
-                    {
-                        db.RemoveRange(siniestro.Terceros);
-                        db.Remove(siniestro);
-                    }
-                    db.Remove(poliza);
-                }
                 db.Remove(vehiculoABorrar);
                 db.SaveChanges();
             }

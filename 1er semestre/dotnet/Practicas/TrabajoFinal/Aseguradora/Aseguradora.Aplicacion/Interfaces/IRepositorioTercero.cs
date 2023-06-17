@@ -1,9 +1,10 @@
 using Aseguradora.Aplicacion.Entidades;
+using Aseguradora.Aplicacion.ClassUtils;
 
 namespace Aseguradora.Aplicacion.Interfaces;
 public interface IRepositorioTercero
 {
-    Error AgregarTercero(Tercero Tercero);
+    void AgregarTercero(Tercero Tercero);
     Error EliminarTercero(int id);
     Error ModificarTercero(Tercero Tercero);
     List<Tercero> ListarTerceros();

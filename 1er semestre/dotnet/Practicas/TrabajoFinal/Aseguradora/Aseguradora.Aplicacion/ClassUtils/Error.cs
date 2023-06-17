@@ -1,4 +1,4 @@
-namespace Aseguradora.Aplicacion.Entidades;
+namespace Aseguradora.Aplicacion.ClassUtils;
 
 public class Error
 {

@@ -1,5 +1,5 @@
 using Aseguradora.Aplicacion.Interfaces;
-using Aseguradora.Aplicacion.Entidades;
+using Aseguradora.Aplicacion.ClassUtils;
 
 namespace Aseguradora.Aplicacion.UseCases;
 
