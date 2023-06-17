@@ -9,7 +9,7 @@ main[b-g6x6s7l54y] {
 }
 
 .sidebar[b-g6x6s7l54y] {
-  background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+  background-image: linear-gradient(40deg, #623697 0%, #3700b3 50%, #8c57cb 100%);
 }
 
 .top-row[b-g6x6s7l54y] {
@@ -68,6 +68,6 @@ main[b-g6x6s7l54y] {
   .top-row[b-g6x6s7l54y],
   article[b-g6x6s7l54y] {
     padding-left: 2rem !important;
-    padding-right: 1.5rem !important;
+    padding-right: 2rem !important;
   }
 }

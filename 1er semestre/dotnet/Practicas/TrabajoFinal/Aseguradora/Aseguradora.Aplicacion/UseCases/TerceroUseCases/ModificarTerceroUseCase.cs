@@ -14,7 +14,7 @@ public class ModificarTerceroUseCase : TerceroUseCase
         var siniestro = RepositorioSiniestro.ListarSiniestros().Where(p => p.Id == tercero.SiniestroId).SingleOrDefault();
         if (siniestro != null)
         {
-            error = Repositorio.ModificarTercero(tercero);
+            Repositorio.ModificarTercero(tercero);
         }
         else
         {

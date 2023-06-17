@@ -64,8 +64,7 @@
     }
     void Cerrar(){
         Error error = new Error();
-        if(_modificar) error = ModificarTitularUseCase.Ejecutar(_titular);
-        else AgregarTitularUseCase.Ejecutar(_titular);
+        error = _modificar ? ModificarTitularUseCase.Ejecutar(_titular) : AgregarTitularUseCase.Ejecutar(_titular);
 
         if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
         else CerrarDialogo.InvokeAsync();

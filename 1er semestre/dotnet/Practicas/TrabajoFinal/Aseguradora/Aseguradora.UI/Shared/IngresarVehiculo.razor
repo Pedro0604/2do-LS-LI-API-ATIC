@@ -54,7 +54,7 @@
     }
     void Cerrar(){
         Error error;
-        error = _modificar ?ModificarVehiculoUseCase.Ejecutar(_vehiculo) : AgregarVehiculoUseCase.Ejecutar(_vehiculo);
+        error = _modificar ? ModificarVehiculoUseCase.Ejecutar(_vehiculo) : AgregarVehiculoUseCase.Ejecutar(_vehiculo);
 
         if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
         else CerrarDialogo.InvokeAsync();
