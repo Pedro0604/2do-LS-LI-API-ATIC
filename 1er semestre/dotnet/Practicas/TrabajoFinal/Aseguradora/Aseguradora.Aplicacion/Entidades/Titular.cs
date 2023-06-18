@@ -7,12 +7,4 @@ public class Titular : Persona
 
     // Propiedad de navegación para los vehículos
     public List<Vehiculo> Vehiculos { get; set; } = new List<Vehiculo>();
-
-    public override string ToString()
-    {
-        string st = $"Titular: | {base.ToString()}";
-        st += this.Direccion != "" ? $" - Dirección: {this.Direccion}" : "";
-        st += this.Email != "" ? $" - Correo electrónico: {this.Email}" : "";
-        return st;
-    }
 }

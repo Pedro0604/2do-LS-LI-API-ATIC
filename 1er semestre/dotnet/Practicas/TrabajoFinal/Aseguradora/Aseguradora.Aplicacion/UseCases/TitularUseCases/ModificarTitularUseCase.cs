@@ -11,7 +11,7 @@ public class ModificarTitularUseCase : TitularUseCase
     {
         Error error = new Error();
         var t = Repositorio.ListarTitulares().Where(t => t.DNI == titular.DNI).SingleOrDefault();
-        if (t == null)
+        if (t == null || t.Id == titular.Id)
         {
             Repositorio.ModificarTitular(titular);
         }
