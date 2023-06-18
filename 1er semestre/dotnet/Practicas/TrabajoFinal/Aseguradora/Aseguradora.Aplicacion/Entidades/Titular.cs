@@ -1,5 +1,6 @@
 namespace Aseguradora.Aplicacion.Entidades;
 
+//Clase derivada de la clase Persona
 public class Titular : Persona
 {
     public string? Direccion { get; set; }

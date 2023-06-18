@@ -52,9 +52,7 @@ public class RepositorioVehiculo : IRepositorioVehiculo
         var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            var vehiculoABorrar = db.Vehiculos
-            .Where(v => v.Id == id)
-            .SingleOrDefault();
+            var vehiculoABorrar = db.Vehiculos.Where(v => v.Id == id).SingleOrDefault();
 
             if (vehiculoABorrar != null)
             {

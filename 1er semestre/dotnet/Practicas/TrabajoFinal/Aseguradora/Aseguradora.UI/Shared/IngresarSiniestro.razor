@@ -1,6 +1,7 @@
 @inject AgregarSiniestroUseCase AgregarSiniestroUseCase;
 @inject ModificarSiniestroUseCase ModificarSiniestroUseCase;
 @inject GetSiniestroUseCase GetSiniestroUseCase;
+@inject ListarPolizasUseCase ListarPolizasUseCase;
 
 @if(Visible){
         <div>
@@ -13,19 +14,36 @@
             <h1>Agregar un siniestro</h1>
         }
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="dir-siniestro" placeholder="Dirección del siniestro" @bind="_siniestro.DireccionSiniestro">
+            <input name="dir-siniestro" class="form-control" type="text" id="dir-siniestro" placeholder="Dirección del siniestro" @bind="_siniestro.DireccionSiniestro">
             <label for="dir-siniestro" class="form-label">Direción del siniestro</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="date" id="fecha-ocurr" placeholder="Fecha de ocurrencia" min="2010-01-01" max="2023-06-19" @bind="_siniestro.FechaOcurrencia">
+            <input name="fecha-ocurr" class="form-control @(_classFecha)" type="date" id="fecha-ocurr" placeholder="Fecha de ocurrencia" min="2010-01-01" max=@_maxFecha @bind="_siniestro.FechaOcurrencia">
             <label for="fecha-ocurr" class="form-label">Fecha de ocurrencia</label>
+            <div class="invalid-feedback">
+                La fecha de ocurrencia del siniestro no se encuentra dentro<br> de la fecha de vigencia de la póliza correspondiente
+            </div>
         </div>
         <div class="form-floating mb-3">
-            <textarea class="form-control" id="descrip-siniestro" rows="3" placeholder="Descripción del siniestro" @bind="_siniestro.Descripcion"></textarea>
+            <textarea name="descrip-siniestro" class="form-control" id="descrip-siniestro" rows="3" placeholder="Descripción del siniestro" @bind="_siniestro.Descripcion"></textarea>
             <label for="descrip-siniestro" class="form-label">Descripción del siniestro</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="poliza-id" placeholder="Id de la póliza" @bind="_siniestro.PolizaId">
+            <select name="poliza-id" class="form-select" id="poliza-id" placeholder="Id de la póliza" @bind="_siniestro.PolizaId">
+                @if(_polizas != null){
+                    foreach (var poliza in _polizas)
+                    {
+                        <option value=@(poliza.Id)>
+                            Id: @poliza.Id - Inicio: @poliza.FechaInicioVigencia.ToString("dd/MM/yyyy") - Fin: @poliza.FechaFinVigencia.ToString("dd/MM/yyyy")
+                        </option>
+                    }
+                }
+                else{
+                    <option value="0">
+                        Aún no hay pólizas disponibles
+                    </option>
+                }
+            </select>
             <label for="poliza-id" class="form-label">Id de la póliza</label>
         </div>
         <button @onclick="Cerrar" class="btn btn-success btn-ingresar" >@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
@@ -39,6 +57,10 @@
     [Parameter] public bool Visible {get; set;} = false;
     bool _modificar = false;
     Siniestro _siniestro = new Siniestro();
+    string _maxFecha = DateTime.Now.ToString("yyyy-MM-dd");
+    List<Poliza>? _polizas = null;
+    string _classFecha = "";
+    Poliza? _poliza = null;
 
     protected override void OnParametersSet() 
     {
@@ -49,12 +71,31 @@
                 _siniestro = _siniestroEncontrado;
             }
         }
+        _polizas = ListarPolizasUseCase.Ejecutar();
     }
     void Cerrar(){
-        Error error;
-        error = _modificar ? ModificarSiniestroUseCase.Ejecutar(_siniestro) : AgregarSiniestroUseCase.Ejecutar(_siniestro);
+        Error error = new Error();
 
-        if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
-        else CerrarDialogo.InvokeAsync();
+        _poliza = _polizas?.Where(p => p.Id == _siniestro.PolizaId).SingleOrDefault();
+        if (_poliza != null)
+        {
+            if ((_siniestro.FechaOcurrencia >= _poliza.FechaInicioVigencia) && (_siniestro.FechaOcurrencia <= _poliza.FechaFinVigencia))
+            {
+                if(_modificar){
+                    error = ModificarSiniestroUseCase.Ejecutar(_siniestro);
+                }
+                else{
+                    AgregarSiniestroUseCase.Ejecutar(_siniestro);
+                }
+
+                if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
+                else CerrarDialogo.InvokeAsync();
+            }
+            else _classFecha = "is-invalid";
+        }
+        else
+        {
+            OnError.InvokeAsync("No hay ninguna póliza con Id " + _siniestro.PolizaId);
+        }
     }
 }

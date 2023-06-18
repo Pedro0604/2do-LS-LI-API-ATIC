@@ -29,10 +29,8 @@ else{
         {
           <tr>
             <td>@siniestro.Id</td>
-            <td>@siniestro.FechaIngreso.ToString("g",
-                      CultureInfo.CreateSpecificCulture("es-ARG"))</td>
-            <td>@siniestro.FechaOcurrencia.ToString("d",
-                      CultureInfo.CreateSpecificCulture("es-ARG"))</td>
+            <td>@siniestro.FechaIngreso.ToString("dd/MM/yyyy")</td>
+            <td>@siniestro.FechaOcurrencia.ToString("dd/MM/yyyy")</td>
             <td>@siniestro.DireccionSiniestro</td>
             <td>@siniestro.Descripcion</td>
             <td>@siniestro.PolizaId</td>

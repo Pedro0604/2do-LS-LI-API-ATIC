@@ -1,6 +1,7 @@
 @inject AgregarPolizaUseCase AgregarPolizaUseCase;
 @inject ModificarPolizaUseCase ModificarPolizaUseCase;
 @inject GetPolizaUseCase GetPolizaUseCase;
+@inject ListarVehiculosUseCase ListarVehiculosUseCase;
 
 
 @if(Visible){
@@ -26,15 +27,35 @@
             <label for="tipo-cobert" class="form-label">Tipo de cobertura</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" id="fecha-inicio" type="date" min="2010-01-01" max="2024-06-19" placeholder="Fecha de inicio de la vigencia" @bind="_poliza.FechaInicioVigencia">
+            <input class="form-control @(_classFecha)" id="fecha-inicio" type="date" min="2010-01-01" max="2024-06-19" placeholder="Fecha de inicio de la vigencia" @bind="_poliza.FechaInicioVigencia">
             <label for="fecha-inicio" class="form-label">Fecha de inicio de la vigencia</label>
+            <div class="invalid-feedback">
+                La fecha de inicio de vigencia de la póliza no puede<br>ser posterior a su fecha de finalización
+            </div>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" id="fecha-fin" type="date" min="2010-01-01" max="2024-06-19" placeholder="Fecha de fin de la vigencia" @bind="_poliza.FechaFinVigencia">
+            <input class="form-control @(_classFecha)" id="fecha-fin" type="date" min="2010-01-01" max="2024-06-19" placeholder="Fecha de fin de la vigencia" @bind="_poliza.FechaFinVigencia">
             <label for="fecha-fin" class="form-label">Fecha de fin de la vigencia</label>
+            <div class="invalid-feedback">
+                La fecha de inicio de vigencia de la póliza no puede<br>ser posterior a su fecha de finalización
+            </div>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" id="vehiculo-id" type="text" placeholder="Id del vehículo" @bind="_poliza.VehiculoId">
+            <select name="vehiculo-id" class="form-control" id="vehiculo-id" type="text" placeholder="Id del vehículo" @bind="_poliza.VehiculoId">
+                @if(_vehiculos != null){
+                    foreach (var vehiculo in _vehiculos)
+                    {
+                        <option value=@(vehiculo.Id)>
+                            Id: @vehiculo.Id - Dominio: @vehiculo.Dominio
+                        </option>
+                    }
+                }
+                else{
+                    <option value="0">
+                        Aún no hay vehículos disponibles
+                    </option>
+                }
+            </select>
             <label for="vehiculo-id" class="form-label">Id del vehículo</label>
         </div>
         <button @onclick="Cerrar" class="btn btn-success btn-ingresar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
@@ -48,6 +69,8 @@
     [Parameter] public bool Visible {get; set;} = false;
     bool _modificar = false;
     Poliza _poliza = new Poliza();
+    List<Vehiculo>? _vehiculos = null;
+    string _classFecha = "";
 
     protected override void OnParametersSet() 
     {
@@ -58,12 +81,17 @@
                 _poliza = _polizaEncontrada;
             }
         }
+        _vehiculos = ListarVehiculosUseCase.Ejecutar();
     }
     void Cerrar(){
         Error error;
-        error = _modificar ? ModificarPolizaUseCase.Ejecutar(_poliza) : AgregarPolizaUseCase.Ejecutar(_poliza);
-
-        if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
-        else CerrarDialogo.InvokeAsync();
+        if (_poliza.FechaInicioVigencia < _poliza.FechaFinVigencia)
+        {
+            error = _modificar ? ModificarPolizaUseCase.Ejecutar(_poliza) : AgregarPolizaUseCase.Ejecutar(_poliza);
+            
+            if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
+            else CerrarDialogo.InvokeAsync();
+        }
+        else _classFecha = "is-invalid";
     }
 }

@@ -54,9 +54,7 @@ public class RepositorioTitular : IRepositorioTitular
         var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            var titularABorrar = db.Titulares
-            .Where(t => t.Id == id)
-            .SingleOrDefault();
+            var titularABorrar = db.Titulares.Where(t => t.Id == id).SingleOrDefault();
 
             if (titularABorrar != null)
             {

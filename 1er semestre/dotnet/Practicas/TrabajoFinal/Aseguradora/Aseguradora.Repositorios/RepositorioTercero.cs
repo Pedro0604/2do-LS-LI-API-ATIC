@@ -54,9 +54,7 @@ public class RepositorioTercero : IRepositorioTercero
         var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            var terceroABorrar = db.Terceros
-            .Where(t => t.Id == id)
-            .SingleOrDefault();
+            var terceroABorrar = db.Terceros.Where(t => t.Id == id).SingleOrDefault();
 
             if (terceroABorrar != null)
             {

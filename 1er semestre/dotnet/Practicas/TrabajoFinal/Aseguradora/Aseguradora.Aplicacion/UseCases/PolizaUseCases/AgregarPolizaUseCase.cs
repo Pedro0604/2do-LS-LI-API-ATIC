@@ -7,7 +7,7 @@ namespace Aseguradora.Aplicacion.UseCases;
 public class AgregarPolizaUseCase : PolizaUseCase
 {
     protected IRepositorioVehiculo RepositorioVehiculo { get; private set; }
-    public AgregarPolizaUseCase(IRepositorioPoliza repositorio, IRepositorioVehiculo repositorioVehiculo) : base(repositorio)=>RepositorioVehiculo = repositorioVehiculo;
+    public AgregarPolizaUseCase(IRepositorioPoliza repositorio, IRepositorioVehiculo repositorioVehiculo) : base(repositorio) => RepositorioVehiculo = repositorioVehiculo;
 
     public Error Ejecutar(Poliza poliza)
     {
@@ -15,14 +15,7 @@ public class AgregarPolizaUseCase : PolizaUseCase
         var vehiculo = RepositorioVehiculo.ListarVehiculos().Where(p => p.Id == poliza.VehiculoId).SingleOrDefault();
         if (vehiculo != null)
         {
-            if (poliza.FechaInicioVigencia <= poliza.FechaFinVigencia)
-            {
-                Repositorio.AgregarPoliza(poliza);
-            }
-            else
-            {
-                error.Mensaje = "La fecha de inicio de vigencia de la póliza no puede ser menor que la fecha de finalización";
-            }
+            Repositorio.AgregarPoliza(poliza);
         }
         else
         {

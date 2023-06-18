@@ -50,6 +50,7 @@ builder.Services.AddScoped<IRepositorioVehiculo, RepositorioVehiculo>();
 builder.Services.AddScoped<IRepositorioTercero, RepositorioTercero>();
 builder.Services.AddScoped<IRepositorioSiniestro, RepositorioSiniestro>();
 
+// Hacemos el EnsureCreated usando el método estático Crear() de la clase estática CrearDB
 CrearDB.Crear();
 
 var app = builder.Build();

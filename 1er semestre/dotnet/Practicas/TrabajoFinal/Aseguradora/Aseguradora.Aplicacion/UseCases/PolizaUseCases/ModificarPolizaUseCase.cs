@@ -15,14 +15,7 @@ public class ModificarPolizaUseCase : PolizaUseCase
         var vehiculo = RepositorioVehiculo.ListarVehiculos().Where(p => p.Id == poliza.VehiculoId).SingleOrDefault();
         if (vehiculo != null)
         {
-            if (poliza.FechaInicioVigencia <= poliza.FechaFinVigencia)
-            {
-                error = Repositorio.ModificarPoliza(poliza);
-            }
-            else
-            {
-                error.Mensaje = "La fecha de inicio de vigencia de la póliza no puede ser menor que la fecha de finalización";
-            }
+            error = Repositorio.ModificarPoliza(poliza);
         }
         else
         {

@@ -1,6 +1,7 @@
 @inject AgregarVehiculoUseCase AgregarVehiculoUseCase;
 @inject ModificarVehiculoUseCase ModificarVehiculoUseCase;
 @inject GetVehiculoUseCase GetVehiculoUseCase;
+@inject ListarTitularesUseCase ListarTitularesUseCase;
 
 @if(Visible){
     <div>
@@ -13,19 +14,33 @@
             <h1>Agregar un vehículo</h1>
         }
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="dominio" placeholder="Dominio" @bind="_vehiculo.Dominio">
+            <input name="dominio" class="form-control" type="text" id="dominio" placeholder="Dominio" @bind="_vehiculo.Dominio">
             <label for="dominio" class="form-label">Dominio</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="marca" placeholder="Marca" @bind="_vehiculo.Marca">
+            <input name="marca" class="form-control" type="text" id="marca" placeholder="Marca" @bind="_vehiculo.Marca">
             <label for="marca" class="form-label">Marca</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="año-fab" placeholder="Año de fabricacion" @bind="_vehiculo.AñoFabricacion">
+            <input name="año-fab" class="form-control" type="text" id="año-fab" placeholder="Año de fabricacion" @bind="_vehiculo.AñoFabricacion">
             <label for="año-fab" class="form-label">Año de fabricacion</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="titular-id" placeholder="Id del titular" @bind="_vehiculo.TitularId">
+            <select name="titular-id" class="form-select" id="titular-id" placeholder="Id del titular" @bind="_vehiculo.TitularId">
+                @if(_titulares != null){
+                    foreach (var titular in _titulares)
+                    {
+                        <option value=@(titular.Id)>
+                            Id: @titular.Id - DNI: @titular.DNI - Nombre: @titular.Nombre
+                        </option>
+                    }
+                }
+                else{
+                    <option value="0">
+                        Aún no hay titulares disponibles
+                    </option>
+                }
+            </select>
             <label for="titular-id" class="form-label">Id del titular</label>
         </div>
         <button @onclick="Cerrar" class="btn btn-success btn-ingresar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
@@ -40,6 +55,7 @@
     bool _modificar = false;
     Vehiculo _vehiculo = new Vehiculo();
     string? _dominio;
+    List<Titular>? _titulares = null;
 
     protected override void OnParametersSet() 
     {
@@ -51,6 +67,7 @@
                 _dominio = _vehiculo.Dominio;
             }
         }
+        _titulares = ListarTitularesUseCase.Ejecutar();
     }
     void Cerrar(){
         Error error;

@@ -1,6 +1,7 @@
 @inject AgregarTitularUseCase AgregarTitularUseCase;
 @inject ModificarTitularUseCase ModificarTitularUseCase;
 @inject GetTitularUseCase GetTitularUseCase;
+@inject ListarTitularesUseCase ListarTitularesUseCase;
 
 @if(Visible){
     <div>
@@ -13,27 +14,30 @@
         <h1>Agregar un titular</h1>
         }
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="nombre-titular" placeholder="Nombre" @bind="_titular.Nombre">
+            <input name="dominio" class="form-control" type="text" id="nombre-titular" placeholder="Nombre" @bind="_titular.Nombre">
             <label for="nombre-titular" class="form-label">Nombre</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="apellido-titular" placeholder="Apellido" @bind="_titular.Apellido">
+            <input name="apellido-titular" class="form-control" type="text" id="apellido-titular" placeholder="Apellido" @bind="_titular.Apellido">
             <label for="apellido-titular" class="form-label">Apellido</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="dni-titular" placeholder="DNI" @bind="_titular.DNI" maxlength="8">
+            <input name="dni-titular" class="form-control @(_classDNI)" type="text" id="dni-titular" placeholder="DNI" @bind="_titular.DNI" maxlength="8">
             <label for="dni-titular" class="form-label">DNI</label>
+            <div class="invalid-feedback">
+                Ya existe un titular de DNI @_titular.DNI
+            </div>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="direccion-titular" placeholder="Dirección" @bind="_titular.Direccion">
+            <input name="direccion-titular" class="form-control" type="text" id="direccion-titular" placeholder="Dirección" @bind="_titular.Direccion">
             <label for="direccion-titular" class="form-label">Dirección</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="tel" id="telefono-titular" placeholder="Teléfono" @bind="_titular.Telefono">
+            <input name="telefono-titular" class="form-control" type="tel" id="telefono-titular" placeholder="Teléfono" @bind="_titular.Telefono">
             <label for="telefono-titular" class="form-label">Teléfono</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="email" id="email-titular" placeholder="email@dotnet.com" @bind="_titular.Email">
+            <input name="email-titular" class="form-control" type="email" id="email-titular" placeholder="email@dotnet.com" @bind="_titular.Email">
             <label for="email-titular" class="form-label">email@dotnet.com</label>
         </div>
         <button @onclick="Cerrar" class="btn btn-success btn-ingresar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
@@ -49,6 +53,7 @@
     Titular _titular = new Titular();
     string? _nombre;
     string? _apellido;
+    string _classDNI = "";
 
     protected override void OnParametersSet() 
     {
@@ -64,9 +69,19 @@
     }
     void Cerrar(){
         Error error = new Error();
-        error = _modificar ? ModificarTitularUseCase.Ejecutar(_titular) : AgregarTitularUseCase.Ejecutar(_titular);
 
-        if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
-        else CerrarDialogo.InvokeAsync();
+        var t = ListarTitularesUseCase.Ejecutar().Where(t => t.DNI == _titular.DNI).SingleOrDefault();
+        if(t==null || t.Id == Id){
+            if(_modificar){
+                error = ModificarTitularUseCase.Ejecutar(_titular);
+            }
+            else{
+                AgregarTitularUseCase.Ejecutar(_titular);
+            }
+
+            if(error.Mensaje != "") OnError.InvokeAsync(error.Mensaje);
+            else CerrarDialogo.InvokeAsync();
+        }
+        else _classDNI = "is-invalid";
     }
 }

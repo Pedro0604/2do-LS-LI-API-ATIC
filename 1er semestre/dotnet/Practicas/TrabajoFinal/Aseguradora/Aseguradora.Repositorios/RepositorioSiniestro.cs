@@ -52,9 +52,7 @@ public class RepositorioSiniestro : IRepositorioSiniestro
         var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            var siniestroABorrar = db.Siniestros
-            .Where(s => s.Id == id)
-            .SingleOrDefault();
+            var siniestroABorrar = db.Siniestros.Where(s => s.Id == id).SingleOrDefault();
 
             if (siniestroABorrar != null)
             {

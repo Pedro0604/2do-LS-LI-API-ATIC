@@ -1,6 +1,7 @@
 @inject AgregarTerceroUseCase AgregarTerceroUseCase;
 @inject ModificarTerceroUseCase ModificarTerceroUseCase;
 @inject GetTerceroUseCase GetTerceroUseCase;
+@inject ListarSiniestrosUseCase ListarSiniestrosUseCase;
 
 @if(Visible){
     <div>
@@ -33,7 +34,21 @@
             <label for="telefono-tercero" class="form-label">Teléfono</label>
         </div>
         <div class="form-floating mb-3">
-            <input class="form-control" type="text" id="siniestro-id" placeholder="Id del siniestro" @bind="_tercero.SiniestroId">
+            <select name="siniestro-id" class="form-control" type="text" id="siniestro-id" placeholder="Id del siniestro" @bind="_tercero.SiniestroId">
+                @if(_siniestros != null){
+                    foreach (var siniestro in _siniestros)
+                    {
+                        <option value=@(siniestro.Id)>
+                            Id: @siniestro.Id - Fecha de ocurrencia: @siniestro.FechaOcurrencia.ToString("dd/MM/yyyy")
+                        </option>
+                    }
+                }
+                else{
+                    <option value="0">
+                        Aún no hay siniestros disponibles
+                    </option>
+                }
+            </select>
             <label for="siniestro-id" class="form-label">Id del siniestro</label>
         </div>
         <button @onclick="Cerrar" class="btn btn-success btn-ingresar">@if(_modificar){<span>Modificar</span>}else{<span>Agregar</span>}</button>
@@ -49,6 +64,7 @@
     Tercero _tercero = new Tercero();
     string? _nombre;
     string? _apellido;
+    List<Siniestro>? _siniestros = null;
 
     protected override void OnParametersSet() 
     {
@@ -61,6 +77,7 @@
                 _apellido = _tercero.Apellido;
             }
         }
+        _siniestros = ListarSiniestrosUseCase.Ejecutar();
     }
     void Cerrar(){
         Error error;

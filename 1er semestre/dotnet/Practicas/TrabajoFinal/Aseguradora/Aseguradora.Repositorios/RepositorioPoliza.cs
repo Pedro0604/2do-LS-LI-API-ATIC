@@ -54,9 +54,7 @@ public class RepositorioPoliza : IRepositorioPoliza
         var error = new Error();
         using (var db = new AseguradoraContext())
         {
-            var polizaABorrar = db.Polizas
-            .Where(p => p.Id == id)
-            .SingleOrDefault();
+            var polizaABorrar = db.Polizas.Where(p => p.Id == id).SingleOrDefault();
 
             if (polizaABorrar != null)
             {

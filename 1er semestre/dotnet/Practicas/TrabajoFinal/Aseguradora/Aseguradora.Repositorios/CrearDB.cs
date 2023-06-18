@@ -1,6 +1,6 @@
 namespace Aseguradora.Repositorios;
 
-public class CrearDB
+public static class CrearDB
 {
     public static void Crear()
     {
