@@ -215,6 +215,7 @@ public class ArbolBinarioPrincesaAccesible<T> {
 		return a;
 	}
 
+	@SuppressWarnings("unchecked")
 	public Personaje PrincesaAccesible() {
 		Personaje p = null;
 		if (!this.esVacio()) {

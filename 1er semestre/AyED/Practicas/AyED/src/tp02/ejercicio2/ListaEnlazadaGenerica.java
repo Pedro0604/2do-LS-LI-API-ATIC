@@ -229,6 +229,7 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 		return true;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public boolean equals(Object o) {
 		if (this == o)

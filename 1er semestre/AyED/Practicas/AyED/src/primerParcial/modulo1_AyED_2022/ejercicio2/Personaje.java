@@ -2,7 +2,6 @@ package primerParcial.modulo1_AyED_2022.ejercicio2;
 
 public class Personaje {
 	private String nombre;
-	private boolean esAccesible;
 
 	public Personaje(String nombre) {
 		this.nombre = nombre;
@@ -10,7 +9,6 @@ public class Personaje {
 
 	public Personaje(String nombre, boolean esAccesible) {
 		this.nombre = nombre;
-		this.esAccesible = esAccesible;
 	}
 
 	public Personaje() {
