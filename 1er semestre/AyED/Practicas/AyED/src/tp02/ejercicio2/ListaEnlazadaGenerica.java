@@ -248,4 +248,16 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 		}
 	}
 
+	@Override
+	public void copiar(ListaGenerica<T> l) {
+		this.comenzar();
+		while (!this.fin()) {
+			eliminar(this.proximo());
+		}
+		l.comenzar();
+		while (!l.fin()) {
+			this.agregarFinal(l.proximo());
+		}
+	}
+
 }

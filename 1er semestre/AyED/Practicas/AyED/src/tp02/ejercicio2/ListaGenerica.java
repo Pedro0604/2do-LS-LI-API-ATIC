@@ -104,4 +104,11 @@ public abstract class ListaGenerica<T> {
 	 **/
 
 	public abstract boolean agregar(T[] arr);
+
+	/**
+	 * Copia los datos de la lista l a la instancia actual, manteniendo la
+	 * referencia
+	 **/
+
+	public abstract void copiar(ListaGenerica<T> l);
 }
