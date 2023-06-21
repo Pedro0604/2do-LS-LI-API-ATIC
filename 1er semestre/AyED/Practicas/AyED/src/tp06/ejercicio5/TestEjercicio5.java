@@ -51,6 +51,8 @@ public class TestEjercicio5 {
 					+ mapa.caminoSinCargarCombustible("La Plata", "Magdalena", 106));
 			System.out.println("Camino sin cargar combustible 5: "
 					+ mapa.caminoSinCargarCombustible("La Plata", "Magdalena", 107));
+			System.out.println(
+					"Camino sin cargar combustible 6: " + mapa.caminoSinCargarCombustible("La Plata", "Vieytes", 100));
 			System.out.println();
 
 			// Devolver camino con menos cargas de combustible

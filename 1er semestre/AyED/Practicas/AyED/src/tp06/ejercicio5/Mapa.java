@@ -97,7 +97,7 @@ public class Mapa {
 
 		// Recorro la lista de vértices mientras no se termine y no haya encontrado
 		// alguna de las dos ciudades
-		while ((!vertices.fin()) && (posIni == -1 || !encontreCiudad2)) {
+		while (!vertices.fin()) {
 			v = vertices.proximo();
 			if (ciudades.incluye(v.dato())) {
 				marca[v.getPosicion()] = true;
@@ -250,6 +250,7 @@ public class Mapa {
 			}
 		}
 		if (!encontre) {
+			marca[pos] = false;
 			camino.eliminarEn(camino.tamanio());
 		}
 
