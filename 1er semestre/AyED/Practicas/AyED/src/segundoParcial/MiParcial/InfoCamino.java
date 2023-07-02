@@ -27,4 +27,19 @@ public class InfoCamino {
 		this.tiempoTot = tiempoTot;
 	}
 
+	public void agregarSitio(String st) {
+		this.camino.agregarFinal(st);
+	}
+
+	public void incrementarTiempo(int t) {
+		this.tiempoTot += t;
+	}
+
+	public void decrementarTiempo(int t) {
+		this.tiempoTot -= t;
+	}
+
+	public void eliminarUltimo() {
+		this.camino.eliminarEn(this.camino.tamanio());
+	}
 }

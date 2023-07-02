@@ -27,44 +27,40 @@ public class Parcial {
 			boolean[] marca) {
 		marca[pos] = true;
 		Vertice<Dato> v = sitios.vertice(pos);
-		actual.getCamino().agregarFinal(v.dato().getNombre());
-		actual.setTiempoTot(v.dato().getTiempo() + actual.getTiempoTot());
-		if ((actual.getCamino().tamanio() > resultado.getCamino().tamanio())
-				|| (actual.getCamino().tamanio() == resultado.getCamino().tamanio())
-						&& (actual.getTiempoTot() < resultado.getTiempoTot())) {
+		actual.agregarSitio(v.dato().getNombre());
+		actual.incrementarTiempo(v.dato().getTiempo());
+		if (((actual.getCamino().tamanio() == resultado.getCamino().tamanio())
+				&& (actual.getTiempoTot() < resultado.getTiempoTot()))
+				|| (actual.getCamino().tamanio() > resultado.getCamino().tamanio())) {
 			resultado.setCamino(actual.getCamino().clonar());
 			resultado.setTiempoTot(actual.getTiempoTot());
 		}
-		// else { puse en el parcial :(
+		// else { - puse en el parcial :(
 		ListaGenerica<Arista<Dato>> ady = sitios.listaDeAdyacentes(v);
-		Arista<Dato> arista;
-		Vertice<Dato> vProx;
-		int tiempo = 0;
-		int posProx;
 		ady.comenzar();
-		while (!ady.fin()/* && ((actual.getTiempoTot() + tiempo) < maxTiempo)) puse en el parcial :( */) {
-			arista = ady.proximo();
-			vProx = arista.verticeDestino();
-			tiempo = vProx.dato().getTiempo();
-			posProx = vProx.getPosicion();
+		while (!ady.fin() && (actual.getTiempoTot() < maxTiempo)) {
+			Arista<Dato> arista = ady.proximo();
+			Vertice<Dato> vProx = arista.verticeDestino();
+			int tiempo = vProx.dato().getTiempo();
+			int posProx = vProx.getPosicion();
 			if (!marca[posProx] && ((actual.getTiempoTot() + tiempo) <= maxTiempo)) {
 				dfs(posProx, sitios, resultado, actual, maxTiempo, marca);
-				actual.setTiempoTot(actual.getTiempoTot() - tiempo);
+				actual.decrementarTiempo(tiempo);
 			}
 		}
 		// }
 		marca[pos] = false;
-		actual.getCamino().eliminarEn(actual.getCamino().tamanio());
+		actual.eliminarUltimo();
 	}
 
 	private static int buscarOrigen(Grafo<Dato> sitios, String origen) {
-		int pos = -1;
 		ListaGenerica<Vertice<Dato>> ldv = sitios.listaDeVertices();
+		int pos = -1;
 		ldv.comenzar();
 		while (!ldv.fin() && pos == -1) {
-			Vertice<Dato> v = ldv.proximo();
-			if (v.dato().getNombre().equals(origen)) {
-				pos = v.getPosicion();
+			Vertice<Dato> vProx = ldv.proximo();
+			if (vProx.dato().getNombre().equals(origen)) {
+				pos = vProx.getPosicion();
 			}
 		}
 		return pos;

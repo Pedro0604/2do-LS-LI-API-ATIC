@@ -8,13 +8,13 @@ import tp06.ejercicio3.VerticeImplMatrizAdy;
 public class TestParcialGrafos {
 
 	public static void main(String[] args) {
-		Vertice<Dato> a = new VerticeImplMatrizAdy<Dato>(new Dato("Maradona", 30));
+		Vertice<Dato> a = new VerticeImplMatrizAdy<Dato>(new Dato("Estadio Único Diego Armando Maradona", 30));
 		Vertice<Dato> b = new VerticeImplMatrizAdy<Dato>(new Dato("MACLA", 120));
-		Vertice<Dato> c = new VerticeImplMatrizAdy<Dato>(new Dato("Catedral", 60));
-		Vertice<Dato> d = new VerticeImplMatrizAdy<Dato>(new Dato("Rectorado", 45));
-		Vertice<Dato> e = new VerticeImplMatrizAdy<Dato>(new Dato("Museo", 200));
-		Vertice<Dato> f = new VerticeImplMatrizAdy<Dato>(new Dato("Palacio", 40));
-		Vertice<Dato> g = new VerticeImplMatrizAdy<Dato>(new Dato("Coliseo", 50));
+		Vertice<Dato> c = new VerticeImplMatrizAdy<Dato>(new Dato("Catedral de La Plata", 60));
+		Vertice<Dato> d = new VerticeImplMatrizAdy<Dato>(new Dato("Rectorado UNLP", 45));
+		Vertice<Dato> e = new VerticeImplMatrizAdy<Dato>(new Dato("Museo UNLP", 200));
+		Vertice<Dato> f = new VerticeImplMatrizAdy<Dato>(new Dato("Palacio Campodónico", 40));
+		Vertice<Dato> g = new VerticeImplMatrizAdy<Dato>(new Dato("Coliseo Podestá", 50));
 		Vertice<Dato> h = new VerticeImplMatrizAdy<Dato>(new Dato("Legislatura", 20));
 
 		Grafo<Dato> grafo = new GrafoImplMatrizAdy<Dato>(15);
@@ -49,7 +49,7 @@ public class TestParcialGrafos {
 		grafo.conectar(g, f);
 		grafo.conectar(h, g);
 
-		InfoCamino resultado = Parcial.resolver(grafo, "Legislatura", 365);
-		System.out.println("Camino: " + resultado.getCamino() + ". Tiempo total = " + resultado.getTiempoTot());
+		InfoCamino resultado = Parcial.resolver(grafo, "Estadio Único Diego Armando Maradona", 150);
+		System.out.println(resultado.getCamino() + ". Tiempo total = " + resultado.getTiempoTot() + " minutos.");
 	}
 }
