@@ -28,14 +28,14 @@ public class Farola {
 	public void turnOn() {
 		if (!this.isOn()) {
 			this.setOn(true);
-			this.getNeighbors().stream().forEach(farola -> farola.turnOn());
+			this.getNeighbors().forEach(farola -> farola.turnOn());
 		}
 	}
 
 	public void turnOff() {
 		if (this.isOn()) {
 			this.setOn(false);
-			this.getNeighbors().stream().forEach(farola -> farola.turnOff());
+			this.getNeighbors().forEach(farola -> farola.turnOff());
 		}
 	}
 
