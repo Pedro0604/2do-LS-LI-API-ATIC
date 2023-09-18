@@ -19,6 +19,7 @@ case $2 in
     ;;
 *)
     echo "Operacion no valida"
+    exit 2
     ;;
 esac
 

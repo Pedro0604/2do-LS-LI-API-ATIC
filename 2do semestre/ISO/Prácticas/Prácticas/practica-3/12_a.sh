@@ -3,7 +3,6 @@
 echo "Introduzca dos numeros:"
 read num1 num2
 
-
 echo "Multiplicacion: $(expr $num1 \* $num2)"
 echo "Suma: $(expr $num1 + $num2)"
 echo "Resta: $(expr $num1 - $num2)"
@@ -15,3 +14,5 @@ elif [ $num2 -gt $num1 ]; then
 else
     echo "Los numeros son iguales"
 fi
+
+exit 0

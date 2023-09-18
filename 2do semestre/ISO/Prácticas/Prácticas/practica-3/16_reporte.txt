@@ -1,0 +1,2 @@
+Usuario  |  Extension  |  Cantidad de archivos
+pepox0604  |  .sh  |  1

@@ -15,3 +15,5 @@ elif [ $2 -gt $1 ]; then
 else
     echo "Los numeros son iguales"
 fi
+
+exit 0

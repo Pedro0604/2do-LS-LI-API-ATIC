@@ -23,3 +23,5 @@ else
         echo "El directorio $1 fue creado"
     fi
 fi
+
+exit 0

@@ -17,3 +17,5 @@ select opcion in "Listar" "Donde estoy" "Quien esta" "Salir"; do
         ;;
     esac
 done
+
+exit 0

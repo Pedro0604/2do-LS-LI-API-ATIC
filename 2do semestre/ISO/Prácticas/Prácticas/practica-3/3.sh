@@ -19,3 +19,4 @@ df -h /dev/sda1
 echo "Introduzca pais - provincia - ciudad y caca"
 read pais provincia ciudad caca
 echo "Pais: $pais - Provincia: $provincia - Ciudad: $ciudad - Caca: $caca"
+exit 0
