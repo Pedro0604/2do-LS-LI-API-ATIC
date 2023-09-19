@@ -23,9 +23,7 @@ select opcion in "push" "pop" "length" "print" "salir"; do
         ;;
     print)
         if [ $length -ne 0 ]; then
-            for elemento in ${pila[*]}; do
-                echo $elemento
-            done
+            echo ${pila[*]}
         else
             echo "La pila esta vacia"
         fi
