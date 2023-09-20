@@ -3,14 +3,19 @@ if [ $# -ne 3 ]; then
     exit 1
 fi
 
+if [ ! -e $1 ]; then
+    echo "El primer parametro '$1' no existe"
+    exit 2
+fi
+
 if [ ! -d $1 ]; then
     echo "El primer parametro '$1' no es un directorio"
-    exit 2
+    exit 3
 fi
 
 if [ "$2" != "-a" ] && [ "$2" != "-b" ]; then
     echo "El flag pasado como segundo parametro '$2' debe ser -a o -b"
-    exit 3
+    exit 4
 fi
 
 for archivo in $(ls $1); do
