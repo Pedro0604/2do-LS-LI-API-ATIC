@@ -1,5 +1,5 @@
 array=()
-directorio="/home/pepox0604/docs/"
+directorio="/home"
 
 verArchivo() {
     for archivo in ${array[*]}; do
@@ -22,7 +22,7 @@ borrarArchivo() {
                 unset array[$i]
                 echo "Archivo borrado logicamente"
             else
-                rm ${array[i]}
+                sudo rm ${array[i]}
                 unset array[$i]
                 echo "Archivo borrado fisicamente"
             fi
@@ -34,9 +34,11 @@ borrarArchivo() {
     return 5
 }
 
-for archivo in $(find $directorio -type f -name "*.doc"); do
+pushd "/home"
+for archivo in $(find $directorio -maxdepth 1 -type f -name "*.doc"); do
     array+=($archivo)
 done
+popd
 
 select opcion in "Ver archivo" "Borrar archivo" "length" "print" "salir"; do
     case $opcion in
