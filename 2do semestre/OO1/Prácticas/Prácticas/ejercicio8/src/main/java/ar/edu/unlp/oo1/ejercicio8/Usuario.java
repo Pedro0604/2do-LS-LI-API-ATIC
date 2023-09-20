@@ -20,16 +20,16 @@ public class Usuario {
 	}
 
 	public double ultimoConsumoActiva() {
-		return this.ultimoConsumo().getConsumoEnergiaActiva();
+		return this.ultimoConsumo() != null ? this.ultimoConsumo().getConsumoEnergiaActiva() : 0;
 	}
 
 	private Consumo ultimoConsumo() {
-		return this.consumos.get(this.consumos.size());
+		return this.consumos.stream().max((c1, c2) -> c1.getFecha().compareTo(c2.getFecha())).orElse(null);
 	}
 
 	public Factura facturarEnBaseA(double precioKWh) {
-		double monto = this.ultimoConsumo().costoEnBaseA(precioKWh);
-		double descuento = this.ultimoConsumo().factorDePotencia() > 0.8 ? 0.1 : 0;
+		double monto = this.ultimoConsumo() != null ? this.ultimoConsumo().costoEnBaseA(precioKWh) : 0;
+		double descuento = this.ultimoConsumo() != null ? (this.ultimoConsumo().factorDePotencia() > 0.8 ? 0.1 : 0) : 0;
 		Factura factura = new Factura(this, monto, descuento, LocalDate.now());
 		this.facturas.add(factura);
 

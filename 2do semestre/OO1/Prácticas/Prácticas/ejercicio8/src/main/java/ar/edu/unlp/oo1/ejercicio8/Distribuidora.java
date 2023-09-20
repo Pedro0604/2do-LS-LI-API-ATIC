@@ -12,6 +12,14 @@ public class Distribuidora {
 		this.precioKWh = precioKWh;
 	}
 
+	public double getPrecioKWh() {
+		return precioKWh;
+	}
+
+	public List<Usuario> getUsuarios() {
+		return usuarios;
+	}
+
 	public void agregarUsuario(Usuario usuario) {
 		this.usuarios.add(usuario);
 	}
