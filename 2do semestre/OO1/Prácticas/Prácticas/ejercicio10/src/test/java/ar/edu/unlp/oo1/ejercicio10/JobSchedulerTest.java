@@ -28,25 +28,25 @@ public class JobSchedulerTest {
 
 	private JobScheduler newFifoScheduler() {
 		JobScheduler fifoScheduler = new JobScheduler();
-		fifoScheduler.setStrategy("FIFO");
+		fifoScheduler.setStrategy(new FIFOStrategy());
 		return fifoScheduler;
 	}
 
 	private JobScheduler newLifoScheduler() {
 		JobScheduler lifoScheduler = new JobScheduler();
-		lifoScheduler.setStrategy("LIFO");
+		lifoScheduler.setStrategy(new LIFOStrategy());
 		return lifoScheduler;
 	}
 
 	private JobScheduler newPriorityScheduler() {
 		JobScheduler priorityScheduler = new JobScheduler();
-		priorityScheduler.setStrategy("HighestPriority");
+		priorityScheduler.setStrategy(new PriorityStrategy());
 		return priorityScheduler;
 	}
 
 	private JobScheduler newEffortScheduler() {
 		JobScheduler effortScheduler = new JobScheduler();
-		effortScheduler.setStrategy("MostEffort");
+		effortScheduler.setStrategy(new EffortStrategy());
 		return effortScheduler;
 	}
 

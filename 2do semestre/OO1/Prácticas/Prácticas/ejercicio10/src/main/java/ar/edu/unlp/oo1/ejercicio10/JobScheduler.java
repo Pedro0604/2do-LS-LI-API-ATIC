@@ -5,14 +5,15 @@ import java.util.List;
 
 public class JobScheduler {
 	protected List<JobDescription> jobs;
-	protected SchedulerStrategy strategy;
+	protected SchedulerStrategyComparer strategy;
 
 	public JobScheduler() {
 		this.jobs = new ArrayList<>();
-		this.strategy = "FIFO";
+		this.strategy = new FIFOStrategy();
 	}
 
 	public void schedule(JobDescription job) {
+		job.setIndex(this.jobs.size());
 		this.jobs.add(job);
 	}
 
@@ -22,7 +23,7 @@ public class JobScheduler {
 		}
 	}
 
-	public String getStrategy() {
+	public SchedulerStrategyComparer getStrategy() {
 		return this.strategy;
 	}
 
@@ -30,35 +31,13 @@ public class JobScheduler {
 		return jobs;
 	}
 
-	public void setStrategy(String aStrategy) {
+	public void setStrategy(SchedulerStrategyComparer aStrategy) {
 		this.strategy = aStrategy;
 	}
 
 	public JobDescription next() {
-		JobDescription nextJob = null;
-
-		switch (strategy) {
-		case "FIFO":
-			nextJob = jobs.get(0);
-			this.unschedule(nextJob);
-			return nextJob;
-
-		case "LIFO":
-			nextJob = jobs.get(jobs.size() - 1);
-			this.unschedule(nextJob);
-			return nextJob;
-
-		case "HighestPriority":
-			nextJob = jobs.stream().max((j1, j2) -> Double.compare(j1.priority(), j2.priority())).orElse(null);
-			this.unschedule(nextJob);
-			return nextJob;
-
-		case "MostEffort":
-			nextJob = jobs.stream().max((j1, j2) -> Double.compare(j1.effort(), j2.effort())).orElse(null);
-			this.unschedule(nextJob);
-			return nextJob;
-		}
-		return null;
+		JobDescription nextJob = this.jobs.stream().max((j1, j2) -> strategy.compareJob(j1, j2)).orElse(null);
+		this.unschedule(nextJob);
+		return nextJob;
 	}
-
 }
