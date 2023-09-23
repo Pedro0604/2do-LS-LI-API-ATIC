@@ -1,7 +1,7 @@
 package ar.edu.unlp.oo1.ejercicio9;
 
 public abstract class Cuenta {
-	private double saldo;
+	protected double saldo;
 
 	public Cuenta() {
 		this.saldo = 0;
@@ -32,9 +32,9 @@ public abstract class Cuenta {
 		return false;
 	}
 
-	public abstract boolean puedeExtraer(double monto);
-
-	public void extraerSinControlar(double monto) {
+	protected void extraerSinControlar(double monto) {
 		this.saldo -= monto;
 	}
+
+	protected abstract boolean puedeExtraer(double monto);
 }

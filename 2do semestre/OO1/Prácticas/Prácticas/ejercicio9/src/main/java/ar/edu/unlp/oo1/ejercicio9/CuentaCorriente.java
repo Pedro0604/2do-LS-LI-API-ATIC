@@ -18,7 +18,6 @@ public class CuentaCorriente extends Cuenta {
 
 	@Override
 	public boolean puedeExtraer(double monto) {
-		return (this.getSaldo() + this.descubierto) >= monto;
+		return (this.saldo + this.descubierto) >= monto;
 	}
-
 }
