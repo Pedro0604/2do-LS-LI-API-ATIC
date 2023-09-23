@@ -13,6 +13,12 @@ public class Consumo {
 		this.fecha = fecha;
 	}
 
+	public Consumo(LocalDate fecha, double consumoEnergiaActiva, double consumoEnergiaReactiva) {
+		this.consumoEnergiaActiva = consumoEnergiaActiva;
+		this.consumoEnergiaReactiva = consumoEnergiaReactiva;
+		this.fecha = fecha;
+	}
+
 	public LocalDate getFecha() {
 		return this.fecha;
 	}

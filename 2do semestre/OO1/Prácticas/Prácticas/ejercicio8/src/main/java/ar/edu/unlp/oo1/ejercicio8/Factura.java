@@ -15,8 +15,12 @@ public class Factura {
 		this.fecha = fecha;
 	}
 
+	public double getMontoEnergiaActiva() {
+		return montoEnergiaActiva;
+	}
+
 	public double montoTotal() {
-		return this.montoEnergiaActiva;
+		return this.montoEnergiaActiva - this.montoEnergiaActiva * this.descuento;
 	}
 
 	public Usuario usuario() {

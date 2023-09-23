@@ -26,12 +26,12 @@ public class FacturaTest {
 	@Test
 	public void testCrearFactura() {
 		assertEquals(f1.usuario(), u1);
-		assertEquals(f1.montoTotal(), 100);
+		assertEquals(f1.getMontoEnergiaActiva(), 100);
 		assertEquals(f1.descuento(), 0.1);
 		assertEquals(f1.fecha(), LocalDate.of(2022, 10, 8));
 
 		assertEquals(f2.usuario(), u2);
-		assertEquals(f2.montoTotal(), 200);
+		assertEquals(f2.getMontoEnergiaActiva(), 200);
 		assertEquals(f2.descuento(), 0);
 		assertEquals(f2.fecha(), LocalDate.of(2021, 10, 8));
 
@@ -39,12 +39,12 @@ public class FacturaTest {
 		f2 = new Factura(nuevoUsuario, 999, 0.123, LocalDate.now());
 
 		assertNotEquals(f2.usuario(), u2);
-		assertNotEquals(f2.montoTotal(), 200);
+		assertNotEquals(f2.getMontoEnergiaActiva(), 200);
 		assertNotEquals(f2.descuento(), 0);
 		assertNotEquals(f2.fecha(), LocalDate.of(2021, 10, 8));
 
 		assertEquals(f2.usuario(), nuevoUsuario);
-		assertEquals(f2.montoTotal(), 999);
+		assertEquals(f2.getMontoEnergiaActiva(), 999);
 		assertEquals(f2.descuento(), 0.123);
 		assertEquals(f2.fecha(), LocalDate.now());
 
