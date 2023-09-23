@@ -14,11 +14,15 @@ public class Consumo {
 	}
 
 	public LocalDate getFecha() {
-		return fecha;
+		return this.fecha;
 	}
 
 	public double getConsumoEnergiaActiva() {
-		return consumoEnergiaActiva;
+		return this.consumoEnergiaActiva;
+	}
+
+	public double getConsumoEnergiaReactiva() {
+		return this.consumoEnergiaReactiva;
 	}
 
 	public double costoEnBaseA(double precioKWh) {

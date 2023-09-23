@@ -56,9 +56,10 @@ public class DistribuidoraTest {
 		assertFalse(d1.getUsuarios().contains(nuevo));
 		assertEquals(d1.getUsuarios().size(), 2);
 		d1.agregarUsuario(nuevo);
-		assertEquals(d1.getUsuarios().size(), 3);
 		assertTrue(d1.getUsuarios().contains(nuevo));
+		assertEquals(d1.getUsuarios().size(), 3);
 
+		assertFalse(d2.getUsuarios().contains(nuevo));
 		assertEquals(d2.getUsuarios().size(), 0);
 		d2.agregarUsuario(nuevo);
 		assertTrue(d2.getUsuarios().contains(nuevo));
@@ -71,6 +72,12 @@ public class DistribuidoraTest {
 		assertEquals(d2.consumoTotalActiva(), 0);
 
 		u1.agregarMedicion(new Consumo(100, 100, LocalDate.of(2023, 10, 10)));
+		assertEquals(d1.consumoTotalActiva(), 120);
+
+		u2.agregarMedicion(new Consumo(50, 50, LocalDate.of(2020, 10, 10)));
+		assertEquals(d1.consumoTotalActiva(), 120);
+
+		u1.agregarMedicion(new Consumo(1000, 1000, LocalDate.of(2019, 10, 10)));
 		assertEquals(d1.consumoTotalActiva(), 120);
 	}
 

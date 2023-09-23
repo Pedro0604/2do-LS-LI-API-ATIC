@@ -15,6 +15,18 @@ public class Usuario {
 		this.domicilio = domicilio;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getDomicilio() {
+		return domicilio;
+	}
+
+	public List<Consumo> getConsumos() {
+		return consumos;
+	}
+
 	public void agregarMedicion(Consumo consumo) {
 		this.consumos.add(consumo);
 	}
