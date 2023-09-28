@@ -13,6 +13,7 @@ public class Consumo {
 		this.fecha = fecha;
 	}
 
+	// Constructor para los tests de OO1
 	public Consumo(LocalDate fecha, double consumoEnergiaActiva, double consumoEnergiaReactiva) {
 		this.consumoEnergiaActiva = consumoEnergiaActiva;
 		this.consumoEnergiaReactiva = consumoEnergiaReactiva;

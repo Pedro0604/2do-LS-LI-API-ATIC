@@ -23,9 +23,9 @@ public class DistribuidoraTestOO1 {
 		pablo = new Usuario("Pablo", "Calle Picasso 23, Paris");
 		frida = new Usuario("Frida", "Calle Kahlo 54, Mexico DF");
 
-		alto = new Consumo(5000, 2500, LocalDate.of(2021, 6, 8));
-		bajo = new Consumo(300, 300, LocalDate.of(2021, 6, 10));
-		medio = new Consumo(100, 800, LocalDate.of(2021, 6, 15));
+		alto = new Consumo(LocalDate.of(2021, 6, 8), 5000, 2500);
+		bajo = new Consumo(LocalDate.of(2021, 6, 10), 300, 300);
+		medio = new Consumo(LocalDate.of(2021, 6, 15), 100, 800);
 
 		redCompleta.agregarUsuario(mercedes);
 		redCompleta.agregarUsuario(pablo);
@@ -39,7 +39,6 @@ public class DistribuidoraTestOO1 {
 	public void testConstructor() {
 		assertEquals(50d, this.distribuidora.getPrecioKWh());
 		assertEquals(0d, this.distribuidora.consumoTotalActiva());
-		assertTrue(this.distribuidora.facturar().isEmpty());
 		assertTrue(this.distribuidora.getUsuarios().isEmpty());
 	}
 
@@ -63,9 +62,20 @@ public class DistribuidoraTestOO1 {
 		this.pablo.agregarMedicion(bajo);
 		this.frida.agregarMedicion(alto);
 		assertEquals(5400, this.redCompleta.consumoTotalActiva(), 0.001d);
-		Consumo otro = new Consumo(100, 800, LocalDate.of(2021, 7, 15));
+		Consumo otro = new Consumo(LocalDate.of(2021, 7, 15), 100, 800);
 		this.frida.agregarMedicion(otro);
 		assertEquals(500, this.redCompleta.consumoTotalActiva(), 0.001d);
 	}
 
+	@Test
+	public void testFacturar() {
+		assertEquals(3, this.redCompleta.facturar().size());
+		assertTrue(this.distribuidora.facturar().isEmpty());
+	}
+
+	@Test
+	public void testSetPrecioKW() {
+		this.distribuidora.precioKWh(200d);
+		assertEquals(200d, this.distribuidora.getPrecioKWh());
+	}
 }

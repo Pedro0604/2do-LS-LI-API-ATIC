@@ -15,12 +15,12 @@ public class FacturaTestOO1 {
 	@BeforeEach
 	public void setUp() {
 		usuario = new Usuario("Mercedes", "Calle Sosa 99, San Miguel de Tucuman");
-		factura = new Factura(usuario, 2000, 0.10, LocalDate.now());
+		factura = new Factura(2000, 0.1, usuario);
 	}
 
 	@Test
 	public void testInicializar() {
-		assertEquals(0.10, factura.descuento());
+		assertEquals(0.1, factura.descuento());
 		assertEquals(2000, factura.getMontoEnergiaActiva());
 		assertEquals(factura.fecha(), LocalDate.now());
 		assertEquals(usuario, factura.usuario());

@@ -15,6 +15,14 @@ public class Factura {
 		this.fecha = fecha;
 	}
 
+	// Constructor para los tests de OO1
+	public Factura(double montoEnergiaActiva, double descuento, Usuario usuario) {
+		this.montoEnergiaActiva = montoEnergiaActiva;
+		this.descuento = descuento;
+		this.fecha = LocalDate.now();
+		this.usuario = usuario;
+	}
+
 	public double getMontoEnergiaActiva() {
 		return montoEnergiaActiva;
 	}

@@ -1,6 +1,7 @@
 package ar.edu.unlp.oo1.ejercicio8;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.time.LocalDate;
 
@@ -39,15 +40,24 @@ public class UsuarioTestOO1 {
 	}
 
 	@Test
+	public void testUsuario() {
+		assertEquals("Towers", this.usuario.getNombre());
+		assertEquals("La Plata", this.usuario.getDomicilio());
+		assertTrue(this.usuario.facturas().isEmpty());
+		assertEquals(0d, this.usuarioSinConsumos.ultimoConsumoActiva());
+	}
+
+	@Test
 	public void testUltimoConsumoActiva() {
 		assertEquals(820, this.usuario.ultimoConsumoActiva());
+		assertEquals(0, this.usuarioSinConsumos.ultimoConsumoActiva());
 	}
 
 	@Test
 	public void testFacturarEnBaseAUsuarioConDescuento() {
 		Factura result = this.usuario.facturarEnBaseA(10);
 		assertEquals(8200, result.getMontoEnergiaActiva());
-		assertEquals(0.10, result.descuento());
+		assertEquals(0.1, result.descuento());
 		assertEquals(LocalDate.now(), result.fecha());
 	}
 
@@ -74,7 +84,7 @@ public class UsuarioTestOO1 {
 	public void testAgregarMedicion() {
 		Consumo ultimoConsumo = new Consumo(LocalDate.of(2021, 5, 8), 500, 5000);
 		this.usuario.agregarMedicion(ultimoConsumo);
-		assertEquals(ultimoConsumo.getConsumoEnergiaActiva(), this.usuario.ultimoConsumoActiva());
+		assertEquals(500, this.usuario.ultimoConsumoActiva());
 	}
 
 }
