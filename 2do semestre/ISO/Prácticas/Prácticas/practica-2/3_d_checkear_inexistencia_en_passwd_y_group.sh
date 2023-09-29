@@ -6,7 +6,7 @@ else
 	echo "$name still exists in /etc/passwd"
 fi
 
-if [ $(cat /etc/group grep -w "$name" | wc -l) -eq 0 ]; then
+if [ $(cat /etc/group | grep -w "$name" | wc -l) -eq 0 ]; then
 	echo "$name not found in /etc/group"
 else
 	echo "$name still exists in /etc/group"
