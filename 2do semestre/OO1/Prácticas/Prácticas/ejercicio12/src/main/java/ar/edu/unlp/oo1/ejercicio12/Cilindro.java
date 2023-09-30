@@ -10,6 +10,14 @@ public class Cilindro extends Pieza {
 		this.altura = altura;
 	}
 
+	public double getRadio() {
+		return radio;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
 	@Override
 	public double volumen() {
 		return Math.PI * Math.pow(this.radio, 2) * this.altura;

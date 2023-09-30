@@ -10,12 +10,20 @@ public class ReporteDeConstruccion {
 		this.piezas = new ArrayList<>();
 	}
 
+	public List<Pieza> getPiezas() {
+		return piezas;
+	}
+
+	public void addPieza(Pieza p) {
+		this.piezas.add(p);
+	}
+
 	public double getVolumenDeMaterial(String nombreDeMaterial) {
 		return this.piezas.stream().filter(p -> p.getMaterial().equals(nombreDeMaterial)).mapToDouble(p -> p.volumen())
 				.sum();
 	}
 
-	public double getSuperficieColor(String nombreDeColor) {
+	public double getSuperficieDeColor(String nombreDeColor) {
 		return this.piezas.stream().filter(p -> p.getColor().equals(nombreDeColor)).mapToDouble(p -> p.superficie())
 				.sum();
 	}

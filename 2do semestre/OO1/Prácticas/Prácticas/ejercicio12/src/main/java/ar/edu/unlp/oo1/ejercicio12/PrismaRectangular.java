@@ -3,11 +3,23 @@ package ar.edu.unlp.oo1.ejercicio12;
 public class PrismaRectangular extends Pieza {
 	private double ladoMayor, ladoMenor, altura;
 
-	public PrismaRectangular(String color, String material, double ladoMayor, double ladoMenor, double altura) {
+	public PrismaRectangular(String color, String material, double ladoMenor, double ladoMayor, double altura) {
 		super(color, material);
 		this.ladoMayor = ladoMayor;
 		this.ladoMenor = ladoMenor;
 		this.altura = altura;
+	}
+
+	public double getLadoMayor() {
+		return ladoMayor;
+	}
+
+	public double getLadoMenor() {
+		return ladoMenor;
+	}
+
+	public double getAltura() {
+		return altura;
 	}
 
 	@Override
