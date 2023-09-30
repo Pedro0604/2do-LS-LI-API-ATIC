@@ -1,7 +1,7 @@
 package ar.edu.unlp.oo1.ejercicio11;
 
-import java.time.Duration;
 import java.time.LocalDate;
+import java.time.Period;
 
 public class PlazoFijo implements ValorActualeable {
 	private LocalDate fechaConstitucion;
@@ -15,14 +15,25 @@ public class PlazoFijo implements ValorActualeable {
 		this.porcentajeDeInteresDiario = porcentajeDeInteresDiario;
 	}
 
+	public LocalDate getFechaConstitucion() {
+		return fechaConstitucion;
+	}
+
+	public double getMontoDepositado() {
+		return montoDepositado;
+	}
+
+	public double getPorcentajeDeInteresDiario() {
+		return porcentajeDeInteresDiario;
+	}
+
 	@Override
 	public double valorActual() {
-		long dias = Duration.between(fechaConstitucion, LocalDate.now()).toDays();
+		long dias = Period.between(fechaConstitucion, LocalDate.now()).getDays();
 		double valor = montoDepositado;
 		for (int i = 1; i <= dias; i++) {
 			valor += valor * porcentajeDeInteresDiario;
 		}
 		return valor;
 	}
-
 }

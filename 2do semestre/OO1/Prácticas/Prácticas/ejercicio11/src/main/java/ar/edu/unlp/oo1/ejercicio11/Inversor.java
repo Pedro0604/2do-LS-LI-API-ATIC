@@ -12,6 +12,18 @@ public class Inversor implements ValorActualeable {
 		this.inversiones = new ArrayList<>();
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public List<ValorActualeable> getInversiones() {
+		return inversiones;
+	}
+
+	public void addInversion(ValorActualeable inversion) {
+		this.inversiones.add(inversion);
+	}
+
 	public double valorActual() {
 		return this.inversiones.stream().mapToDouble(inversion -> inversion.valorActual()).sum();
 	}

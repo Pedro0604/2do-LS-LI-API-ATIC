@@ -12,6 +12,18 @@ public class InversionEnAcciones implements ValorActualeable {
 		this.valorUnitario = valorUnitario;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public double getValorUnitario() {
+		return valorUnitario;
+	}
+
 	@Override
 	public double valorActual() {
 		return cantidad * valorUnitario;
