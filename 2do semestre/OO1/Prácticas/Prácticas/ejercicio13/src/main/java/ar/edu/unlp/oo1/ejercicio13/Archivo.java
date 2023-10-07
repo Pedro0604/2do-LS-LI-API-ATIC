@@ -4,9 +4,10 @@ public class Archivo {
 	private String nombre;
 	private int tamanio;
 
-	public Archivo(String nombre) {
+	public Archivo(String nombre, int tamanio) {
 		super();
 		this.nombre = nombre;
+		this.tamanio = tamanio;
 	}
 
 	public String getNombre() {

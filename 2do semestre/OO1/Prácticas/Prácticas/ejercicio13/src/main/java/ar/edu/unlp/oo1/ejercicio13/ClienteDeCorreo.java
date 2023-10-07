@@ -13,6 +13,10 @@ public class ClienteDeCorreo {
 		this.carpetas = new ArrayList<>();
 	}
 
+	public Carpeta getInbox() {
+		return inbox;
+	}
+
 	public List<Carpeta> getCarpetas() {
 		List<Carpeta> c = new ArrayList<>(this.carpetas);
 		c.add(inbox);
@@ -24,8 +28,7 @@ public class ClienteDeCorreo {
 	}
 
 	public void mover(Email email, Carpeta origen, Carpeta destino) {
-		origen.removeEmail(email);
-		destino.addEmail(email);
+		origen.moverEmailA(email, destino);
 	}
 
 	public Email buscar(String texto) {

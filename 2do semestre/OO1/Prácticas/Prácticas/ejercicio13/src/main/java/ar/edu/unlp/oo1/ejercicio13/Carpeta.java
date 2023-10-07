@@ -17,6 +17,10 @@ public class Carpeta {
 		return this.nombre;
 	}
 
+	public List<Email> getEmails() {
+		return emails;
+	}
+
 	public void addEmail(Email email) {
 		this.emails.add(email);
 	}
@@ -31,5 +35,12 @@ public class Carpeta {
 
 	public int tamanioCarpeta() {
 		return this.emails.stream().mapToInt(e -> e.tamanioEmail()).sum();
+	}
+
+	public void moverEmailA(Email email, Carpeta destino) {
+		if (this.getEmails().contains(email)) {
+			this.removeEmail(email);
+			destino.addEmail(email);
+		}
 	}
 }

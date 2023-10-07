@@ -32,7 +32,7 @@ public class Email {
 	}
 
 	public boolean tieneTexto(String texto) {
-		return this.titulo.contains(texto) || this.cuerpo.contains(texto);
+		return texto != null && (this.titulo.contains(texto) || this.cuerpo.contains(texto));
 	}
 
 	public int tamanioEmail() {
