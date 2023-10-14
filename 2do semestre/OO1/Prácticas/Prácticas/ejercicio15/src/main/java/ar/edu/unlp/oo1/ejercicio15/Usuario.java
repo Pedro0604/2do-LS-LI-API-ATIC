@@ -23,6 +23,18 @@ public class Usuario {
 		return propiedades;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public int getDni() {
+		return dni;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
 	public Propiedad registrarPropiedad(String nombre, String descripcion, double precioNoche, String direccion) {
 		Propiedad nueva = new Propiedad(nombre, descripcion, precioNoche, direccion, this);
 		this.propiedades.add(nueva);
@@ -43,8 +55,10 @@ public class Usuario {
 		return this.reservas;
 	}
 	
-	public void reservar(Propiedad propiedad, DateLapseable periodo) {
-		this.reservas.add(new Reserva(periodo, propiedad));
+	public Reserva reservar(Propiedad propiedad, DateLapseable periodo) {
+		Reserva nueva = new Reserva(periodo, propiedad);
+		this.reservas.add(nueva);
+		return nueva;
 	}
 	
 	public double calcularIngresos(Usuario duenio, DateLapseable periodo) {

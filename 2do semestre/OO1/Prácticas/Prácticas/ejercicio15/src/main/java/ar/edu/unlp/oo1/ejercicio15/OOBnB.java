@@ -1,10 +1,19 @@
 package ar.edu.unlp.oo1.ejercicio15;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class OOBnB {
 	private List<Usuario> usuarios;
+
+	public OOBnB() {
+		usuarios = new ArrayList<>();
+	}
+	
+	public List<Usuario> getUsuarios() {
+		return usuarios;
+	}
 
 	public Usuario registrarUsuario(String nombre, int dni, String direccion) {
 		Usuario nuevo = new Usuario(nombre, dni, direccion);

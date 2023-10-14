@@ -12,6 +12,18 @@ public class Reserva {
 		this.propiedad = propiedad;
 	}
 	
+	public DateLapseable getPeriodo() {
+		return periodo;
+	}
+
+	public Propiedad getPropiedad() {
+		return propiedad;
+	}
+
+	public void setPeriodo(DateLapseable periodo) {
+		this.periodo = periodo;
+	}
+
 	public boolean isEliminable() {
 		return this.periodo.getFrom().isAfter(LocalDate.now());
 	}

@@ -19,6 +19,26 @@ public class Propiedad {
 		return precioNoche;
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public Usuario getDuenio() {
+		return duenio;
+	}
+
+	public void setPrecioNoche(double precioNoche) {
+		this.precioNoche = precioNoche;
+	}
+
 	public boolean tieneComoDuenio(Usuario duenio) {
 		return this.duenio == duenio;
 	}
