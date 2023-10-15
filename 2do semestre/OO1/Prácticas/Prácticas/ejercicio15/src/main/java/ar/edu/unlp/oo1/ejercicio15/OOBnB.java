@@ -10,7 +10,7 @@ public class OOBnB {
 	public OOBnB() {
 		usuarios = new ArrayList<>();
 	}
-	
+
 	public List<Usuario> getUsuarios() {
 		return usuarios;
 	}
@@ -21,21 +21,26 @@ public class OOBnB {
 		return nuevo;
 	}
 
-	public List<Propiedad> buscarPropiedades(DateLapseable periodo){
-		return this.getAllPropiedades().stream().filter(propiedad->!this.usuarios.stream().anyMatch(usuario->usuario.tieneReservada(propiedad, periodo))).collect(Collectors.toList());
+	public List<Propiedad> buscarPropiedades(DateLapseable periodo) {
+		return this.getAllPropiedades().stream().filter(
+				propiedad -> !this.usuarios.stream().anyMatch(usuario -> usuario.tieneReservada(propiedad, periodo)))
+				.collect(Collectors.toList());
 	}
-	
-	public void reservar(Propiedad propiedad, Usuario inquilino, DateLapseable periodo) {
-		if(this.buscarPropiedades(periodo).contains(propiedad)) {
-			inquilino.reservar(propiedad, periodo);
+
+	public Reserva reservar(Propiedad propiedad, Usuario inquilino, DateLapseable periodo) {
+		Reserva r = null;
+		if (this.buscarPropiedades(periodo).contains(propiedad)) {
+			r = inquilino.reservar(propiedad, periodo);
 		}
+		return r;
 	}
-	
-	private List<Propiedad> getAllPropiedades(){
-		return this.usuarios.stream().flatMap(usuario->usuario.getPropiedades().stream()).collect(Collectors.toList());
+
+	private List<Propiedad> getAllPropiedades() {
+		return this.usuarios.stream().flatMap(usuario -> usuario.getPropiedades().stream())
+				.collect(Collectors.toList());
 	}
-	
+
 	public double calcularIngresos(Usuario duenio, DateLapseable periodo) {
-		return this.usuarios.stream().mapToDouble(usuario->usuario.calcularIngresos(duenio, periodo)).sum();
+		return this.usuarios.stream().mapToDouble(usuario -> usuario.calcularIngresos(duenio, periodo)).sum();
 	}
 }
