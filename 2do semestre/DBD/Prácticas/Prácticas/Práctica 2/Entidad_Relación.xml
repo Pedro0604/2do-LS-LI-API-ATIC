@@ -1,0 +1,30 @@
+<mxlibrary>[
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"endArrow=oval;html=1;rounded=0;endFill=0;\" edge=\"1\" source=\"10\" target=\"7\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"99.35533905932743\" y=\"67.85786437626894\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"264\" y=\"-8\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"endArrow=oval;html=1;rounded=0;endFill=0;\" edge=\"1\" source=\"10\" target=\"8\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"114\" y=\"82\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"274\" y=\"2\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"endArrow=oval;html=1;rounded=0;endFill=0;\" edge=\"1\" source=\"10\" target=\"9\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"99.35533905932743\" y=\"96.14213562373095\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"284\" y=\"12\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"endArrow=oval;html=1;rounded=0;endFill=0;\" edge=\"1\" source=\"10\" target=\"6\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"64\" y=\"62\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"104\" y=\"20\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"piso (0, 1)\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry x=\"64\" width=\"80\" height=\"30\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"7\" value=\"departamento (0, 1)\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry x=\"150\" y=\"22\" width=\"130\" height=\"30\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"8\" value=\"numero\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry x=\"174\" y=\"52\" width=\"60\" height=\"30\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"9\" value=\"calle\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry x=\"179\" y=\"90\" width=\"50\" height=\"30\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"10\" value=\"Dirección\" style=\"ellipse;whiteSpace=wrap;html=1;align=center;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"59\" width=\"100\" height=\"40\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 280,
+    "h": 120,
+    "aspect": "fixed",
+    "title": "Dirección completa - ER"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"endArrow=block;html=1;rounded=0;endFill=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"70\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 70,
+    "h": 1.1764705882352942,
+    "aspect": "fixed",
+    "title": "Jerarquía - ER"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"endArrow=oval;html=1;rounded=0;endFill=0;\" edge=\"1\" target=\"3\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint y=\"19\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"40\" y=\"18\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"Atributo\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry x=\"50\" width=\"60\" height=\"30\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 110,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Atributo - ER"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"endArrow=oval;html=1;rounded=0;endFill=1;\" edge=\"1\" target=\"3\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint y=\"19\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"40\" y=\"18\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"Identificador\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=0;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry x=\"35\" width=\"90\" height=\"30\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 125,
+    "h": 30,
+    "aspect": "fixed",
+    "title": "Identificador - ER"
+  }
+]</mxlibrary>
