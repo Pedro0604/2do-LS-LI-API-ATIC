@@ -1,0 +1,3 @@
+UPDATE Cliente
+SET telefono = '221-4400897'
+WHERE DNI = 38495444
