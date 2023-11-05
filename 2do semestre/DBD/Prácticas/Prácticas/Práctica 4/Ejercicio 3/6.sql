@@ -5,6 +5,6 @@ Select j.nombre,
 FROM Jugador j
     INNER JOIN ClubJugador cj ON j.DNI = cj.DNI
 GROUP BY cj.codigoClub,
-    j.nombre,
+    j.DNI,
     apellido,
     edad

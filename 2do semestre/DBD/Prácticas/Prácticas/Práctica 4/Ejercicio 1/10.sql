@@ -4,9 +4,7 @@ Select DNI,
     SUM(f.total) as montoTotal
 FROM Cliente c
     INNER JOIN Factura f ON c.idCliente = f.idCliente
-    INNER JOIN Detalle d ON f.idFactura = d.idFactura
-    INNER JOIN Producto p ON d.idProducto = p.idProducto
-GROUP BY f.nroTicket,
+GROUP BY f.idCliente,
     c.DNI,
     c.apellido,
     c.nombre
