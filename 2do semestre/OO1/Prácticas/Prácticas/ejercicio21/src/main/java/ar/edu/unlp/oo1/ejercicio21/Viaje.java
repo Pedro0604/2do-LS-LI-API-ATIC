@@ -20,7 +20,12 @@ public class Viaje {
 		this.costo = costo;
 		this.fechaViaje = fechaViaje;
 		this.pasajeros = new ArrayList<>();
-		this.pasajeros.add(this.vehiculo.getDuenio());
+	}
+
+	public List<Usuario> getPasajeros() {
+		List<Usuario> pasajerosTemp = new ArrayList<>(this.pasajeros);
+		pasajerosTemp.add(this.vehiculo.getDuenio());
+		return pasajerosTemp;
 	}
 
 	public boolean esEnUltimos30Dias() {

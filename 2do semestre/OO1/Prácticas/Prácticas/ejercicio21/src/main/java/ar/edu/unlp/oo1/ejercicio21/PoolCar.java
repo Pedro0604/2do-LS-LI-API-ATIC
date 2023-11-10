@@ -7,23 +7,23 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class PoolCar {
-	private List<Usuario> usuarios;
-	private List<Viaje> viajes;
+	private List<Conductor> conductores;
+	private List<Pasajero> pasajeros;
 
 	public PoolCar() {
-		usuarios = new ArrayList<>();
-		viajes = new ArrayList<>();
+		pasajeros = new ArrayList<>();
+		conductores = new ArrayList<>();
 	}
 
 	public Conductor altaConductor(String nombre, Vehiculo v) {
 		Conductor nuevo = new Conductor(nombre, v);
-		usuarios.add(nuevo);
+		conductores.add(nuevo);
 		return nuevo;
 	}
 
 	public Pasajero altaPasajero(String nombre, Vehiculo v) {
 		Pasajero nuevo = new Pasajero(nombre);
-		usuarios.add(nuevo);
+		pasajeros.add(nuevo);
 		return nuevo;
 	}
 
@@ -32,7 +32,7 @@ public class PoolCar {
 			return null;
 		} else {
 			Viaje v = new Viaje(origen, destino, vehiculo, costo, fecha);
-			this.viajes.add(v);
+			vehiculo.addViajeToConductor(v);
 			return v;
 		}
 	}
