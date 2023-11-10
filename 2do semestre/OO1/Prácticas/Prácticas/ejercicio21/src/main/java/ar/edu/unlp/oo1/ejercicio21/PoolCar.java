@@ -28,7 +28,9 @@ public class PoolCar {
 		if (ChronoUnit.DAYS.between(fecha, LocalDate.now()) < 2) {
 			return null;
 		} else {
-			this.usuarios
+			Viaje v = new Viaje(origen, destino, vehiculo, costo, fecha);
+			vehiculo.addViajeToDuenio(v);
+			return v;
 		}
 	}
 }

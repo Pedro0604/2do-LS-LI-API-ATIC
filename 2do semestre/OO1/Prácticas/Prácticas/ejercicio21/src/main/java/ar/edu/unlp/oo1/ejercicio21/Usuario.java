@@ -1,5 +1,6 @@
 package ar.edu.unlp.oo1.ejercicio21;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Usuario {
@@ -11,6 +12,11 @@ public abstract class Usuario {
 		super();
 		this.nombre = nombre;
 		this.saldo = 0;
+		this.viajes = new ArrayList<>();
+	}
+
+	public void addViaje(Viaje v) {
+		this.viajes.add(v);
 	}
 
 	public void cargarSaldo(double monto) {

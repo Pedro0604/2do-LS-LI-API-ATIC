@@ -9,7 +9,6 @@ public class Viaje {
 	private Vehiculo vehiculo;
 	private double costo;
 	private LocalDate fechaViaje;
-	private List<Usuario> pasajeros;
 
 	public Viaje(String origen, String destino, Vehiculo vehiculo, double costo, LocalDate fechaViaje) {
 		super();
