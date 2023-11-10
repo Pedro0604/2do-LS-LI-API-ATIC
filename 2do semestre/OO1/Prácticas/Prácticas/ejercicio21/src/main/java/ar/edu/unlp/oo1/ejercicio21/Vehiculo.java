@@ -15,8 +15,4 @@ public class Vehiculo {
 	public Conductor getDuenio() {
 		return this.duenio;
 	}
-	
-	public void addViajeToConductor(Viaje v) {
-		this.duenio.addViaje();
-	}
 }
