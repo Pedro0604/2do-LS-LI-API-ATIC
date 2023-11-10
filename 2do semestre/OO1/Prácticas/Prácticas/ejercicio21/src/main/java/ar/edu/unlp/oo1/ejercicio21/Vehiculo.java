@@ -11,8 +11,8 @@ public class Vehiculo {
 	public int getAniosVehiculo() {
 		return LocalDate.now().getYear() - this.anioFabricacion;
 	}
-	
-	public void addViajeToDuenio(Viaje v) {
-		this.duenio.addViaje(v);
+
+	public Conductor getDuenio() {
+		return this.duenio;
 	}
 }

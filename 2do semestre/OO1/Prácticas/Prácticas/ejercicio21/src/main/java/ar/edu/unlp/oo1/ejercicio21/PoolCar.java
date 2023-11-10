@@ -4,12 +4,15 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PoolCar {
 	private List<Usuario> usuarios;
+	private List<Viaje> viajes;
 
 	public PoolCar() {
 		usuarios = new ArrayList<>();
+		viajes = new ArrayList<>();
 	}
 
 	public Conductor altaConductor(String nombre, Vehiculo v) {
@@ -29,8 +32,19 @@ public class PoolCar {
 			return null;
 		} else {
 			Viaje v = new Viaje(origen, destino, vehiculo, costo, fecha);
-			vehiculo.addViajeToDuenio(v);
+			this.viajes.add(v);
 			return v;
 		}
+	}
+
+	public List<Viaje> listarViajesManiana() {
+		return this.usuarios.stream().flatMap(u -> u.getViajesManiana().stream()).distinct()
+				.collect(Collectors.toList());
+	}
+
+	public void procesarViajes() {
+		List<Usuario> usuariosManiana = this.usuarios.stream()
+				.filter(u -> u.participaEnViaje(this.listarViajesManiana())).collect(Collectors.toList());
+		usuariosManiana.stream().forEach(u -> u.descontarSaldo());
 	}
 }
