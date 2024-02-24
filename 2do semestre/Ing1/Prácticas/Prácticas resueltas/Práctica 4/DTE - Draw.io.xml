@@ -1,0 +1,29 @@
+<mxlibrary>[
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"andooooooo\" style=\"whiteSpace=wrap;html=1;align=center;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"200\" height=\"100\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 200,
+    "h": 100,
+    "aspect": "fixed",
+    "title": "Estado - DTE"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=classic;startSize=6;endSize=8;curved=0;rounded=0;endFill=1;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"80\" relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint y=\"70\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 1,
+    "h": 70,
+    "aspect": "fixed",
+    "title": "Estado inicial - DTE"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" style=\"edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;\" edge=\"1\" target=\"3\" parent=\"1\"&gt;&lt;mxGeometry relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"10\" as=\"sourcePoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"&amp;lt;font style=&amp;quot;font-size: 37px;&amp;quot;&amp;gt;•&amp;lt;/font&amp;gt;\" style=\"ellipse;whiteSpace=wrap;html=1;aspect=fixed;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"70\" width=\"20\" height=\"20\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 20,
+    "h": 90,
+    "aspect": "fixed",
+    "title": "Estado final - DTE"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"pregunta\" style=\"ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"80\" height=\"50\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 80,
+    "h": 50,
+    "aspect": "fixed"
+  }
+]</mxlibrary>
