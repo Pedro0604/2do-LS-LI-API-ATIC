@@ -1,0 +1,11 @@
+#error[b-wf5euqohlt]{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#titulo[b-wf5euqohlt]{
+    display: flex;
+    gap: 30px;
+}

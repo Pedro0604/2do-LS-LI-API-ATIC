@@ -1,0 +1,15 @@
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Repositorios.deps.json
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Repositorios.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Repositorios.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Aplicacion.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\bin\Debug\net7.0\Aseguradora.Aplicacion.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.csproj.AssemblyReference.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.AssemblyInfoInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.AssemblyInfo.cs
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.csproj.CoreCompileInputs.cache
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.csproj.CopyComplete
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\refint\Aseguradora.Repositorios.dll
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\Aseguradora.Repositorios.pdb
+D:\Pedro\Facultad\2do\1er semestre\dotnet\Practicas\TrabajoFinal\Aseguradora\Aseguradora.Repositorios\obj\Debug\net7.0\ref\Aseguradora.Repositorios.dll

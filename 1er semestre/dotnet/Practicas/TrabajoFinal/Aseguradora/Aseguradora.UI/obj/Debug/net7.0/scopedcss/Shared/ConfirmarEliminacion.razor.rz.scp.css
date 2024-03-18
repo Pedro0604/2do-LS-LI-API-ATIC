@@ -1,0 +1,11 @@
+#confirmarEliminacion[b-xitvtigc3p]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#botones[b-xitvtigc3p]{
+    display: flex;
+    gap: 30px;
+}
