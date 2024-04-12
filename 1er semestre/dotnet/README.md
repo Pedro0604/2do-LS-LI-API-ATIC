@@ -1,0 +1,16 @@
+# Seminario de Lenguajes: .NET
+## 2do año - 1er semestre
+### [Prácticas](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas)
+  * [PDFs](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/PDFs)
+  * [Práctica 1](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/Practica1)
+  * [Práctica 2](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/Practica2)
+  * [Práctica 3](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/Practica3)
+  * [Práctica 4](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/Practica4)
+  * [Práctica 5](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/Practica5)
+  * [Práctica 6](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/Practica6)
+  * [Práctica 7y8](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/Practica7y8)
+  * [Práctica 9](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/Practica9)
+  * [Práctica 10](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/Practica10)
+  * [Primera entrega TP integrador](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/PrimerTrabajo)
+  * [Trabajo Final](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Practicas/TrabajoFinal)
+### [Teorías](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/dotnet/Teorias)
