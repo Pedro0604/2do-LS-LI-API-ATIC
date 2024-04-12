@@ -1,5 +1,5 @@
 # Funcionameinto de la [Práctica 4 resuelta en Google Sheets](https://docs.google.com/spreadsheets/d/1jrI0PM7C8r88W7rHsgzcwTy1V1eCkyGTN0vbkiD0W5w/edit?usp=sharing)
-### Los modelos son hojas generales con todos los algoritmos de planificación (con y sin E/S)
+### Los modelos son hojas generales con todos los algoritmos de planificación usados (con y sin E/S)
 
 ## Funcionalidades
 * En los diagramas si se hace un uso correcto de los caracteres '>' y '<', así como del tiempo de CPU:
