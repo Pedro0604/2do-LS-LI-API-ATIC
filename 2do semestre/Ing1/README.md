@@ -6,7 +6,7 @@
 > Las prácticas 3, 4 y 5 tienen los ejercicios hechos en [draw.io](https://draw.io). Las imagenes .drawio.png (o .png en la práctica 3) pueden ser subidas a [draw.io](https://draw.io) para modificarlas
 
 > [!NOTE]
-> A su vez, .drawio.xml de las prácticas 4 y 5 se puede abrir en [draw.io](https://draw.io) y tiene un par de elementos usados para la resolución de las prácticas (van a aparecer en la sidebar de la izquierda)
+> A su vez, los archivos .drawio.xml de las prácticas 4 y 5 se puede abrir en [draw.io](https://draw.io) y tiene un par de elementos usados para la resolución de las prácticas (van a aparecer en la sidebar de la izquierda)
 
   * [PDFs](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/Ing1/Pr%C3%A1cticas/PDFs)
   * [Prácticas resueltas](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/Ing1/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas)
