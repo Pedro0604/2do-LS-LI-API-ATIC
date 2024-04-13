@@ -14,7 +14,7 @@
     * [Práctica 3](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/Ing1/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/Pr%C3%A1ctica%203)
       * [Práctica 3 completa (los primeros casos de uso son modelos generales)](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/Ing1/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/Pr%C3%A1ctica%203/Pr%C3%A1ctica%203%20-%20PDF.pdf)
     * [Práctica 4](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/Ing1/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/Pr%C3%A1ctica%204)
-      * [Práctica 4 completa (los círculos de colores son dudas)](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/Ing1/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/Pr%C3%A1ctica%204/Pr%C3%A1ctica%204%20-%20PDF.pdf)
+      * [Práctica 4 completa (los círculos amarillos son dudas)](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/Ing1/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/Pr%C3%A1ctica%204/Pr%C3%A1ctica%204%20-%20PDF.pdf)
     * [Práctica 5](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/Ing1/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/Pr%C3%A1ctica%205)
       * [Práctica 5 completa](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/Ing1/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/Pr%C3%A1ctica%205/Pr%C3%A1ctica%205%20-%20PDF.pdf)
   * [Parciales viejos](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/Ing1/Pr%C3%A1cticas/Parciales%20viejos)
