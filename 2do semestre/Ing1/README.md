@@ -21,5 +21,6 @@
 ### [Teorías](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/Ing1/Teor%C3%ADas)
   * [PDFs](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/Ing1/Teor%C3%ADas/PDFs)
   * [Resumen de teorías](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/Ing1/Teor%C3%ADas/Resumen%20teor%C3%ADas.pdf)
-  * [Trabajo práctico de teoría (consigna)](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/Ing1/Teor%C3%ADas/PDFs/TP%20promoci%C3%B3n.pdf)
-    * [Trabajo práctico de teoría (resuelto)](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/Ing1/Teor%C3%ADas/Trabajo%20pr%C3%A1ctico%20de%20teoria.pdf)
+  * **Trabajo práctico de teoría**
+    * [Consigna](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/Ing1/Teor%C3%ADas/PDFs/TP%20promoci%C3%B3n.pdf)
+    * [Trabajo práctico resuelto](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/Ing1/Teor%C3%ADas/Trabajo%20pr%C3%A1ctico%20de%20teoria.pdf)
