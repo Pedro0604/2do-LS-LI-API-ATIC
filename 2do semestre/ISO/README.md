@@ -7,7 +7,7 @@
 > Si bien la práctica 4 y 5 tienen sus respectivos archivos .xlsx, conviene verlas en Google Sheets para que todo funcione correctamente
 
 > [!IMPORTANT]  
-> En el README.md de la [Práctica 4](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/ISO/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/practica-4/README.md) y de la [Práctica 5](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/ISO/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/practica-5/README.md) hay explicaciones sobre los usos y funcionalidades de los Google Sheets
+> En los README.md de la [Práctica 4](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/blob/main/2do%20semestre/ISO/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/practica-4/README.md) y de la [Práctica 5](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/2do%20semestre/ISO/Pr%C3%A1cticas/Pr%C3%A1cticas%20resueltas/practica-5/README.md) hay explicaciones sobre los usos y funcionalidades de los Google Sheets
 
 
 > [!NOTE]
