@@ -6,8 +6,7 @@
 * requerimientosArray (aunque es un string xdxd, pero despues se hace array 😎): un string con los requerimientos ordenados por llegada y con el siguiente formato: llegada1-{lote1}/llegada2-{lote2}/llegada3-{lote3}...)
 * maxRango: el máximo rango permitido (es un entero) (el mínimo es siempre 0)
 
-## Funcionalidades
-### Calcula los movimientos de la cabeza para los requerimientos y algoritmo indicados:
+## Funcionalidad
   * Para cada requerimiento imprime en consola:
     ```
     Desde: <posicion_inicial> - Hasta: <posición_final> [PF]
@@ -17,3 +16,9 @@
     
   * Cuando llega un nuevo lote de requerimientos imprime el número de lote y el número de movimiento en que llegó
   * Al finalizar todos los requerimientos imprime el total de movimientos
+
+## Uso
+### Se ejecuta el programa y se debe:
+1. Seleccionar el ejercicio que se desea (el default es el 13)
+2. Seleccionar el algoritmo que se desea (el default es el FCFS)
+3. Listo 😃
