@@ -1,0 +1,16 @@
+# Alogritmos y Estructuras de Datos
+## 2do año - 1er semestre
+### [Prácticas](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas)
+  * [PDFs](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/PDFs)
+  * [Práctica 1](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/Practica1)
+  * [Proyecto de Eclipse con todas las prácticas](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/AyED)
+    * [TP 2](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/AyED/src/tp02)
+    * [TP 3](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/AyED/src/tp03)
+    * [TP 4](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/AyED/src/tp04)
+    * [TP 6](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/AyED/src/tp06)
+    * [Parciales viejos - Primer parcial](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/AyED/src/primerParcial)
+    * [Mí primer parcial](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/AyED/src/primerParcial/MiParcial)
+    * [Mí segundo parcial](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/AyED/src/segundoParcial/MiParcial)
+  * [Apuntes](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/Apuntes)
+  * [Archivos .zip usados](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Practicas/zip)
+### [Teorías](https://github.com/Pedro0604/2do-LS-LI-API-ATIC/tree/main/1er%20semestre/AyED/Teorias)
