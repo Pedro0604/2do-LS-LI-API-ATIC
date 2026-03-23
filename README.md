@@ -1,4 +1,4 @@
-# 2do LS-LI-APU-ATIC - Facultad de Informática UNLP - 2023
+# 2do Licenciatura en Sistemas/Licenciatura en Informática/Analista Programador Universitario/Analista en TIC - Facultad de Informática UNLP - 2023
 <details open>
   <summary><h2>1er semestre</h2></summary>
  
